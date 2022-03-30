@@ -1,5 +1,6 @@
 {
     "weight": {
-    
+        "name": "weight",
+        "description": "Check a player's Senither weight."
     }
 }
