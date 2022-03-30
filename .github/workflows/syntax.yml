@@ -7,11 +7,11 @@ on:
   pull_request:
 
 jobs:
-  test:
+  syntax-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: json-syntax-check
+      - name: Check Syntax
         uses: limitusus/json-syntax-check@v1
         with:
           pattern: "\\.json$"
