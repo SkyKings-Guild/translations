@@ -1,6 +1,14 @@
 {
     "weight": {
         "name": "weight",
-        "description": "Check a player's Senither weight."
+        "description": "Check a player's Senither weight.",
+        "options": [
+            {
+                "name": "player",
+                "description": "The player to check."
+            }
+        ],
+        "responses": {
+        }
     }
 }
