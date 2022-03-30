@@ -9,6 +9,7 @@
             }
         ],
         "responses": {
+            "noProfileFound": "{} does not have any SkyBlock profiles."
         }
     }
 }
