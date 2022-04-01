@@ -4,11 +4,11 @@
         "description": "Manage your guild's configuration."
     },
     "config view": {
-        "name": "view",
-        "description": "View your guild's configuration.",
+        "name": "viewes",
+        "description": "Viewes your guild's configuration.",
         "options": [],
         "responses": {
-            "title.1": ["{ctx.guild.name}'s Configuration"],
+            "title.1": ["{ctx.guild.name}'s Configuration en Español"],
             "description.1": [
                 "Autoreply Enabled: {autoreply}\n",
                 "Hypixel News Ping: {news_ping}\n",
@@ -27,9 +27,9 @@
                 "Macroer Action: {macroer_action}\n",
                 "Phisher Action: {phisher_action}\n",
                 "\n",
-                "You can edit the config with `/config edit`!"
+                "You can edit the config with `/config edit`!\nen Español"
             ],
-            "title.2": ["{ctx.guild.name}'s Verification Configuration"],
+            "title.2": ["{ctx.guild.name}'s Verification Configuration en Español"],
             "description.2": [
                 "Verification Enabled: {verification}\n",
                 "Verified Role: {verified}\n",
@@ -42,11 +42,11 @@
                 "Hypixel Staff: {staff}\n",
                 "Nickname Format: {nickname}\n",
                 "\n",
-                "You can edit the config with `/config edit`!"
+                "You can edit the config with `/config edit`!\nen Español"
             ]
         }
     },
     "*": {
-        "page": "Page"
+        "page": "Página"
     }
 }
