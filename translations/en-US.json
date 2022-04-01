@@ -9,7 +9,16 @@
             }
         ],
         "responses": {
-            "noProfileFound": "{} does not have any SkyBlock profiles."
+            "noProfileFound": ["{player} does not have any SkyBlock profiles."],
+            "weight": [
+                "**{player}** has {weight['weight']:,} weight with {weight['overflow']:,} overflow.\n",
+                "Total Weight: {weight['total']}"
+            ],
+            "weightValues": [
+                "**Skills**: {skill_weight:,}\n"
+                "**Dungeons**: {dungeon_weight:,}\n"
+                "**Slayers**: {slayer_weight:,}"
+            ]
         }
     }
 }
