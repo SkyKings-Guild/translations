@@ -15,8 +15,8 @@
                 "Total Weight: {weight['total']}"
             ],
             "weightValues": [
-                "**Skills**: {skill_weight:,}\n"
-                "**Dungeons**: {dungeon_weight:,}\n"
+                "**Skills**: {skill_weight:,}\n",
+                "**Dungeons**: {dungeon_weight:,}\n",
                 "**Slayers**: {slayer_weight:,}"
             ]
         }
