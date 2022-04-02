@@ -105,6 +105,124 @@
             "invalid": "Invalid option provided. Please go back and fix it."
         }
     },
+    "config guilds view": {
+        "name": "view",
+        "description": "View the guilds linked to this server.",
+        "options": [],
+        "responses": {
+            "base": [
+                "Name: {name}\n",
+                "ID: {gid}\n",
+                "Member Counter Channel: {membercount}\n",
+                "Member Counter Format: {membercount_format}\n",
+                "Guild Member Role: {member_role}\n"
+            ],
+            "rankFieldTitle": [
+                "Ranks"
+            ],
+            "ranks": [
+                "{rank}: {role}"
+            ],
+            "noRanks": [
+                "No ranks have been linked."
+            ]
+        }
+    },
+    "config guilds add-guild": {
+        "name": "add-guild",
+        "description": "Add a Hypixel guild to this server.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The name of the guild to add."
+            }
+        ],
+        "responses": {
+            "addedGuild": [
+                "The guild **{guild}** has been added to this server!"
+            ],
+            "guildNotFound": [
+                "The guild **{guild}** does not exist."
+            ]
+        }
+    },
+    "config guilds remove-guild": {
+        "name": "remove-guild",
+        "description": "Remove a Hypixel guild from this server.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The name of the guild to remove."
+            }
+        ],
+        "responses": {
+            "removedGuild": [
+                "The guild **{guild}** has been removed from this server!"
+            ],
+            "guildNotFound": [
+                "The guild **{guild}** does not exist."
+            ]
+        }
+    },
+    "config guilds add-rank": {
+        "name": "add-rank",
+        "description": "Links a Hypixel guild rank to a Discord role.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The name of the guild that holds the rank."
+            },
+            {
+                "name": "rank",
+                "description": "The rank to link."
+            },
+            {
+                "name": "role",
+                "description": "The role to link to the rank."
+            }
+        ],
+        "responses": {
+            "guildNotAdded": [
+                "The guild **{guild}** is not linked to this server.\n",
+                "Add it with `/config guilds add-guild`."
+            ],
+            "guildNotFound": [
+                "The guild **{guild}** does not exist."
+            ],
+            "rankNotFound": [
+                "The rank **{rank}** does not exist in the **{guild}** guild."
+            ],
+            "addedRank": [
+                "The rank **{rank}** in guild **{guild}** has been linked to {role.mention}!"
+            ]
+        }
+    },
+    "config guilds remove-rank": {
+        "name": "remove-rank",
+        "description": "Unlinks a Hypixel guild rank from a Discord role.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The name of the guild that holds the rank."
+            },
+            {
+                "name": "rank",
+                "description": "The rank to remove."
+            }
+        ],
+        "responses": {
+            "guildNotAdded": [
+                "The guild **{guild}** is not linked to this server.\n",
+                "Add it with `/config guilds add-guild`."
+            ],
+            "guildNotFound": [
+                "The guild **{guild}** does not exist."
+            ],
+            "removedRank": [
+                "The rank **{rank}** in guild **{guild}** has been unlinked."
+            ]
+        }
+    },
     "*": {
         "errors": {
             "*": {
@@ -125,6 +243,22 @@
                     "{role.mention} cannot be used because it's managed and cannot be assigned.\n",
                     "Please try a different role."
                 ]
+            },
+            "3": {
+                "note": "Raised when adding guilds if the guild already exists",
+                "message": ["That guild has already been linked to this server."]
+            },
+            "4": {
+                "note": "Raised when trying to edit a guild that doesnt exist in db",
+                "message": ["That guild has not been added to this server."]
+            },
+            "5": {
+                "note": "Raised when adding a guild rank that already exists",
+                "message": ["That rank has already been linked to a role."]
+            },
+            "6": {
+                "note": "Raised when trying to edit a guild rank that doesnt exist in db",
+                "message": ["That rank has not been added to this server."]
             }
         },
         "page": "Page"
