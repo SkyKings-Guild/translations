@@ -1,11 +1,11 @@
 {
     "config": {
         "name": "config",
-        "description": "Manage your guild's configuration."
+        "description": "Manage your server's configuration."
     },
     "config view": {
         "name": "view",
-        "description": "View your guild's configuration.",
+        "description": "View your server's configuration.",
         "options": [],
         "responses": {
             "title.1": ["{ctx.guild.name}'s Configuration"],
@@ -46,7 +46,87 @@
             ]
         }
     },
+    "config edit": {
+        "name": "edit",
+        "description": "Edit your server's configuration.",
+        "options": [
+            {
+                "name": "option",
+                "description": "The option to edit."
+            },
+            {
+                "name": "value",
+                "description": "The new value for the option. Leave blank to reset to default."
+            }
+        ],
+        "responses": {
+            "premiumOnly": [
+                "This option is only used in premium servers.\n",
+                "For more information, please see the `/premium info` command."
+            ],
+            "editedSuccessfully": [
+                "{option} has been set to {value}!"
+            ]
+        },
+        "autocomplete": {
+            "bool": ["on", "off"],
+            "action": ["ban", "kick"],
+            "options": [
+                "Verification Enabled",
+                "Verified",
+                "VIP",
+                "VIP+",
+                "MVP",
+                "MVP+",
+                "MVP++",
+                "YouTube",
+                "Hypixel Staff",
+                "Nickname",
+                "Scammer Log Channel",
+                "Hypixel Status Ping",
+                "Hypixel Status Channel",
+                "Hypixel News Ping",
+                "Hypixel News Channel",
+                "Hypixel Patchnotes Ping",
+                "Hypixel Patchnotes Channel",
+                "Fetchur Ping",
+                "Fetchur Channel",
+                "Autoreply",
+                "Giveaway Runner Role",
+                "SkyBlock Date",
+                "Global Event Ping",
+                "Global Event Channel",
+                "SkyBlock Event Channel",
+                "Scammer Action",
+                "IRL Trader Action",
+                "Macroer Action",
+                "Phisher Action"
+            ],
+            "invalid": "Invalid option provided. Please go back and fix it."
+        }
+    },
     "*": {
+        "errors": {
+            "*": {
+                "note": "Catches all errors that aren't here.",
+                "message": ["An unhandled error occured. This has been reported.\n\n{e.__class__.__name__}: {e}"]
+            },
+            "0": {
+                "note": "Raised in config edit if an invalid option is chosen.",
+                "message": ["{option} is not a valid option."]
+            },
+            "1": {
+                "note": "Raised in config edit if an invalid value is chosen.",
+                "message": ["{value} is not a valid value for that option."]
+            },
+            "2": {
+                "note": "Raised in config edit if an un-assignable role is chosen.",
+                "message": [
+                    "{role.mention} cannot be used because it's managed and cannot be assigned.\n",
+                    "Please try a different role."
+                ]
+            }
+        },
         "page": "Page"
     }
 }
