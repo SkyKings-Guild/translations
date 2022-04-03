@@ -223,6 +223,85 @@
             ]
         }
     },
+    "config guilds add-requirement": {
+        "name": "add-requirement",
+        "description": "Adds a requirement to a Hypixel guild.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The guild to add the requirement to."
+            },
+            {
+                "name": "requirement",
+                "description": "The requirement to add.",
+                "choices": [
+                    "Network Level",
+                    "Skill Average",
+                    "Slayer XP",
+                    "Minion Slots",
+                    "Catacombs Level",
+                    "Fairy Souls",
+                    "Weight",
+                    "API Settings Enabled"
+                ]
+            },
+            {
+                "name": "value",
+                "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
+            }
+        ],
+        "responses": {
+            "guildNotAdded": [
+                "The guild **{guild}** is not linked to this server.\n",
+                "Add it with `/config guilds add-guild`."
+            ],
+            "guildNotFound": [
+                "The guild **{guild}** does not exist."
+            ],
+            "requirementNotFound": [
+                "The requirement **{requirement}** does not exist in the **{guild}** guild."
+            ],
+            "addedRequirement": [
+                "The **{requirement}** requirement has been added to **{guild}**!"
+            ]
+        }
+    },
+    "config guilds remove-requirement": {
+        "name": "remove-requirement",
+        "description": "Removes a requirement from a Hypixel guild.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The guild to remove the requirement from."
+            },
+            {
+                "name": "requirement",
+                "description": "The requirement to remove.",
+                "choices": [
+                    "Network Level",
+                    "Skill Average",
+                    "Slayer XP",
+                    "Minion Slots",
+                    "Catacombs Level",
+                    "Fairy Souls",
+                    "Weight",
+                    "API Settings Enabled"
+                ]
+            }
+        ],
+        "responses": {
+            "guildNotAdded": [
+                "The guild **{guild}** is not linked to this server.\n",
+                "Add it with `/config guilds add-guild`."
+            ],
+            "guildNotFound": [
+                "The guild **{guild}** does not exist."
+            ],
+            "removedRequirement": [
+                "The **{requirement}** requirement has been removed from **{guild}**!"
+            ]
+        }
+    },
     "*": {
         "errors": {
             "*": {
@@ -238,27 +317,47 @@
                 "message": ["{value} is not a valid value for that option."]
             },
             "2": {
-                "note": "Raised in config edit if an un-assignable role is chosen.",
+                "note": "Raised if an un-assignable role is chosen and can't be used.",
                 "message": [
                     "{role.mention} cannot be used because it's managed and cannot be assigned.\n",
                     "Please try a different role."
                 ]
             },
             "3": {
-                "note": "Raised when adding guilds if the guild already exists",
+                "note": "Raised when adding guilds if the guild already exists.",
                 "message": ["That guild has already been linked to this server."]
             },
             "4": {
-                "note": "Raised when trying to edit a guild that doesnt exist in db",
+                "note": "Raised when trying to edit a guild that doesnt exist in the database.",
                 "message": ["That guild has not been added to this server."]
             },
             "5": {
-                "note": "Raised when adding a guild rank that already exists",
+                "note": "Raised when adding a guild rank that already exists.",
                 "message": ["That rank has already been linked to a role."]
             },
             "6": {
-                "note": "Raised when trying to edit a guild rank that doesnt exist in db",
+                "note": "Raised when trying to edit a guild rank that doesnt exist in the database.",
                 "message": ["That rank has not been added to this server."]
+            },
+            "7": {
+                "note": "Raised when trying to add a guild requirement that already exists in the database.",
+                "message": ["That requirement has already been added to this guild."]
+            },
+            "8": {
+                "note": "Raised when trying to manage a guild requirement that doesn't exist in the database.",
+                "message": ["That requirement has not been added to this guild."]
+            },
+            "9": {
+                "note": "Raised when trying to add a rank requirement that already exists in the database.",
+                "message": ["That requirement has already been added to this rank."]
+            },
+            "10": {
+                "note": "Raised when trying to manage a rank requirement that doesn't exist in the database.",
+                "message": ["That requirement has not been added to this rank."]
+            },
+            "11": {
+                "note": "Raised when the maximum value for a requirement is exceeded.",
+                "message": ["The maximum value of {maximum:,} for the {requirement} requirement has been exceeded."]
             }
         },
         "page": "Page"
