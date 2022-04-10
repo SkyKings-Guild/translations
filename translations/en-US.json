@@ -604,6 +604,85 @@
             ]
         }
     },
+    "uptime": {
+        "name": "uptime",
+        "description": "Displays the bot's uptime.",
+        "options": [],
+        "responses": {
+            "uptime": [
+                "The bot has been online since {time}."
+            ]
+        }
+    },
+    "invite": {
+        "name": "invite",
+        "description": "Invite the bot to your server.",
+        "options": [],
+        "responses": {
+            "invite": [
+                "[Click here]({url}) to invite the bot to your server."
+            ],
+            "button": [
+                "Invite the Bot"
+            ]
+        }
+    },
+    "info": {
+        "name": "info",
+        "description": "Displays some information and statistics about the bot.",
+        "options": [],
+        "responses": {
+            "title": [
+                "SkyKings v{version}"
+            ],
+            "versionInfoTitle": [
+                "Version Information"
+            ],
+            "versionInfo": [
+                "Python {python_version}\n",
+                "py-cord {pycord_version}\n",
+                "asyncpg {asyncpg_version}\n",
+                "aiohttp {aiohttp_version}"
+            ],
+            "systemInfoTitle": [
+                "System Information"
+            ],
+            "systemInfo": [
+                "Operating System: {os}\n",
+                "CPU usage: {cpu}%\n",
+                "Memory: {memory}"
+            ],
+            "botInfoTitle": [
+                "Bot Information"
+            ],
+            "botInfo": [
+                "Commands: {commands:,}\n",
+                "Extensions: {extensions:,}\n",
+                "Cogs: {cogs:,}\n",
+                "Servers: {servers:,}\n",
+                "Users: {users:,}\n",
+                "Shards: {shards:,}\n",
+                "Shard ID: {shard_id}\n",
+                "Average Latency: {latency} ms\n",
+                "Shard Latency: {shard_latency} ms\n",
+                "\n",
+                "Developed by plun1331#5535 - [discord.gg/skykings](https://discord.gg/skykings)"
+            ]
+        }
+    },
+    "ping": {
+        "name": "ping",
+        "description": "Measure the latency of the bot.",
+        "options": [],
+        "responses": {
+            "pong": [
+                "**Pong!**\n",
+                "Rest API Latency: {latency:,} ms\n",
+                "Average Websocket Latency: {avg_ws_latency:,} ms\n",
+                "Shard Websocket Latency: {shard_latency:,} ms"
+            ]
+        }
+    },
     "*": {
         "errors": {
             "*": {
