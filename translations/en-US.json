@@ -117,15 +117,20 @@
                 "Member Counter Format: {membercount_format}\n",
                 "Guild Member Role: {member_role}\n"
             ],
-            "rankFieldTitle": [
-                "Ranks"
-            ],
             "ranks": [
-                "{rank}: {role}"
+                "Role: {role}\nRequirements: {requirements}"
             ],
             "noRanks": [
                 "No ranks have been linked."
-            ]
+            ],
+            "Network Level": ["Network Level: {value:,}"],
+            "Skill Average": ["Skill Average: {value:,}"],
+            "Slayer XP": ["Slayer XP: {value:,}"],
+            "Minion Slots": ["Minion Slots: {value:,}"],
+            "Catacombs Level": ["Catacombs Level: {value:,}"],
+            "Fairy Souls": ["Fairy Souls: {value:,}"],
+            "Weight": ["Weight: {value:,}"],
+            "API Settings Enabled": ["API Settings Enabled"]
         }
     },
     "config guilds add-guild": {
@@ -166,7 +171,7 @@
     },
     "config guilds add-rank": {
         "name": "add-rank",
-        "description": "Links a Hypixel guild rank to a Discord role.",
+        "description": "Registers a guild rank with the bot.",
         "options": [
             {
                 "name": "guild",
@@ -174,11 +179,11 @@
             },
             {
                 "name": "rank",
-                "description": "The rank to link."
+                "description": "The rank to register."
             },
             {
                 "name": "role",
-                "description": "The role to link to the rank."
+                "description": "The role to link to the rank. Leave blank for no role."
             }
         ],
         "responses": {
@@ -190,16 +195,16 @@
                 "The guild **{guild}** does not exist."
             ],
             "rankNotFound": [
-                "The rank **{rank}** does not exist in the **{guild}** guild."
+                "The **{rank}** rank does not exist in **{guild}**."
             ],
             "addedRank": [
-                "The rank **{rank}** in guild **{guild}** has been linked to {role.mention}!"
+                "The **{rank}** rank in **{guild}** has been registered!"
             ]
         }
     },
-    "config guilds remove-rank": {
-        "name": "remove-rank",
-        "description": "Unlinks a Hypixel guild rank from a Discord role.",
+    "config guilds edit-rank": {
+        "name": "edit-rank",
+        "description": "Changes the role that's linked to a guild rank.",
         "options": [
             {
                 "name": "guild",
@@ -207,7 +212,46 @@
             },
             {
                 "name": "rank",
-                "description": "The rank to remove."
+                "description": "The rank to edit."
+            },
+            {
+                "name": "role",
+                "description": "The role to link to the rank. Leave blank for no role."
+            }
+        ],
+        "responses": {
+            "guildNotAdded": [
+                "The guild **{guild}** is not linked to this server.\n",
+                "Add it with `/config guilds add-guild`."
+            ],
+            "guildNotFound": [
+                "The guild **{guild}** does not exist."
+            ],
+            "rankNotFound": [
+                "The **{rank}** rank does not exist in **{guild}**."
+            ],
+            "editedRank": [
+                "The role for the **{rank}** rank in **{guild}** has been {state}!"
+            ],
+            "role": [
+                "set to {role.mention}"
+            ],
+            "noRole": [
+                "removed"
+            ]
+        }
+    },
+    "config guilds remove-rank": {
+        "name": "remove-rank",
+        "description": "Unregisters a Hypixel guild rank.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The guild that holds the rank."
+            },
+            {
+                "name": "rank",
+                "description": "The rank to unregister."
             }
         ],
         "responses": {
@@ -219,7 +263,7 @@
                 "The guild **{guild}** does not exist."
             ],
             "removedRank": [
-                "The rank **{rank}** in guild **{guild}** has been unlinked."
+                "The **{rank}** rank in **{guild}** has been unregistered."
             ]
         }
     },
@@ -385,6 +429,10 @@
             ],
             "rankNotFound": [
                 "The rank **{rank}** does not exist in the **{guild}** guild."
+            ],
+            "rankNotAdded": [
+                "**{guild}**'s **{rank}** rank has not been registered with the bot.\n",
+                "Add it with `/config guilds add-rank`."
             ],
             "addedRequirement": [
                 "The **{requirement}** requirement has been added to **{guild}**'s **{rank}** rank!"
