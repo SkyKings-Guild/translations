@@ -525,6 +525,85 @@
             ]
         }
     },
+    "premium info": {
+        "name": "info",
+        "description": "Get information on SkyKings Premium.",
+        "options": [],
+        "responses": {
+            "premium": [
+                "SkyKings Premium"
+            ],
+            "base": [
+                "Purchasing SkyKings premium gives you a few perks in our Discord server, ",
+                "and unlocks some features on our bot!\n",
+                "It also supports us, and allows us to keep this bot running.\n",
+                "To purchase, just visit https://www.patreon.com/SkyKings."
+            ],
+            "perkTitle": [
+                "Perks"
+            ],
+            "perks": [
+                "**Discord Features**",
+                "➥ Access to premium features on our bot.\n",
+                "➥ A custom role.\n",
+                "➥ Access to bazaar flipping bot.\n",
+                "➥ Your own custom VC.\n",
+                "**Bot Features for Server Owners**",
+                "➥ No limit on guild or rank requirements.\n",
+                "➥ Faster event update times (6 hours -> 1 hour).\n",
+                "➥ Guild Member Counter.\n",
+                "➥ Guild vs Guild events.\n",
+                "➥ More coming soon..."
+            ]
+        }
+    },
+    "premium status": {
+        "name": "status",
+        "description": "Displays this server's premium status.",
+        "options": [],
+        "responses": {
+            "notActive": [
+                "This server does not have premium active."
+            ],
+            "fromUser": [
+                "This server has premium from {redeemed_by.mention} ({redeemed_by}).\n",
+                "It can be transferred to another server {when}."
+            ],
+            "fromCode": [
+                "This server redeemed a premium code and has premium active until {exp}."
+            ]
+        }
+    },
+    "premium transfer": {
+        "name": "transfer",
+        "description": "Transfers your premium subscription to the current server.",
+        "options": [],
+        "responses": {
+            "cooldown": [
+                "Your premium transfer is on a cooldown.\n",
+                "You can transfer your premium {when}."
+            ],
+            "transferSuccess": [
+                "Premium transferred! **{guild.name}** now has premium active."
+            ]
+        }
+    },
+    "premium redeem": {
+        "name": "redeem",
+        "description": "Redeems a premium code.",
+        "options": [
+            {
+                "name": "code",
+                "description": "The code to redeem."
+            }
+        ],
+        "responses": {
+            "redeemed": [
+                "The code **{code}** has been redeemed!\n",
+                "**{guild.name}** now has premium active until {when}."
+            ]
+        }
+    },
     "*": {
         "errors": {
             "*": {
@@ -581,6 +660,26 @@
             "11": {
                 "note": "Raised when the maximum value for a requirement is exceeded.",
                 "message": ["The maximum value of {maximum:,} for the {requirement} requirement has been exceeded."]
+            },
+            "12": {
+                "note": "Raised when trying to redeem premium on a guild that already has it active.",
+                "message": ["This server already has premium active."]
+            },
+            "13": {
+                "note": "Raised when trying to redeem a premium code on a guild that has premium from a user.",
+                "message": ["This server has premium active from a SkyKings Premium member.\n",
+                            "Premium codes cannot be redeemed in this server."]
+            },
+            "14": {
+                "note": "Raised when trying to use a nonexistant premium code.",
+                "message": ["This premium code is not valid."]
+            }
+        },
+        "checkFailure": {
+            "0": {
+                "note": "Raised when a user doesn't have premium and needs it.",
+                "message": ["You need SkyKings Premium to use this command.\n",
+                            "For more information, please see `/premium info`."]
             }
         },
         "page": "Page"
