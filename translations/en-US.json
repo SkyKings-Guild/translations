@@ -543,12 +543,12 @@
                 "Perks"
             ],
             "perks": [
-                "**Discord Features**",
+                "**Discord Features**\n",
                 "➥ Access to premium features on our bot.\n",
                 "➥ A custom role.\n",
                 "➥ Access to bazaar flipping bot.\n",
-                "➥ Your own custom VC.\n",
-                "**Bot Features for Server Owners**",
+                "➥ Your own custom VC.\n\n",
+                "**Bot Features for Server Owners**\n",
                 "➥ No limit on guild or rank requirements.\n",
                 "➥ Faster event update times (6 hours -> 1 hour).\n",
                 "➥ Guild Member Counter.\n",
@@ -680,6 +680,38 @@
                 "Rest API Latency: {latency:,} ms\n",
                 "Average Websocket Latency: {avg_ws_latency:,} ms\n",
                 "Shard Websocket Latency: {shard_latency:,} ms"
+            ]
+        }
+    },
+    "command-usage": {
+        "name": "command-usage",
+        "description": "Displays the usage of a command.",
+        "options": [],
+        "responses": {
+            "title": [
+                "Command Usage"
+            ],
+            "base": [
+                "**Total Commands Used**: {commands:,}\n\n"
+            ],
+            "noCommands": [
+                "There's currently no command data."
+            ]
+        }
+    },
+    "votes": {
+        "name": "votes",
+        "description": "Displays the bot's top voters this month.",
+        "options": [],
+        "responses": {
+            "title": [
+                "Bot Votes"
+            ],
+            "base": [
+                "**Votes this month**: {votes:,}\n\n"
+            ],
+            "noVotes": [
+                "There have been no votes this month."
             ]
         }
     },
