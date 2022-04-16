@@ -525,6 +525,10 @@
             ]
         }
     },
+    "premium": {
+        "name": "premium",
+        "description": "Commands relating to SkyKings Premium."
+    },
     "premium info": {
         "name": "info",
         "description": "Get information on SkyKings Premium.",
@@ -715,6 +719,81 @@
             ]
         }
     },
+    "event": {
+        "name": "event",
+        "description": "Commands relating to events."
+    },
+    "event start": {
+        "name": "start",
+        "description": "Starts an event.",
+        "options": [
+            {
+                "name": "event",
+                "description": "The type of event to start.",
+                "choices": [
+                    "Skill XP",
+                    "Farming XP",
+                    "Mining XP",
+                    "Combat XP",
+                    "Foraging XP",
+                    "Fishing XP",
+                    "Enchanting XP",
+                    "Alchemy XP",
+                    "Carpentry XP",
+                    "Runecrafting XP",
+                    "Taming XP",
+                    "Slayer XP",
+                    "Catacombs XP",
+                    "Senither Weight",
+                    "Weighted Skill XP",
+                    "Gifts Given"
+                ]
+            },
+            {
+                "name": "duration",
+                "description": "The duration of the event, must be between 14 days and 1 day. Example: 1w 3d"
+            },
+            {
+                "name": "gvg",
+                "description": "Whether the event should be a Guilds vs Guilds event. Premium is required for this option."
+            },
+            {
+                "name": "channel",
+                "description": "The channel to send the event to. Defaults to the current channel."
+            },
+            {
+                "name": "role",
+                "description": "The role to ping for the start of the event."
+            },
+            {
+                "name": "schedule_event",
+                "description": "Whether or not the bot should register the event with Discord."
+            }
+        ],
+        "responses": {
+            "eventStartedNotScheduled": [
+                "Succesfully started a {gvg}{type} event! ",
+                "Unfortunately, I wasn't able to register the event with Discord.\n",
+                "[Jump to Message]({message})"
+            ],
+            "eventStartedScheduled": [
+                "Succesfully started a {gvg}{type} event! ",
+                "[Discord Event URL]({event})\n",
+                "[Jump to Message]({message})"
+            ],
+            "eventStarted": [
+                "Succesfully started a {gvg}{type} event!\n",
+                "[Jump to Message]({message})"
+            ],
+            "invalidDuration": [
+                "The duration you provided was invalid.\n",
+                "For example, you can use `1w 3d` for 1 week and 3 days."
+            ],
+            "durationLimited": [
+                "The event can only last between 14 days and 1 day."
+            ]
+        }
+    },
     "*": {
         "errors": {
             "*": {
@@ -784,6 +863,21 @@
             "14": {
                 "note": "Raised when trying to use a nonexistant premium code.",
                 "message": ["This premium code is not valid."]
+            },
+            "15": {
+                "note": "Raised when trying to start an event when one is running.",
+                "message": ["There's already an event running in this server."]
+            },
+            "16": {
+                "note": "Raised when trying to start a guilds vs guilds event without premium.",
+                "message": [
+                    "SkyKings Premium is needed to make a Guilds vs Guilds event.\n",
+                    "For more information, please see `/premium info`."
+                ]
+            },
+            "17": {
+                "note": "Raised when the bot does not have permission to send messages.",
+                "message": ["I don't have permission to send messages in the specified channel."]
             }
         },
         "checkFailure": {
@@ -791,7 +885,46 @@
                 "note": "Raised when a user doesn't have premium and needs it.",
                 "message": ["You need SkyKings Premium to use this command.\n",
                             "For more information, please see `/premium info`."]
+            },
+            "1": {
+                "note": "Raised when an event is already running.",
+                "message": ["There's already an event running in this server."]
+            },
+            "2": {
+                "note": "Raised when an event is not running.",
+                "message": ["There isn't event running in this server."]
             }
+        },
+        "events": {
+            "*": ["Event"],
+            "gvg": ["Guild vs Guild"],
+            "SKILL": ["Skill XP"],
+            "SKILL_FARMING": ["Farming XP"],
+            "SKILL_MINING": ["Mining XP"],
+            "SKILL_COMBAT": ["Combat XP"],
+            "SKILL_FORAGING": ["Foraging XP"],
+            "SKILL_FISHING": ["Fishing XP"],
+            "SKILL_ENCHANTING": ["Enchanting XP"],
+            "SKILL_ALCHEMY": ["Alchemy XP"],
+            "SKILL_CARPENTRY": ["Carpentry XP"],
+            "SKILL_RUNECRAFTING": ["Runecrafting XP"],
+            "SKILL_TAMING": ["Taming XP"],
+            "SLAYER": ["Slayer XP"],
+            "CATACOMBS": ["Catacombs XP"],
+            "WEIGHT": ["Weight"],
+            "SKILL_WEIGHTED": ["Weighted Skill XP"],
+            "startMessage": [
+                "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
+                "1. You join the event,\n",
+                "2. The bot starts tracking the XP you earn,\n",
+                "3. You get placed on the leaderboard accordingly.\n",
+                "This message will serve as the leaderboard, and will be updated every {when}. Good luck, and have fun!\n",
+                "**This event ends on {end_date} ({end_relative})**"
+            ],
+            "updateQueued": ["Event queued for update at {when}."],
+            "updating": ["Updating the event leaderboard..."],
+            "nobody": ["Nothing to see here! Nobody's in the event!"],
+            "ended": ["This event has ended and all data will be deleted {when}."]
         },
         "page": "Page"
     }
