@@ -794,6 +794,14 @@
             ]
         }
     },
+    "event join": {
+        "name": "join",
+        "description": "Joins the event running in this server.",
+        "options": [],
+        "responses": {
+            "eventJoined": ["You've successfully joined the event in **{ctx.guild.name}**!"]
+        }
+    },
     "*": {
         "errors": {
             "*": {
@@ -893,6 +901,23 @@
             "2": {
                 "note": "Raised when an event is not running.",
                 "message": ["There isn't event running in this server."]
+            },
+            "3": {
+                "note": "Raised when the command invoker is not verified.",
+                "message": ["You must be verified to use this command.\n",
+                            "You can verify with `/verify`."]
+            },
+            "4": {
+                "note": "Raised when the command invoker is already verified.",
+                "message": ["You're already verified."]
+            },
+            "5": {
+                "note": "Raised when the command invoker is already in the event.",
+                "message": ["You're already in the event."]
+            },
+            "6": {
+                "note": "Raised when the command invoker is not in the event.",
+                "message": ["You're not in the event. Join it with `/event join`."]
             }
         },
         "events": {
@@ -911,7 +936,7 @@
             "SKILL_TAMING": ["Taming XP"],
             "SLAYER": ["Slayer XP"],
             "CATACOMBS": ["Catacombs XP"],
-            "WEIGHT": ["Weight"],
+            "WEIGHT": ["Senither Weight"],
             "SKILL_WEIGHTED": ["Weighted Skill XP"],
             "startMessage": [
                 "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
@@ -925,6 +950,16 @@
             "updating": ["Updating the event leaderboard..."],
             "nobody": ["Nothing to see here! Nobody's in the event!"],
             "ended": ["This event has ended and all data will be deleted {when}."]
+        },
+        "eventButtons": {
+            "btnJoin": ["Join Event"],
+            "btnPos": ["Check Position"],
+            "notVerified": ["You must be verified to join an event. Verify with the `/verify` command."],
+            "noEvent": ["There isn't an event running in this server."],
+            "alreadyJoined": ["You're already in the event."],
+            "joined": ["You've successfully joined the event!"],
+            "notJoined": ["You're not in the event."],
+            "position": ["You are currently have {xp:,} XP in the event and are #{pos:,} out of {players:,} players."]
         },
         "page": "Page"
     }
