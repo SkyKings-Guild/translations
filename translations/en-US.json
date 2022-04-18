@@ -25,7 +25,7 @@
                 "Scammer Action: {scammer_action}\n",
                 "IRL Trader Action: {trader_action}\n",
                 "Macroer Action: {macroer_action}\n",
-                "Phisher Action: {phisher_action}\n",
+                "Ratter Action: {phisher_action}\n",
                 "\n",
                 "You can edit the config with `/config edit`!"
             ],
@@ -802,6 +802,14 @@
             "eventJoined": ["You've successfully joined the event in **{ctx.guild.name}**!"]
         }
     },
+    "event leave": {
+        "name": "leave",
+        "description": "Leaves the event running in this server.",
+        "options": [],
+        "responses": {
+            "eventLeft": ["You've successfully left the event in **{ctx.guild.name}**!"]
+        }
+    },
     "*": {
         "errors": {
             "*": {
@@ -920,6 +928,9 @@
                 "message": ["You're not in the event. Join it with `/event join`."]
             }
         },
+        "converterFailure": {
+            "player": ["The specified player does not exist."]
+        },
         "events": {
             "*": ["Event"],
             "gvg": ["Guild vs Guild"],
@@ -938,6 +949,21 @@
             "CATACOMBS": ["Catacombs XP"],
             "WEIGHT": ["Senither Weight"],
             "SKILL_WEIGHTED": ["Weighted Skill XP"],
+            "SKILL_LABEL": ["XP"],
+            "SKILL_FARMING_LABEL": ["XP"],
+            "SKILL_MINING_LABEL": ["XP"],
+            "SKILL_COMBAT_LABEL": ["XP"],
+            "SKILL_FORAGING_LABEL": ["XP"],
+            "SKILL_FISHING_LABEL": ["XP"],
+            "SKILL_ENCHANTING_LABEL": ["XP"],
+            "SKILL_ALCHEMY_LABEL": ["XP"],
+            "SKILL_CARPENTRY_LABEL": ["XP"],
+            "SKILL_RUNECRAFTING_LABEL": ["XP"],
+            "SKILL_TAMING_LABEL": ["XP"],
+            "SLAYER_LABEL": ["XP"],
+            "CATACOMBS_LABEL": ["XP"],
+            "WEIGHT_LABEL": ["Weight"],
+            "SKILL_WEIGHTED_LABEL": ["XP"],
             "startMessage": [
                 "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
                 "1. You join the event,\n",
@@ -949,7 +975,8 @@
             "updateQueued": ["Event queued for update at {when}."],
             "updating": ["Updating the event leaderboard..."],
             "nobody": ["Nothing to see here! Nobody's in the event!"],
-            "ended": ["This event has ended and all data will be deleted {when}."]
+            "ended": ["This event has ended and all data will be deleted {when}."],
+            "members": ["Members"]
         },
         "eventButtons": {
             "btnJoin": ["Join Event"],
