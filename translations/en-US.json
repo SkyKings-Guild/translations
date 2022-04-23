@@ -810,6 +810,20 @@
             "eventLeft": ["You've successfully left the event in **{ctx.guild.name}**!"]
         }
     },
+    "event position": {
+        "name": "position",
+        "description": "Shows the position of a player in the event.",
+        "options": [
+            {
+                "name": "player",
+                "description": "The player to show the position of."
+            }
+        ],
+        "responses": {
+            "notJoined": ["{player} is not in the event."],
+            "playerPosition": ["{player} has {xp:,} XP in the event and is #{pos:,} out of {players:,} players."]
+        }
+    },
     "*": {
         "errors": {
             "*": {
