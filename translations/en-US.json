@@ -821,7 +821,25 @@
         ],
         "responses": {
             "notJoined": ["{player} is not in the event."],
-            "playerPosition": ["{player} has {xp:,} XP in the event and is #{pos:,} out of {players:,} players."]
+            "playerPosition": ["{player} has {xp:,} {label} in the event and is #{pos:,} out of {players:,} players."]
+        }
+    },
+    "event guild": {
+        "name": "guild",
+        "description": "Checks how the members of a guild are doing in the event.",
+        "options": [
+            {
+                "name": "guild",
+                "description": "The guild to lookup."
+            }
+        ],
+        "responses": {
+            "guildNotFound": ["The guild **{guild}** does not exist."],
+            "title": ["{guild}'s Event Data"],
+            "guild": [
+                "**{guild}** has {members} members in the event and is averaging {avg:,} {label} per member. ",
+                "(Total {label}: {total:,})"
+            ]
         }
     },
     "*": {
