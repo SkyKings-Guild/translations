@@ -1025,6 +1025,13 @@
             "notJoined": ["You're not in the event."],
             "position": ["You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."]
         },
-        "page": "Page"
+        "pagination": {
+            "page": ["Page"],
+            "noPages": ["There are no other pages to switch to!"],
+            "invalidPage": ["Invalid page number."],
+            "pageNumber": ["Page Number"],
+            "pageNumberPlaceholder": ["Input a page number to switch to."],
+            "pageTitle": ["Switch Page"]
+        }
     }
 }
