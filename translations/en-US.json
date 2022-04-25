@@ -839,7 +839,8 @@
             "guild": [
                 "**{guild}** has {members} members in the event and is averaging {avg:,} {label} per member. ",
                 "(Total {label}: {total:,})"
-            ]
+            ],
+            "noMembers": ["**{guild}** has no members in the event."]
         }
     },
     "*": {
