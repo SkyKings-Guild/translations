@@ -1018,7 +1018,7 @@
             "alreadyJoined": ["You're already in the event."],
             "joined": ["You've successfully joined the event!"],
             "notJoined": ["You're not in the event."],
-            "position": ["You are currently have {xp:,} XP in the event and are #{pos:,} out of {players:,} players."]
+            "position": ["You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."]
         },
         "page": "Page"
     }
