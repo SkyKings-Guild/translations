@@ -926,6 +926,10 @@
             "17": {
                 "note": "Raised when the bot does not have permission to send messages.",
                 "message": ["I don't have permission to send messages in the specified channel."]
+            },
+            "18": {
+                "note": "Raised when the player argument is required but was not passed.",
+                "message": ["You must provide a player to search for as you are not verified."]
             }
         },
         "checkFailure": {
