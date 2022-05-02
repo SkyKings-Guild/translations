@@ -897,13 +897,13 @@
       }
     ],
     "responses": {
-      "notScammers": [
-        "{player} is not marked as a dumb fuck in our database.\n",
+      "notScammer": [
+        "**{player}** is not marked as a dumb fuck in our database.\n",
         "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
         "\n\n*If this is untrue, please report this player with the `/report` command.*"
       ],
       "isScammer": [
-        "{player} is marked as a dumb fuck in our database."
+        "**{player}** is marked as a dumb fuck in our database."
       ],
       "SCAMMER_NAME": [
         "Entry #{id} - Scammer"
@@ -941,13 +941,13 @@
       }
     ],
     "responses": {
-      "notScammers": [
-        "{player} is not marked as a dumb fuck in our database.\n",
+      "notScammer": [
+        "**{player}** is not marked as a dumb fuck in our database.\n",
         "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
         "\n\n*If this is untrue, please report this player with the `/report` command.*"
       ],
       "isScammer": [
-        "{player} is marked as a dumb fuck in our database."
+        "**{player}** is marked as a dumb fuck in our database."
       ],
       "SCAMMER_NAME": [
         "Entry #{id} - Scammer"
