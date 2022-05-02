@@ -1,1037 +1,1323 @@
 {
-    "config": {
-        "name": "config",
-        "description": "Manage your server's configuration."
-    },
-    "config view": {
-        "name": "view",
-        "description": "View your server's configuration.",
-        "options": [],
-        "responses": {
-            "title.1": ["{ctx.guild.name}'s Configuration"],
-            "description.1": [
-                "Autoreply Enabled: {autoreply}\n",
-                "Hypixel News Ping: {news_ping}\n",
-                "Hypixel News Channel: {news_channel}\n",
-                "SkyBlock Patchnotes Ping: {patchnotes_ping}\n",
-                "SkyBlock Patchnotes Channel: {patchnotes_channel}\n",
-                "Fetchur Ping: {fetchur_ping}\n",
-                "Fetchur Channel: {fetchur_channel}\n",
-                "Global Event Ping: {global_event_ping}\n",
-                "Global Event Channel: {global_event_channel}\n",
-                "SkyBlock Date/Time Channel: {skyblock_time}\n",
-                "SkyBlock Events: {skyblock_events}\n",
-                "Action Logs: {scammer_logs}\n",
-                "Scammer Action: {scammer_action}\n",
-                "IRL Trader Action: {trader_action}\n",
-                "Macroer Action: {macroer_action}\n",
-                "Ratter Action: {phisher_action}\n",
-                "\n",
-                "You can edit the config with `/config edit`!"
-            ],
-            "title.2": ["{ctx.guild.name}'s Verification Configuration"],
-            "description.2": [
-                "Verification Enabled: {verification}\n",
-                "Verified Role: {verified}\n",
-                "VIP: {vip}\n",
-                "VIP+: {vip_plus}\n",
-                "MVP: {mvp}\n",
-                "MVP+: {mvp_plus}\n",
-                "MVP++: {mvp_plus_plus}\n",
-                "YouTube Rank: {youtube}\n",
-                "Hypixel Staff: {staff}\n",
-                "Nickname Format: {nickname}\n",
-                "\n",
-                "You can edit the config with `/config edit`!"
-            ]
-        }
-    },
-    "config edit": {
-        "name": "edit",
-        "description": "Edit your server's configuration.",
-        "options": [
-            {
-                "name": "option",
-                "description": "The option to edit."
-            },
-            {
-                "name": "value",
-                "description": "The new value for the option. Leave blank to reset to default."
-            }
-        ],
-        "responses": {
-            "premiumOnly": [
-                "This option is only used in premium servers.\n",
-                "For more information, please see the `/premium info` command."
-            ],
-            "editedSuccessfully": [
-                "{option} has been set to {value}!"
-            ]
-        },
-        "autocomplete": {
-            "bool": ["on", "off"],
-            "action": ["ban", "kick"],
-            "options": [
-                "Verification Enabled",
-                "Verified",
-                "VIP",
-                "VIP+",
-                "MVP",
-                "MVP+",
-                "MVP++",
-                "YouTube",
-                "Hypixel Staff",
-                "Nickname",
-                "Scammer Log Channel",
-                "Hypixel Status Ping",
-                "Hypixel Status Channel",
-                "Hypixel News Ping",
-                "Hypixel News Channel",
-                "Hypixel Patchnotes Ping",
-                "Hypixel Patchnotes Channel",
-                "Fetchur Ping",
-                "Fetchur Channel",
-                "Autoreply",
-                "Giveaway Runner Role",
-                "SkyBlock Date",
-                "Global Event Ping",
-                "Global Event Channel",
-                "SkyBlock Event Channel",
-                "Scammer Action",
-                "IRL Trader Action",
-                "Macroer Action",
-                "Phisher Action"
-            ],
-            "invalid": "Invalid option provided. Please go back and fix it."
-        }
-    },
-    "config guilds view": {
-        "name": "view",
-        "description": "View the guilds linked to this server.",
-        "options": [],
-        "responses": {
-            "base": [
-                "Name: {name}\n",
-                "ID: {gid}\n",
-                "Member Counter Channel: {membercount}\n",
-                "Member Counter Format: {membercount_format}\n",
-                "Guild Member Role: {member_role}\n"
-            ],
-            "ranks": [
-                "Role: {role}\nRequirements: {requirements}"
-            ],
-            "noRanks": [
-                "No ranks have been linked."
-            ],
-            "Network Level": ["Network Level: {value:,}"],
-            "Skill Average": ["Skill Average: {value:,}"],
-            "Slayer XP": ["Slayer XP: {value:,}"],
-            "Minion Slots": ["Minion Slots: {value:,}"],
-            "Catacombs Level": ["Catacombs Level: {value:,}"],
-            "Fairy Souls": ["Fairy Souls: {value:,}"],
-            "Weight": ["Weight: {value:,}"],
-            "API Settings Enabled": ["API Settings Enabled"]
-        }
-    },
-    "config guilds add-guild": {
-        "name": "add-guild",
-        "description": "Add a Hypixel guild to this server.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild to add."
-            }
-        ],
-        "responses": {
-            "addedGuild": [
-                "The guild **{guild}** has been added to this server!"
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ]
-        }
-    },
-    "config guilds remove-guild": {
-        "name": "remove-guild",
-        "description": "Remove a Hypixel guild from this server.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild to remove."
-            }
-        ],
-        "responses": {
-            "removedGuild": [
-                "The guild **{guild}** has been removed from this server!"
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ]
-        }
-    },
-    "config guilds add-rank": {
-        "name": "add-rank",
-        "description": "Registers a guild rank with the bot.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild that holds the rank."
-            },
-            {
-                "name": "rank",
-                "description": "The rank to register."
-            },
-            {
-                "name": "role",
-                "description": "The role to link to the rank. Leave blank for no role."
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "rankNotFound": [
-                "The **{rank}** rank does not exist in **{guild}**."
-            ],
-            "addedRank": [
-                "The **{rank}** rank in **{guild}** has been registered!"
-            ]
-        }
-    },
-    "config guilds edit-rank": {
-        "name": "edit-rank",
-        "description": "Changes the role that's linked to a guild rank.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild that holds the rank."
-            },
-            {
-                "name": "rank",
-                "description": "The rank to edit."
-            },
-            {
-                "name": "role",
-                "description": "The role to link to the rank. Leave blank for no role."
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "rankNotFound": [
-                "The **{rank}** rank does not exist in **{guild}**."
-            ],
-            "editedRank": [
-                "The role for the **{rank}** rank in **{guild}** has been {state}!"
-            ],
-            "role": [
-                "set to {role.mention}"
-            ],
-            "noRole": [
-                "removed"
-            ]
-        }
-    },
-    "config guilds remove-rank": {
-        "name": "remove-rank",
-        "description": "Unregisters a Hypixel guild rank.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild that holds the rank."
-            },
-            {
-                "name": "rank",
-                "description": "The rank to unregister."
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "removedRank": [
-                "The **{rank}** rank in **{guild}** has been unregistered."
-            ]
-        }
-    },
-    "config guilds add-requirement": {
-        "name": "add-requirement",
-        "description": "Adds a requirement to a Hypixel guild.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild to add the requirement to."
-            },
-            {
-                "name": "requirement",
-                "description": "The requirement to add.",
-                "choices": [
-                    "Network Level",
-                    "Skill Average",
-                    "Slayer XP",
-                    "Minion Slots",
-                    "Catacombs Level",
-                    "Fairy Souls",
-                    "Weight",
-                    "API Settings Enabled"
-                ]
-            },
-            {
-                "name": "value",
-                "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "requirementNotFound": [
-                "The requirement **{requirement}** does not exist in the **{guild}** guild."
-            ],
-            "addedRequirement": [
-                "The **{requirement}** requirement has been added to **{guild}**!"
-            ]
-        }
-    },
-    "config guilds remove-requirement": {
-        "name": "remove-requirement",
-        "description": "Removes a requirement from a Hypixel guild.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild to remove the requirement from."
-            },
-            {
-                "name": "requirement",
-                "description": "The requirement to remove.",
-                "choices": [
-                    "Network Level",
-                    "Skill Average",
-                    "Slayer XP",
-                    "Minion Slots",
-                    "Catacombs Level",
-                    "Fairy Souls",
-                    "Weight",
-                    "API Settings Enabled"
-                ]
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "removedRequirement": [
-                "The **{requirement}** requirement has been removed from **{guild}**!"
-            ]
-        }
-    },
-    "config guilds edit-requirement": {
-        "name": "edit-requirement",
-        "description": "Edits a requirement of a Hypixel guild.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild to edit the requirement of."
-            },
-            {
-                "name": "requirement",
-                "description": "The requirement to edit.",
-                "choices": [
-                    "Network Level",
-                    "Skill Average",
-                    "Slayer XP",
-                    "Minion Slots",
-                    "Catacombs Level",
-                    "Fairy Souls",
-                    "Weight"
-                ]
-            },
-            {
-                "name": "value",
-                "description": "The new value of the requirement."
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "requirementNotFound": [
-                "The requirement **{requirement}** does not exist in **{guild}**."
-            ],
-            "updatedRequirement": [
-                "The **{requirement}** requirement has been set to **{value:,}** in **{guild}**!"
-            ]
-        }
-    },
-    "config guilds add-rank-requirement": {
-        "name": "add-rank-requirement",
-        "description": "Adds a requirement to a Hypixel guild rank.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild that holds the rank."
-            },
-            {
-                "name": "rank",
-                "description": "The rank to add the requirement to."
-            },
-            {
-                "name": "requirement",
-                "description": "The requirement to add.",
-                "choices": [
-                    "Network Level",
-                    "Skill Average",
-                    "Slayer XP",
-                    "Minion Slots",
-                    "Catacombs Level",
-                    "Fairy Souls",
-                    "Weight",
-                    "API Settings Enabled"
-                ]
-            },
-            {
-                "name": "value",
-                "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "rankNotFound": [
-                "The rank **{rank}** does not exist in the **{guild}** guild."
-            ],
-            "rankNotAdded": [
-                "**{guild}**'s **{rank}** rank has not been registered with the bot.\n",
-                "Add it with `/config guilds add-rank`."
-            ],
-            "addedRequirement": [
-                "The **{requirement}** requirement has been added to **{guild}**'s **{rank}** rank!"
-            ]
-        }
-    },
-    "config guilds remove-rank-requirement": {
-        "name": "remove-rank-requirement",
-        "description": "Removes a requirement from a Hypixel guild rank.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild that holds the rank."
-            },
-            {
-                "name": "rank",
-                "description": "The rank to remove the requirement from."
-            },
-            {
-                "name": "requirement",
-                "description": "The requirement to remove.",
-                "choices": [
-                    "Network Level",
-                    "Skill Average",
-                    "Slayer XP",
-                    "Minion Slots",
-                    "Catacombs Level",
-                    "Fairy Souls",
-                    "Weight",
-                    "API Settings Enabled"
-                ]
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "removedRequirement": [
-                "The **{requirement}** requirement has been removed from **{guild}**'s **{rank}** rank!"
-            ]
-        }
-    },
-    "config guilds edit-rank-requirement": {
-        "name": "edit-rank-requirement",
-        "description": "Edits a requirement from a Hypixel guild rank.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild that holds the rank."
-            },
-            {
-                "name": "rank",
-                "description": "The rank to edit the requirement from."
-            },
-            {
-                "name": "requirement",
-                "description": "The requirement to edit.",
-                "choices": [
-                    "Network Level",
-                    "Skill Average",
-                    "Slayer XP",
-                    "Minion Slots",
-                    "Catacombs Level",
-                    "Fairy Souls",
-                    "Weight"
-                ]
-            },
-            {
-                "name": "value",
-                "description": "The value to set the requirement to."
-            }
-        ],
-        "responses": {
-            "guildNotAdded": [
-                "The guild **{guild}** is not linked to this server.\n",
-                "Add it with `/config guilds add-guild`."
-            ],
-            "guildNotFound": [
-                "The guild **{guild}** does not exist."
-            ],
-            "rankNotFound": [
-                "The rank **{rank}** does not exist in the **{guild}** guild."
-            ],
-            "updatedRequirement": [
-                "The **{requirement}** requirement has been set to **{value}** for **{guild}**'s **{rank}** rank!"
-            ]
-        }
-    },
-    "premium": {
-        "name": "premium",
-        "description": "Commands relating to SkyKings Premium."
-    },
-    "premium info": {
-        "name": "info",
-        "description": "Get information on SkyKings Premium.",
-        "options": [],
-        "responses": {
-            "premium": [
-                "SkyKings Premium"
-            ],
-            "base": [
-                "Purchasing SkyKings premium gives you a few perks in our Discord server, ",
-                "and unlocks some features on our bot!\n",
-                "It also supports us, and allows us to keep this bot running.\n",
-                "To purchase, just visit https://www.patreon.com/SkyKings."
-            ],
-            "perkTitle": [
-                "Perks"
-            ],
-            "perks": [
-                "**Discord Features**\n",
-                "➥ Access to premium features on our bot.\n",
-                "➥ A custom role.\n",
-                "➥ Access to bazaar flipping bot.\n",
-                "➥ Your own custom VC.\n\n",
-                "**Bot Features for Server Owners**\n",
-                "➥ No limit on guild or rank requirements.\n",
-                "➥ Faster event update times (6 hours -> 1 hour).\n",
-                "➥ Guild Member Counter.\n",
-                "➥ Guild vs Guild events.\n",
-                "➥ More coming soon..."
-            ]
-        }
-    },
-    "premium status": {
-        "name": "status",
-        "description": "Displays this server's premium status.",
-        "options": [],
-        "responses": {
-            "notActive": [
-                "This server does not have premium active."
-            ],
-            "fromUser": [
-                "This server has premium from {redeemed_by.mention} ({redeemed_by}).\n",
-                "It can be transferred to another server {when}."
-            ],
-            "fromCode": [
-                "This server redeemed a premium code and has premium active until {exp}."
-            ]
-        }
-    },
-    "premium transfer": {
-        "name": "transfer",
-        "description": "Transfers your premium subscription to the current server.",
-        "options": [],
-        "responses": {
-            "cooldown": [
-                "Your premium transfer is on a cooldown.\n",
-                "You can transfer your premium {when}."
-            ],
-            "transferSuccess": [
-                "Premium transferred! **{guild.name}** now has premium active."
-            ]
-        }
-    },
-    "premium redeem": {
-        "name": "redeem",
-        "description": "Redeems a premium code.",
-        "options": [
-            {
-                "name": "code",
-                "description": "The code to redeem."
-            }
-        ],
-        "responses": {
-            "redeemed": [
-                "The code **{code}** has been redeemed!\n",
-                "**{guild.name}** now has premium active until {when}."
-            ]
-        }
-    },
-    "uptime": {
-        "name": "uptime",
-        "description": "Displays the bot's uptime.",
-        "options": [],
-        "responses": {
-            "uptime": [
-                "The bot has been online since {time}."
-            ]
-        }
-    },
-    "invite": {
-        "name": "invite",
-        "description": "Invite the bot to your server.",
-        "options": [],
-        "responses": {
-            "invite": [
-                "[Click here]({url}) to invite the bot to your server."
-            ],
-            "button": [
-                "Invite the Bot"
-            ]
-        }
-    },
-    "info": {
-        "name": "info",
-        "description": "Displays some information and statistics about the bot.",
-        "options": [],
-        "responses": {
-            "title": [
-                "SkyKings v{version}"
-            ],
-            "versionInfoTitle": [
-                "Version Information"
-            ],
-            "versionInfo": [
-                "Python {python_version}\n",
-                "py-cord {pycord_version}\n",
-                "asyncpg {asyncpg_version}\n",
-                "aiohttp {aiohttp_version}"
-            ],
-            "systemInfoTitle": [
-                "System Information"
-            ],
-            "systemInfo": [
-                "Operating System: {os}\n",
-                "CPU usage: {cpu}%\n",
-                "Memory: {memory}"
-            ],
-            "botInfoTitle": [
-                "Bot Information"
-            ],
-            "botInfo": [
-                "Commands: {commands:,}\n",
-                "Extensions: {extensions:,}\n",
-                "Cogs: {cogs:,}\n",
-                "Servers: {servers:,}\n",
-                "Users: {users:,}\n",
-                "Shards: {shards:,}\n",
-                "Shard ID: {shard_id}\n",
-                "Average Latency: {latency} ms\n",
-                "Shard Latency: {shard_latency} ms\n",
-                "\n",
-                "Developed by plun1331#5535 - [discord.gg/skykings](https://discord.gg/skykings)"
-            ]
-        }
-    },
-    "ping": {
-        "name": "ping",
-        "description": "Measure the latency of the bot.",
-        "options": [],
-        "responses": {
-            "pong": [
-                "**Pong!**\n",
-                "Rest API Latency: {latency:,} ms\n",
-                "Average Websocket Latency: {avg_ws_latency:,} ms\n",
-                "Shard Websocket Latency: {shard_latency:,} ms"
-            ]
-        }
-    },
-    "command-usage": {
-        "name": "command-usage",
-        "description": "Displays the usage of a command.",
-        "options": [],
-        "responses": {
-            "title": [
-                "Command Usage"
-            ],
-            "base": [
-                "**Total Commands Used**: {commands:,}\n\n"
-            ],
-            "noCommands": [
-                "There's currently no command data."
-            ]
-        }
-    },
-    "votes": {
-        "name": "votes",
-        "description": "Displays the bot's top voters this month.",
-        "options": [],
-        "responses": {
-            "title": [
-                "Bot Votes"
-            ],
-            "base": [
-                "**Votes this month**: {votes:,}\n\n"
-            ],
-            "noVotes": [
-                "There have been no votes this month."
-            ]
-        }
-    },
-    "event": {
-        "name": "event",
-        "description": "Commands relating to events."
-    },
-    "event start": {
-        "name": "start",
-        "description": "Starts an event.",
-        "options": [
-            {
-                "name": "event",
-                "description": "The type of event to start.",
-                "choices": [
-                    "Skill XP",
-                    "Farming XP",
-                    "Mining XP",
-                    "Combat XP",
-                    "Foraging XP",
-                    "Fishing XP",
-                    "Enchanting XP",
-                    "Alchemy XP",
-                    "Carpentry XP",
-                    "Runecrafting XP",
-                    "Taming XP",
-                    "Slayer XP",
-                    "Catacombs XP",
-                    "Senither Weight",
-                    "Weighted Skill XP",
-                    "Gifts Given"
-                ]
-            },
-            {
-                "name": "duration",
-                "description": "The duration of the event, must be between 14 days and 1 day. Example: 1w 3d"
-            },
-            {
-                "name": "gvg",
-                "description": "Whether the event should be a Guilds vs Guilds event. Premium is required for this option."
-            },
-            {
-                "name": "channel",
-                "description": "The channel to send the event to. Defaults to the current channel."
-            },
-            {
-                "name": "role",
-                "description": "The role to ping for the start of the event."
-            },
-            {
-                "name": "schedule_event",
-                "description": "Whether or not the bot should register the event with Discord."
-            }
-        ],
-        "responses": {
-            "eventStartedNotScheduled": [
-                "Succesfully started a {gvg}{type} event! ",
-                "Unfortunately, I wasn't able to register the event with Discord.\n",
-                "[Jump to Message]({message})"
-            ],
-            "eventStartedScheduled": [
-                "Succesfully started a {gvg}{type} event! ",
-                "[Discord Event URL]({event})\n",
-                "[Jump to Message]({message})"
-            ],
-            "eventStarted": [
-                "Succesfully started a {gvg}{type} event!\n",
-                "[Jump to Message]({message})"
-            ],
-            "invalidDuration": [
-                "The duration you provided was invalid.\n",
-                "For example, you can use `1w 3d` for 1 week and 3 days."
-            ],
-            "durationLimited": [
-                "The event can only last between 14 days and 1 day."
-            ]
-        }
-    },
-    "event join": {
-        "name": "join",
-        "description": "Joins the event running in this server.",
-        "options": [],
-        "responses": {
-            "eventJoined": ["You've successfully joined the event in **{ctx.guild.name}**!"]
-        }
-    },
-    "event leave": {
-        "name": "leave",
-        "description": "Leaves the event running in this server.",
-        "options": [],
-        "responses": {
-            "eventLeft": ["You've successfully left the event in **{ctx.guild.name}**!"]
-        }
-    },
-    "event position": {
-        "name": "position",
-        "description": "Shows the position of a player in the event.",
-        "options": [
-            {
-                "name": "player",
-                "description": "The player to show the position of."
-            }
-        ],
-        "responses": {
-            "notJoined": ["{player} is not in the event."],
-            "playerPosition": ["{player} has {xp:,} {label} in the event and is #{pos:,} out of {players:,} players."]
-        }
-    },
-    "event guild": {
-        "name": "guild",
-        "description": "Checks how the members of a guild are doing in the event.",
-        "options": [
-            {
-                "name": "guild",
-                "description": "The guild to lookup."
-            }
-        ],
-        "responses": {
-            "guildNotFound": ["The guild **{guild}** does not exist."],
-            "title": ["{guild}'s Event Data"],
-            "guild": [
-                "**{guild}** has {members} members in the event and is averaging {avg:,} {label} per member. ",
-                "(Total {label}: {total:,})"
-            ],
-            "noMembers": ["**{guild}** has no members in the event."]
-        }
-    },
-    "*": {
-        "errors": {
-            "*": {
-                "note": "Catches all errors that aren't here.",
-                "message": ["An unhandled error occured. This has been reported.\n\n{e.__class__.__name__}: {e}"]
-            },
-            "0": {
-                "note": "Raised in config edit if an invalid option is chosen.",
-                "message": ["{option} is not a valid option."]
-            },
-            "1": {
-                "note": "Raised in config edit if an invalid value is chosen.",
-                "message": ["{value} is not a valid value for that option."]
-            },
-            "2": {
-                "note": "Raised if an un-assignable role is chosen and can't be used.",
-                "message": [
-                    "{role.mention} cannot be used because it's managed and cannot be assigned.\n",
-                    "Please try a different role."
-                ]
-            },
-            "3": {
-                "note": "Raised when adding guilds if the guild already exists.",
-                "message": ["That guild has already been linked to this server."]
-            },
-            "4": {
-                "note": "Raised when trying to edit a guild that doesnt exist in the database.",
-                "message": ["That guild has not been added to this server."]
-            },
-            "5": {
-                "note": "Raised when adding a guild rank that already exists.",
-                "message": ["That rank has already been linked to a role."]
-            },
-            "6": {
-                "note": "Raised when trying to edit a guild rank that doesnt exist in the database.",
-                "message": ["That rank has not been added to this server."]
-            },
-            "7": {
-                "note": "Raised when trying to add a guild requirement that already exists in the database.",
-                "message": ["That requirement has already been added to this guild."]
-            },
-            "8": {
-                "note": "Raised when trying to manage a guild requirement that doesn't exist in the database.",
-                "message": ["That requirement has not been added to this guild."]
-            },
-            "9": {
-                "note": "Raised when trying to add a rank requirement that already exists in the database.",
-                "message": ["That requirement has already been added to this rank."]
-            },
-            "10": {
-                "note": "Raised when trying to manage a rank requirement that doesn't exist in the database.",
-                "message": ["That requirement has not been added to this rank."]
-            },
-            "11": {
-                "note": "Raised when the maximum value for a requirement is exceeded.",
-                "message": ["The maximum value of {maximum:,} for the {requirement} requirement has been exceeded."]
-            },
-            "12": {
-                "note": "Raised when trying to redeem premium on a guild that already has it active.",
-                "message": ["This server already has premium active."]
-            },
-            "13": {
-                "note": "Raised when trying to redeem a premium code on a guild that has premium from a user.",
-                "message": ["This server has premium active from a SkyKings Premium member.\n",
-                            "Premium codes cannot be redeemed in this server."]
-            },
-            "14": {
-                "note": "Raised when trying to use a nonexistant premium code.",
-                "message": ["This premium code is not valid."]
-            },
-            "15": {
-                "note": "Raised when trying to start an event when one is running.",
-                "message": ["There's already an event running in this server."]
-            },
-            "16": {
-                "note": "Raised when trying to start a guilds vs guilds event without premium.",
-                "message": [
-                    "SkyKings Premium is needed to make a Guilds vs Guilds event.\n",
-                    "For more information, please see `/premium info`."
-                ]
-            },
-            "17": {
-                "note": "Raised when the bot does not have permission to send messages.",
-                "message": ["I don't have permission to send messages in the specified channel."]
-            },
-            "18": {
-                "note": "Raised when the player argument is required but was not passed.",
-                "message": ["You must provide a player to search for as you are not verified."]
-            }
-        },
-        "checkFailure": {
-            "0": {
-                "note": "Raised when a user doesn't have premium and needs it.",
-                "message": ["You need SkyKings Premium to use this command.\n",
-                            "For more information, please see `/premium info`."]
-            },
-            "1": {
-                "note": "Raised when an event is already running.",
-                "message": ["There's already an event running in this server."]
-            },
-            "2": {
-                "note": "Raised when an event is not running.",
-                "message": ["There isn't event running in this server."]
-            },
-            "3": {
-                "note": "Raised when the command invoker is not verified.",
-                "message": ["You must be verified to use this command.\n",
-                            "You can verify with `/verify`."]
-            },
-            "4": {
-                "note": "Raised when the command invoker is already verified.",
-                "message": ["You're already verified."]
-            },
-            "5": {
-                "note": "Raised when the command invoker is already in the event.",
-                "message": ["You're already in the event."]
-            },
-            "6": {
-                "note": "Raised when the command invoker is not in the event.",
-                "message": ["You're not in the event. Join it with `/event join`."]
-            }
-        },
-        "converterFailure": {
-            "player": ["The specified player does not exist."]
-        },
-        "events": {
-            "*": ["Event"],
-            "gvg": ["Guild vs Guild"],
-            "SKILL": ["Skill XP"],
-            "SKILL_FARMING": ["Farming XP"],
-            "SKILL_MINING": ["Mining XP"],
-            "SKILL_COMBAT": ["Combat XP"],
-            "SKILL_FORAGING": ["Foraging XP"],
-            "SKILL_FISHING": ["Fishing XP"],
-            "SKILL_ENCHANTING": ["Enchanting XP"],
-            "SKILL_ALCHEMY": ["Alchemy XP"],
-            "SKILL_CARPENTRY": ["Carpentry XP"],
-            "SKILL_RUNECRAFTING": ["Runecrafting XP"],
-            "SKILL_TAMING": ["Taming XP"],
-            "SLAYER": ["Slayer XP"],
-            "CATACOMBS": ["Catacombs XP"],
-            "WEIGHT": ["Senither Weight"],
-            "SKILL_WEIGHTED": ["Weighted Skill XP"],
-            "SKILL_LABEL": ["XP"],
-            "SKILL_FARMING_LABEL": ["XP"],
-            "SKILL_MINING_LABEL": ["XP"],
-            "SKILL_COMBAT_LABEL": ["XP"],
-            "SKILL_FORAGING_LABEL": ["XP"],
-            "SKILL_FISHING_LABEL": ["XP"],
-            "SKILL_ENCHANTING_LABEL": ["XP"],
-            "SKILL_ALCHEMY_LABEL": ["XP"],
-            "SKILL_CARPENTRY_LABEL": ["XP"],
-            "SKILL_RUNECRAFTING_LABEL": ["XP"],
-            "SKILL_TAMING_LABEL": ["XP"],
-            "SLAYER_LABEL": ["XP"],
-            "CATACOMBS_LABEL": ["XP"],
-            "WEIGHT_LABEL": ["Weight"],
-            "SKILL_WEIGHTED_LABEL": ["XP"],
-            "startMessage": [
-                "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
-                "1. You join the event,\n",
-                "2. The bot starts tracking the XP you earn,\n",
-                "3. You get placed on the leaderboard accordingly.\n",
-                "This message will serve as the leaderboard, and will be updated every {when}. Good luck, and have fun!\n",
-                "**This event ends on {end_date} ({end_relative})**"
-            ],
-            "updateQueued": ["Event queued for update at {when}."],
-            "updating": ["Updating the event leaderboard..."],
-            "nobody": ["Nothing to see here! Nobody's in the event!"],
-            "ended": ["This event has ended and all data will be deleted {when}."],
-            "members": ["Members"]
-        },
-        "eventButtons": {
-            "btnJoin": ["Join Event"],
-            "btnPos": ["Check Position"],
-            "notVerified": ["You must be verified to join an event. Verify with the `/verify` command."],
-            "noEvent": ["There isn't an event running in this server."],
-            "alreadyJoined": ["You're already in the event."],
-            "joined": ["You've successfully joined the event!"],
-            "notJoined": ["You're not in the event."],
-            "position": ["You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."]
-        },
-        "pagination": {
-            "page": ["Page"],
-            "noPages": ["There are no other pages to switch to!"],
-            "invalidPage": ["Invalid page number."],
-            "pageNumber": ["Page Number"],
-            "pageNumberPlaceholder": ["Input a page number to switch to."],
-            "pageTitle": ["Switch Page"]
-        }
+  "config": {
+    "name": "config",
+    "description": "Manage your server's configuration."
+  },
+  "config view": {
+    "name": "view",
+    "description": "View your server's configuration.",
+    "options": [],
+    "responses": {
+      "title.1": [
+        "{ctx.guild.name}'s Configuration"
+      ],
+      "description.1": [
+        "Autoreply Enabled: {autoreply}\n",
+        "Hypixel News Ping: {news_ping}\n",
+        "Hypixel News Channel: {news_channel}\n",
+        "SkyBlock Patchnotes Ping: {patchnotes_ping}\n",
+        "SkyBlock Patchnotes Channel: {patchnotes_channel}\n",
+        "Fetchur Ping: {fetchur_ping}\n",
+        "Fetchur Channel: {fetchur_channel}\n",
+        "Global Event Ping: {global_event_ping}\n",
+        "Global Event Channel: {global_event_channel}\n",
+        "SkyBlock Date/Time Channel: {skyblock_time}\n",
+        "SkyBlock Events: {skyblock_events}\n",
+        "Action Logs: {scammer_logs}\n",
+        "Scammer Action: {scammer_action}\n",
+        "IRL Trader Action: {trader_action}\n",
+        "Macroer Action: {macroer_action}\n",
+        "Ratter Action: {phisher_action}\n",
+        "\n",
+        "You can edit the config with `/config edit`!"
+      ],
+      "title.2": [
+        "{ctx.guild.name}'s Verification Configuration"
+      ],
+      "description.2": [
+        "Verification Enabled: {verification}\n",
+        "Verified Role: {verified}\n",
+        "VIP: {vip}\n",
+        "VIP+: {vip_plus}\n",
+        "MVP: {mvp}\n",
+        "MVP+: {mvp_plus}\n",
+        "MVP++: {mvp_plus_plus}\n",
+        "YouTube Rank: {youtube}\n",
+        "Hypixel Staff: {staff}\n",
+        "Nickname Format: {nickname}\n",
+        "\n",
+        "You can edit the config with `/config edit`!"
+      ]
     }
+  },
+  "config edit": {
+    "name": "edit",
+    "description": "Edit your server's configuration.",
+    "options": [
+      {
+        "name": "option",
+        "description": "The option to edit."
+      },
+      {
+        "name": "value",
+        "description": "The new value for the option. Leave blank to reset to default."
+      }
+    ],
+    "responses": {
+      "premiumOnly": [
+        "This option is only used in premium servers.\n",
+        "For more information, please see the `/premium info` command."
+      ],
+      "editedSuccessfully": [
+        "{option} has been set to {value}!"
+      ]
+    },
+    "autocomplete": {
+      "bool": [
+        "on",
+        "off"
+      ],
+      "action": [
+        "ban",
+        "kick"
+      ],
+      "options": [
+        "Verification Enabled",
+        "Verified",
+        "VIP",
+        "VIP+",
+        "MVP",
+        "MVP+",
+        "MVP++",
+        "YouTube",
+        "Hypixel Staff",
+        "Nickname",
+        "Scammer Log Channel",
+        "Hypixel Status Ping",
+        "Hypixel Status Channel",
+        "Hypixel News Ping",
+        "Hypixel News Channel",
+        "Hypixel Patchnotes Ping",
+        "Hypixel Patchnotes Channel",
+        "Fetchur Ping",
+        "Fetchur Channel",
+        "Autoreply",
+        "Giveaway Runner Role",
+        "SkyBlock Date",
+        "Global Event Ping",
+        "Global Event Channel",
+        "SkyBlock Event Channel",
+        "Scammer Action",
+        "IRL Trader Action",
+        "Macroer Action",
+        "Phisher Action"
+      ],
+      "invalid": "Invalid option provided. Please go back and fix it."
+    }
+  },
+  "config guilds view": {
+    "name": "view",
+    "description": "View the guilds linked to this server.",
+    "options": [],
+    "responses": {
+      "base": [
+        "Name: {name}\n",
+        "ID: {gid}\n",
+        "Member Counter Channel: {membercount}\n",
+        "Member Counter Format: {membercount_format}\n",
+        "Guild Member Role: {member_role}\n"
+      ],
+      "ranks": [
+        "Role: {role}\nRequirements: {requirements}"
+      ],
+      "noRanks": [
+        "No ranks have been linked."
+      ],
+      "Network Level": [
+        "Network Level: {value:,}"
+      ],
+      "Skill Average": [
+        "Skill Average: {value:,}"
+      ],
+      "Slayer XP": [
+        "Slayer XP: {value:,}"
+      ],
+      "Minion Slots": [
+        "Minion Slots: {value:,}"
+      ],
+      "Catacombs Level": [
+        "Catacombs Level: {value:,}"
+      ],
+      "Fairy Souls": [
+        "Fairy Souls: {value:,}"
+      ],
+      "Weight": [
+        "Weight: {value:,}"
+      ],
+      "API Settings Enabled": [
+        "API Settings Enabled"
+      ]
+    }
+  },
+  "config guilds add-guild": {
+    "name": "add-guild",
+    "description": "Add a Hypixel guild to this server.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to add."
+      }
+    ],
+    "responses": {
+      "addedGuild": [
+        "The guild **{guild}** has been added to this server!"
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ]
+    }
+  },
+  "config guilds remove-guild": {
+    "name": "remove-guild",
+    "description": "Remove a Hypixel guild from this server.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to remove."
+      }
+    ],
+    "responses": {
+      "removedGuild": [
+        "The guild **{guild}** has been removed from this server!"
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ]
+    }
+  },
+  "config guilds add-rank": {
+    "name": "add-rank",
+    "description": "Registers a guild rank with the bot.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild that holds the rank."
+      },
+      {
+        "name": "rank",
+        "description": "The rank to register."
+      },
+      {
+        "name": "role",
+        "description": "The role to link to the rank. Leave blank for no role."
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "rankNotFound": [
+        "The **{rank}** rank does not exist in **{guild}**."
+      ],
+      "addedRank": [
+        "The **{rank}** rank in **{guild}** has been registered!"
+      ]
+    }
+  },
+  "config guilds edit-rank": {
+    "name": "edit-rank",
+    "description": "Changes the role that's linked to a guild rank.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild that holds the rank."
+      },
+      {
+        "name": "rank",
+        "description": "The rank to edit."
+      },
+      {
+        "name": "role",
+        "description": "The role to link to the rank. Leave blank for no role."
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "rankNotFound": [
+        "The **{rank}** rank does not exist in **{guild}**."
+      ],
+      "editedRank": [
+        "The role for the **{rank}** rank in **{guild}** has been {state}!"
+      ],
+      "role": [
+        "set to {role.mention}"
+      ],
+      "noRole": [
+        "removed"
+      ]
+    }
+  },
+  "config guilds remove-rank": {
+    "name": "remove-rank",
+    "description": "Unregisters a Hypixel guild rank.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild that holds the rank."
+      },
+      {
+        "name": "rank",
+        "description": "The rank to unregister."
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "removedRank": [
+        "The **{rank}** rank in **{guild}** has been unregistered."
+      ]
+    }
+  },
+  "config guilds add-requirement": {
+    "name": "add-requirement",
+    "description": "Adds a requirement to a Hypixel guild.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to add the requirement to."
+      },
+      {
+        "name": "requirement",
+        "description": "The requirement to add.",
+        "choices": [
+          "Network Level",
+          "Skill Average",
+          "Slayer XP",
+          "Minion Slots",
+          "Catacombs Level",
+          "Fairy Souls",
+          "Weight",
+          "API Settings Enabled"
+        ]
+      },
+      {
+        "name": "value",
+        "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "requirementNotFound": [
+        "The requirement **{requirement}** does not exist in the **{guild}** guild."
+      ],
+      "addedRequirement": [
+        "The **{requirement}** requirement has been added to **{guild}**!"
+      ]
+    }
+  },
+  "config guilds remove-requirement": {
+    "name": "remove-requirement",
+    "description": "Removes a requirement from a Hypixel guild.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to remove the requirement from."
+      },
+      {
+        "name": "requirement",
+        "description": "The requirement to remove.",
+        "choices": [
+          "Network Level",
+          "Skill Average",
+          "Slayer XP",
+          "Minion Slots",
+          "Catacombs Level",
+          "Fairy Souls",
+          "Weight",
+          "API Settings Enabled"
+        ]
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "removedRequirement": [
+        "The **{requirement}** requirement has been removed from **{guild}**!"
+      ]
+    }
+  },
+  "config guilds edit-requirement": {
+    "name": "edit-requirement",
+    "description": "Edits a requirement of a Hypixel guild.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to edit the requirement of."
+      },
+      {
+        "name": "requirement",
+        "description": "The requirement to edit.",
+        "choices": [
+          "Network Level",
+          "Skill Average",
+          "Slayer XP",
+          "Minion Slots",
+          "Catacombs Level",
+          "Fairy Souls",
+          "Weight"
+        ]
+      },
+      {
+        "name": "value",
+        "description": "The new value of the requirement."
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "requirementNotFound": [
+        "The requirement **{requirement}** does not exist in **{guild}**."
+      ],
+      "updatedRequirement": [
+        "The **{requirement}** requirement has been set to **{value:,}** in **{guild}**!"
+      ]
+    }
+  },
+  "config guilds add-rank-requirement": {
+    "name": "add-rank-requirement",
+    "description": "Adds a requirement to a Hypixel guild rank.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild that holds the rank."
+      },
+      {
+        "name": "rank",
+        "description": "The rank to add the requirement to."
+      },
+      {
+        "name": "requirement",
+        "description": "The requirement to add.",
+        "choices": [
+          "Network Level",
+          "Skill Average",
+          "Slayer XP",
+          "Minion Slots",
+          "Catacombs Level",
+          "Fairy Souls",
+          "Weight",
+          "API Settings Enabled"
+        ]
+      },
+      {
+        "name": "value",
+        "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "rankNotFound": [
+        "The rank **{rank}** does not exist in the **{guild}** guild."
+      ],
+      "rankNotAdded": [
+        "**{guild}**'s **{rank}** rank has not been registered with the bot.\n",
+        "Add it with `/config guilds add-rank`."
+      ],
+      "addedRequirement": [
+        "The **{requirement}** requirement has been added to **{guild}**'s **{rank}** rank!"
+      ]
+    }
+  },
+  "config guilds remove-rank-requirement": {
+    "name": "remove-rank-requirement",
+    "description": "Removes a requirement from a Hypixel guild rank.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild that holds the rank."
+      },
+      {
+        "name": "rank",
+        "description": "The rank to remove the requirement from."
+      },
+      {
+        "name": "requirement",
+        "description": "The requirement to remove.",
+        "choices": [
+          "Network Level",
+          "Skill Average",
+          "Slayer XP",
+          "Minion Slots",
+          "Catacombs Level",
+          "Fairy Souls",
+          "Weight",
+          "API Settings Enabled"
+        ]
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "removedRequirement": [
+        "The **{requirement}** requirement has been removed from **{guild}**'s **{rank}** rank!"
+      ]
+    }
+  },
+  "config guilds edit-rank-requirement": {
+    "name": "edit-rank-requirement",
+    "description": "Edits a requirement from a Hypixel guild rank.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild that holds the rank."
+      },
+      {
+        "name": "rank",
+        "description": "The rank to edit the requirement from."
+      },
+      {
+        "name": "requirement",
+        "description": "The requirement to edit.",
+        "choices": [
+          "Network Level",
+          "Skill Average",
+          "Slayer XP",
+          "Minion Slots",
+          "Catacombs Level",
+          "Fairy Souls",
+          "Weight"
+        ]
+      },
+      {
+        "name": "value",
+        "description": "The value to set the requirement to."
+      }
+    ],
+    "responses": {
+      "guildNotAdded": [
+        "The guild **{guild}** is not linked to this server.\n",
+        "Add it with `/config guilds add-guild`."
+      ],
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "rankNotFound": [
+        "The rank **{rank}** does not exist in the **{guild}** guild."
+      ],
+      "updatedRequirement": [
+        "The **{requirement}** requirement has been set to **{value}** for **{guild}**'s **{rank}** rank!"
+      ]
+    }
+  },
+  "premium": {
+    "name": "premium",
+    "description": "Commands relating to SkyKings Premium."
+  },
+  "premium info": {
+    "name": "info",
+    "description": "Get information on SkyKings Premium.",
+    "options": [],
+    "responses": {
+      "premium": [
+        "SkyKings Premium"
+      ],
+      "base": [
+        "Purchasing SkyKings premium gives you a few perks in our Discord server, ",
+        "and unlocks some features on our bot!\n",
+        "It also supports us, and allows us to keep this bot running.\n",
+        "To purchase, just visit https://www.patreon.com/SkyKings."
+      ],
+      "perkTitle": [
+        "Perks"
+      ],
+      "perks": [
+        "**Discord Features**\n",
+        "➥ Access to premium features on our bot.\n",
+        "➥ A custom role.\n",
+        "➥ Access to bazaar flipping bot.\n",
+        "➥ Your own custom VC.\n\n",
+        "**Bot Features for Server Owners**\n",
+        "➥ No limit on guild or rank requirements.\n",
+        "➥ Faster event update times (6 hours -> 1 hour).\n",
+        "➥ Guild Member Counter.\n",
+        "➥ Guild vs Guild events.\n",
+        "➥ More coming soon..."
+      ]
+    }
+  },
+  "premium status": {
+    "name": "status",
+    "description": "Displays this server's premium status.",
+    "options": [],
+    "responses": {
+      "notActive": [
+        "This server does not have premium active."
+      ],
+      "fromUser": [
+        "This server has premium from {redeemed_by.mention} ({redeemed_by}).\n",
+        "It can be transferred to another server {when}."
+      ],
+      "fromCode": [
+        "This server redeemed a premium code and has premium active until {exp}."
+      ]
+    }
+  },
+  "premium transfer": {
+    "name": "transfer",
+    "description": "Transfers your premium subscription to the current server.",
+    "options": [],
+    "responses": {
+      "cooldown": [
+        "Your premium transfer is on a cooldown.\n",
+        "You can transfer your premium {when}."
+      ],
+      "transferSuccess": [
+        "Premium transferred! **{guild.name}** now has premium active."
+      ]
+    }
+  },
+  "premium redeem": {
+    "name": "redeem",
+    "description": "Redeems a premium code.",
+    "options": [
+      {
+        "name": "code",
+        "description": "The code to redeem."
+      }
+    ],
+    "responses": {
+      "redeemed": [
+        "The code **{code}** has been redeemed!\n",
+        "**{guild.name}** now has premium active until {when}."
+      ]
+    }
+  },
+  "uptime": {
+    "name": "uptime",
+    "description": "Displays the bot's uptime.",
+    "options": [],
+    "responses": {
+      "uptime": [
+        "The bot has been online since {time}."
+      ]
+    }
+  },
+  "invite": {
+    "name": "invite",
+    "description": "Invite the bot to your server.",
+    "options": [],
+    "responses": {
+      "invite": [
+        "[Click here]({url}) to invite the bot to your server."
+      ],
+      "button": [
+        "Invite the Bot"
+      ]
+    }
+  },
+  "info": {
+    "name": "info",
+    "description": "Displays some information and statistics about the bot.",
+    "options": [],
+    "responses": {
+      "title": [
+        "SkyKings v{version}"
+      ],
+      "versionInfoTitle": [
+        "Version Information"
+      ],
+      "versionInfo": [
+        "Python {python_version}\n",
+        "py-cord {pycord_version}\n",
+        "asyncpg {asyncpg_version}\n",
+        "aiohttp {aiohttp_version}"
+      ],
+      "systemInfoTitle": [
+        "System Information"
+      ],
+      "systemInfo": [
+        "Operating System: {os}\n",
+        "CPU usage: {cpu}%\n",
+        "Memory: {memory}"
+      ],
+      "botInfoTitle": [
+        "Bot Information"
+      ],
+      "botInfo": [
+        "Commands: {commands:,}\n",
+        "Extensions: {extensions:,}\n",
+        "Cogs: {cogs:,}\n",
+        "Servers: {servers:,}\n",
+        "Users: {users:,}\n",
+        "Shards: {shards:,}\n",
+        "Shard ID: {shard_id}\n",
+        "Average Latency: {latency} ms\n",
+        "Shard Latency: {shard_latency} ms\n",
+        "\n",
+        "Developed by plun1331#5535 - [discord.gg/skykings](https://discord.gg/skykings)"
+      ]
+    }
+  },
+  "ping": {
+    "name": "ping",
+    "description": "Measure the latency of the bot.",
+    "options": [],
+    "responses": {
+      "pong": [
+        "**Pong!**\n",
+        "Rest API Latency: {latency:,} ms\n",
+        "Average Websocket Latency: {avg_ws_latency:,} ms\n",
+        "Shard Websocket Latency: {shard_latency:,} ms"
+      ]
+    }
+  },
+  "command-usage": {
+    "name": "command-usage",
+    "description": "Displays the usage of a command.",
+    "options": [],
+    "responses": {
+      "title": [
+        "Command Usage"
+      ],
+      "base": [
+        "**Total Commands Used**: {commands:,}\n\n"
+      ],
+      "noCommands": [
+        "There's currently no command data."
+      ]
+    }
+  },
+  "votes": {
+    "name": "votes",
+    "description": "Displays the bot's top voters this month.",
+    "options": [],
+    "responses": {
+      "title": [
+        "Bot Votes"
+      ],
+      "base": [
+        "**Votes this month**: {votes:,}\n\n"
+      ],
+      "noVotes": [
+        "There have been no votes this month."
+      ]
+    }
+  },
+  "event": {
+    "name": "event",
+    "description": "Commands relating to events."
+  },
+  "event start": {
+    "name": "start",
+    "description": "Starts an event.",
+    "options": [
+      {
+        "name": "event",
+        "description": "The type of event to start.",
+        "choices": [
+          "Skill XP",
+          "Farming XP",
+          "Mining XP",
+          "Combat XP",
+          "Foraging XP",
+          "Fishing XP",
+          "Enchanting XP",
+          "Alchemy XP",
+          "Carpentry XP",
+          "Runecrafting XP",
+          "Taming XP",
+          "Slayer XP",
+          "Catacombs XP",
+          "Senither Weight",
+          "Weighted Skill XP",
+          "Gifts Given"
+        ]
+      },
+      {
+        "name": "duration",
+        "description": "The duration of the event, must be between 14 days and 1 day. Example: 1w 3d"
+      },
+      {
+        "name": "gvg",
+        "description": "Whether the event should be a Guilds vs Guilds event. Premium is required for this option."
+      },
+      {
+        "name": "channel",
+        "description": "The channel to send the event to. Defaults to the current channel."
+      },
+      {
+        "name": "role",
+        "description": "The role to ping for the start of the event."
+      },
+      {
+        "name": "schedule_event",
+        "description": "Whether or not the bot should register the event with Discord."
+      }
+    ],
+    "responses": {
+      "eventStartedNotScheduled": [
+        "Succesfully started a {gvg}{type} event! ",
+        "Unfortunately, I wasn't able to register the event with Discord.\n",
+        "[Jump to Message]({message})"
+      ],
+      "eventStartedScheduled": [
+        "Succesfully started a {gvg}{type} event! ",
+        "[Discord Event URL]({event})\n",
+        "[Jump to Message]({message})"
+      ],
+      "eventStarted": [
+        "Succesfully started a {gvg}{type} event!\n",
+        "[Jump to Message]({message})"
+      ],
+      "invalidDuration": [
+        "The duration you provided was invalid.\n",
+        "For example, you can use `1w 3d` for 1 week and 3 days."
+      ],
+      "durationLimited": [
+        "The event can only last between 14 days and 1 day."
+      ]
+    }
+  },
+  "event join": {
+    "name": "join",
+    "description": "Joins the event running in this server.",
+    "options": [],
+    "responses": {
+      "eventJoined": [
+        "You've successfully joined the event in **{ctx.guild.name}**!"
+      ]
+    }
+  },
+  "event leave": {
+    "name": "leave",
+    "description": "Leaves the event running in this server.",
+    "options": [],
+    "responses": {
+      "eventLeft": [
+        "You've successfully left the event in **{ctx.guild.name}**!"
+      ]
+    }
+  },
+  "event position": {
+    "name": "position",
+    "description": "Shows the position of a player in the event.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to show the position of."
+      }
+    ],
+    "responses": {
+      "notJoined": [
+        "{player} is not in the event."
+      ],
+      "playerPosition": [
+        "{player} has {xp:,} {label} in the event and is #{pos:,} out of {players:,} players."
+      ]
+    }
+  },
+  "event guild": {
+    "name": "guild",
+    "description": "Checks how the members of a guild are doing in the event.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to lookup."
+      }
+    ],
+    "responses": {
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
+      ],
+      "title": [
+        "{guild}'s Event Data"
+      ],
+      "guild": [
+        "**{guild}** has {members} members in the event and is averaging {avg:,} {label} per member. ",
+        "(Total {label}: {total:,})"
+      ],
+      "noMembers": [
+        "**{guild}** has no members in the event."
+      ]
+    }
+  },
+  "lookup": {
+    "name": "lookup",
+    "description": "Check if a player is a scammer, IRL trader, ratter, or macroer."
+  },
+  "lookup player": {
+    "name": "player",
+    "description": "Check if someone is a scammer/IRL trader/ratter/macroer. Checks their Discord account if linked.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to check."
+      }
+    ],
+    "responses": {
+      "notScammers": [
+        "{player} is not marked as a dumb fuck in our database.\n",
+        "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
+        "\n\n*If this is untrue, please report this player with the `/report` command.*"
+      ],
+      "isScammer": [
+        "{player} is marked as a dumb fuck in our database."
+      ],
+      "SCAMMER_NAME": [
+        "Entry #{id} - Scammer"
+      ],
+      "IRL_TRADER_NAME": [
+        "Entry #{id} - IRL Trader"
+      ],
+      "RATTER_NAME": [
+        "Entry #{id} - Ratter"
+      ],
+      "MACROER_NAME": [
+        "Entry #{id} - Macroer"
+      ],
+      "SCAMMER": [
+        "Reason: {reason}"
+      ],
+      "IRL_TRADER": [
+        "Reason: {reason}"
+      ],
+      "RATTER": [
+        "Reason: {reason}"
+      ],
+      "MACROER": [
+        "Reason: {reason}"
+      ]
+    }
+  },
+  "lookup user": {
+    "name": "user",
+    "description": "Check if a user is a scammer/IRL trader/ratter/macroer. Checks their Minecraft account if linked.",
+    "options": [
+      {
+        "name": "user",
+        "description": "The user to check."
+      }
+    ],
+    "responses": {
+      "notScammers": [
+        "{player} is not marked as a dumb fuck in our database.\n",
+        "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
+        "\n\n*If this is untrue, please report this player with the `/report` command.*"
+      ],
+      "isScammer": [
+        "{player} is marked as a dumb fuck in our database."
+      ],
+      "SCAMMER_NAME": [
+        "Entry #{id} - Scammer"
+      ],
+      "IRL_TRADER_NAME": [
+        "Entry #{id} - IRL Trader"
+      ],
+      "RATTER_NAME": [
+        "Entry #{id} - Ratter"
+      ],
+      "MACROER_NAME": [
+        "Entry #{id} - Macroer"
+      ],
+      "SCAMMER": [
+        "Reason: {reason}"
+      ],
+      "IRL_TRADER": [
+        "Reason: {reason}"
+      ],
+      "RATTER": [
+        "Reason: {reason}"
+      ],
+      "MACROER": [
+        "Reason: {reason}"
+      ]
+    }
+  },
+  "*": {
+    "errors": {
+      "*": {
+        "note": "Catches all errors that aren't here.",
+        "message": [
+          "An unhandled error occured. This has been reported.\n\n{e.__class__.__name__}: {e}"
+        ]
+      },
+      "0": {
+        "note": "Raised in config edit if an invalid option is chosen.",
+        "message": [
+          "{option} is not a valid option."
+        ]
+      },
+      "1": {
+        "note": "Raised in config edit if an invalid value is chosen.",
+        "message": [
+          "{value} is not a valid value for that option."
+        ]
+      },
+      "2": {
+        "note": "Raised if an un-assignable role is chosen and can't be used.",
+        "message": [
+          "{role.mention} cannot be used because it's managed and cannot be assigned.\n",
+          "Please try a different role."
+        ]
+      },
+      "3": {
+        "note": "Raised when adding guilds if the guild already exists.",
+        "message": [
+          "That guild has already been linked to this server."
+        ]
+      },
+      "4": {
+        "note": "Raised when trying to edit a guild that doesnt exist in the database.",
+        "message": [
+          "That guild has not been added to this server."
+        ]
+      },
+      "5": {
+        "note": "Raised when adding a guild rank that already exists.",
+        "message": [
+          "That rank has already been linked to a role."
+        ]
+      },
+      "6": {
+        "note": "Raised when trying to edit a guild rank that doesnt exist in the database.",
+        "message": [
+          "That rank has not been added to this server."
+        ]
+      },
+      "7": {
+        "note": "Raised when trying to add a guild requirement that already exists in the database.",
+        "message": [
+          "That requirement has already been added to this guild."
+        ]
+      },
+      "8": {
+        "note": "Raised when trying to manage a guild requirement that doesn't exist in the database.",
+        "message": [
+          "That requirement has not been added to this guild."
+        ]
+      },
+      "9": {
+        "note": "Raised when trying to add a rank requirement that already exists in the database.",
+        "message": [
+          "That requirement has already been added to this rank."
+        ]
+      },
+      "10": {
+        "note": "Raised when trying to manage a rank requirement that doesn't exist in the database.",
+        "message": [
+          "That requirement has not been added to this rank."
+        ]
+      },
+      "11": {
+        "note": "Raised when the maximum value for a requirement is exceeded.",
+        "message": [
+          "The maximum value of {maximum:,} for the {requirement} requirement has been exceeded."
+        ]
+      },
+      "12": {
+        "note": "Raised when trying to redeem premium on a guild that already has it active.",
+        "message": [
+          "This server already has premium active."
+        ]
+      },
+      "13": {
+        "note": "Raised when trying to redeem a premium code on a guild that has premium from a user.",
+        "message": [
+          "This server has premium active from a SkyKings Premium member.\n",
+          "Premium codes cannot be redeemed in this server."
+        ]
+      },
+      "14": {
+        "note": "Raised when trying to use a nonexistant premium code.",
+        "message": [
+          "This premium code is not valid."
+        ]
+      },
+      "15": {
+        "note": "Raised when trying to start an event when one is running.",
+        "message": [
+          "There's already an event running in this server."
+        ]
+      },
+      "16": {
+        "note": "Raised when trying to start a guilds vs guilds event without premium.",
+        "message": [
+          "SkyKings Premium is needed to make a Guilds vs Guilds event.\n",
+          "For more information, please see `/premium info`."
+        ]
+      },
+      "17": {
+        "note": "Raised when the bot does not have permission to send messages.",
+        "message": [
+          "I don't have permission to send messages in the specified channel."
+        ]
+      },
+      "18": {
+        "note": "Raised when the player argument is required but was not passed.",
+        "message": [
+          "You must provide a player to search for as you are not verified."
+        ]
+      }
+    },
+    "checkFailure": {
+      "0": {
+        "note": "Raised when a user doesn't have premium and needs it.",
+        "message": [
+          "You need SkyKings Premium to use this command.\n",
+          "For more information, please see `/premium info`."
+        ]
+      },
+      "1": {
+        "note": "Raised when an event is already running.",
+        "message": [
+          "There's already an event running in this server."
+        ]
+      },
+      "2": {
+        "note": "Raised when an event is not running.",
+        "message": [
+          "There isn't event running in this server."
+        ]
+      },
+      "3": {
+        "note": "Raised when the command invoker is not verified.",
+        "message": [
+          "You must be verified to use this command.\n",
+          "You can verify with `/verify`."
+        ]
+      },
+      "4": {
+        "note": "Raised when the command invoker is already verified.",
+        "message": [
+          "You're already verified."
+        ]
+      },
+      "5": {
+        "note": "Raised when the command invoker is already in the event.",
+        "message": [
+          "You're already in the event."
+        ]
+      },
+      "6": {
+        "note": "Raised when the command invoker is not in the event.",
+        "message": [
+          "You're not in the event. Join it with `/event join`."
+        ]
+      }
+    },
+    "converterFailure": {
+      "player": [
+        "The specified player does not exist."
+      ]
+    },
+    "events": {
+      "*": [
+        "Event"
+      ],
+      "gvg": [
+        "Guild vs Guild"
+      ],
+      "SKILL": [
+        "Skill XP"
+      ],
+      "SKILL_FARMING": [
+        "Farming XP"
+      ],
+      "SKILL_MINING": [
+        "Mining XP"
+      ],
+      "SKILL_COMBAT": [
+        "Combat XP"
+      ],
+      "SKILL_FORAGING": [
+        "Foraging XP"
+      ],
+      "SKILL_FISHING": [
+        "Fishing XP"
+      ],
+      "SKILL_ENCHANTING": [
+        "Enchanting XP"
+      ],
+      "SKILL_ALCHEMY": [
+        "Alchemy XP"
+      ],
+      "SKILL_CARPENTRY": [
+        "Carpentry XP"
+      ],
+      "SKILL_RUNECRAFTING": [
+        "Runecrafting XP"
+      ],
+      "SKILL_TAMING": [
+        "Taming XP"
+      ],
+      "SLAYER": [
+        "Slayer XP"
+      ],
+      "CATACOMBS": [
+        "Catacombs XP"
+      ],
+      "WEIGHT": [
+        "Senither Weight"
+      ],
+      "SKILL_WEIGHTED": [
+        "Weighted Skill XP"
+      ],
+      "SKILL_LABEL": [
+        "XP"
+      ],
+      "SKILL_FARMING_LABEL": [
+        "XP"
+      ],
+      "SKILL_MINING_LABEL": [
+        "XP"
+      ],
+      "SKILL_COMBAT_LABEL": [
+        "XP"
+      ],
+      "SKILL_FORAGING_LABEL": [
+        "XP"
+      ],
+      "SKILL_FISHING_LABEL": [
+        "XP"
+      ],
+      "SKILL_ENCHANTING_LABEL": [
+        "XP"
+      ],
+      "SKILL_ALCHEMY_LABEL": [
+        "XP"
+      ],
+      "SKILL_CARPENTRY_LABEL": [
+        "XP"
+      ],
+      "SKILL_RUNECRAFTING_LABEL": [
+        "XP"
+      ],
+      "SKILL_TAMING_LABEL": [
+        "XP"
+      ],
+      "SLAYER_LABEL": [
+        "XP"
+      ],
+      "CATACOMBS_LABEL": [
+        "XP"
+      ],
+      "WEIGHT_LABEL": [
+        "Weight"
+      ],
+      "SKILL_WEIGHTED_LABEL": [
+        "XP"
+      ],
+      "startMessage": [
+        "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
+        "1. You join the event,\n",
+        "2. The bot starts tracking the XP you earn,\n",
+        "3. You get placed on the leaderboard accordingly.\n",
+        "This message will serve as the leaderboard, and will be updated every {when}. Good luck, and have fun!\n",
+        "**This event ends on {end_date} ({end_relative})**"
+      ],
+      "updateQueued": [
+        "Event queued for update at {when}."
+      ],
+      "updating": [
+        "Updating the event leaderboard..."
+      ],
+      "nobody": [
+        "Nothing to see here! Nobody's in the event!"
+      ],
+      "ended": [
+        "This event has ended and all data will be deleted {when}."
+      ],
+      "members": [
+        "Members"
+      ]
+    },
+    "eventButtons": {
+      "btnJoin": [
+        "Join Event"
+      ],
+      "btnPos": [
+        "Check Position"
+      ],
+      "notVerified": [
+        "You must be verified to join an event. Verify with the `/verify` command."
+      ],
+      "noEvent": [
+        "There isn't an event running in this server."
+      ],
+      "alreadyJoined": [
+        "You're already in the event."
+      ],
+      "joined": [
+        "You've successfully joined the event!"
+      ],
+      "notJoined": [
+        "You're not in the event."
+      ],
+      "position": [
+        "You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."
+      ]
+    },
+    "pagination": {
+      "page": [
+        "Page"
+      ],
+      "noPages": [
+        "There are no other pages to switch to!"
+      ],
+      "invalidPage": [
+        "Invalid page number."
+      ],
+      "pageNumber": [
+        "Page Number"
+      ],
+      "pageNumberPlaceholder": [
+        "Input a page number to switch to."
+      ],
+      "pageTitle": [
+        "Switch Page"
+      ]
+    }
+  }
 }
