@@ -975,6 +975,28 @@
       ]
     }
   },
+  "bazaar": {
+    "name": "bazaar",
+    "description": "Views an item on the Bazaar.",
+    "options": [
+      {
+        "name": "item",
+        "description": "The item to view."
+      }
+    ],
+    "responses": {
+      "itemNotFound": ["The item **{item}** does not exist."],
+      "itemNotInBazaar": [
+        "**{item}** is not in the bazaar."
+      ],
+      "instantBuy": ["Buy Instantly"],
+      "instantSell": ["Sell Instantly"],
+      "highestBuyOrder": ["Highest Buy Order"],
+      "lowestSellOrder": ["Lowest Sell Order"],
+      "buyVolume": ["Buy Volume"],
+      "sellVolume": ["Sell Volume"]
+    }
+  },
   "*": {
     "errors": {
       "*": {
