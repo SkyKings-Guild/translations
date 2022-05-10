@@ -997,6 +997,64 @@
       "sellVolume": ["Sell Volume"]
     }
   },
+  "auctions": {
+      "name": "auctions",
+      "description": "View auctions."
+  },
+  "auctions search": {
+      "name": "search",
+      "description": "Search for auctions in the auction house.",
+      "options": [
+        {
+          "name": "item",
+          "description": "The item to search for."
+        },
+        {
+          "name": "enchantment",
+          "description": "Whether or not the provided item is an enchantment."
+        },
+        {
+          "name": "bin",
+          "description": "Filter BIN auctions. Leave blank to search all auctions."
+        }
+      ],
+      "responses": {
+        "noAuctions": ["No auctions matching the query **{query}** were found."],
+        "title": ["{item} in the Auction House"]
+      }
+  },
+  "auctions player": {
+      "name": "player",
+      "description": "View a player's auctions.",
+      "options": [
+        {
+          "name": "player",
+          "description": "The player to search for."
+        }
+      ],
+      "responses": {
+        "noAuctions": ["**{player}** has no auctions."],
+        "title": ["{player}'s Auctions"]
+      }
+  },
+  "auctions lowestbin": {
+      "name": "lowestbin",
+      "description": "Find the lowest BIN auction for an item.",
+      "options": [
+        {
+          "name": "item",
+          "description": "The item to search for."
+        },
+        {
+          "name": "enchantment",
+          "description": "Whether or not the provided item is an enchantment."
+        }
+      ],
+      "responses": {
+        "noAuction": ["Could not find a BIN auction for **{item}**."],
+        "title": ["Lowest BIN for {item}"]
+      }
+  },
   "*": {
     "errors": {
       "*": {
@@ -1340,6 +1398,21 @@
       "pageTitle": [
         "Switch Page"
       ]
+    },
+    "auctions": {
+      "item": ["Item"],
+      "category": ["Category"],
+      "rarity": ["Rarity"],
+      "auctioneer": ["Auctioneer"],
+      "started": ["Started at"],
+      "ends": ["Ends at"],
+      "type": ["Auction Type"],
+      "startingBid": ["Starting Bid"],
+      "highestBid": ["Highest Bid"],
+      "topBidder": ["Top Bidder"],
+      "loreGenCredits": ["Lore generator by poke535.dev"],
+      "noEndedAuctions": ["This player has no ended auctions."],
+      "noActiveAuctions": ["This player has no active auctions."]
     }
   }
 }
