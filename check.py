@@ -5,5 +5,5 @@ with open('encodings.json', 'r') as f:
     
 
 for lang, encoding in encodings.items():
-    with open(f'translations/{lang}.json', 'r') as f:
-        json.load(f, encoding=encoding)
+    with open(f'translations/{lang}.json', 'r', encoding=encoding) as f:
+        json.load(f)
