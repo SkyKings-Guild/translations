@@ -1055,6 +1055,30 @@
         "title": ["Lowest BIN for {item}"]
       }
   },
+  "price": {
+    "name": "price",
+    "description": "Find the price of an item. Uses the bazaar and lowest BIN.",
+    "options": [
+      {
+        "name": "item",
+        "description": "The item to search for."
+      },
+      {
+        "name": "enchantment",
+        "description": "Whether or not the provided item is an enchantment."
+      }
+    ],
+    "responses": {
+      "noItem": ["**{item}** is not a valid item."],
+      "bazaarPrice": [
+        "**{item}** is currently selling for an average of **{price} coins**",
+        "on the bazaar."
+      ],
+      "noPrice": ["Could not determine a price for **{item}**."],
+      "price": ["**{item}** is currently selling for **{price} coins** on the auction house. (Lowest BIN)"],
+      "enchantsNotSupported": ["Enchantments are not supported at this time. Please check back later."]
+    }
+  },
   "*": {
     "errors": {
       "*": {
@@ -1413,6 +1437,9 @@
       "loreGenCredits": ["Lore generator by poke535.dev"],
       "noEndedAuctions": ["This player has no ended auctions."],
       "noActiveAuctions": ["This player has no active auctions."]
+    },
+    "reportPrice": {
+
     }
   }
 }
