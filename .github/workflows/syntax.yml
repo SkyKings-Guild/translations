@@ -6,9 +6,6 @@ on:
       - 'translations/**.json'
       - './encodings.json'
   pull_request:
-    paths:
-      - 'translations/**.json'
-      - './encodings.json'
   workflow_dispatch:
 
 jobs:
