@@ -1079,6 +1079,19 @@
       "enchantsNotSupported": ["Enchantments are not supported at this time. Please check back later."]
     }
   },
+  "bits-to-bin": {
+    "name": "bits-to-bin",
+    "description": "Displays items purchasable with bits, and its coins per bit.",
+    "options": [],
+    "responses": {
+      "title": ["Bits to BIN"],
+      "field": [
+        "**Bit Price**: {cost:,}\n",
+        "**Coin Price**: {price:,.0f}\n",
+        "**Coins Per Bit**: {coinsPerBit:,.2f}"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
