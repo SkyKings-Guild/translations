@@ -1059,11 +1059,10 @@
     "responses": {
       "noItem": ["**{item}** is not a valid item."],
       "bazaarPrice": [
-        "**{item}** is currently selling for an average of **{price} coins**",
-        "on the bazaar."
+        "**{item}** is currently selling for an average of **{price} coins** on the bazaar."
       ],
       "noPrice": ["Could not determine a price for **{item}**."],
-      "price": ["**{item}** is currently selling for **{price} coins** on the auction house. (Lowest BIN)"]
+      "price": ["**{item}** is currently selling for **{price:,.0f} coins** on the auction house."]
     }
   },
   "bits-to-bin": {
