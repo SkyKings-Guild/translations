@@ -1010,10 +1010,6 @@
           "description": "The item to search for."
         },
         {
-          "name": "enchantment",
-          "description": "Whether or not the provided item is an enchantment."
-        },
-        {
           "name": "bin",
           "description": "Filter BIN auctions. Leave blank to search all auctions."
         }
@@ -1044,10 +1040,6 @@
         {
           "name": "item",
           "description": "The item to search for."
-        },
-        {
-          "name": "enchantment",
-          "description": "Whether or not the provided item is an enchantment."
         }
       ],
       "responses": {
@@ -1062,10 +1054,6 @@
       {
         "name": "item",
         "description": "The item to search for."
-      },
-      {
-        "name": "enchantment",
-        "description": "Whether or not the provided item is an enchantment."
       }
     ],
     "responses": {
@@ -1075,8 +1063,7 @@
         "on the bazaar."
       ],
       "noPrice": ["Could not determine a price for **{item}**."],
-      "price": ["**{item}** is currently selling for **{price} coins** on the auction house. (Lowest BIN)"],
-      "enchantsNotSupported": ["Enchantments are not supported at this time. Please check back later."]
+      "price": ["**{item}** is currently selling for **{price} coins** on the auction house. (Lowest BIN)"]
     }
   },
   "bits-to-bin": {
