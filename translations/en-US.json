@@ -1087,6 +1087,20 @@
     "description": "Displays information about the SkyBlock collections.",
     "options": []
   },
+  "skyblock skills": {
+    "name": "skills",
+    "description": "Displays information about the SkyBlock skills.",
+    "options": [],
+    "responses": {
+      "title": ["Skill Info: {emoji} {skill}"],
+      "description": ["{description}"],
+      "fieldName": ["Level {level}"],
+      "fieldValue": [
+        "Required XP: {xp:,.0f}\n",
+        "Unlocks:\n{unlocks}"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
@@ -1465,7 +1479,7 @@
       "description": ["Max Tier: {max_tier}"],
       "fieldName": ["Tier {tier}"],
       "fieldValue": [
-        "Amount Required: {amount_required:,}\n",
+        "Items: {amount_required:,}\n",
         "Unlocks:\n{unlocks}"
       ]
     },
@@ -1475,6 +1489,19 @@
       "COMBAT": ["Combat"],
       "FORAGING": ["Foraging"],
       "FISHING": ["Fishing"]
+    },
+    "skills": {
+      "FARMING": ["Farming"],
+      "MINING": ["Mining"],
+      "COMBAT": ["Combat"],
+      "FORAGING": ["Foraging"],
+      "FISHING": ["Fishing"],
+      "ENCHANTING": ["Enchanting"],
+      "ALCHEMY": ["Alchemy"],
+      "CARPENTRY": ["Carpentry"],
+      "RUNECRAFTING": ["Runecrafting"],
+      "SOCIAL": ["Social"],
+      "TAMING": ["Taming"]
     }
   }
 }
