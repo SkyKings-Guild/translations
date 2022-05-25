@@ -1078,6 +1078,15 @@
       ]
     }
   },
+  "skyblock": {
+    "name": "skyblock",
+    "description": "Commands for displaying information about the SkyBlock gamemode."
+  },
+  "skyblock collections": {
+    "name": "collections",
+    "description": "Displays information about the SkyBlock collections.",
+    "options": []
+  },
   "*": {
     "errors": {
       "*": {
@@ -1437,8 +1446,35 @@
       "noEndedAuctions": ["This player has no ended auctions."],
       "noActiveAuctions": ["This player has no active auctions."]
     },
+    "bazaar": {
+      "buyPrice": ["Buy Price"],
+      "sellPrice": ["Sell Price"]
+    },
+    "charts": {
+      "pastDay": ["Past Day"],
+      "pastWeek": ["Past Week"],
+      "pastMonth": ["Past Month"]
+    },
     "reportPrice": {
 
+    },
+    "collectionInfo": {
+      "titleNoCol": ["Collection Info"],
+      "descriptionNoCol": ["Select a collection in the dropdown below to view it."],
+      "title": ["Collection Info: {collection}"],
+      "description": ["Max Tier: {max_tier}"],
+      "fieldName": ["Tier {tier}"],
+      "fieldValue": [
+        "Amount Required: {amount_required:,}\n",
+        "Unlocks:\n{unlocks}"
+      ]
+    },
+    "collections": {
+      "FARMING": ["Farming"],
+      "MINING": ["Mining"],
+      "COMBAT": ["Combat"],
+      "FORAGING": ["Foraging"],
+      "FISHING": ["Fishing"]
     }
   }
 }
