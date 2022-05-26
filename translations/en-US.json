@@ -1101,6 +1101,83 @@
       ]
     }
   },
+  "skyblock item": {
+    "name": "item",
+    "description": "Displays information about a SkyBlock item.",
+    "options": [
+      {
+        "name": "item",
+        "description": "The name of the item to display information about."
+      }
+    ],
+    "responses": {
+      "notFound": ["Could not find an item named **{item}**."],
+      "title": ["Item Information: {item}"],
+      "attributesName": ["Attributes"],
+      "attributesValue": [
+        "Glowing: {glowing}\n",
+        "Museum Item: {museum}\n",
+        "Dungeon Item: {dungeon}\n"
+      ],
+      "category": ["Item Type: {category}"],
+      "tier": ["Tier: {tier}"],
+      "id": ["ID: {id}"],
+      "statsName": ["Base Stats"],
+      "requirementsName": ["Usage Requirements"],
+      "requirementsValue": ["{requirements}"],
+      "dungeonRequirementsName": ["Dungeon Usage Requirements"],
+      "dungeonRequirementsValue": ["{requirements}"],
+      "essenceName": ["Essence Crafting"],
+      "dungeonize": ["Dungeonize: {amount:,} {type}"],
+      "star": ["{stars}: {data}"],
+      "innerStar": ["{amount:,} {type}"],
+      "essenceValue": ["{essence}"],
+      "gemstoneSlotName": ["Gemstone Slot {slot}"],
+      "gemstoneSlotType": ["Type: {type}"],
+      "gemstoneSlotCost": ["\nUnlock Cost:\n{cost}"],
+      "innerGemstoneSlotCost": ["{amount:,} {type}"],
+      "npcSellPrice": ["NPC Sell Price: {price:,}"],
+      "requirements.nether_reputation": ["{reputation:,} {faction} Reputation{coop}"],
+      "requirements.dungeon.CATACOMBS": ["Catacombs Level {level}"],
+      "requirements.skill.COMBAT": ["Combat {level}"],
+      "requirements.skill.FISHING": ["Fishing {level}"],
+      "requirements.skill.MINING": ["Mining {level}"],
+      "requirements.skill.SOCIAL": ["Social {level}"],
+      "requirements.skill.FARMING": ["Farming {level}"],
+      "requirements.skill.FORAGING": ["Foraging {level}"],
+      "requirements.slayer.enderman": ["Voidgloom Seraph {level}"],
+      "requirements.slayer.zombie": ["Revenant Horror {level}"],
+      "requirements.slayer.spider": ["Tarantula Broodfather {level}"],
+      "requirements.slayer.wolf": ["Sven Packmaster {level}"],
+      "requirements.slayer.blaze": ["Inferno Demonlord {level}"],
+      "requirements.dungeon_completion.CATACOMBS": ["The Catacombs, Floor {level} Completion"],
+      "requirements.dungeon_completion.MASTER_CATACOMBS": ["Master Mode, Floor {level} Completion"],
+      "requirements.heart_of_the_mountain": ["Heart of the Mountain Tier {level}"],
+      "requirements.targetPractice": ["Target Practice {level}"],
+      "essence.DIAMOND": ["Diamond Essence"],
+      "essence.WITHER": ["Wither Essence"],
+      "essence.GOLD": ["Gold Essence"],
+      "essence.CRIMSON": ["Crimson Essence"],
+      "essence.ICE": ["Ice Essence"],
+      "essence.UNDEAD": ["Undead Essence"],
+      "essence.DRAGON": ["Dragon Essence"],
+      "gemstone_slot_type.SAPPHIRE": ["Sapphire"],
+      "gemstone_slot_type.JASPER": ["Jasper"],
+      "gemstone_slot_type.AMETHYST": ["Amethyst"],
+      "gemstone_slot_type.JADE": ["Jade"],
+      "gemstone_slot_type.AMBER": ["Amber"],
+      "gemstone_slot_type.TOPAZ": ["Topaz"],
+      "gemstone_slot_type.OPAL": ["Opal"],
+      "gemstone_slot_type.RUBY": ["Ruby"],
+      "gemstone_slot_type.COMBAT": ["Combat"],
+      "gemstone_slot_type.OFFENSIVE": ["Offensive"],
+      "gemstone_slot_type.DEFENSIVE": ["Defensive"],
+      "gemstone_slot_type.MINING": ["Mining"],
+      "gemstone_slot_type.UNIVERSAL": ["Universal"],
+      "faction.BARBARIANS": ["Barbarians"],
+      "faction.MAGES": ["MAGE"]
+    }
+  },
   "*": {
     "errors": {
       "*": {
