@@ -1339,6 +1339,17 @@
       "removedPing": ["Removed the ping role for **{event}**."]
     }
   },
+  "skyblock mayor": {
+    "name": "mayor",
+    "description": "Displays the current SkyBlock mayor, as well as the current election.",
+    "options": [],
+    "responses": {
+      "mayorTitle": ["Hypixel SkyBlock Mayor"],
+      "mayorDescription": ["The current mayor is **{mayor}**.\n\n{perks}"],
+      "electionName": ["Election for Year {year:,}"],
+      "electionDescription": ["Total Votes: {votes:,}"]
+    }
+  },
   "*": {
     "errors": {
       "*": {
