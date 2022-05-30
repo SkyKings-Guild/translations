@@ -1220,6 +1220,125 @@
     "name": "events",
     "description": "Manages SkyBlock event notifications."
   },
+  "skyblock-events": {
+    "name": "skyblock-events",
+    "description": "Manages SkyBlock event notifications."
+  },
+  "skyblock-events config": {
+    "name": "config",
+    "description": "Configures the server's SkyBlock event notifications."
+  },
+  "skyblock-events config view": {
+    "name": "view",
+    "description": "Displays the server's SkyBlock event notification configuration.",
+    "options": [],
+    "responses": {
+      "title": ["SkyBlock Event Notifications"],
+      "fieldTemplate": [
+        "Enabled: {enabled}\n",
+        "Alerts: {alerts}\n",
+        "Ping Role: {ping}\n"
+      ],
+      "allAlerts": "All",
+      "noAlerts": "None"
+    }
+  },
+  "skyblock-events config toggle": {
+    "name": "toggle",
+    "description": "Toggles an event notification on or off.",
+    "options": [
+      {
+        "name": "event",
+        "description": "The event to toggle.",
+        "choices": [
+          "New Year",
+          "Spooky Festival",
+          "Jerry's Workshop Opens",
+          "Season of Jerry",
+          "Mayor Election Ends",
+          "Travelling Zoo",
+          "Fear Mongerer",
+          "Dark Auction",
+          "Mayor Election Begins",
+          "Bank Interest"
+        ]
+      }
+    ],
+    "responses": {
+      "enabled": ["Enabled **{event}**."],
+      "disabled": ["Disabled **{event}**."]
+    }
+  },
+  "skyblock-events config toggle-alert": {
+    "name": "toggle-alert",
+    "description": "Toggles an alert on or off for an event.",
+    "options": [
+    {
+        "name": "event",
+        "description": "The event to toggle an alert for.",
+        "choices": [
+          "New Year",
+          "Spooky Festival",
+          "Jerry's Workshop Opens",
+          "Season of Jerry",
+          "Mayor Election Ends",
+          "Travelling Zoo",
+          "Fear Mongerer",
+          "Dark Auction",
+          "Mayor Election Begins",
+          "Bank Interest"
+        ]
+    },
+    {
+        "name": "alert",
+        "description": "The alert to toggle.",
+        "choices": [
+          "Start of event",
+          "5 minutes before event",
+          "10 minutes before event",
+          "30 minutes before event"
+        ]
+    }
+    ],
+    "responses": {
+      "enabledAlert": ["Enabled the **{alert}** alert for **{event}**."],
+      "disabledAlert": ["Disabled the **{alert}** alert for **{event}**."],
+      "0": "Start of event",
+      "5": "5 minutes before event",
+      "10": "10 minutes before event",
+      "30": "30 minutes before event"
+    }
+  },
+  "skyblock-events config set-ping": {
+    "name": "set-ping",
+    "description": "Sets the ping role for an event.",
+    "options": [
+      {
+        "name": "event",
+        "description": "The event to set the ping role for.",
+        "choices": [
+          "New Year",
+          "Spooky Festival",
+          "Jerry's Workshop Opens",
+          "Season of Jerry",
+          "Mayor Election Ends",
+          "Travelling Zoo",
+          "Fear Mongerer",
+          "Dark Auction",
+          "Mayor Election Begins",
+          "Bank Interest"
+        ]
+      },
+      {
+        "name": "role",
+        "description": "The role to set as the ping role. Leave blank to remove."
+      }
+    ],
+    "responses": {
+      "setPing": ["Set the ping role for **{event}** to **{role}**."],
+      "removedPing": ["Removed the ping role for **{event}**."]
+    }
+  },
   "*": {
     "errors": {
       "*": {
@@ -1344,6 +1463,42 @@
         "message": [
           "You must provide a player to search for as you are not verified."
         ]
+      },
+      "19": {
+        "note": "Raised when an invalid event is passed.",
+        "message": [
+          "**{event}** is not a valid event."
+        ]
+      },
+      "20": {
+          "note": "Raised when an event is already enabled.",
+          "message": [
+            "That event is already enabled."
+          ]
+      },
+      "21": {
+          "note": "Raised when an event is already disabled.",
+          "message": [
+              "That event is already disabled."
+          ]
+      },
+      "22": {
+          "note": "Raised when an invalid alert time is passed. (skyblock events config)",
+          "message": [
+              "**{time}** is not a valid time. It must be **0**, **5**, **10**, or **30**."
+          ]
+      },
+      "23": {
+          "note": "Raised when an alert is already enabled. (skyblock events config)",
+          "message": [
+              "That alert is already enabled."
+          ]
+      },
+      "24": {
+          "note": "Raised when an alert is already disabled. (skyblock events config)",
+          "message": [
+              "That alert is already disabled."
+          ]
       }
     },
     "checkFailure": {
@@ -1638,6 +1793,33 @@
       "datetime": ["{day} of {month}, Year {year}"],
       "am": ["{time} AM"],
       "pm": ["{time} PM"]
+    },
+    "sbEvents": {
+        "NEW_YEAR": ["New Year"],
+        "NEW_YEAR_ALERT": ["The New Year Celebration starts"],
+        "SPOOKY_FESTIVAL": ["Spooky Festival"],
+        "SPOOKY_FESTIVAL_ALERT": ["The Spooky Festival starts"],
+        "WORKSHOP_OPEN": ["Jerry's Workshop Opens"],
+        "WORKSHOP_OPEN_ALERT": ["Jerry's Workshop opens"],
+        "SEASON_OF_JERRY": ["Season of Jerry"],
+        "SEASON_OF_JERRY_ALERT": ["The Season of Jerry starts"],
+        "MAYOR_ELECTION_END": ["Mayor Election Ends"],
+        "MAYOR_ELECTION_END_ALERT": ["The Mayor Election ends"],
+        "TRAVELLING_ZOO": ["Travelling Zoo"],
+        "TRAVELLING_ZOO_ALERT": ["The Travelling Zoo arrives"],
+        "FEAR_MONGERER": ["Fear Mongerer"],
+        "FEAR_MONGERER_ALERT": ["The Fear Mongerer spawns"],
+        "DARK_AUCTION": ["Dark Auction"],
+        "DARK_AUCTION_ALERT": ["The Dark Auction opens"],
+        "MAYOR_ELECTION_START": ["Mayor Election Begins"],
+        "MAYOR_ELECTION_START_ALERT": ["The Mayor Election begins"],
+        "BANK_INTEREST": ["Bank Interest"],
+        "BANK_INTEREST_ALERT": ["Bank Interest is being paid"],
+        "startingNow": ["{event} **now**!"],
+        "startingSoon": ["{event} in **{time}**!"],
+        "5": "five minutes",
+        "10": "ten minutes",
+        "30": "thirty minutes"
     }
   }
 }
