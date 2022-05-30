@@ -1178,6 +1178,48 @@
       "faction.MAGES": ["MAGE"]
     }
   },
+  "skyblock leaderboard":{
+    "name": "leaderboard",
+    "description": "Displays leaderboards from SkyCrypt (sky.shiiyu.moe)",
+    "options": [
+      {
+        "name": "leaderboard",
+        "description": "The leaderboard to display."
+      },
+      {
+        "name": "player",
+        "description": "The player to search for on the leaderboard."
+      }
+    ]
+  },
+  "skyblock wiki": {
+    "name": "wiki",
+    "description": "Searches for an article on the Hypixel SkyBlock Wiki.",
+    "options": [
+      {
+        "name": "search",
+        "description": "The search term to search for."
+      }
+    ],
+    "responses": {
+      "title": ["Hypixel SkyBlock Wiki"],
+      "noResults": ["No results were found for **{search}**."],
+      "results": ["Results for **{search}**:\n{results}"],
+      "wikiURL": ["The wiki can be found at [wiki.hypixel.net](https://wiki.hypixel.net/)."]
+    }
+  },
+  "skyblock time": {
+    "name": "time",
+    "description": "Displays the current time in SkyBlock.",
+    "options": [],
+    "responses": {
+      "time": ["Is is currently {time} on the {date} in Hypixel SkyBlock."]
+    }
+  },
+  "skyblock events": {
+    "name": "events",
+    "description": "Manages SkyBlock event notifications."
+  },
   "*": {
     "errors": {
       "*": {
@@ -1539,7 +1581,10 @@
     },
     "bazaar": {
       "buyPrice": ["Buy Price"],
-      "sellPrice": ["Sell Price"]
+      "sellPrice": ["Sell Price"],
+      "pastDay": ["Past Day"],
+      "pastWeek": ["Past Week"],
+      "pastMonth": ["Past Month"]
     },
     "charts": {
       "pastDay": ["Past Day"],
@@ -1579,6 +1624,20 @@
       "RUNECRAFTING": ["Runecrafting"],
       "SOCIAL": ["Social"],
       "TAMING": ["Taming"]
+    },
+    "skycryptLB": {
+      "skipUserTitle": ["Find Player"],
+      "skipUserLabel": ["Player"],
+      "skipUserPlaceholder": ["Enter a player name to find on the leaderboard."],
+      "skipToUser": ["Find Player"],
+      "title": ["SkyCrypt Leaderboards: {leaderboard}"],
+      "playerNotFound": ["**{player}** was not found on the leaderboard."],
+      "playerFound": ["Found {player} on page {page}. Rank: {rank:,}"]
+    },
+    "time": {
+      "datetime": ["{day} of {month}, Year {year}"],
+      "am": ["{time} AM"],
+      "pm": ["{time} PM"]
     }
   }
 }
