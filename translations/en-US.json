@@ -1356,7 +1356,16 @@
     "options": [],
     "responses": {
       "bingoTitle": ["Hypixel SkyBlock Bingo Card"],
-      "progress": ["Progress: {progress:,} ({tier}/{tiers})"]
+      "progress": [
+        "Progress: {progress:,}\n",
+        "Next Tier: {needed:,}\n> {toNext:,} needed\n",
+        "Tier {tier}/{tiers}"
+      ],
+      "finishedProgress": [
+        "Progress: {progress:,}\n",
+        "Tier {tier}/{tiers}\n",
+        "Goal completed!"
+      ]
     }
   },
   "*": {
