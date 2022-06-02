@@ -1350,6 +1350,15 @@
       "electionDescription": ["Total Votes: {votes:,}"]
     }
   },
+  "skyblock bingo": {
+    "name": "bingo",
+    "description": "Displays the current SkyBlock Bingo card.",
+    "options": [],
+    "responses": {
+      "bingoTitle": ["Hypixel SkyBlock Bingo Card"],
+      "progress": ["Progress: {progress:,} ({tier}/{tiers})"]
+    }
+  },
   "*": {
     "errors": {
       "*": {
