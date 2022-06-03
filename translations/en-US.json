@@ -1368,6 +1368,62 @@
       ]
     }
   },
+  "player": {
+    "name": "player",
+    "description": "Get information about a player on Hypixel.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to get information about."
+      }
+    ],
+    "responses": {
+      "neverJoined": [
+        "**{name}** has never joined Hypixel."
+      ],
+      "description": [
+        "Username: {name}\n",
+        "UUID: {uuid}\n",
+        "Discord ID: {userid}\n",
+        "Rank: {rank}\n",
+        "Guild: {guild}\n",
+        "First Login: {first_login}\n",
+        "Last Login: {last_login}\n",
+        "Last Logout: {last_logout}\n",
+        "Network XP: {network_xp:,.2f}\n",
+        "Network Level: {network_level:,.0f}\n",
+        "Minecraft Version: {version}\n",
+        "Karma: {karma}\n",
+        "Achievement Points: {achievement_points}\n",
+        "Status: {status}"
+      ],
+      "title": [
+        "{name}'s Hypixel Profile"
+      ]
+    }
+  },
+  "locate": {
+    "name": "locate",
+    "description": "Locate a player on the Hypixel Network.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to locate."
+      }
+    ],
+    "responses": {
+      "neverJoined": [
+        "**{name}** has never joined Hypixel."
+      ],
+      "title": ["{name}'s Status"],
+      "offline": ["**{name}** is currently offline."],
+      "noData": ["I was unable to fetch **{name}**'s status."],
+      "onlineCantLocate": ["**{name}** is currently online, but has their status API settings disabled."],
+      "online": ["**{name}** is currently online. I was unable to determine where."],
+      "onlineWithMode": ["**{name}** is currently playing {game}.\nMode: {mode}."],
+      "onlineWithGame": ["**{name}** is currently playing {game}."]
+    }
+  },
   "*": {
     "errors": {
       "*": {
