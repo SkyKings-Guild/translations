@@ -1424,6 +1424,50 @@
       "onlineWithGame": ["**{name}** is currently playing {game}."]
     }
   },
+  "profiles": {
+    "name": "profiles",
+    "description": "Displays a rundown of a player's SkyBlock profiles.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view profiles for."
+      }
+    ],
+    "responses": {
+      "title": [
+        "{name}'s {profile} Profile"
+      ],
+      "description": [
+        "First Joined: {first_join}\n",
+        "Last Saved: {last_save}\n"
+      ],
+      "miscellaneousName": ["Miscellaneous"],
+      "miscellaneousValue": [
+        "<:fairysoul:986790574310965248> {fairy_souls}/238 Fairy Souls\n",
+        "<:diamond_sword:986848758149021716> {skill_average:.2f} Skill Average\n",
+        "<:gold_block:986849038404026438> Bank: {bank}\n",
+        "<:gold_ingot:986849117340839937> Purse: {purse:,.0f} Coins\n",
+        "<:weights:986849604492476477> Weight: {senither_weight:,.0f} Senither, {lily_weight:,.0f} Lily"
+      ],
+      "slayerLevelName": ["Slayer Levels"],
+      "slayerLevelValue": [
+        "<:revenant:986789889423077456> Revenant Horror: {zombie_slayer:.0f}\n",
+        "<:tarantula:986789892271005728> Tarantula Broodfather: {spider_slayer:.0f}\n",
+        "<:sven:986789891088187403> Sven Packmaster: {wolf_slayer:.0f}\n",
+        "<:voidgloom:986789894397526036> Voidgloom Seraph: {enderman_slayer:.0f}\n",
+        "<:blaze:986789888093487104> Inferno Demonlord: {blaze_slayer:.0f}"
+      ],
+      "dungeonName": ["Dungeons"],
+      "dungeonValue": [
+        "<:catacombs:986846576582459443> Catacombs Level {catacombs_level:.0f}\n",
+        "<:healer_orb:986846578025308201> Healer Level {healer_class:.0f}\n",
+        "<:mage_orb:986846579463946250> Mage Level {mage_class:.0f}\n",
+        "<:berserk_orb:986846574812487711> Berserk Level {berserk_class:.0f}\n",
+        "<:archer_orb:986846573415768075> Archer Level {archer_class:.0f}\n",
+        "<:tank_orb:986846580759986236> Tank Level {tank_class:.0f}"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
@@ -1583,6 +1627,12 @@
           "note": "Raised when an alert is already disabled. (skyblock events config)",
           "message": [
               "That alert is already disabled."
+          ]
+      },
+      "25": {
+          "note": "Raised when a player doesn't have any SkyBlock profiles to fetch.",
+          "message": [
+              "**{name}** has no SkyBlock profiles."
           ]
       }
     },
