@@ -1442,7 +1442,9 @@
         "Last Saved: {last_save}\n",
         "Profile Type: {profile_type}"
       ],
-      "miscellaneousName": ["Miscellaneous"],
+      "miscellaneousName": [
+        "Miscellaneous"
+      ],
       "miscellaneousValue": [
         "<:fairysoul:986790574310965248> {fairy_souls}/238 Fairy Souls\n",
         "<:diamond_sword:986848758149021716> {skill_average:.2f} Skill Average\n",
@@ -1450,7 +1452,9 @@
         "<:gold_ingot:986849117340839937> Purse: {purse:,.0f} Coins\n",
         "<:weights:986849604492476477> Weight: {senither_weight:,.0f} Senither, {lily_weight:,.0f} Lily"
       ],
-      "slayerLevelName": ["Slayer Levels"],
+      "slayerLevelName": [
+        "Slayer Levels"
+      ],
       "slayerLevelValue": [
         "<:revenant:986789889423077456> Revenant Horror: {zombie_slayer:.0f}\n",
         "<:tarantula:986789892271005728> Tarantula Broodfather: {spider_slayer:.0f}\n",
@@ -1458,7 +1462,9 @@
         "<:voidgloom:986789894397526036> Voidgloom Seraph: {enderman_slayer:.0f}\n",
         "<:blaze:986789888093487104> Inferno Demonlord: {blaze_slayer:.0f}"
       ],
-      "dungeonName": ["Dungeons"],
+      "dungeonName": [
+        "Dungeons"
+      ],
       "dungeonValue": [
         "<:catacombs:986846576582459443> Catacombs Level {catacombs_level:.0f}\n",
         "<:healer_orb:986846578025308201> Healer Level {healer_class:.0f}\n",
@@ -1467,10 +1473,36 @@
         "<:archer_orb:986846573415768075> Archer Level {archer_class:.0f}\n",
         "<:tank_orb:986846580759986236> Tank Level {tank_class:.0f}"
       ],
-      "specialProfile": ["{type} Profile"],
-      "normalProfile": ["Normal Profile"],
-      "normal": ["Normal"],
-      "coopName": ["Co-op Members ({count})"]
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ],
+      "normal": [
+        "Normal"
+      ],
+      "coopName": [
+        "Co-op Members ({count})"
+      ]
+    }
+  },
+  "friends": {
+    "name": "friends",
+    "description": "Displays a player's Hypixel friends list.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to fetch friends for."
+      }
+    ],
+    "responses": {
+      "neverJoined": [
+        "**{name}** has never joined Hypixel."
+      ],
+      "title": [
+        "{name}'s Friends ({count})"
+      ]
     }
   },
   "*": {
