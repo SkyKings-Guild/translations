@@ -1438,8 +1438,9 @@
         "{name}'s {profile} Profile"
       ],
       "description": [
-        "First Joined: {first_join}\n",
-        "Last Saved: {last_save}\n"
+        "Created: {first_join}\n",
+        "Last Saved: {last_save}\n",
+        "Profile Type: {profile_type}"
       ],
       "miscellaneousName": ["Miscellaneous"],
       "miscellaneousValue": [
@@ -1465,7 +1466,11 @@
         "<:berserk_orb:986846574812487711> Berserk Level {berserk_class:.0f}\n",
         "<:archer_orb:986846573415768075> Archer Level {archer_class:.0f}\n",
         "<:tank_orb:986846580759986236> Tank Level {tank_class:.0f}"
-      ]
+      ],
+      "specialProfile": ["{type} Profile"],
+      "normalProfile": ["Normal Profile"],
+      "normal": ["Normal"],
+      "coopName": ["Co-op Members ({count})"]
     }
   },
   "*": {
@@ -1955,6 +1960,11 @@
         "5": "five minutes",
         "10": "ten minutes",
         "30": "thirty minutes"
+    },
+    "profileTypes": {
+      "ironman": "Ironman",
+      "island": "Stranded",
+      "bingo": "Bingo"
     }
   }
 }
