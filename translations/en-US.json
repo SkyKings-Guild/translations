@@ -1621,6 +1621,9 @@
       ],
       "normalProfile": [
         "Normal Profile"
+      ],
+      "apiDisabled": [
+        "This player's skill API is disabled on this profile."
       ]
     }
   },
