@@ -1499,9 +1499,6 @@
     "responses": {
       "neverJoined": [
         "**{name}** has never joined Hypixel."
-      ],
-      "title": [
-        "{name}'s Friends ({count})"
       ]
     }
   },
@@ -1997,6 +1994,11 @@
       "ironman": "Ironman",
       "island": "Stranded",
       "bingo": "Bingo"
+    },
+    "friendsList": {
+      "title": ["{name}'s Friends ({count:,})"],
+      "friend": ["{name} since {timestamp}"],
+      "noFriends": ["This player has no friends."]
     }
   }
 }
