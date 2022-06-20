@@ -1586,7 +1586,7 @@
   },
   "skills": {
     "name": "skills",
-    "description": "Displays a player's skills.",
+    "description": "Displays a player's Skyblock skills.",
     "options": [
       {
         "name": "player",
@@ -1624,6 +1624,50 @@
       ],
       "apiDisabled": [
         "This player's skill API is disabled on this profile."
+      ]
+    }
+  },
+  "collections": {
+    "name": "collections",
+    "description": "Displays a player's Skyblock collections.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view collections for."
+      }
+    ],
+    "responses": {
+      "title": [
+        "{name}'s Collections on {profile}"
+      ],
+      "apiDisabled": [
+        "This player's collection API is disabled on this profile."
+      ],
+      "selectDifferentProfile": [
+        "Select a different profile."
+      ],
+      "collectionTitle": [
+        "{emoji} {name}'s {category} Collections on {profile}"
+      ],
+      "collectionDescription": [
+        "{maxed} out of {total} {category} collections have been maxed."
+      ],
+      "collectionName": [
+        "{item} ({level:.0f})"
+      ],
+      "innerMaxed": [
+        "Items: {xp:,}\n",
+        "Maxed collection!"
+      ],
+      "inner": [
+        "Items: {xp:,}\n",
+        "Progress: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
       ]
     }
   },
