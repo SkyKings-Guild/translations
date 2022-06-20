@@ -1502,6 +1502,88 @@
       ]
     }
   },
+  "slayers": {
+    "name": "slayers",
+    "description": "Displays a player's slayer information.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view slayers for."
+      }
+    ],
+    "responses": {
+      "title": [
+        "{name}'s {profile} Profile"
+      ],
+      "zombieName": [
+        "<:revenant:986789889423077456> Revenant Horror"
+      ],
+      "zombieValue": [
+        "XP: {xp:,}\n",
+        "Level: {level:.0f}\n",
+        "Boss Kills:\n",
+        "> Tier 1: {kills_t1:,}\n",
+        "> Tier 2: {kills_t2:,}\n",
+        "> Tier 3: {kills_t3:,}\n",
+        "> Tier 4: {kills_t4:,}\n",
+        "> Tier 5: {kills_t5:,}"
+      ],
+      "spiderName": [
+        "<:tarantula:986789892271005728> Tarantula Broodfather"
+      ],
+      "spiderValue": [
+        "XP: {xp:,}\n",
+        "Level: {level:.0f}\n",
+        "Boss Kills:\n",
+        "> Tier 1: {kills_t1:,}\n",
+        "> Tier 2: {kills_t2:,}\n",
+        "> Tier 3: {kills_t3:,}\n",
+        "> Tier 4: {kills_t4:,}"
+      ],
+      "wolfName": [
+        "<:sven:986789891088187403> Sven Packmaster"
+      ],
+      "wolfValue": [
+        "XP: {xp:,}\n",
+        "Level: {level:.0f}\n",
+        "Boss Kills:\n",
+        "> Tier 1: {kills_t1:,}\n",
+        "> Tier 2: {kills_t2:,}\n",
+        "> Tier 3: {kills_t3:,}\n",
+        "> Tier 4: {kills_t4:,}"
+      ],
+      "endermanName": [
+        "<:voidgloom:986789894397526036> Voidgloom Seraph"
+      ],
+      "endermanValue": [
+        "XP: {xp:,}\n",
+        "Level: {level:.0f}\n",
+        "Boss Kills:\n",
+        "> Tier 1: {kills_t1:,}\n",
+        "> Tier 2: {kills_t2:,}\n",
+        "> Tier 3: {kills_t3:,}\n",
+        "> Tier 4: {kills_t4:,}"
+      ],
+      "blazeName": [
+        "<:blaze:986789888093487104> Inferno Demonlord"
+      ],
+      "blazeValue": [
+        "XP: {xp:,}\n",
+        "Level: {level:.0f}\n",
+        "Boss Kills:\n",
+        "> Tier 1: {kills_t1:,}\n",
+        "> Tier 2: {kills_t2:,}\n",
+        "> Tier 3: {kills_t3:,}\n",
+        "> Tier 4: {kills_t4:,}"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
