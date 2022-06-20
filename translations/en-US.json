@@ -1513,7 +1513,7 @@
     ],
     "responses": {
       "title": [
-        "{name}'s {profile} Profile"
+        "{name}'s Slayers on {profile}"
       ],
       "zombieName": [
         "<:revenant:986789889423077456> Revenant Horror"
@@ -1575,6 +1575,46 @@
         "> Tier 2: {kills_t2:,}\n",
         "> Tier 3: {kills_t3:,}\n",
         "> Tier 4: {kills_t4:,}"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
+  "skills": {
+    "name": "skills",
+    "description": "Displays a player's skills.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view skills for."
+      }
+    ],
+    "responses": {
+      "title": [
+        "{name}'s Skills on {profile}"
+      ],
+      "combatName": ["<:combat:978800035443667025> Combat ({level:.0f})"],
+      "miningName": ["<:mining:978799566612738049> Mining ({level:.0f})"],
+      "alchemyName": ["<:alchemy:979159298154315828> Alchemy ({level:.0f})"],
+      "farmingName": ["<:farming:978799567124447343> Farming ({level:.0f})"],
+      "tamingName": ["<:taming:979159299655860327> Taming ({level:.0f})"],
+      "enchantingName": ["<:enchanting:979159298913488946> Enchanting ({level:.0f})"],
+      "foragingName": ["<:foraging:978800035347185704> Foraging ({level:.0f})"],
+      "fishingName": ["<:fishing:978799568462413914> Fishing ({level:.0f})"],
+      "carpentryName": ["<:carpentry:979159298846363688> Carpentry ({level:.0f})"],
+      "runecraftingName": ["<:runecrafting:979159298846380113> Runecrafting ({level:.0f})"],
+      "socialName": ["<:social:979159299475513344> Social ({level:.0f})"],
+      "inner": [
+        "Total XP: {xp:,.0f}\n",
+        "Progress: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
+      ],
+      "innerMaxed": [
+        "Total XP: {xp:,}\n",
+        "Max level!"
       ],
       "specialProfile": [
         "{type} Profile"
