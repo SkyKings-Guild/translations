@@ -1443,7 +1443,7 @@
         "Profile Type: {profile_type}"
       ],
       "miscellaneousName": [
-        "Miscellaneous"
+        "\uD83D\uDCCA Miscellaneous"
       ],
       "miscellaneousValue": [
         "<:fairysoul:986790574310965248> {fairy_souls}/238 Fairy Souls\n",
@@ -1453,7 +1453,7 @@
         "<:weights:986849604492476477> Weight: {senither_weight:,.0f} Senither, {lily_weight:,.0f} Lily"
       ],
       "slayerLevelName": [
-        "Slayer Levels"
+        "<:maddox:988669718862917692> Slayer Levels"
       ],
       "slayerLevelValue": [
         "<:revenant:986789889423077456> Revenant Horror: {zombie_slayer:.0f}\n",
@@ -1463,7 +1463,7 @@
         "<:blaze:986789888093487104> Inferno Demonlord: {blaze_slayer:.0f}"
       ],
       "dungeonName": [
-        "Dungeons"
+        "<:dungeons:988667365883543602> Dungeons"
       ],
       "dungeonValue": [
         "<:catacombs:986846576582459443> Catacombs Level {catacombs_level:.0f}\n",
@@ -1662,6 +1662,163 @@
       "inner": [
         "Items: {xp:,}\n",
         "Progress: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
+  "weight": {
+    "name": "weight",
+    "description": "Displays a player's Skyblock weight.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view weight for."
+      }
+    ],
+    "responses": {
+      "titleSenither": [
+        "{name}'s Senither Weight on {profile}"
+      ],
+      "overviewOption": [
+        "Overview"
+      ],
+      "slayersOption": [
+        "Slayers"
+      ],
+      "skillsOption": [
+        "Skills"
+      ],
+      "dungeonsOption": [
+        "Dungeons"
+      ],
+      "lilyOption": [
+        "Unavailable for Lily Weight."
+      ],
+      "overviewDescriptionSenither": [
+        "**{name}** has {weight:,.1f} weight and {overflow:,.1f} overflow on **{profile}**, for a total of {total:,.1f} weight.\n\n",
+        "<:diamond_sword:986848758149021716> **Skill Weight**: {skill_weight:,.1f}\n",
+        "<:maddox:988669718862917692> **Slayer Weight**: {slayer_weight:,.1f}\n",
+        "<:dungeons:988667365883543602> **Dungeon Weight**: {dungeon_weight:,.1f}"
+      ],
+      "skillsTitleSenither": [
+        "<:diamond_sword:986848758149021716> {name}'s Senither Skill Weight on {profile}"
+      ],
+      "skillsDescriptionSenither": [
+        "**Skill Weight**: {weight:,.1f}\n",
+        "**Overflow**: {overflow:,.1f}\n",
+        "**Total**: {total:,.1f}"
+      ],
+      "mining": [
+        "<:mining:978799566612738049> Mining"
+      ],
+      "foraging": [
+        "<:foraging:978800035347185704> Foraging"
+      ],
+      "enchanting": [
+        "<:enchanting:979159298913488946> Enchanting"
+      ],
+      "farming": [
+        "<:farming:978799567124447343> Farming"
+      ],
+      "combat": [
+        "<:combat:978800035443667025> Combat"
+      ],
+      "fishing": [
+        "<:fishing:978799568462413914> Fishing"
+      ],
+      "alchemy": [
+        "<:alchemy:979159298154315828> Alchemy"
+      ],
+      "taming": [
+        "<:taming:979159299655860327> Taming"
+      ],
+      "slayersTitleSenither": [
+        "<:maddox:988669718862917692> {name}'s Senither Slayer Weight on {profile}"
+      ],
+      "slayersDescriptionSenither": [
+        "**Slayer Weight**: {weight:,.1f}\n",
+        "**Overflow**: {overflow:,.1f}\n",
+        "**Total**: {total:,.1f}"
+      ],
+      "zombie": [
+        "<:revenant:986789889423077456> Revenant Horror"
+      ],
+      "spider": [
+        "<:tarantula:986789892271005728> Tarantula Broodfather"
+      ],
+      "wolf": [
+        "<:sven:986789891088187403> Sven Packmaster"
+      ],
+      "enderman": [
+        "<:voidgloom:986789894397526036> Voidgloom Seraph"
+      ],
+      "blaze": [
+        "<:blaze:986789888093487104> Inferno Demonlord"
+      ],
+      "dungeonsTitleSenither": [
+        "<:dungeons:988667365883543602> {name}'s Senither Dungeon Weight on {profile}"
+      ],
+      "dungeonsDescriptionSenither": [
+        "**Dungeon Weight**: {weight:,.1f}\n",
+        "**Overflow**: {overflow:,.1f}\n",
+        "**Total**: {total:,.1f}"
+      ],
+      "catacombs": [
+        "<:catacombs:986846576582459443> Catacombs"
+      ],
+      "healer": [
+        "<:healer_orb:986846578025308201> Healer"
+      ],
+      "mage": [
+        "<:mage_orb:986846579463946250> Mage"
+      ],
+      "berserk": [
+        "<:berserk_orb:986846574812487711> Berserk"
+      ],
+      "archer": [
+        "<:archer_orb:986846573415768075> Archer"
+      ],
+      "tank": [
+        "<:tank_orb:986846580759986236> Tank"
+      ],
+      "inner": [
+        "XP: {xp:,.0f}\n",
+        "Level: {level:.1f}\n",
+        "Weight: {weight:,.1f}\n"
+      ],
+      "overflow": [
+        "Overflow: {overflow:,.1f}"
+      ],
+      "titleLily": [
+        "{name}'s Lily Weight on {profile}"
+      ],
+      "overviewDescriptionLily": [
+        "**{name}** has {weight:,.1f} weight on **{profile}**.\n\n",
+        "<:diamond_sword:986848758149021716> **Skill Weight**: {skill_weight:,.1f}\n",
+        "<:maddox:988669718862917692> **Slayer Weight**: {slayer_weight:,.1f}\n",
+        "<:dungeons:988667365883543602> **Dungeon Weight**: {dungeon_weight:,.1f}"
+      ],
+      "skillNameLily": ["<:diamond_sword:986848758149021716> Skills"],
+      "skillValueLily": [
+        "Skill Average: {skill_avg:,.1f}\n",
+        "Weight: {weight:,.1f}"
+      ],
+      "slayerNameLily": ["<:maddox:988669718862917692> Slayers"],
+      "slayerValueLily": [
+        "Total XP: {xp:,.1f}\n",
+        "Weight: {weight:,.1f}"
+      ],
+      "dungeonsNameLily": ["<:dungeons:988667365883543602> Dungeons"],
+      "dungeonsValueLily": [
+        "Catacombs Level: {cata_lvl:,.1f}\n",
+        "Catacombs Weight: {cata_weight:,.1f}\n",
+        "Catacombs Completion Weight: {cata_comp_weight:,.1f}\n",
+        "Master Mode Completion Weight: {master_comp_weight:,.1f}"
       ],
       "specialProfile": [
         "{type} Profile"
