@@ -1874,6 +1874,58 @@
       ]
     }
   },
+  "dungeons info": {
+    "name": "info",
+    "description": "Displays a player's general SkyBlock dungeon statistics.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view dungeon stats for."
+      }
+    ],
+    "responses": {
+      "title": ["{name}'s Dungeon Statistics on {profile}"],
+      "noDungeonData": ["There is no dungeon data on this profile."],
+      "choseAnotherProfile": ["Chose another profile."],
+      "description": [
+        "<:catacombs:986846576582459443> Catacombs Level {level:,} ({xp:,.0f} XP)\n",
+        "<:normal_cata:988675938034282538> Highest Catacombs Floor Completed: {cata_floor_completed}\n",
+        "<:master_cata:988676045358121020> Highest Master Mode Floor Completed: {master_floor_completed}\n",
+        "<:chest:993336473661231175> Secrets (All Profiles): {secrets:,}"
+      ],
+      "classesName": ["Classes"],
+      "classesValue": [
+        "<:healer_orb:986846578025308201> Healer {healer_level:,} ({healer_xp:,.0f} XP)\n",
+        "<:mage_orb:986846579463946250> Mage {mage_level:,} ({mage_xp:,.0f} XP)\n",
+        "<:berserk_orb:986846574812487711> Berserk {berserk_level:,} ({berserk_xp:,.0f} XP)\n",
+        "<:archer_orb:986846573415768075> Archer {archer_level:,} ({archer_xp:,.0f} XP)\n",
+        "<:tank_orb:986846580759986236> Tank {tank_level:,} ({tank_xp:,.0f} XP)"
+      ],
+      "overview": ["Overview"],
+      "entranceTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Entrance"],
+      "floorTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Floor {floor}"],
+      "masterTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Master Mode Floor {floor}"],
+      "innerDescription": [
+        "Times Played: {played:,}\n",
+        "Completions: {completions:,}\n",
+        "Best Score: {best_score:,}\n",
+        "Most Mobs Killed: {most_mobs_killed:,}\n",
+        "Total Mobs Killed: {mobs_killed:,}\n",
+        "Fastest Time: {fastest_time}\n",
+        "Fastest S Time: {fastest_time_s}\n",
+        "Fastest S+ Time: {fastest_time_s_plus}"
+      ],
+      "entranceLabel": ["Entrance"],
+      "floorLabel": ["Floor {floor}"],
+      "masterLabel": ["Master Mode Floor {floor}"],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
