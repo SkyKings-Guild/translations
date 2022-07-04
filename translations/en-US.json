@@ -2294,7 +2294,8 @@
       "priceLabel": ["Actual Item Price"],
       "pricePlaceholder": ["What's the item's actual value?"],
       "response": [
-        "Thanks for your feedback. We'll look into the issue and rectify it as soon as possible."
+        "Thanks for your feedback. We'll look into the issue and rectify it as soon as possible.\n\n",
+        "**Abuse of this system will not be tolerated.**"
       ]
     },
     "collectionInfo": {
