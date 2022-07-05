@@ -1983,6 +1983,29 @@
       ]
     }
   },
+  "bank": {
+    "name": "bank",
+    "description": "Displays a player's bank balance and transactions.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view bank information for."
+      }
+    ],
+    "responses": {
+      "title": ["{name}'s Bank Information on {profile}"],
+      "noBankAPI": ["Bank API is disabled on this profile."],
+      "description": ["<:gold_block:986849038404026438> Balance: {balance:,.0f} coins"],
+      "transactions": ["Transactions"],
+      "noTransactions": ["No recent transactions were found on this profile."],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
