@@ -1926,6 +1926,63 @@
       ]
     }
   },
+  "dungeons best-runs": {
+    "name": "best-runs",
+    "description": "Displays a player's best runs for a floor in the catacombs.",
+    "options": [
+      {
+        "name": "floor",
+        "description": "The floor to view best runs for.",
+        "choices": [
+          "Entrance",
+          "Floor 1",
+          "Floor 2",
+          "Floor 3",
+          "Floor 4",
+          "Floor 5",
+          "Floor 6",
+          "Floor 7",
+          "Master Mode Floor 1",
+          "Master Mode Floor 2",
+          "Master Mode Floor 3",
+          "Master Mode Floor 4",
+          "Master Mode Floor 5",
+          "Master Mode Floor 6",
+          "Master Mode Floor 7"
+        ]
+      },
+      {
+        "name": "player",
+        "description": "The player to view best runs for."
+      }
+    ],
+    "responses": {
+      "noBestRuns": ["No best runs were found on this profile."],
+      "entranceTitle": ["{emoji} {name}'s Best Runs for Entrance on {profile}"],
+      "floorTitle": ["{emoji} {name}'s Best Runs for Floor {floor} on {profile}"],
+      "masterTitle": ["{emoji} {name}'s Best Runs for Master Mode Floor {floor} on {profile}"],
+      "description": [
+        "Time: {time}\n",
+        "Score: {score:,}\n",
+        "> Exploration: {exploration_score:,}\n",
+        "> Speed: {speed_score:,}\n",
+        "> Skill: {skill_score:,}\n",
+        "> Bonus: {bonus_score:,}\n",
+        "Secrets: {secrets:,}\n",
+        "Teammates: {teammates}\n",
+        "Class: {selected_class}\n",
+        "Mobs Killed: {kills:,}\n",
+        "Damage Dealt: {damage_dealt:,}\n",
+        "Damage Mitigated: {damage_mitigated:,}"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
