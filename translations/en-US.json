@@ -1874,6 +1874,10 @@
       ]
     }
   },
+  "dungeons": {
+    "name": "dungeons",
+    "description": "View Dungeon statistics."
+  },
   "dungeons info": {
     "name": "info",
     "description": "Displays a player's general SkyBlock dungeon statistics.",
@@ -2004,6 +2008,52 @@
       "normalProfile": [
         "Normal Profile"
       ]
+    }
+  },
+  "bingo": {
+    "name": "bingo",
+    "description": "Check a player's Bingo statistics."
+  },
+  "bingo card": {
+    "name": "card",
+    "description": "Displays a player's Bingo card for this month.",
+    "options": [
+        {
+            "name": "player",
+            "description": "The player to view the bingo card for."
+        }
+    ],
+    "responses": {
+      "bingoTitle": ["{name}'s SkyBlock Bingo Card"],
+      "noBingoData": ["{name} has not played this month's bingo."],
+      "bingoDescription": ["Points: {points}\n\n{board}"],
+      "progress": [
+        "Progress: {progress:,}\n",
+        "Next Tier: {needed:,}\n> {toNext:,} needed\n",
+        "Tier {tier}/{tiers}"
+      ],
+      "finishedProgress": [
+        "Progress: {progress:,}\n",
+        "Tier {tier}/{tiers}\n",
+        "Goal completed!"
+      ]
+    }
+  },
+  "bingo stats": {
+    "name": "stats",
+    "description": "Displays a player's Bingo statistics.",
+    "options": [
+        {
+            "name": "player",
+            "description": "The player to view bingo statistics for."
+        }
+    ],
+    "responses": {
+      "noBingoData": ["{name} has not played this month's bingo."],
+      "bingoTitle": ["{name}'s SkyBlock Bingo Statistics"],
+      "inner": ["Points: {points:,}\nGoals Completed: {goals_completed:,}"],
+      "event": ["Bingo #{number}"],
+      "description": ["Points (Lifetime): {points}"]
     }
   },
   "*": {
