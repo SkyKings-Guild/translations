@@ -2056,6 +2056,100 @@
       "description": ["Points (Lifetime): {points}"]
     }
   },
+  "guild info": {
+    "name": "info",
+    "description": "Displays information about a guild.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to view."
+      }
+    ],
+    "responses": {
+      "noGuild": ["No guild was found with that name."],
+      "title": ["{name}'s Guild Information"],
+      "description": [
+        "Description: {description}\n",
+        "ID: {id}\n",
+        "Guild Master: {gm}\n",
+        "Members: {members:,}\n",
+        "Created: <t:{created}:F>\n",
+        "Tag: {tag}\n",
+        "XP: {xp:,}\n",
+        "Level: {level:,}\n",
+        "Preferred Games: {prefgames}"
+      ]
+    }
+  },
+  "guild members": {
+    "name": "members",
+    "description": "Displays a list of members in a guild.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to view."
+      }
+    ],
+    "responses": {
+      "noGuild": ["No guild was found with that name."],
+      "title": ["{name}'s Guild Members"],
+      "rankInner": [
+        "Members: {members:,}\n",
+        "Created: <t:{created}:F>\n",
+        "Tag: {tag}"
+      ],
+      "memberInner": [
+        "Joined: <t:{joined}:F>\n",
+        "Guild Rank: {rank}\n",
+        "XP History: \n{xp_history}"
+      ]
+    }
+  },
+  "guild xp": {
+    "name": "xp",
+    "description": "Displays a list of members that are under a certain GEXP threshold.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to view."
+      },
+      {
+        "name": "gexp",
+        "description": "The GEXP threshold to display members under."
+      }
+    ],
+    "responses": {
+      "noGuild": ["No guild was found with that name."],
+      "title": ["{name}'s Guild XP Search"],
+      "description": ["Threshold: {gexp:,}\nMembers: {members:,}/{total:,}"],
+      "memberInner": [
+        "{name} ({xp:,} GEXP)"
+      ]
+    }
+  },
+  "guild check": {
+    "name": "check",
+    "description": "View a list of guild members that are not in the current Discord server.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to view."
+      }
+    ],
+    "responses": {
+      "checkRunning": ["There's already a check running in this guild. Please try again later."],
+      "noGuild": ["No guild was found with that name."],
+      "title": ["Guild Member Check for {name}"],
+      "allMembersInDC": ["All guild members are in the current Discord server."],
+      "description": ["{amount}/{total} {name} guild members are not in this Discord server."],
+      "inner0": [
+        "{name} - Unverified"
+      ],
+      "inner1": [
+          "{name} - Verified, Not in server"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
@@ -2163,9 +2257,9 @@
         ]
       },
       "16": {
-        "note": "Raised when trying to start a guilds vs guilds event without premium.",
+        "note": "Raised when trying to use a premium feature without premium.",
         "message": [
-          "SkyKings Premium is needed to make a Guilds vs Guilds event.\n",
+          "SkyKings Premium is required to perform that action.\n",
           "For more information, please see `/premium info`."
         ]
       },
@@ -2267,6 +2361,19 @@
         "note": "Raised when the command invoker is not in the event.",
         "message": [
           "You're not in the event. Join it with `/event join`."
+        ]
+      },
+      "7": {
+        "note": "Raised when the command invoker does not have permissions.",
+        "message": [
+          "You do not have permission to run this command.\n"
+        ]
+      },
+      "8": {
+        "note": "Raised when trying to use a premium feature without premium.",
+        "message": [
+          "SkyKings Premium is required to perform that action.\n",
+          "For more information, please see `/premium info`."
         ]
       }
     },
@@ -2561,6 +2668,12 @@
       "title": ["{name}'s Friends ({count:,})"],
       "friend": ["{name} since {timestamp}"],
       "noFriends": ["This player has no friends."]
+    },
+    "guild": {
+      "jumpGuildMember": ["Jump to Guild Member"],
+      "jumpGuildMemberPlaceholder": ["Enter a player to find."],
+      "player": ["Player Name"],
+      "notFound": ["That player was not found in this guild."]
     }
   }
 }
