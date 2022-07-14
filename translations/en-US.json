@@ -2150,6 +2150,63 @@
       ]
     }
   },
+  "status":{
+    "name": "status",
+    "description": "View Hypixel's current status from their status page.",
+    "options": [],
+    "responses": {
+      "title": ["Hypixel Server Status"],
+      "inner": [
+        "**[{name}]({shortlink})**\n",
+        "{update}\n",
+        "Status: {status}\n",
+        "Impact: {impact}"
+      ]
+    },
+    "innerScheduled": [
+      "**[{name}]({shortlink})**\n",
+      "{update}\n",
+      "Scheduled for <t:{time}:F>."
+    ],
+    "unresolved": ["Unresolved Incidents"],
+    "activeMaintenence": ["Active Maintenence"],
+    "scheduledMaintenence": ["Scheduled Maintenence"]
+  },
+  "userinfo": {
+    "name": "userinfo",
+    "description": "Displays information about a user.",
+    "options": [
+      {
+        "name": "user",
+        "description": "The user to view information about."
+      }
+    ],
+    "responses": {
+      "title": ["{name}'s User Information"],
+      "userInfoName": ["User Information"],
+      "userInfoValue": [
+        "Name: {name}\n",
+        "Discriminator: {discriminator}\n",
+        "ID: {id}\n",
+        "Created: <t:{created}:F>"
+      ],
+      "memberInfoName": ["Member Information"],
+      "boosted": ["Server Booster since <t:{time}:F>"],
+      "memberInfoValue": [
+        "Nick: {nick}\n",
+        "Top Role: {top_role}\n",
+        "Joined: <t:{joined}:F>\n",
+        "{boosted}"
+      ],
+      "playerInfoName": ["Player Information"],
+      "playerInfoValue": [
+        "Username: {name}\n",
+        "Rank: {rank}\n",
+        "Network Level: {level}\n",
+        "Guild: {guild}"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
