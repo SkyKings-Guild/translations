@@ -2238,6 +2238,38 @@
       ]
     }
   },
+  "verify help": {
+    "name": "help",
+    "description": "Learn how to add your Discord account to your Hypixel social menu.",
+    "options": [],
+    "responses": {
+      "title": ["Verification Instructions"],
+      "description": [
+        "To link your Minecraft account to your Discord account:\n",
+        "**1)** In any Hypixel lobby, right click the \"My Profile\" item in your 2nd hotbar slot.\n",
+        "**2)** Select \"Social Media\", to the right of the Redstone Block.\n",
+        "**3)** Select \"Discord\".\n",
+        "**4)** Paste your Discord username ({name}) into chat. __This is case sensitive.__\n",
+        "**5)** If a book pops up, select \"I understand\".\n",
+        "**6)** Use the `/verify hypixel` command to connect your Minecraft account to your Discord account.\n",
+        "Note that it may take up to 5 minutes for the API to reflect your changes.\n\n",
+        "For a video example, click [here](https://youtu.be/6ZXaZ-chzWI)."
+      ]
+    }
+  },
+  "verify sync": {
+    "name": "sync",
+    "description": "Synchronize your Discord account with Hypixel's social menu.",
+    "options": [],
+    "responses": {
+      "synced": ["Successfully updated your roles."],
+      "syncedPartially": [
+        "Successfully updated your roles.\n",
+        "Some roles or your nickname were not changed due to permission issues. ",
+        "Please contact a server administrator for more information."
+      ]
+    }
+  },
   "unverify": {
     "name": "unverify",
     "description": "Unverify your Minecraft account.",
