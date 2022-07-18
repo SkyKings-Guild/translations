@@ -2207,6 +2207,47 @@
       ]
     }
   },
+  "verify": {
+    "name": "verify",
+    "description": "Verification commands."
+  },
+  "verify hypixel": {
+    "name": "hypixel",
+    "description": "Verify your Minecraft account through Hypixel's social menu.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to verify with."
+      }
+    ],
+    "responses": {
+      "notLinked": [
+        "**{name}** does not have a Discord account associated with them in their Hypixel social menu.\n\n",
+        "To learn how to add your Discord account to your Hypixel social menu, try the `/verify help` command."
+      ],
+      "notVerified": [
+        "**{name}**'s associated Discord account is not identical to yours.\n\n",
+        "To learn how to add your Discord account to your Hypixel social menu, try the `/verify help` command."
+      ],
+      "alreadyVerified": [
+        "**{name}** is already verified with <@{userid}>. Verifying on this account will remove that link.\n\n",
+        "Would you like to continue?"
+      ],
+      "verified": [
+        "**{name}** has been linked to your Discord account."
+      ]
+    }
+  },
+  "unverify": {
+    "name": "unverify",
+    "description": "Unverify your Minecraft account.",
+    "options": [],
+    "responses": {
+      "unverified": [
+        "You have been unlinked from your Minecraft account, **{name}**."
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
@@ -2731,6 +2772,10 @@
       "jumpGuildMemberPlaceholder": ["Enter a player to find."],
       "player": ["Player Name"],
       "notFound": ["That player was not found in this guild."]
+    },
+    "confirmation": {
+      "yes": "Yes",
+      "no": "No"
     }
   }
 }
