@@ -195,6 +195,37 @@
       ]
     }
   },
+  "config guilds edit-guild": {
+      "name": "edit-guild",
+      "description": "Edits the config for a linked Hypixel guild.",
+      "options": [
+      {
+          "name": "guild",
+          "description": "The guild to edit."
+      },
+      {
+          "name": "option",
+          "description": "The setting to update.",
+          "choices": [
+            "Member Count Channel",
+            "Member Count Format",
+            "Role"
+          ]
+      },
+      {
+          "name": "value",
+          "description": "The value to set the setting to. Leave blank to reset the setting."
+      }
+      ],
+      "responses": {
+        "guildNotFound": [
+            "The guild **{guild}** does not exist."
+        ],
+        "editedGuild": [
+            "**{guild}**'s config was successfully updated."
+        ]
+      }
+  },
   "config guilds add-rank": {
     "name": "add-rank",
     "description": "Registers a guild rank with the bot.",
@@ -817,6 +848,17 @@
       ],
       "durationLimited": [
         "The event can only last between 14 days and 1 day."
+      ]
+    }
+  },
+  "event end": {
+    "name": "end",
+    "description": "Ends an event.",
+    "options": [],
+    "responses": {
+      "eventEnded": [
+        "Succesfully scheduled the event to end.\n",
+        "This may take a while depending on the amount of players and the size of the event queue."
       ]
     }
   },
