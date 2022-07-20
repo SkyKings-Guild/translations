@@ -1213,7 +1213,7 @@
     "description": "Displays the current time in SkyBlock.",
     "options": [],
     "responses": {
-      "time": ["Is is currently {time} on the {date} in Hypixel SkyBlock."]
+      "time": ["Is is currently {time} on {date} in Hypixel SkyBlock."]
     }
   },
   "skyblock events": {
@@ -2758,7 +2758,7 @@
       "playerFound": ["Found {player} on page {page}. Rank: {rank:,}"]
     },
     "time": {
-      "datetime": ["{day} of {month}, Year {year}"],
+      "datetime": ["{month} {day}, Year {year}"],
       "am": ["{time} AM"],
       "pm": ["{time} PM"]
     },
