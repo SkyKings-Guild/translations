@@ -200,29 +200,33 @@
       "description": "Edits the config for a linked Hypixel guild.",
       "options": [
       {
-          "name": "guild",
-          "description": "The guild to edit."
+        "name": "guild",
+        "description": "The guild to edit."
       },
       {
-          "name": "option",
-          "description": "The setting to update.",
-          "choices": [
-            "Member Count Channel",
-            "Member Count Format",
-            "Role"
-          ]
+        "name": "option",
+        "description": "The setting to update.",
+        "choices": [
+          "Member Count Channel",
+          "Member Count Format",
+          "Role"
+        ]
       },
       {
-          "name": "value",
-          "description": "The value to set the setting to. Leave blank to reset the setting."
+        "name": "value",
+        "description": "The value to set the setting to. Leave blank to reset the setting."
       }
       ],
       "responses": {
         "guildNotFound": [
-            "The guild **{guild}** does not exist."
+          "The guild **{guild}** does not exist."
         ],
         "editedGuild": [
-            "**{guild}**'s config was successfully updated."
+          "**{guild}**'s config was successfully updated."
+        ],
+        "premiumGuild": [
+          "This option will only work for premium servers.\n",
+          "For more information, please see the `/premium info` command."
         ]
       }
   },
