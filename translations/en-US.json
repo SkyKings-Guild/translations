@@ -2882,6 +2882,10 @@
       "quartz_obtain": ["Can be mined from the Crimson Isle with a Silk Touch pickaxe."],
       "red_wool": ["50 Red Wool"],
       "red_wool_obtain": ["Can be purchased from the Wool Weaver, crafted, or gained with the Rainbow enchantment."]
+    },
+    "statuspage": {
+      "truncated": ["Truncated..."],
+      "components": ["Affected Components"]
     }
   }
 }
