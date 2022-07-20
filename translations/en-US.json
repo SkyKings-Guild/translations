@@ -2854,6 +2854,34 @@
     "confirmation": {
       "yes": "Yes",
       "no": "No"
+    },
+    "fetchur": {
+      "title": ["Daily Fetchur"],
+      "item": ["Today's Item: {item}\n{obtain}"],
+      "yellow_glass": ["20 Yellow Stained Glass"],
+      "yellow_glass_obtain": ["Can be purchased from the Wool Weaver or crafted."],
+      "compass": ["Compass"],
+      "compass_obtain": ["Can be crafted with 4 iron ingots and a redstone dust."],
+      "mithril": ["20 Mithril"],
+      "mithril_obtain": ["Can be purchased from the Bazaar or mined."],
+      "firework": ["Firework Rocket"],
+      "firework_obtain": ["Can be crafted with paper and gunpowder."],
+      "coffee": ["Cheap or Decent Coffee"],
+      "coffee_obtain": ["Can be purchased from the Bartender for 1,000 or 5,000 coins."],
+      "door": ["Any Door"],
+      "door_obtain": ["Can be crafted with 6 wooden planks, or 6 iron ingots."],
+      "rabbits_foot": ["3 Rabbit's Foot"],
+      "rabbits_foot_obtain": ["Can be purchased from the Bazaar or dropped from rabbits."],
+      "superboom": ["Superboom TNT"],
+      "superboom_obtain": ["Can be purchased from Ophelia or Walter in the hub, or found as a drop in Dungeons."],
+      "pumpkin": ["Pumpkin"],
+      "pumpkin_obtain": ["Can be purchased from the Bazaar or Farm Merchant in the hub, or harvested at the Barn."],
+      "flint_and_steel": ["Flint and Steel"],
+      "flint_and_steel_obtain": ["Can be crafted with a flint and an iron ingot."],
+      "quartz": ["50 Nether Quartz Ore"],
+      "quartz_obtain": ["Can be mined from the Crimson Isle with a Silk Touch pickaxe."],
+      "red_wool": ["50 Red Wool"],
+      "red_wool_obtain": ["Can be purchased from the Wool Weaver, crafted, or gained with the Rainbow enchantment."]
     }
   }
 }
