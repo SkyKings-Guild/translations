@@ -97,8 +97,8 @@
         "Hypixel Status Channel",
         "Hypixel News Ping",
         "Hypixel News Channel",
-        "Hypixel Patchnotes Ping",
-        "Hypixel Patchnotes Channel",
+        "SkyBlock Patchnotes Ping",
+        "SkyBlock Patchnotes Channel",
         "Fetchur Ping",
         "Fetchur Channel",
         "Autoreply",
@@ -112,7 +112,7 @@
         "Macroer Action",
         "Phisher Action"
       ],
-      "invalid": "Invalid option provided. Please go back and fix it."
+      "invalid": ["Invalid option provided. Please go back and fix it."]
     }
   },
   "config guilds view": {
