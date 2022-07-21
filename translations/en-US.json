@@ -2257,9 +2257,9 @@
     "name": "verify",
     "description": "Verification commands."
   },
-  "verify hypixel": {
-    "name": "hypixel",
-    "description": "Verify your Minecraft account through Hypixel's social menu.",
+  "verify link": {
+    "name": "link",
+    "description": "Link with your Minecraft account through Hypixel's social menu.",
     "options": [
       {
         "name": "player",
@@ -2316,9 +2316,9 @@
       ]
     }
   },
-  "unverify": {
-    "name": "unverify",
-    "description": "Unverify your Minecraft account.",
+  "verify unlink": {
+    "name": "unlink",
+    "description": "Unlink your Minecraft account.",
     "options": [],
     "responses": {
       "unverified": [
