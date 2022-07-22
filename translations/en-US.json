@@ -2886,6 +2886,17 @@
     "statuspage": {
       "truncated": ["Truncated..."],
       "components": ["Affected Components"]
+    },
+    "actions": {
+      "scammer": ["Scammer Joined"],
+      "trader": ["IRL Trader Joined"],
+      "assigned_role": ["They were assigned the <@&{role}> role automatically."],
+      "kicked": ["They were kicked from the server automatically."],
+      "description": [
+        "User: {user}\n",
+        "UUID: {uuid}\n",
+        "{action}"
+      ]
     }
   }
 }
