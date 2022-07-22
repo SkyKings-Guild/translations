@@ -2892,6 +2892,9 @@
       "trader": ["IRL Trader Joined"],
       "assigned_role": ["They were assigned the <@&{role}> role automatically."],
       "kicked": ["They were kicked from the server automatically."],
+      "kick": ["Kick"],
+      "ban": ["Ban"],
+      "give_role": ["Give Role"],
       "description": [
         "User: {user}\n",
         "UUID: {uuid}\n",
