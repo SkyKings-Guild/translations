@@ -15,6 +15,7 @@ To start, first pick a language.
 Because of how Discord works, we are limited to the languages listed [here](https://discord.com/developers/docs/reference#locales).
 
 Once you have picked a language, click the `Fork` button in the top right to make a copy of this repository.
+
 ![image](https://user-images.githubusercontent.com/49261529/180373224-1e582f8d-923a-4b3d-89c0-d41bf2381829.png)
 
 After you have forked the repository, you will be brought to your copy, or 'fork', of it.
@@ -35,6 +36,7 @@ When translating, **DO NOT** translate:
 ## Submitting the translation
 
 To submit the translation, navigate to the [`Pull Requests` tab](https://github.com/SkyKings-Guild/translations/pulls) and click `New Pull Request`.
+
 ![image](https://user-images.githubusercontent.com/49261529/180374143-8bf78d31-0511-4ec5-b7fd-4628b2733874.png)
 
 Fill out the template, and then click `Create Pull Request`.
