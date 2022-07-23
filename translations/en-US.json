@@ -636,7 +636,8 @@
       ],
       "fromCode": [
         "This server redeemed a premium code and has premium active until {exp}."
-      ]
+      ],
+      "admin": ["This server has permanent premium granted by a SkyKings administrator."]
     }
   },
   "premium transfer": {
