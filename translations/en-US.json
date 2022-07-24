@@ -2343,6 +2343,12 @@
           "An unhandled error occured. This has been reported.\n\n{e.__class__.__name__}: {e}"
         ]
       },
+      "HTTP-500": {
+        "note": "Raised on an HTTP 500 range error.",
+        "message": [
+          "A request to the API returned a server error:\n{e}\nPlease try again later."
+        ]
+      }
       "0": {
         "note": "Raised in config edit if an invalid option is chosen.",
         "message": [
