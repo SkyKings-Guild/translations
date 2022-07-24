@@ -2348,7 +2348,7 @@
         "message": [
           "A request to the API returned a server error:\n{e}\nPlease try again later."
         ]
-      }
+      },
       "0": {
         "note": "Raised in config edit if an invalid option is chosen.",
         "message": [
