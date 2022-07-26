@@ -867,6 +867,23 @@
       ]
     }
   },
+  "event delete": {
+    "name": "delete",
+    "description": "Deletes all data from an event.",
+    "options": [],
+    "responses": {
+      "eventDeleteConfirm": [
+        "Are you sure you want to delete the event?\n",
+        "This will remove all data associated with the event and cannot be undone."
+      ],
+      "eventDeleted": [
+        "Succesfully deleted the event."
+      ],
+      "eventDeleteCancelled": [
+        "Operation cancelled."
+      ]
+    }
+  },
   "event join": {
     "name": "join",
     "description": "Joins the event running in this server.",
