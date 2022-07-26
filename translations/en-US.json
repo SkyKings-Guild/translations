@@ -2543,7 +2543,7 @@
       "2": {
         "note": "Raised when an event is not running.",
         "message": [
-          "There isn't event running in this server."
+          "There isn't an event running in this server."
         ]
       },
       "3": {
