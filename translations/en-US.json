@@ -2642,6 +2642,9 @@
       "SKILL_WEIGHTED": [
         "Weighted Skill XP"
       ],
+      "GIFTS_GIVEN": [
+        "Gifts Given"
+      ],
       "SKILL_LABEL": [
         "XP"
       ],
@@ -2686,6 +2689,9 @@
       ],
       "SKILL_WEIGHTED_LABEL": [
         "XP"
+      ],
+      "GIFTS_GIVEN_LABEL": [
+        "Gifts"
       ],
       "startMessage": [
         "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
