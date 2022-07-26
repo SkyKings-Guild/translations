@@ -2461,7 +2461,8 @@
       "15": {
         "note": "Raised when trying to start an event when one is running.",
         "message": [
-          "There's already an event running in this server."
+          "There's already an event running in this server.\n",
+          "If it's already ended, you can forcefully delete it with the `/event delete` command."
         ]
       },
       "16": {
