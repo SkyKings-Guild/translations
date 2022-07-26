@@ -922,6 +922,23 @@
       ]
     }
   },
+  "event list": {
+    "name": "list",
+    "description": "Shows all players in the event.",
+    "options": [],
+    "responses": {
+      "eventNoMembers": [
+        "There's nobody in the event!"
+      ],
+      "title": [
+        "Event Leaderboard"
+      ],
+      "eventMembers": [
+        "**Total Participants**: {players:,}\n\n",
+        "{data}"
+      ]
+    }
+  },
   "event guild": {
     "name": "guild",
     "description": "Checks how the members of a guild are doing in the event.",
@@ -2742,7 +2759,8 @@
       ],
       "position": [
         "You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."
-      ]
+      ],
+      "jsonify": ["Dump to JSON File"]
     },
     "pagination": {
       "page": [
