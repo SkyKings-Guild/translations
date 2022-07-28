@@ -2250,16 +2250,16 @@
         "{update}\n",
         "Status: {status}\n",
         "Impact: {impact}"
-      ]
-    },
-    "innerScheduled": [
-      "**[{name}]({shortlink})**\n",
-      "{update}\n",
-      "Scheduled for <t:{time}:F>."
-    ],
-    "unresolved": ["Unresolved Incidents"],
-    "activeMaintenence": ["Active Maintenence"],
-    "scheduledMaintenence": ["Scheduled Maintenence"]
+      ],
+      "innerScheduled": [
+        "**[{name}]({shortlink})**\n",
+        "{update}\n",
+        "Scheduled for <t:{time}:F>."
+      ],
+      "unresolved": ["Unresolved Incidents"],
+      "activeMaintenence": ["Active Maintenence"],
+      "scheduledMaintenence": ["Scheduled Maintenence"]
+    }
   },
   "userinfo": {
     "name": "userinfo",
@@ -2340,7 +2340,7 @@
         "**3)** Select \"Discord\".\n",
         "**4)** Paste your Discord username ({name}) into chat. __This is case sensitive.__\n",
         "**5)** If a book pops up, select \"I understand\".\n",
-        "**6)** Use the `/verify hypixel` command to connect your Minecraft account to your Discord account.\n",
+        "**6)** Use the `/verify link` command to connect your Minecraft account to your Discord account.\n",
         "Note that it may take up to 5 minutes for the API to reflect your changes.\n\n",
         "For a video example, click [here](https://youtu.be/6ZXaZ-chzWI)."
       ]
