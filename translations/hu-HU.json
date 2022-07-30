@@ -1,708 +1,708 @@
 {
   "config": {
-    "name": "config",
-    "description": "Manage your server's configuration."
+    "name": "konfiguráció",
+    "description": "Kezeld a szervered konfigurációját."
   },
   "config view": {
-    "name": "view",
-    "description": "View your server's configuration.",
+    "name": "megtekintés",
+    "description": "Tekintsd meg a szervered konfigurációját.",
     "options": [],
     "responses": {
       "title.1": [
-        "{ctx.guild.name}'s Configuration"
+        "{ctx.guild.name} konfigurációja"
       ],
       "description.1": [
-        "Autoreply Enabled: {autoreply}\n",
-        "Hypixel News Ping: {news_ping}\n",
-        "Hypixel News Channel: {news_channel}\n",
-        "SkyBlock Patchnotes Ping: {patchnotes_ping}\n",
-        "SkyBlock Patchnotes Channel: {patchnotes_channel}\n",
-        "Fetchur Ping: {fetchur_ping}\n",
-        "Fetchur Channel: {fetchur_channel}\n",
-        "Global Event Ping: {global_event_ping}\n",
-        "Global Event Channel: {global_event_channel}\n",
-        "SkyBlock Date/Time Channel: {skyblock_time}\n",
-        "SkyBlock Events: {skyblock_events}\n",
-        "Action Logs: {scammer_logs}\n",
-        "Scammer Action: {scammer_action}\n",
-        "IRL Trader Action: {trader_action}\n",
-        "Macroer Action: {macroer_action}\n",
-        "Ratter Action: {phisher_action}\n",
+        "Automatikus válasz bekapcsolása: {autoreply}\n",
+        "Hypixel hírek ping: {news_ping}\n",
+        "Hypixel hírek csatornája: {news_channel}\n",
+        "SkyBlock frissítési jegyzetek: {patchnotes_ping}\n",
+        "SkyBlock frissítési jegyzetek csatornája: {patchnotes_channel}\n",
+        "Fetchur értesítések ping: {fetchur_ping}\n",
+        "Fetchur értesítések csatornája: {fetchur_channel}\n",
+        "Globális esemény ping: {global_event_ping}\n",
+        "Globális esemény csatornája: {global_event_channel}\n",
+        "SkyBlock dátum/idő csatornája: {skyblock_time}\n",
+        "SkyBlock események: {skyblock_events}\n",
+        "Műveleti napló: {scammer_logs}\n",
+        "Scammer művelet: {scammer_action}\n",
+        "IRL Kereskedő művelet: {trader_action}\n",
+        "Makrózó művelet: {macroer_action}\n",
+        "Rattelő művelet: {phisher_action}\n",
         "\n",
-        "You can edit the config with `/config edit`!"
+        "Módosítani tudod a konfigurációkat a '/config edit' paranccsal!"
       ],
       "title.2": [
-        "{ctx.guild.name}'s Verification Configuration"
+        "{ctx.guild.name}'s Megerősítés konfiguráció"
       ],
       "description.2": [
-        "Verification Enabled: {verification}\n",
-        "Verified Role: {verified}\n",
+        "Megerősítés bekapcsolva: {verification}\n",
+        "Megerősítés role-ja: {verified}\n",
         "VIP: {vip}\n",
         "VIP+: {vip_plus}\n",
         "MVP: {mvp}\n",
         "MVP+: {mvp_plus}\n",
         "MVP++: {mvp_plus_plus}\n",
-        "YouTube Rank: {youtube}\n",
-        "Hypixel Staff: {staff}\n",
-        "Nickname Format: {nickname}\n",
+        "YouTube Rang: {youtube}\n",
+        "Hypixel Dolgozó: {staff}\n",
+        "Becenév formátum: {nickname}\n",
         "\n",
-        "You can edit the config with `/config edit`!"
+        "Módosítani tudod a konfigurációkat a '/config edit' paranccsal!"
       ]
     }
   },
   "config edit": {
-    "name": "edit",
-    "description": "Edit your server's configuration.",
+    "name": "módosítás",
+    "description": "Módosítsd a szerver konfigurációját!",
     "options": [
       {
-        "name": "option",
-        "description": "The option to edit."
+        "name": "lehetőségek",
+        "description": "A módosítandó lehetőség."
       },
       {
-        "name": "value",
-        "description": "The new value for the option. Leave blank to reset to default."
+        "name": "értesítés",
+        "description": "Az új opció értéke. Hagyd üresen, ha alaphelyzetbe szeretnéd állítani."
       }
     ],
     "responses": {
       "premiumOnly": [
-        "This option is only used in premium servers.\n",
-        "For more information, please see the `/premium info` command."
+        "Ez az opció csak a prémium szervereken használható.\n",
+        "Ha többet szeretnél tudni, használd a '/premium info' parancsot."
       ],
       "editedSuccessfully": [
-        "{option} has been set to {value}!"
+        "{option} {value}-re lett állítva!!"
       ]
     },
     "autocomplete": {
       "bool": [
-        "on",
-        "off"
+        "be",
+        "ki"
       ],
       "action": [
-        "ban",
-        "kick"
+        "kitiltás",
+        "kirúgás"
       ],
       "options": [
-        "Verification Enabled",
-        "Verified",
+        "Megerősítés bekapcsolva",
+        "Megerősítve",
         "VIP",
         "VIP+",
         "MVP",
         "MVP+",
         "MVP++",
         "YouTube",
-        "Hypixel Staff",
-        "Nickname",
-        "Scammer Log Channel",
-        "Hypixel Status Ping",
-        "Hypixel Status Channel",
-        "Hypixel News Ping",
-        "Hypixel News Channel",
-        "SkyBlock Patchnotes Ping",
-        "SkyBlock Patchnotes Channel",
-        "Fetchur Ping",
-        "Fetchur Channel",
-        "Autoreply",
-        "Giveaway Runner Role",
-        "SkyBlock Date",
-        "Global Event Ping",
-        "Global Event Channel",
-        "SkyBlock Event Channel",
-        "Scammer Action",
-        "IRL Trader Action",
-        "Macroer Action",
-        "Phisher Action"
+        "Hypixel Dolgozó",
+        "Becenév",
+        "Scammer napló csatornája",
+        "Hypixel állapot ping",
+        "Hypixel állapot csatornája",
+        "Hypixel hírek ping",
+        "Hypixel hírek csatornája",
+        "SkyBlock műveleti napló ping",
+        "SkyBlock műveleti napló csatornája",
+        "Fetchur ping",
+        "Fetchur csatornája",
+        "Automatikus válaszolás",
+        "Ajándékozó role",
+        "SkyBlock dátum",
+        "Globális esemény ping",
+        "Globális esemény csatornája",
+        "SkyBlock esemény csatornája",
+        "Scammer művelet",
+        "IRL Kereskedő művelet",
+        "Makrózó művelet",
+        "Adathalász művelet"
       ],
-      "invalid": ["Invalid option provided. Please go back and fix it."]
+      "invalid": ["Érvénytelen lehetőséget adtál meg. Kérlek menj vissza és javítsd ki."]
     }
   },
   "config guilds view": {
-    "name": "view",
-    "description": "View the guilds linked to this server.",
+    "name": "megtekintés",
+    "description": "Tekintsd meg az ehhez a szerverhez kötött céheket.",
     "options": [],
     "responses": {
       "base": [
-        "Name: {name}\n",
+        "Név: {name}\n",
         "ID: {gid}\n",
-        "Member Counter Channel: {membercount}\n",
-        "Member Counter Format: {membercount_format}\n",
-        "Guild Member Role: {member_role}\n"
+        "Guild tagszámoló csatorna: {membercount}\n",
+        "Tag számoló formátuma: {membercount_format}\n",
+        "Guild tag role: {member_role}\n"
       ],
       "ranks": [
         "Role: {role}\nRequirements: {requirements}"
       ],
       "noRanks": [
-        "No ranks have been linked."
+        "Nincsenek rangok kötve a szerverhez."
       ],
       "Network Level": [
-        "Network Level: {value:,}"
+        "Hypixel szint: {value:,}"
       ],
       "Skill Average": [
-        "Skill Average: {value:,}"
+        "Képesség átlag: {value:,}"
       ],
       "Slayer XP": [
-        "Slayer XP: {value:,}"
+        "Slayer tapasztalat: {value:,}"
       ],
       "Minion Slots": [
-        "Minion Slots: {value:,}"
+        "Minion helyek: {value:,}"
       ],
       "Catacombs Level": [
-        "Catacombs Level: {value:,}"
+        "Catacombs szint: {value:,}"
       ],
       "Fairy Souls": [
         "Fairy Souls: {value:,}"
       ],
       "Weight": [
-        "Weight: {value:,}"
+        "Súlyozás: {value:,}"
       ],
       "API Settings Enabled": [
-        "API Settings Enabled"
+        "API Beállítások Bekapcsolva"
       ]
     }
   },
   "config guilds add-guild": {
-    "name": "add-guild",
-    "description": "Add a Hypixel guild to this server.",
+    "name": "guild-hozzáadás",
+    "description": "Hozzáad egy Hypixel guild-et a szerverhez.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to add."
+        "description": "A hozzáadandó guild."
       }
     ],
     "responses": {
       "addedGuild": [
-        "The guild **{guild}** has been added to this server!"
+        "A **{guild}** nevű guild hozzá lett adva a szerverhez!"
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik!"
       ]
     }
   },
   "config guilds remove-guild": {
-    "name": "remove-guild",
-    "description": "Remove a Hypixel guild from this server.",
+    "name": "guild-eltávolítás",
+    "description": "Eltávolít egy Hypixel guild-ot a szerverről",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to remove."
+        "description": "Az eltávolítandó guild."
       }
     ],
     "responses": {
       "removedGuild": [
-        "The guild **{guild}** has been removed from this server!"
+        "A **{guild}** nevű guild el lett távolítva a szerverről!"
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik!"
       ]
     }
   },
   "config guilds edit-guild": {
-      "name": "edit-guild",
-      "description": "Edits the config for a linked Hypixel guild.",
+      "name": "guild-módosítás",
+      "description": "Módosítja a szerverhez kötött Hypixel guild konfigurációját.",
       "options": [
       {
         "name": "guild",
-        "description": "The guild to edit."
+        "description": "A módosítandó guild."
       },
       {
-        "name": "option",
-        "description": "The setting to update.",
+        "name": "lehetőségek",
+        "description": "A frissíthető lehetőségek.",
         "choices": [
-          "Member Count Channel",
-          "Member Count Format",
+          "Tagszámláló csatorna",
+          "Tagszámláló formátuma",
           "Role"
         ]
       },
       {
-        "name": "value",
-        "description": "The value to set the setting to. Leave blank to reset the setting."
+        "name": "érték",
+        "description": "A beállítás új értéke. Hagyd üresen, ha alaphelyzetbe szeretnéd állítani."
       }
       ],
       "responses": {
         "guildNotFound": [
-          "The guild **{guild}** does not exist."
+          "A **{guild}** nevű guild does nem létezik."
         ],
         "editedGuild": [
-          "**{guild}**'s config was successfully updated."
+          "A **{guild}** nevű guild konfigurációja sikeresen frissítve lett."
         ],
         "premiumGuild": [
-          "This option will only work for premium servers.\n",
-          "For more information, please see the `/premium info` command."
+          "Ez az opció csak a prémium szervereken használható.\n",
+          "Ha többet szeretnél tudni, használd a '/premium info' parancsot."
         ]
       }
   },
   "config guilds add-rank": {
-    "name": "add-rank",
-    "description": "Registers a guild rank with the bot.",
+    "name": "rang-hozzáadása",
+    "description": "Regisztrál egy guild rangot a bottal",
     "options": [
       {
         "name": "guild",
-        "description": "The guild that holds the rank."
+        "description": "A guild amelyiknél a rang lesz."
       },
       {
-        "name": "rank",
-        "description": "The rank to register."
+        "name": "rang",
+        "description": "A regisztrálandó rang."
       },
       {
         "name": "role",
-        "description": "The role to link to the rank. Leave blank for no role."
+        "description": "A role ami a ranghoz lesz kötve. Hagyd üresen, ha nem akarsz role-t."
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a  `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "rankNotFound": [
-        "The **{rank}** rank does not exist in **{guild}**."
+        "A **{rank}** rang nem létezik a **{guild}** nevű guild-ban."
       ],
       "addedRank": [
-        "The **{rank}** rank in **{guild}** has been registered!"
+        "A **{rank}** rang a **{guild}** nevű guild-ban regisztrálva lett!"
       ]
     }
   },
   "config guilds edit-rank": {
-    "name": "edit-rank",
-    "description": "Changes the role that's linked to a guild rank.",
+    "name": "rang-módosítás",
+    "description": "Megváltoztatja a role-t, ami a guild ranghoz van kötve.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild that holds the rank."
+        "description": "A guild amelyiknél a rang van."
       },
       {
         "name": "rank",
-        "description": "The rank to edit."
+        "description": "A módosítandó rang."
       },
       {
         "name": "role",
-        "description": "The role to link to the rank. Leave blank for no role."
+        "description": "A role, ami a ranghoz van kötve. Hagyd üresen, ha nem akarsz role-t."
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "rankNotFound": [
-        "The **{rank}** rank does not exist in **{guild}**."
+        "A **{rank}** rang nem létezik a **{guild}** nevű guild-ban."
       ],
       "editedRank": [
-        "The role for the **{rank}** rank in **{guild}** has been {state}!"
+        "A **{rank}** rang a **{guild}** nevű guildban {state}-re lett módosítva!"
       ],
       "role": [
-        "set to {role.mention}"
+        "átállítva {role.mention}"
       ],
       "noRole": [
-        "removed"
+        "eltávolítva"
       ]
     }
   },
   "config guilds remove-rank": {
-    "name": "remove-rank",
-    "description": "Unregisters a Hypixel guild rank.",
+    "name": "rang-törlése",
+    "description": "Töröl egy Hypixel guild rangját.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild that holds the rank."
+        "description": "A guild amelyiknél a rang van."
       },
       {
-        "name": "rank",
-        "description": "The rank to unregister."
+        "name": "rang",
+        "description": "A törölnivaló rang."
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "removedRank": [
-        "The **{rank}** rank in **{guild}** has been unregistered."
+        "A **{rank}** rang a **{guild}** nevű guildban törölve lett."
       ]
     }
   },
   "config guilds add-requirement": {
-    "name": "add-requirement",
-    "description": "Adds a requirement to a Hypixel guild.",
+    "name": "követelmény-hozzáadása",
+    "description": "Hozzáad egy követelményt egy Hypixel guild-hez.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to add the requirement to."
+        "description": "A guild, amihez a követelményt adod."
       },
       {
-        "name": "requirement",
-        "description": "The requirement to add.",
+        "name": "követelmény",
+        "description": "A hozzáadandó követelmény.",
         "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
+          "Hypixel szint",
+          "Képesség átlag",
+          "Slayer tapasztalat",
+          "Minion helyek",
+          "Catacombs szint",
           "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
+          "Súlyozás",
+          "API beállítások bekapcsolva"
         ]
       },
       {
-        "name": "value",
-        "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
+        "name": "érték",
+        "description": "A követelmény értéke. Írj be akármilyen számot a 'API beállítások bekapcsolva' követelményhez."
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "requirementNotFound": [
-        "The requirement **{requirement}** does not exist in the **{guild}** guild."
+        "A **{requirement}** követelmény nem létezik a **{guild}** nevű guild-ban."
       ],
       "addedRequirement": [
-        "The **{requirement}** requirement has been added to **{guild}**!"
+        "A **{requirement}** követelmény hozzá lett adva a **{guild}** nevű guild-hoz!"
       ]
     }
   },
   "config guilds remove-requirement": {
-    "name": "remove-requirement",
-    "description": "Removes a requirement from a Hypixel guild.",
+    "name": "követelmény-eltávolítás",
+    "description": "Eltávolít egy követelményt egy Hypixel guild-ról.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to remove the requirement from."
+        "description": "A guild, ahonnan eltávolítod a követelményt."
       },
       {
-        "name": "requirement",
-        "description": "The requirement to remove.",
+        "name": "követelmény",
+        "description": "Az eltávolítandó követelmény.",
         "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
+          "Hypixel szint",
+          "Képesség átlag",
+          "Slayer tapasztalat",
+          "Minion helyek",
+          "Catacombs szint",
           "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
+          "Súlyozás",
+          "API beállítások bekapcsolva"
         ]
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "removedRequirement": [
-        "The **{requirement}** requirement has been removed from **{guild}**!"
+        "A **{requirement}** követelmény el lett távolítva a **{guild}** nevű guild-ról!"
       ]
     }
   },
   "config guilds edit-requirement": {
-    "name": "edit-requirement",
-    "description": "Edits a requirement of a Hypixel guild.",
+    "name": "követelmény-módosítás",
+    "description": "Módosítja egy Hypixel guild követelményét.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to edit the requirement of."
+        "description": "A guild, ahol módosítod a követelményt."
       },
       {
-        "name": "requirement",
-        "description": "The requirement to edit.",
+        "name": "követelmény",
+        "description": "A módosítandó követelmény.",
         "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
+          "Hypixel szint",
+          "Képesség átlag",
+          "Slayer tapasztalat",
+          "Minion helyek",
+          "Catacombs szint",
           "Fairy Souls",
-          "Weight"
+          "Súlyozás"
         ]
       },
       {
-        "name": "value",
-        "description": "The new value of the requirement."
+        "name": "érték",
+        "description": "A követelmény új értéke."
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "requirementNotFound": [
-        "The requirement **{requirement}** does not exist in **{guild}**."
+        "A **{requirement}** követelmény nem létezik a **{guild}** nevű guild-ban."
       ],
       "updatedRequirement": [
-        "The **{requirement}** requirement has been set to **{value:,}** in **{guild}**!"
+        "A **{requirement}** követelmény **{value:,}**-re lett állítva a **{guild}** nevű guild-ban!"
       ]
     }
   },
   "config guilds add-rank-requirement": {
-    "name": "add-rank-requirement",
-    "description": "Adds a requirement to a Hypixel guild rank.",
+    "name": "rang-követelmény-hozzáadás",
+    "description": "Hozzáad egy követelményt egy Hypixel guild rangjához.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild that holds the rank."
+        "description": "A guild amelyiknél a rang van."
       },
       {
         "name": "rank",
-        "description": "The rank to add the requirement to."
+        "description": "A rang, amelyikhez a követelményt adod."
       },
       {
         "name": "requirement",
-        "description": "The requirement to add.",
+        "description": "A hozzáadandó követelmény.",
         "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
+          "Hypixel szint",
+          "Képesség átlag",
+          "Slayer tapasztalat",
+          "Minion helyek",
+          "Catacombs szint",
           "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
+          "Súlyozás",
+          "API beállítások bekapcsolva"
         ]
       },
       {
-        "name": "value",
-        "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
+        "name": "érték",
+        "description": "A követelmény értéke. Írj be akármilyen számot a 'API beállítások bekapcsolva' követelményhez."
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "rankNotFound": [
-        "The rank **{rank}** does not exist in the **{guild}** guild."
+        "A **{rank}** rang nem létezik a **{guild}** nevű guild-ban."
       ],
       "rankNotAdded": [
-        "**{guild}**'s **{rank}** rank has not been registered with the bot.\n",
-        "Add it with `/config guilds add-rank`."
+        "A **{guild}** nevű guild **{rank}** rangja nincs regisztrálva a bottal.\n",
+        "Regisztráld a `/config guilds add-rank` paranccsal."
       ],
       "addedRequirement": [
-        "The **{requirement}** requirement has been added to **{guild}**'s **{rank}** rank!"
+        "A **{requirement}** követelmény hozzá lett adva a **{guild}** nevű guild **{rank}** rangjához!"
       ]
     }
   },
   "config guilds remove-rank-requirement": {
-    "name": "remove-rank-requirement",
-    "description": "Removes a requirement from a Hypixel guild rank.",
+    "name": "rang-követelmény-eltávolítás",
+    "description": "Eltávolít egy követelményt egy Hypixel guild rangról.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild that holds the rank."
+        "description": "A guild amelyiknél a rang van."
       },
       {
         "name": "rank",
-        "description": "The rank to remove the requirement from."
+        "description": "A rang, ahonnan eltávolítod a követelményt."
       },
       {
-        "name": "requirement",
-        "description": "The requirement to remove.",
+        "name": "követelmény",
+        "description": "Az eltávolítandó követelmény.",
         "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
+          "Hypixel szint",
+          "Képesség átlag",
+          "Slayer tapasztalat",
+          "Minion helyek",
+          "Catacombs szint",
           "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
+          "Súlyozás",
+          "API beállítások bekapcsolva"
         ]
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` paranccsal."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "removedRequirement": [
-        "The **{requirement}** requirement has been removed from **{guild}**'s **{rank}** rank!"
+        "A **{requirement}** követelmény el lett távolítva a **{guild}** nevű guild **{rank}** rangjáról!"
       ]
     }
   },
   "config guilds edit-rank-requirement": {
-    "name": "edit-rank-requirement",
-    "description": "Edits a requirement from a Hypixel guild rank.",
+    "name": "rang-követelmény-módosítás",
+    "description": "Módosítja egy Hypixel guild rangjának követelményét.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild that holds the rank."
+        "description": "A guild amelyiknél a rang van."
       },
       {
         "name": "rank",
-        "description": "The rank to edit the requirement from."
+        "description": "A rang, amelyiknek módosítod a rangját."
       },
       {
-        "name": "requirement",
-        "description": "The requirement to edit.",
+        "name": "követelmény",
+        "description": "A módosítandó követelmény",
         "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
+          "Hypixel szint",
+          "Képesség szint",
+          "Slayer tapasztalat",
+          "Minion helyek",
+          "Catacombs szint",
           "Fairy Souls",
-          "Weight"
+          "Súlyozás"
         ]
       },
       {
-        "name": "value",
-        "description": "The value to set the requirement to."
+        "name": "érték",
+        "description": "Az érték, amire a követelményt állítod."
       }
     ],
     "responses": {
       "guildNotAdded": [
-        "The guild **{guild}** is not linked to this server.\n",
-        "Add it with `/config guilds add-guild`."
+        "A **{guild}** nevű guild nincsen ehhez a szerverhez kötve.\n",
+        "Add a szerverhez a `/config guilds add-guild` parancshoz."
       ],
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "rankNotFound": [
-        "The rank **{rank}** does not exist in the **{guild}** guild."
+        "A **{rank}** rang nem létezik a **{guild}** nevű guild-ban."
       ],
       "updatedRequirement": [
-        "The **{requirement}** requirement has been set to **{value}** for **{guild}**'s **{rank}** rank!"
+        "A **{requirement}** követelmény át lett állítva **{value}**-ra a **{guild}** nevű guild **{rank}** rangján!"
       ]
     }
   },
   "premium": {
     "name": "premium",
-    "description": "Commands relating to SkyKings Premium."
+    "description": "Parancsok amik a SkyKings Premium-hoz vannak kötve."
   },
   "premium info": {
     "name": "info",
-    "description": "Get information on SkyKings Premium.",
+    "description": "Szerezz információt a SkyKings Premium-ról.",
     "options": [],
     "responses": {
       "premium": [
         "SkyKings Premium"
       ],
       "base": [
-        "Purchasing SkyKings premium gives you a few perks in our Discord server, ",
-        "and unlocks some features on our bot!\n",
-        "It also supports us, and allows us to keep this bot running.\n",
-        "To purchase, just visit https://www.patreon.com/SkyKings."
+        "Ha megveszed a Skykings Premiumot, akkor kapsz pár képességet a Discord szerverünkön, ",
+        "és feloldasz pár különleges funkciót a boton!\n",
+        "Ezzel támogatsz minket, és segítesz futtatni a botot!\n",
+        "Hogy megvásárold, látogasd meg a https://www.patreon.com/SkyKings oldalt."
       ],
       "perkTitle": [
-        "Perks"
+        "Képességek"
       ],
       "perks": [
-        "**Discord Features**\n",
-        "➥ Access to premium features on our bot.\n",
-        "➥ A custom role.\n",
-        "➥ Access to bazaar flipping bot.\n",
-        "➥ Your own custom VC.\n\n",
-        "**Bot Features for Server Owners**\n",
-        "➥ No limit on guild or rank requirements.\n",
-        "➥ Faster event update times (6 hours -> 1 hour).\n",
-        "➥ Guild Member Counter.\n",
-        "➥ Guild vs Guild events.\n",
-        "➥ More coming soon..."
+        "**Discord Funkciók**\n",
+        "➥ Hozzáférés prémium funkciókhoz a boton.\n",
+        "➥ Egy egyedi role.\n",
+        "➥ Hozzáférés a bazaar flipper bothoz.\n",
+        "➥ A saját, egyedi VC-d.\n\n",
+        "**Botfunkciók szervertulajdonosoknak.**\n",
+        "➥ Nincs limit a guild és rang követelményeken.\n",
+        "➥ Gyorsabb eseményfrissítés (6 óra -> 1 hour).\n",
+        "➥ Guild Tagszámláló.\n",
+        "➥ Guild vs Guild események.\n",
+        "➥ Több hamarosan..."
       ]
     }
   },
   "premium status": {
-    "name": "status",
-    "description": "Displays this server's premium status.",
+    "name": "állapot",
+    "description": "Kijelzi a szerver prémium státuszát.",
     "options": [],
     "responses": {
       "notActive": [
-        "This server does not have premium active."
+        "Ezen a szerveren nincsen prémium."
       ],
       "fromUser": [
-        "This server has premium from {redeemed_by.mention} ({redeemed_by}).\n",
-        "It can be transferred to another server {when}."
+        "Ezen a szerveren prémium van {redeemed_by.mention} óta ({redeemed_by}) által.\n",
+        "Átruházható egy másik szerverre {when}-tól."
       ],
       "fromCode": [
-        "This server redeemed a premium code and has premium active until {exp}."
+        "Ez a szerver felhasznált egy prémium kódot és aktív prémiumja lesz {exp} EXP-ig."
       ],
-      "admin": ["This server has permanent premium granted by a SkyKings administrator."]
+      "admin": ["Ennek a szervernek örök prémiumot adott egy Skykings adminisztrátor."]
     }
   },
   "premium transfer": {
-    "name": "transfer",
-    "description": "Transfers your premium subscription to the current server.",
+    "name": "átruházás",
+    "description": "Átruházza a prémium feliratkozást erre a szerverre..",
     "options": [],
     "responses": {
       "cooldown": [
-        "Your premium transfer is on a cooldown.\n",
-        "You can transfer your premium {when}."
+        "A prémium átruházásod cooldown-on van.\n",
+        "Át tudod ruházni a prémiumot {when} után."
       ],
       "transferSuccess": [
-        "Premium transferred! **{guild.name}** now has premium active."
+        "Premium átruházva! A **{guild.name}** nevű guild már aktív prémiummal rendelkezik."
       ]
     }
   },
   "premium redeem": {
-    "name": "redeem",
-    "description": "Redeems a premium code.",
+    "name": "felhasználás",
+    "description": "Felhasználsz egy prémium kódot.",
     "options": [
       {
-        "name": "code",
-        "description": "The code to redeem."
+        "name": "kód",
+        "description": "A felhasználandó kód."
       }
     ],
     "responses": {
       "redeemed": [
-        "The code **{code}** has been redeemed!\n",
-        "**{guild.name}** now has premium active until {when}."
+        "A **{code}** kód fel lett használva!\n",
+        "A **{guild.name}** nevű guild már aktív prémiummal rendelkezik {when}-ig."
       ]
     }
   },
   "uptime": {
-    "name": "uptime",
-    "description": "Displays the bot's uptime.",
+    "name": "működési-idő",
+    "description": "Mutatja a bot működési idejét a legutóbbi újraindítás óta.",
     "options": [],
     "responses": {
       "uptime": [
-        "The bot has been online since {time}."
+        "A bot online {time} óta."
       ]
     }
   },
   "invite": {
-    "name": "invite",
-    "description": "Invite the bot to your server.",
+    "name": "meghívás",
+    "description": "Meghívja a botot a szerveredre.",
     "options": [],
     "responses": {
       "invite": [
-        "[Click here]({url}) to invite the bot to your server."
+        "[Click here]({url}) hogy meghívd a botot a szerverre."
       ],
       "button": [
-        "Invite the Bot"
+        "A Bot meghívása"
       ]
     }
   },
   "info": {
     "name": "info",
-    "description": "Displays some information and statistics about the bot.",
+    "description": "Mutat pár információt és statisztikát a botról.",
     "options": [],
     "responses": {
       "title": [
         "SkyKings v{version}"
       ],
       "versionInfoTitle": [
-        "Version Information"
+        "Verzió információ"
       ],
       "versionInfo": [
         "Python {python_version}\n",
@@ -711,41 +711,41 @@
         "aiohttp {aiohttp_version}"
       ],
       "systemInfoTitle": [
-        "System Information"
+        "Rendszer információ"
       ],
       "systemInfo": [
-        "Operating System: {os}\n",
-        "CPU usage: {cpu}%\n",
-        "Memory: {memory}"
+        "Operációs rendszer: {os}\n",
+        "CPU használat: {cpu}%\n",
+        "Memória: {memory}"
       ],
       "botInfoTitle": [
-        "Bot Information"
+        "Bot Információ"
       ],
       "botInfo": [
-        "Commands: {commands:,}\n",
-        "Extensions: {extensions:,}\n",
-        "Cogs: {cogs:,}\n",
-        "Servers: {servers:,}\n",
-        "Users: {users:,}\n",
-        "Shards: {shards:,}\n",
-        "Shard ID: {shard_id}\n",
-        "Average Latency: {latency} ms\n",
-        "Shard Latency: {shard_latency} ms\n",
+        "Parancsok: {commands:,}\n",
+        "Kiterjesztések: {extensions:,}\n",
+        "Fogaskerekek: {cogs:,}\n",
+        "Szerverek: {servers:,}\n",
+        "Felhasználók: {users:,}\n",
+        "Szilánkok: {shards:,}\n",
+        "Szilánk ID: {shard_id}\n",
+        "Átlagos lappangási idő: {latency} ms\n",
+        "Szilánk lappangási idő: {shard_latency} ms\n",
         "\n",
-        "Developed by plun1331#5535 - [discord.gg/skykings](https://discord.gg/skykings)"
+        "Készítette plun1331#5535 - [discord.gg/skykings](https://discord.gg/skykings)"
       ]
     }
   },
   "ping": {
     "name": "ping",
-    "description": "Measure the latency of the bot.",
+    "description": "Megméri a bot lappangási idejét.",
     "options": [],
     "responses": {
       "pong": [
         "**Pong!**\n",
-        "Rest API Latency: {latency:,} ms\n",
-        "Average Websocket Latency: {avg_ws_latency:,} ms\n",
-        "Shard Websocket Latency: {shard_latency:,} ms"
+        "Pihenő API lappangási idő: {latency:,} ms\n",
+        "Átlagos Websocket lappangási idő : {avg_ws_latency:,} ms\n",
+        "Szilánk Websocket lappangási idő: {shard_latency:,} ms"
       ]
     }
   },
