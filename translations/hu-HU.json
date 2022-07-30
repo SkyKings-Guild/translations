@@ -750,48 +750,48 @@
     }
   },
   "command-usage": {
-    "name": "command-usage",
-    "description": "Displays the usage of a command.",
+    "name": "parancshasználat",
+    "description": "Mutatja egy parancs használati célját.",
     "options": [],
     "responses": {
       "title": [
-        "Command Usage"
+        "Parancshasználat"
       ],
       "base": [
         "**Total Commands Used**: {commands:,}\n\n"
       ],
       "noCommands": [
-        "There's currently no command data."
+        "Jelenleg nincsen parancsadat."
       ]
     }
   },
   "votes": {
-    "name": "votes",
-    "description": "Displays the bot's top voters this month.",
+    "name": "szavazatok",
+    "description": "Megjeleníti a bot top szavazóit ebben a hónapban.",
     "options": [],
     "responses": {
       "title": [
-        "Bot Votes"
+        "Bot Szavazatok"
       ],
       "base": [
         "**Votes this month**: {votes:,}\n\n"
       ],
       "noVotes": [
-        "There have been no votes this month."
+        "Nem voltak szavazatok ebben a hónapban."
       ]
     }
   },
   "event": {
-    "name": "event",
-    "description": "Commands relating to events."
+    "name": "esemény",
+    "description": "Eseményekhez kötődő parancsok."
   },
   "event start": {
-    "name": "start",
-    "description": "Starts an event.",
+    "name": "indítás",
+    "description": "Elindít egy eseményt.",
     "options": [
       {
-        "name": "event",
-        "description": "The type of event to start.",
+        "name": "esemény",
+        "description": "Az indítandó esemény típusa.",
         "choices": [
           "Skill XP",
           "Farming XP",
@@ -806,132 +806,132 @@
           "Taming XP",
           "Slayer XP",
           "Catacombs XP",
-          "Senither Weight",
-          "Weighted Skill XP",
-          "Gifts Given"
+          "Senither Súlyozás",
+          "Súlyozott Skill XP",
+          "Ajándékok Adva"
         ]
       },
       {
-        "name": "duration",
-        "description": "The duration of the event, must be between 14 days and 1 day. Example: 1w 3d"
+        "name": "időtartam",
+        "description": "Az esemény időtartama, mindenképp 1 nap és 14 nap között kell lennie. Például: 1w 3d"
       },
       {
         "name": "gvg",
-        "description": "Whether the event should be a Guilds vs Guilds event. Premium is required for this option."
+        "description": "Itt állíthatod be, hogy GvG (Guild versus Guild) legyen az esemény. Ehhez a lehetőséghez prémiummal kell rendelkezni."
       },
       {
-        "name": "channel",
-        "description": "The channel to send the event to. Defaults to the current channel."
+        "name": "csatorna",
+        "description": "A csatorna, ahol az esemény menni fog. Alaphelyzetben a jelenlegi csatornáról indul."
       },
       {
         "name": "role",
-        "description": "The role to ping for the start of the event."
+        "description": "A role, ami meg lesz pingelve az esemény kezdetén."
       },
       {
-        "name": "schedule_event",
-        "description": "Whether or not the bot should register the event with Discord."
+        "name": "event_beosztás",
+        "description": "Itt állíthatod be, hogy az esemény regisztrálva legyen a Discorddal."
       }
     ],
     "responses": {
       "eventStartedNotScheduled": [
-        "Succesfully started a {gvg}{type} event! ",
-        "Unfortunately, I wasn't able to register the event with Discord.\n",
+        "Sikeresen elindult egy {gvg}{type} esemény! ",
+        "Sajnos, nem voltam képes regisztrálni az eseményt a Discorddal.\n",
         "[Jump to Message]({message})"
       ],
       "eventStartedScheduled": [
-        "Succesfully started a {gvg}{type} event! ",
+        "Sikeresen elindult egy {gvg}{type} esemény! ",
         "[Discord Event URL]({event})\n",
         "[Jump to Message]({message})"
       ],
       "eventStarted": [
-        "Succesfully started a {gvg}{type} event!\n",
+        "Sikeresen elindult egy {gvg}{type} esemény!\n",
         "[Jump to Message]({message})"
       ],
       "invalidDuration": [
-        "The duration you provided was invalid.\n",
-        "For example, you can use `1w 3d` for 1 week and 3 days."
+        "Az időtartam amit megadtál, érvénytelen.\n",
+        "Például írhatod azt, hogy '1w 3d' egy 1 hét 3 nap hosszú esemény esetén."
       ],
       "durationLimited": [
-        "The event can only last between 14 days and 1 day."
+        "Egy esemény minium 1 napig, maximum 14 napig tarthat."
       ]
     }
   },
   "event end": {
-    "name": "end",
-    "description": "Ends an event.",
+    "name": "befejezés",
+    "description": "Befejezi az eseményt.",
     "options": [],
     "responses": {
       "eventEnded": [
-        "Succesfully scheduled the event to end.\n",
-        "This may take a while depending on the amount of players and the size of the event queue."
+        "Sikeresen beosztottad az eseményt, hogy véget érjen.\n",
+        "Ez időbe telhet, attól függően, hogy hány játékos indult és, hogy milyen nagy az esemény várólistája."
       ]
     }
   },
   "event delete": {
-    "name": "delete",
-    "description": "Deletes all data from an event.",
+    "name": "törlés",
+    "description": "Kitöröl minden adatot az eseményről.",
     "options": [],
     "responses": {
       "eventDeleteConfirm": [
-        "Are you sure you want to delete the event?\n",
-        "This will remove all data associated with the event and cannot be undone."
+        "Biztos vagy benne, hogy törölni szeretnéd az eseményt?\n",
+        "Ez el fog tüntetni minden adatot, ami az eseményhez köthető és nem visszacsinálható."
       ],
       "eventDeleted": [
-        "Succesfully deleted the event."
+        "Sikeresen törölted az eseményt."
       ],
       "eventDeleteCancelled": [
-        "Operation cancelled."
+        "Művelet megszakítva."
       ]
     }
   },
   "event join": {
-    "name": "join",
-    "description": "Joins the event running in this server.",
+    "name": "csatlakozás",
+    "description": "Csatlakozol a szerveren futó eseménybe.",
     "options": [],
     "responses": {
       "eventJoined": [
-        "You've successfully joined the event in **{ctx.guild.name}**!"
+        "Sikeresen csatlakoztál az eseménybe a **{ctx.guild.name}** nevű guild színeiben!"
       ]
     }
   },
   "event leave": {
-    "name": "leave",
-    "description": "Leaves the event running in this server.",
+    "name": "elhagyás",
+    "description": "Elhagyod a szerveren futó eseményt.",
     "options": [],
     "responses": {
       "eventLeft": [
-        "You've successfully left the event in **{ctx.guild.name}**!"
+        "Sikeresen elhagytad az eseményt a **{ctx.guild.name}** nevű guild színeiben!"
       ]
     }
   },
   "event position": {
-    "name": "position",
-    "description": "Shows the position of a player in the event.",
+    "name": "helyezés",
+    "description": "Mutatja egy játékos helyezését az eseményben.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to show the position of."
+        "name": "játékos",
+        "description": "A játékos, akinek a helyezését szeretnéd."
       }
     ],
     "responses": {
       "notJoined": [
-        "{player} is not in the event."
+        "{player} nincs az eseményben."
       ],
       "playerPosition": [
-        "{player} has {xp:,} {label} in the event and is #{pos:,} out of {players:,} players."
+        "{player}-nek {xp:,} {label}-je van az eseményben és jelenleg a #{pos:,} helyen áll a {players:,} játékosból."
       ]
     }
   },
   "event list": {
-    "name": "list",
-    "description": "Shows all players in the event.",
+    "name": "lista",
+    "description": "Mutatja az összes játékost az eseményben.",
     "options": [],
     "responses": {
       "eventNoMembers": [
-        "There's nobody in the event!"
+        "Senki sincs az eseményben!"
       ],
       "title": [
-        "Event Leaderboard"
+        "Esemény Ranglista"
       ],
       "eventMembers": [
         "**Total Participants**: {players:,}\n\n",
@@ -941,45 +941,45 @@
   },
   "event guild": {
     "name": "guild",
-    "description": "Checks how the members of a guild are doing in the event.",
+    "description": "Megnézi hogyan haladnak egy guild tagjai az eseménnyel.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to lookup."
+        "description": "A keresnivaló guild."
       }
     ],
     "responses": {
       "guildNotFound": [
-        "The guild **{guild}** does not exist."
+        "A **{guild}** nevű guild nem létezik."
       ],
       "title": [
-        "{guild}'s Event Data"
+        "A {guild} nevű guild Eseményadatai"
       ],
       "guild": [
-        "**{guild}** has {members} members in the event and is averaging {avg:,} {label} per member. ",
+        "A **{guild}** nevű guildnak {members} tagja vesz részt az eseményen és együtt átlagolnak {avg:,} {label}-t tagonként. ",
         "(Total {label}: {total:,})"
       ],
       "noMembers": [
-        "**{guild}** has no members in the event."
+        "A **{guild}** nevű guild-nak nincsenek tagjai az eseményen."
       ]
     }
   },
   "lookup": {
-    "name": "lookup",
-    "description": "Check if a player is a scammer, IRL trader, ratter, or macroer."
+    "name": "kikeresés",
+    "description": "Megkeresi, hogy a játékos egy scammer, IRL kereskedő, rattelő vagy makrózó."
   },
   "lookup player": {
-    "name": "player",
-    "description": "Check if someone is a scammer/IRL trader/ratter/macroer. Checks their Discord account if linked.",
+    "name": "játékos",
+    "description": "Megkeresi, hogy valaki egy scammer, IRL kereskedő, rattelő vagy makrózó. Megnézi a Discord fiókjukat, ha kötve van hozzá.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to check."
+        "name": "játékos",
+        "description": "A megnézendő játékos."
       }
     ],
     "responses": {
       "notScammer": [
-        "**{player}** is not marked as a scammer/IRL trader in our database.\n",
+        "**{player}** nincs megjelölve scammerként/IRL kereskedőként az adatbázisunkban.\n",
         "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
         "\n\n*If this is untrue, please report this player with the `/report` command.*"
       ],
