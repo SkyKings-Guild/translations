@@ -980,194 +980,194 @@
     "responses": {
       "notScammer": [
         "**{player}** nincs megjelölve scammerként/IRL kereskedőként az adatbázisunkban.\n",
-        "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
-        "\n\n*If this is untrue, please report this player with the `/report` command.*"
+        "Ez ugyanakkor nem jelenti azt, hogy százszázalékosan nem scammel, mindig légy óvatos, amikor más játékosokkal cserélsz.",
+        "\n\n*Ha ez nem igaz, kérjük jelentsd ezt a játékost `/report` paranccsal.*"
       ],
       "isScammer": [
-        "**{player}** is marked as a scammer/IRL trader in our database."
+        "**{player}** scammerként/IRL kereskedőként van megjelölve az adatbázisban."
       ],
       "SCAMMER_NAME": [
-        "Entry #{id} - Scammer"
+        "Bejegyzés #{id} - Scammer"
       ],
       "IRL_TRADER_NAME": [
-        "Entry #{id} - IRL Trader"
+        "Behegyzés #{id} - IRL Kereskedő"
       ],
       "RATTER_NAME": [
-        "Entry #{id} - Ratter"
+        "Bejegyzés #{id} - Rattelő"
       ],
       "MACROER_NAME": [
-        "Entry #{id} - Macroer"
+        "Bejegyzés #{id} - Makrózó"
       ],
       "SCAMMER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ],
       "IRL_TRADER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ],
       "RATTER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ],
       "MACROER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ]
     }
   },
   "lookup user": {
-    "name": "user",
-    "description": "Check if a user is a scammer/IRL trader/ratter/macroer. Checks their Minecraft account if linked.",
+    "name": "felhasználó",
+    "description": "Megnézi, hogy az adott felhasználó egy scammer/IRL kereskedő/rattelő/makrózó. Megnézi a Minecraft fiókjukat is, ha hozzá van kötve.",
     "options": [
       {
-        "name": "user",
-        "description": "The user to check."
+        "name": "felhasználó",
+        "description": "A megnézendő felhasználó."
       }
     ],
     "responses": {
       "notScammer": [
-        "**{player}** is not marked as a scammer/IRL trader in our database.\n",
-        "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
-        "\n\n*If this is untrue, please report this player with the `/report` command.*"
+        "**{player}** nincs megjelölve scammerként/IRL kereskedőként az adatbázisunkban.\n",
+        "Ez ugyanakkor nem jelenti azt, hogy százszázalékosan nem scammel, mindig légy óvatos, amikor más játékosokkal cserélsz.",
+        "\n\n*Ha ez nem igaz, kérjük jelentsd ezt a játékost `/report` paranccsal.*"
       ],
       "isScammer": [
-        "**{player}** is marked as a scammer/IRL trader in our database."
+        "**{player}** scammerként/IRL kereskedőként van megjelölve az adatbázisban."
       ],
       "SCAMMER_NAME": [
-        "Entry #{id} - Scammer"
+        "Bejegyzés #{id} - Scammer"
       ],
       "IRL_TRADER_NAME": [
-        "Entry #{id} - IRL Trader"
+        "Bejegyzés #{id} - IRL Kereskedő"
       ],
       "RATTER_NAME": [
-        "Entry #{id} - Ratter"
+        "Bejegyzés #{id} - Rattelő"
       ],
       "MACROER_NAME": [
-        "Entry #{id} - Macroer"
+        "Bejegyzés #{id} - Makrózó"
       ],
       "SCAMMER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ],
       "IRL_TRADER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ],
       "RATTER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ],
       "MACROER": [
-        "Reason: {reason}"
+        "Indok: {reason}"
       ]
     }
   },
   "report": {
-    "name": "report",
-    "description": "Report a scammer and get them added to our scammer list.",
+    "name": "feljelentés",
+    "description": "Jelentesz egy scammer-t, hogy az adatbázishoz adjuk.",
     "options": [],
     "responses": {
-      "description": "Scammers can be reported on our [Google Form](https://forms.gle/ANud6cd9mTx2efbh9)."
+      "description": "A scammerek ezen a Google Form-on jelenthetőek: [Google Form](https://forms.gle/ANud6cd9mTx2efbh9)."
     }
   },
   "bazaar": {
-    "name": "bazaar",
-    "description": "Views an item on the Bazaar.",
+    "name": "bazár",
+    "description": "Megtekint egy tárgyat a bazárban.",
     "options": [
       {
         "name": "item",
-        "description": "The item to view."
+        "description": "A megtekintendő tárgy."
       }
     ],
     "responses": {
-      "itemNotFound": ["The item **{item}** does not exist."],
+      "itemNotFound": ["A **{item}** nevű tárgy nem létezik."],
       "itemNotInBazaar": [
-        "**{item}** is not in the bazaar."
+        "**{item}** nevű tárgy nincs a bazárban."
       ],
-      "instantBuy": ["Buy Instantly"],
-      "instantSell": ["Sell Instantly"],
-      "highestBuyOrder": ["Highest Buy Order"],
-      "lowestSellOrder": ["Lowest Sell Order"],
-      "buyVolume": ["Buy Volume"],
-      "sellVolume": ["Sell Volume"]
+      "instantBuy": ["Azonnali vétel"],
+      "instantSell": ["Azonnali eladás"],
+      "highestBuyOrder": ["Legmagasabb értékű rendelés"],
+      "lowestSellOrder": ["Legalacsonyabb értékű eladás"],
+      "buyVolume": ["Vétel kiterjedése"],
+      "sellVolume": ["Eladás kiterjedése"]
     }
   },
   "auctions": {
-      "name": "auctions",
-      "description": "View auctions."
+      "name": "aukciók",
+      "description": "Megtekinti az aukciókat."
   },
   "auctions search": {
-      "name": "search",
-      "description": "Search for auctions in the auction house.",
+      "name": "keresés",
+      "description": "Aukciókat keres az aukcióházban.",
       "options": [
         {
-          "name": "item",
-          "description": "The item to search for."
+          "name": "tárgy",
+          "description": "A keresendő tárgy."
         },
         {
           "name": "bin",
-          "description": "Filter BIN auctions. Leave blank to search all auctions."
+          "description": "BIN aukciók szűrése. Hagyd üresen, ha az összes aukció érdekel."
         },
         {
-          "name": "exact",
-          "description": "Match the item name exactly. Default false."
+          "name": "pontosít",
+          "description": "Találjon egy pontosan ugyanolyan tárgyat. Alaphelyzetben nem pontos."
         }
       ],
       "responses": {
-        "noAuctions": ["No auctions matching the query **{query}** were found."],
-        "title": ["{item} in the Auction House"]
+        "noAuctions": ["Nem találtunk aukciót a **{query}** query-vel."],
+        "title": ["{item} az Aukcióházban"]
       }
   },
   "auctions player": {
-      "name": "player",
-      "description": "View a player's auctions.",
+      "name": "játékos",
+      "description": "Megtekinti egy játékos aukcióit.",
       "options": [
         {
-          "name": "player",
-          "description": "The player to search for."
+          "name": "játékos",
+          "description": "A keresendő játékos."
         }
       ],
       "responses": {
-        "noAuctions": ["**{player}** has no auctions."],
-        "title": ["{player}'s Auctions"]
+        "noAuctions": ["**{player}**-nak nincsenek aukciói."],
+        "title": ["{player} Aukciói"]
       }
   },
   "auctions lowestbin": {
-      "name": "lowestbin",
-      "description": "Find the lowest BIN auction for an item.",
+      "name": "legalacsonyabb-bin",
+      "description": "Megkeresi a legalacsonyabb árú BIN aukcióját egy tárgynak.",
       "options": [
         {
-          "name": "item",
-          "description": "The item to search for."
+          "name": "tárgy",
+          "description": "A keresendő tárgy."
         },
         {
-          "name": "exact",
-          "description": "Match the item name exactly. Default false."
+          "name": "pontosít",
+          "description": "Találjon egy pontosan ugyanolyan tárgyat. Alaphelyzetben nem pontos."
         }
       ],
       "responses": {
-        "noAuction": ["Could not find a BIN auction for **{item}**."],
-        "title": ["Lowest BIN for {item}"]
+        "noAuction": ["Nem találunk BIN aukciót **{item}** nevű tárgynál."],
+        "title": ["{item} legalacsonyabb BIN aukciója"]
       }
   },
   "price": {
-    "name": "price",
-    "description": "Find the price of an item. Uses the bazaar and lowest BIN.",
+    "name": "ár",
+    "description": "Megkeresi egy tárgy árát. A bazárt és a legalacsonyabb BIN árat használja.",
     "options": [
       {
-        "name": "item",
-        "description": "The item to search for."
+        "name": "tárgy",
+        "description": "A keresendő tárgy."
       }
     ],
     "responses": {
-      "noItem": ["**{item}** is not a valid item."],
+      "noItem": ["**{item}** nem egy érvényes tárgy."],
       "bazaarPrice": [
-        "**{item}** is currently selling for an average of **{price} coins** on the bazaar."
+        "**{item}** jelenleg **{price} coins**-ért kel el a bazárban."
       ],
-      "noPrice": ["Could not determine a price for **{item}**."],
-      "price": ["**{item}** is currently selling for **{price:,.0f} coins** on the auction house."]
+      "noPrice": ["Nem lehet eldöntni **{item}** árát."],
+      "price": ["**{item}** jelenleg **{price:,.0f} coins**-ért kel el az aukcióházban."]
     }
   },
   "bits-to-bin": {
-    "name": "bits-to-bin",
-    "description": "Displays items purchasable with bits, and its coins per bit.",
+    "name": "bitek-binre",
+    "description": "Kijelzi a bitekért vásárolható tárgyakat, és átváltja coin-ba.",
     "options": [],
     "responses": {
-      "title": ["Bits to BIN"],
+      "title": ["Bit-ek BIN-re"],
       "field": [
         "**Bit Price**: {cost:,}\n",
         "**Coin Price**: {price:,.0f}\n",
@@ -1177,65 +1177,65 @@
   },
   "skyblock": {
     "name": "skyblock",
-    "description": "Commands for displaying information about the SkyBlock gamemode."
+    "description": "Parancsok amik információkat jeleznek ki a SkyBlock játékmódról ."
   },
   "skyblock collections": {
-    "name": "collections",
-    "description": "Displays information about the SkyBlock collections.",
+    "name": "kollekciók",
+    "description": "Információkat jelez ki a SkyBlock kollekciókról.",
     "options": []
   },
   "skyblock skills": {
-    "name": "skills",
-    "description": "Displays information about the SkyBlock skills.",
+    "name": "képességek",
+    "description": "Információkat jelez ki a SkyBlock képességekről.",
     "options": [],
     "responses": {
-      "title": ["Skill Info: {emoji} {skill}"],
+      "title": ["Képesség Infó: {emoji} {skill}"],
       "description": ["{description}"],
-      "fieldName": ["Level {level}"],
+      "fieldName": ["{level} szint"],
       "fieldValue": [
-        "Required XP: {xp:,.0f}\n",
-        "Unlocks:\n{unlocks}"
+        "Szükséges XP: {xp:,.0f}\n",
+        "Felold:\n{unlocks}"
       ]
     }
   },
   "skyblock item": {
-    "name": "item",
-    "description": "Displays information about a SkyBlock item.",
+    "name": "tárgy",
+    "description": "Információt jelez ki egy SkyBlock tárgyról.",
     "options": [
       {
-        "name": "item",
-        "description": "The name of the item to display information about."
+        "name": "tárgy",
+        "description": "A kijelzendő tárgy neve."
       }
     ],
     "responses": {
-      "notFound": ["Could not find an item named **{item}**."],
-      "title": ["Item Information: {item}"],
-      "attributesName": ["Attributes"],
+      "notFound": ["Nem találunk információt a **{item}** nevű tárgyról."],
+      "title": ["Tárgy információ: {item}"],
+      "attributesName": ["Attribútomok"],
       "attributesValue": [
         "Glowing: {glowing}\n",
         "Museum Item: {museum}\n",
         "Dungeon Item: {dungeon}\n"
       ],
-      "category": ["Item Type: {category}"],
-      "tier": ["Tier: {tier}"],
+      "category": ["Tárgytípus: {category}"],
+      "tier": ["Fokozat: {tier}"],
       "id": ["ID: {id}"],
-      "statsName": ["Base Stats"],
-      "requirementsName": ["Usage Requirements"],
+      "statsName": ["Alap statisztikák"],
+      "requirementsName": ["Használati követelmények"],
       "requirementsValue": ["{requirements}"],
-      "dungeonRequirementsName": ["Dungeon Usage Requirements"],
+      "dungeonRequirementsName": ["Dungeon használati követelmények"],
       "dungeonRequirementsValue": ["{requirements}"],
-      "essenceName": ["Essence Crafting"],
-      "dungeonize": ["Dungeonize: {amount:,} {type}"],
+      "essenceName": ["Esszencia craftolás"],
+      "dungeonize": ["Dungeonizálás: {amount:,} {type}"],
       "star": ["{stars}: {data}"],
       "innerStar": ["{amount:,} {type}"],
       "essenceValue": ["{essence}"],
-      "gemstoneSlotName": ["Gemstone Slot {slot}"],
-      "gemstoneSlotType": ["Type: {type}"],
-      "gemstoneSlotCost": ["\nUnlock Cost:\n{cost}"],
+      "gemstoneSlotName": ["Gemstone hely {slot}"],
+      "gemstoneSlotType": ["Típus: {type}"],
+      "gemstoneSlotCost": ["\nFeloldási ár:\n{cost}"],
       "innerGemstoneSlotCost": ["{amount:,} {type}"],
-      "npcSellPrice": ["NPC Sell Price: {price:,}"],
-      "requirements.nether_reputation": ["{reputation:,} {faction} Reputation{coop}"],
-      "requirements.dungeon.CATACOMBS": ["Catacombs Level {level}"],
+      "npcSellPrice": ["NPC eladási ár: {price:,}"],
+      "requirements.nether_reputation": ["{reputation:,} {faction} reputáció{coop}"],
+      "requirements.dungeon.CATACOMBS": ["Catacombs szint {level}"],
       "requirements.skill.COMBAT": ["Combat {level}"],
       "requirements.skill.FISHING": ["Fishing {level}"],
       "requirements.skill.MINING": ["Mining {level}"],
@@ -1247,17 +1247,17 @@
       "requirements.slayer.spider": ["Tarantula Broodfather {level}"],
       "requirements.slayer.wolf": ["Sven Packmaster {level}"],
       "requirements.slayer.blaze": ["Inferno Demonlord {level}"],
-      "requirements.dungeon_completion.CATACOMBS": ["The Catacombs, Floor {level} Completion"],
-      "requirements.dungeon_completion.MASTER_CATACOMBS": ["Master Mode, Floor {level} Completion"],
-      "requirements.heart_of_the_mountain": ["Heart of the Mountain Tier {level}"],
+      "requirements.dungeon_completion.CATACOMBS": ["The Catacombs, {level} szint kivitel"],
+      "requirements.dungeon_completion.MASTER_CATACOMBS": ["Master Mode, {level} szint kivitel"],
+      "requirements.heart_of_the_mountain": ["Heart of the Mountain {level} szint"],
       "requirements.targetPractice": ["Target Practice {level}"],
-      "essence.DIAMOND": ["Diamond Essence"],
-      "essence.WITHER": ["Wither Essence"],
-      "essence.GOLD": ["Gold Essence"],
-      "essence.CRIMSON": ["Crimson Essence"],
-      "essence.ICE": ["Ice Essence"],
-      "essence.UNDEAD": ["Undead Essence"],
-      "essence.DRAGON": ["Dragon Essence"],
+      "essence.DIAMOND": ["Diamond esszencia"],
+      "essence.WITHER": ["Wither esszencia"],
+      "essence.GOLD": ["Gold esszencia"],
+      "essence.CRIMSON": ["Crimson esszencia"],
+      "essence.ICE": ["Ice esszencia"],
+      "essence.UNDEAD": ["Undead esszencia"],
+      "essence.DRAGON": ["Dragon esszencia"],
       "gemstone_slot_type.SAPPHIRE": ["Sapphire"],
       "gemstone_slot_type.JASPER": ["Jasper"],
       "gemstone_slot_type.AMETHYST": ["Amethyst"],
@@ -1272,30 +1272,30 @@
       "gemstone_slot_type.MINING": ["Mining"],
       "gemstone_slot_type.UNIVERSAL": ["Universal"],
       "faction.BARBARIANS": ["Barbarians"],
-      "faction.MAGES": ["MAGE"]
+      "faction.MAGES": ["Mages"]
     }
   },
   "skyblock leaderboard":{
-    "name": "leaderboard",
-    "description": "Displays leaderboards from SkyCrypt (sky.shiiyu.moe)",
+    "name": "ranglista",
+    "description": "Kijelzi a SkyCrypt ranglistáit (sky.shiiyu.moe)",
     "options": [
       {
-        "name": "leaderboard",
-        "description": "The leaderboard to display."
+        "name": "ranglista",
+        "description": "A kijelzendő ranglista."
       },
       {
-        "name": "player",
-        "description": "The player to search for on the leaderboard."
+        "name": "játékos",
+        "description": "A ranglistán keresendő játékos neve."
       }
     ]
   },
   "skyblock wiki": {
     "name": "wiki",
-    "description": "Searches for an article on the Hypixel SkyBlock Wiki.",
+    "description": "Keres egy cikket a SkyBlock Wiki-ről.",
     "options": [
       {
-        "name": "search",
-        "description": "The search term to search for."
+        "name": "keresés",
+        "description": "A keresőszó amire keresni akarsz."
       }
     ],
     "responses": {
