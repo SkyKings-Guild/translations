@@ -989,7 +989,7 @@
       "SCAMMER_NAME": [
         "Entry #{id} - Scammer"
       ],
-      "IRL_TRADER_NAME": [
+      "TRADER_NAME": [
         "Entry #{id} - IRL Trader"
       ],
       "RATTER_NAME": [
@@ -1033,7 +1033,7 @@
       "SCAMMER_NAME": [
         "Entry #{id} - Scammer"
       ],
-      "IRL_TRADER_NAME": [
+      "TRADER_NAME": [
         "Entry #{id} - IRL Trader"
       ],
       "RATTER_NAME": [
