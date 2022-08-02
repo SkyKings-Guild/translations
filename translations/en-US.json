@@ -1001,7 +1001,7 @@
       "SCAMMER": [
         "Reason: {reason}"
       ],
-      "IRL_TRADER": [
+      "TRADER": [
         "Reason: {reason}"
       ],
       "RATTER": [
@@ -1045,7 +1045,7 @@
       "SCAMMER": [
         "Reason: {reason}"
       ],
-      "IRL_TRADER": [
+      "TRADER": [
         "Reason: {reason}"
       ],
       "RATTER": [
