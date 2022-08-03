@@ -13,6 +13,8 @@
       ],
       "description.1": [
         "Autoreply Enabled: {autoreply}\n",
+        "Hypixel Status Ping: {status_ping}\n",
+        "Hypixel Status Channel: {status_channel}\n",
         "Hypixel News Ping: {news_ping}\n",
         "Hypixel News Channel: {news_channel}\n",
         "SkyBlock Patchnotes Ping: {patchnotes_ping}\n",
