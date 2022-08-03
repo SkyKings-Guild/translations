@@ -177,6 +177,13 @@
       ],
       "guildNotFound": [
         "The guild **{guild}** does not exist."
+      ],
+      "premiumRequired": [
+        "Premium is required to add more than three guilds to one server.\n",
+        "For more information, run the `/premium info` command.
+      ],
+      "maxGuilds": [
+        "You cannot add more than 25 guilds."
       ]
     }
   },
