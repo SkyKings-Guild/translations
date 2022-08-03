@@ -1300,257 +1300,257 @@
     ],
     "responses": {
       "title": ["Hypixel SkyBlock Wiki"],
-      "noResults": ["No results were found for **{search}**."],
-      "results": ["Results for **{search}**:\n{results}"],
-      "wikiURL": ["The wiki can be found at [wiki.hypixel.net](https://wiki.hypixel.net/)."]
+      "noResults": ["Nincs találat a **{search}** keresőszóra."],
+      "results": ["Találatok a **{search}**: keresőszóra\n{results}"],
+      "wikiURL": ["A wiki megtalálható a [wiki.hypixel.net](https://wiki.hypixel.net/) oldalon."]
     }
   },
   "skyblock time": {
-    "name": "time",
-    "description": "Displays the current time in SkyBlock.",
+    "name": "idő",
+    "description": "Kijelzi a jelenlegi időt a SkyBlock-ban.",
     "options": [],
     "responses": {
-      "time": ["Is is currently {time} on {date} in Hypixel SkyBlock."]
+      "time": ["Jelenleg {time} óra van {date} napján a Hypixel SkyBlock-ban."]
     }
   },
   "skyblock events": {
-    "name": "events",
-    "description": "Manages SkyBlock event notifications."
+    "name": "eventek",
+    "description": "Kezeli a SkyBlock eventek értesítéseit."
   },
   "skyblock-events": {
-    "name": "skyblock-events",
-    "description": "Manages SkyBlock event notifications."
+    "name": "skyblock-eventek",
+    "description": "Kezeli a SkyBlock eventek értesítéseit."
   },
   "skyblock-events config": {
-    "name": "config",
-    "description": "Configures the server's SkyBlock event notifications."
+    "name": "konfiguráció",
+    "description": "Konfigurálja a szerveren a SkyBlock eventek értesítéseit."
   },
   "skyblock-events config view": {
-    "name": "view",
-    "description": "Displays the server's SkyBlock event notification configuration.",
+    "name": "megtekintés",
+    "description": "Kijelzi a szerver SkyBlock eventek értesítéseinek a konfigurációját.",
     "options": [],
     "responses": {
-      "title": ["SkyBlock Event Notifications"],
+      "title": ["SkyBlock eventek értesítései"],
       "fieldTemplate": [
         "Enabled: {enabled}\n",
         "Alerts: {alerts}\n",
         "Ping Role: {ping}\n"
       ],
-      "allAlerts": "All",
-      "noAlerts": "None"
+      "allAlerts": "Összes",
+      "noAlerts": "Semelyik"
     }
   },
   "skyblock-events config toggle": {
-    "name": "toggle",
-    "description": "Toggles an event notification on or off.",
+    "name": "kapcsoló",
+    "description": "Be- és kikapcsolja az eventek értesítéseit.",
     "options": [
       {
         "name": "event",
-        "description": "The event to toggle.",
+        "description": "A kapcsolandó event.",
         "choices": [
           "New Year",
           "Spooky Festival",
-          "Jerry's Workshop Opens",
+          "Jerry's Workshop nyílik",
           "Season of Jerry",
-          "Mayor Election Ends",
+          "Mayor Election véget ér",
           "Travelling Zoo",
           "Fear Mongerer",
           "Dark Auction",
-          "Mayor Election Begins",
+          "Mayor Election kezdődik",
           "Bank Interest"
         ]
       }
     ],
     "responses": {
-      "enabled": ["Enabled **{event}**."],
-      "disabled": ["Disabled **{event}**."]
+      "enabled": [" **{event}** bekapcsolva."],
+      "disabled": [" **{event}** kikapcsolva."]
     }
   },
   "skyblock-events config toggle-alert": {
-    "name": "toggle-alert",
-    "description": "Toggles an alert on or off for an event.",
+    "name": "jelzés-kapcsoló",
+    "description": "Be- és kikapcsol egy jelzést az adott eventre.",
     "options": [
     {
         "name": "event",
-        "description": "The event to toggle an alert for.",
+        "description": "Az event, amire a jelzés jön.",
         "choices": [
           "New Year",
           "Spooky Festival",
-          "Jerry's Workshop Opens",
+          "Jerry's Workshop nyílik",
           "Season of Jerry",
-          "Mayor Election Ends",
+          "Mayor Election véget ér",
           "Travelling Zoo",
           "Fear Mongerer",
           "Dark Auction",
-          "Mayor Election Begins",
+          "Mayor Election kezdődik",
           "Bank Interest"
         ]
     },
     {
-        "name": "alert",
-        "description": "The alert to toggle.",
+        "name": "jelzés",
+        "description": "A kapcsolandó jelzés.",
         "choices": [
-          "Start of event",
-          "5 minutes before event",
-          "10 minutes before event",
-          "30 minutes before event"
+          "Event kezdete",
+          "5 perccel event előtt",
+          "10 perccel event előtt",
+          "30 perccel event előtt"
         ]
     }
     ],
     "responses": {
-      "enabledAlert": ["Enabled the **{alert}** alert for **{event}**."],
-      "disabledAlert": ["Disabled the **{alert}** alert for **{event}**."],
-      "0": "Start of event",
-      "5": "5 minutes before event",
-      "10": "10 minutes before event",
-      "30": "30 minutes before event"
+      "enabledAlert": [" **{alert}** jelzés bekapcsolva a **{event}** eventre."],
+      "disabledAlert": [" **{alert}** jelzés kikapcsolva a **{event}** eventre."],
+      "0": "Event kezdete",
+      "5": "5 perccel event előtt",
+      "10": "10 perccel event előtt",
+      "30": "30 perccel event előtt"
     }
   },
   "skyblock-events config set-ping": {
-    "name": "set-ping",
-    "description": "Sets the ping role for an event.",
+    "name": "ping-beállítás",
+    "description": "Beállít egy pingelhető role-t az eventre.",
     "options": [
       {
         "name": "event",
-        "description": "The event to set the ping role for.",
+        "description": "Az event amire a pingelhető role lesz állítva.",
         "choices": [
           "New Year",
           "Spooky Festival",
-          "Jerry's Workshop Opens",
+          "Jerry's Workshop nyílik",
           "Season of Jerry",
-          "Mayor Election Ends",
+          "Mayor Election véget ér",
           "Travelling Zoo",
           "Fear Mongerer",
           "Dark Auction",
-          "Mayor Election Begins",
+          "Mayor Election kezdődik",
           "Bank Interest"
         ]
       },
       {
         "name": "role",
-        "description": "The role to set as the ping role. Leave blank to remove."
+        "description": "A role, ami be lesz állítva a pingre. Hagyd üresen az eltávolításhoz."
       }
     ],
     "responses": {
-      "setPing": ["Set the ping role for **{event}** to **{role}**."],
-      "removedPing": ["Removed the ping role for **{event}**."]
+      "setPing": ["Beállítva a **{event}**-re, hogy pingelődjön a **{role}** role."],
+      "removedPing": ["Eltávolítva a pingelődő role a **{event}**-re."]
     }
   },
   "skyblock mayor": {
     "name": "mayor",
-    "description": "Displays the current SkyBlock mayor, as well as the current election.",
+    "description": "Kijelzi a jelenlegi SkyBlock mayor-t, és a jelenlegi választást is.",
     "options": [],
     "responses": {
       "mayorTitle": ["Hypixel SkyBlock Mayor"],
-      "mayorDescription": ["The current mayor is **{mayor}**.\n\n{perks}"],
-      "electionName": ["Election for Year {year:,}"],
-      "electionDescription": ["Total Votes: {votes:,}"]
+      "mayorDescription": ["A jelenlegi mayor **{mayor}**.\n\n{perks}"],
+      "electionName": ["Választás a {year:,} évre"],
+      "electionDescription": ["Összes szavazat: {votes:,}"]
     }
   },
   "skyblock bingo": {
     "name": "bingo",
-    "description": "Displays the current SkyBlock Bingo card.",
+    "description": "Kijelzi a jelenlegi SkyBlock Bingo kártyát.",
     "options": [],
     "responses": {
       "bingoTitle": ["Hypixel SkyBlock Bingo Card"],
       "progress": [
-        "Progress: {progress:,}\n",
-        "Next Tier: {needed:,}\n> {toNext:,} needed\n",
-        "Tier {tier}/{tiers}"
+        "Haladás: {progress:,}\n",
+        "Követketző Szint: {needed:,}\n> {toNext:,} needed\n",
+        "Szint {tier}/{tiers}"
       ],
       "finishedProgress": [
-        "Progress: {progress:,}\n",
-        "Tier {tier}/{tiers}\n",
-        "Goal completed!"
+        "Haladás: {progress:,}\n",
+        "Szint {tier}/{tiers}\n",
+        "Cél teljesítve!"
       ]
     }
   },
   "player": {
-    "name": "player",
-    "description": "Get information about a player on Hypixel.",
+    "name": "játékos",
+    "description": "Szerezz információt egy játékosról a Hypixelen.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to get information about."
+        "name": "játékos",
+        "description": "A játékos akiről információt szerzünk."
       }
     ],
     "responses": {
       "neverJoined": [
-        "**{name}** has never joined Hypixel."
+        "**{name}** sose lépett be a Hypixel-re."
       ],
       "description": [
-        "Username: {name}\n",
+        "Felhasználónév: {name}\n",
         "UUID: {uuid}\n",
         "Discord ID: {userid}\n",
-        "Rank: {rank}\n",
+        "Rang: {rank}\n",
         "Guild: {guild}\n",
-        "First Login: {first_login}\n",
-        "Last Login: {last_login}\n",
-        "Last Logout: {last_logout}\n",
-        "Network XP: {network_xp:,.2f}\n",
-        "Network Level: {network_level:,.0f}\n",
-        "Minecraft Version: {version}\n",
+        "Első bejelentkezés: {first_login}\n",
+        "Legutolsó bejelentkezés: {last_login}\n",
+        "Legutolsó kijelentkezés: {last_logout}\n",
+        "Hypixel XP: {network_xp:,.2f}\n",
+        "Hypixel szint: {network_level:,.0f}\n",
+        "Minecraft verzió: {version}\n",
         "Karma: {karma}\n",
-        "Achievement Points: {achievement_points}\n",
-        "Status: {status}"
+        "Achievement pontok: {achievement_points}\n",
+        "Státusz: {status}"
       ],
       "title": [
-        "{name}'s Hypixel Profile"
+        "{name}'s Hypixel profilja"
       ]
     }
   },
   "locate": {
-    "name": "locate",
-    "description": "Locate a player on the Hypixel Network.",
+    "name": "bemérés",
+    "description": "Bemér egy játékost a Hypixel szerveren.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to locate."
+        "name": "játékos",
+        "description": "A bemérendő játékos."
       }
     ],
     "responses": {
       "neverJoined": [
-        "**{name}** has never joined Hypixel."
+        "**{name}** sose csatlakozott a Hypixel-re."
       ],
-      "title": ["{name}'s Status"],
-      "offline": ["**{name}** is currently offline."],
-      "noData": ["I was unable to fetch **{name}**'s status."],
-      "onlineCantLocate": ["**{name}** is currently online, but has their status API settings disabled."],
-      "online": ["**{name}** is currently online. I was unable to determine where."],
-      "onlineWithMode": ["**{name}** is currently playing {game}.\nMode: {mode}."],
-      "onlineWithGame": ["**{name}** is currently playing {game}."]
+      "title": ["{name}'s Státusza"],
+      "offline": ["**{name}** jelenleg offline."],
+      "noData": ["Nem voltam képes **{name}** státuszát lehozni."],
+      "onlineCantLocate": ["**{name}** jelenleg online, de a státuszuk kikapcsolt API beállítást jeleznek."],
+      "online": ["**{name}** jelenleg online. Viszont nem tudom, hogy hol van."],
+      "onlineWithMode": ["**{name}** jelenleg {game}-t játszik.\nMód: {mode}."],
+      "onlineWithGame": ["**{name}** jelenleg {game}-t játszik."]
     }
   },
   "profiles": {
-    "name": "profiles",
-    "description": "Displays a rundown of a player's SkyBlock profiles.",
+    "name": "profilok",
+    "description": "Kijelez egy listát egy adott játékos SkyBlock profiljairól.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to view profiles for."
+        "name": "játékos",
+        "description": "A játékos akinek a profiljait nézzük meg."
       }
     ],
     "responses": {
       "title": [
-        "{name}'s {profile} Profile"
+        "{name} {profile} Profilja"
       ],
       "description": [
-        "Created: {first_join}\n",
-        "Last Saved: {last_save}\n",
-        "Profile Type: {profile_type}"
+        "Készítve: {first_join}\n",
+        "Legutóbb mentve: {last_save}\n",
+        "Profil típusa: {profile_type}"
       ],
       "miscellaneousName": [
-        "\uD83D\uDCCA Miscellaneous"
+        "\uD83D\uDCCA Egyéb"
       ],
       "miscellaneousValue": [
         "<:fairysoul:986790574310965248> {fairy_souls}/238 Fairy Souls\n",
         "<:diamond_sword:986848758149021716> {skill_average:.2f} Skill Average\n",
         "<:gold_block:986849038404026438> Bank: {bank}\n",
-        "<:gold_ingot:986849117340839937> Purse: {purse:,.0f} Coins\n",
-        "<:weights:986849604492476477> Weight: {senither_weight:,.0f} Senither, {lily_weight:,.0f} Lily"
+        "<:gold_ingot:986849117340839937> Tárca: {purse:,.0f} Coins\n",
+        "<:weights:986849604492476477> Súly: {senither_weight:,.0f} Senither, {lily_weight:,.0f} Lily"
       ],
       "slayerLevelName": [
-        "<:maddox:988669718862917692> Slayer Levels"
+        "<:maddox:988669718862917692> Slayer Szintek"
       ],
       "slayerLevelValue": [
         "<:revenant:986789889423077456> Revenant Horror: {zombie_slayer:.0f}\n",
@@ -1560,65 +1560,65 @@
         "<:blaze:986789888093487104> Inferno Demonlord: {blaze_slayer:.0f}"
       ],
       "dungeonName": [
-        "<:dungeons:988667365883543602> Dungeons"
+        "<:dungeons:988667365883543602> Dungeon-ök"
       ],
       "dungeonValue": [
-        "<:catacombs:986846576582459443> Catacombs Level {catacombs_level:.0f}\n",
-        "<:healer_orb:986846578025308201> Healer Level {healer_class:.0f}\n",
-        "<:mage_orb:986846579463946250> Mage Level {mage_class:.0f}\n",
-        "<:berserk_orb:986846574812487711> Berserk Level {berserk_class:.0f}\n",
-        "<:archer_orb:986846573415768075> Archer Level {archer_class:.0f}\n",
-        "<:tank_orb:986846580759986236> Tank Level {tank_class:.0f}"
+        "<:catacombs:986846576582459443> Catacombs szint {catacombs_level:.0f}\n",
+        "<:healer_orb:986846578025308201> Healer szint {healer_class:.0f}\n",
+        "<:mage_orb:986846579463946250> Mage szint {mage_class:.0f}\n",
+        "<:berserk_orb:986846574812487711> Berserk szint {berserk_class:.0f}\n",
+        "<:archer_orb:986846573415768075> Archer szint {archer_class:.0f}\n",
+        "<:tank_orb:986846580759986236> Tank szint {tank_class:.0f}"
       ],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ],
       "normal": [
-        "Normal"
+        "Normál"
       ],
       "coopName": [
-        "Co-op Members ({count})"
+        "Co-op Tagok ({count})"
       ]
     }
   },
   "friends": {
-    "name": "friends",
-    "description": "Displays a player's Hypixel friends list.",
+    "name": "barátok",
+    "description": "Kijelzi egy Hypixel játékos barátlistáját.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to fetch friends for."
+        "name": "játékos",
+        "description": "A játékos akinek lehozzuk a barátlistáját."
       }
     ],
     "responses": {
       "neverJoined": [
-        "**{name}** has never joined Hypixel."
+        "**{name}** sose csatlakozott a Hypixel-re."
       ]
     }
   },
   "slayers": {
-    "name": "slayers",
-    "description": "Displays a player's slayer information.",
+    "name": "slayerek",
+    "description": "Kijelzi egy játékos slayereinek információit.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to view slayers for."
+        "name": "játékos",
+        "description": "A játékos akinek megnézzük a slayereit."
       }
     ],
     "responses": {
       "title": [
-        "{name}'s Slayers on {profile}"
+        "{name} Slayerei a {profile} profilon"
       ],
       "zombieName": [
         "<:revenant:986789889423077456> Revenant Horror"
       ],
       "zombieValue": [
         "XP: {xp:,}\n",
-        "Level: {level:.0f}\n",
-        "Boss Kills:\n",
+        "Szint: {level:.0f}\n",
+        "Boss Ölések:\n",
         "> Tier 1: {kills_t1:,}\n",
         "> Tier 2: {kills_t2:,}\n",
         "> Tier 3: {kills_t3:,}\n",
@@ -1630,8 +1630,8 @@
       ],
       "spiderValue": [
         "XP: {xp:,}\n",
-        "Level: {level:.0f}\n",
-        "Boss Kills:\n",
+        "Szint: {level:.0f}\n",
+        "Boss Ölések:\n",
         "> Tier 1: {kills_t1:,}\n",
         "> Tier 2: {kills_t2:,}\n",
         "> Tier 3: {kills_t3:,}\n",
@@ -1642,8 +1642,8 @@
       ],
       "wolfValue": [
         "XP: {xp:,}\n",
-        "Level: {level:.0f}\n",
-        "Boss Kills:\n",
+        "Szint: {level:.0f}\n",
+        "Boss Ölések:\n",
         "> Tier 1: {kills_t1:,}\n",
         "> Tier 2: {kills_t2:,}\n",
         "> Tier 3: {kills_t3:,}\n",
@@ -1654,8 +1654,8 @@
       ],
       "endermanValue": [
         "XP: {xp:,}\n",
-        "Level: {level:.0f}\n",
-        "Boss Kills:\n",
+        "Szint: {level:.0f}\n",
+        "Boss Ölések:\n",
         "> Tier 1: {kills_t1:,}\n",
         "> Tier 2: {kills_t2:,}\n",
         "> Tier 3: {kills_t3:,}\n",
@@ -1666,33 +1666,33 @@
       ],
       "blazeValue": [
         "XP: {xp:,}\n",
-        "Level: {level:.0f}\n",
-        "Boss Kills:\n",
+        "Szint: {level:.0f}\n",
+        "Boss Ölések:\n",
         "> Tier 1: {kills_t1:,}\n",
         "> Tier 2: {kills_t2:,}\n",
         "> Tier 3: {kills_t3:,}\n",
         "> Tier 4: {kills_t4:,}"
       ],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ]
     }
   },
   "skills": {
-    "name": "skills",
-    "description": "Displays a player's Skyblock skills.",
+    "name": "skillek",
+    "description": "Kijelzi egy játékos SkyBlock skilljeit.",
     "options": [
       {
         "name": "player",
-        "description": "The player to view skills for."
+        "description": "A játékos akinek megnézzük a skilljeit."
       }
     ],
     "responses": {
       "title": [
-        "{name}'s Skills on {profile}"
+        "{name} skilljei a {profile} profilon"
       ],
       "combatName": ["<:combat:978800035443667025> Combat ({level:.0f})"],
       "miningName": ["<:mining:978799566612738049> Mining ({level:.0f})"],
@@ -1706,21 +1706,21 @@
       "runecraftingName": ["<:runecrafting:979159298846380113> Runecrafting ({level:.0f})"],
       "socialName": ["<:social:979159299475513344> Social ({level:.0f})"],
       "inner": [
-        "Total XP: {xp:,.0f}\n",
-        "Progress: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
+        "Összes XP: {xp:,.0f}\n",
+        "Haladás: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
       ],
       "innerMaxed": [
-        "Total XP: {xp:,}\n",
-        "Max level!"
+        "Összes XP: {xp:,}\n",
+        "Max szint!"
       ],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ],
       "apiDisabled": [
-        "This player's skill API is disabled on this profile."
+        "Ennek a játékosnak a Skill API-ja ki van kapcsolva ezen a profilon."
       ]
     }
   },
