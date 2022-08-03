@@ -120,6 +120,7 @@
     "description": "View the guilds linked to this server.",
     "options": [],
     "responses": {
+      "noGuilds": ["No guilds have been linked to this server."]
       "base": [
         "Name: {name}\n",
         "ID: {gid}\n",
