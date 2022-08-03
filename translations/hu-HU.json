@@ -1725,90 +1725,90 @@
     }
   },
   "collections": {
-    "name": "collections",
-    "description": "Displays a player's Skyblock collections.",
+    "name": "kollekciók",
+    "description": "Kijelzi egy játékos SkyBlock kollekcióit.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to view collections for."
+        "name": "játékos",
+        "description": "A játékos akinek a kollekcióit nézzük."
       }
     ],
     "responses": {
       "title": [
-        "{name}'s Collections on {profile}"
+        "{name} kollekciói a {profile} profilon"
       ],
       "apiDisabled": [
-        "This player's collection API is disabled on this profile."
+        "Ennek a játékosnak a Kollekció API-a ki van kapcsolva ezen a profilon."
       ],
       "selectDifferentProfile": [
-        "Select a different profile."
+        "Válassz egy másik profilt."
       ],
       "collectionTitle": [
-        "{emoji} {name}'s {category} Collections on {profile}"
+        "{emoji} {name} {category} kategóriájú kollekciói a {profile} profilon"
       ],
       "collectionDescription": [
-        "{maxed} out of {total} {category} collections have been maxed."
+        "{maxed} lett kimaxolva a {total}-ból a {category} kategóriájú kollekcióknál."
       ],
       "collectionName": [
         "{item} ({level:.0f})"
       ],
       "innerMaxed": [
-        "Items: {xp:,}\n",
-        "Maxed collection!"
+        "Tárgyak: {xp:,}\n",
+        "Kimaxolt kollekció!"
       ],
       "inner": [
-        "Items: {xp:,}\n",
-        "Progress: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
+        "Tárgyak: {xp:,}\n",
+        "Haladás: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
       ],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ]
     }
   },
   "weight": {
-    "name": "weight",
-    "description": "Displays a player's Skyblock weight.",
+    "name": "súlyozás",
+    "description": "Kijelzi egy játékos SkyBlock súlyozását.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to view weight for."
+        "name": "játékos",
+        "description": "A játékos akinek a súlyozását nézzük."
       }
     ],
     "responses": {
       "titleSenither": [
-        "{name}'s Senither Weight on {profile}"
+        "{name} Senither Súlya a {profile} profilon"
       ],
       "overviewOption": [
-        "Overview"
+        "Összegzés"
       ],
       "slayersOption": [
-        "Slayers"
+        "Slayer-ek"
       ],
       "skillsOption": [
-        "Skills"
+        "Skill-ek"
       ],
       "dungeonsOption": [
         "Dungeons"
       ],
       "lilyOption": [
-        "Unavailable for Lily Weight."
+        "Elérhetetlen a Lily Súlyozás."
       ],
       "overviewDescriptionSenither": [
-        "**{name}** has {weight:,.1f} weight and {overflow:,.1f} overflow on **{profile}**, for a total of {total:,.1f} weight.\n\n",
-        "<:diamond_sword:986848758149021716> **Skill Weight**: {skill_weight:,.1f}\n",
-        "<:maddox:988669718862917692> **Slayer Weight**: {slayer_weight:,.1f}\n",
-        "<:dungeons:988667365883543602> **Dungeon Weight**: {dungeon_weight:,.1f}"
+        "**{name}**-nek van {weight:,.1f} súlya és {overflow:,.1f} súlyfeleslege a **{profile}** profilon, ami összesen {total:,.1f} súlyt jelent.\n\n",
+        "<:diamond_sword:986848758149021716> **Skill Súly**: {skill_weight:,.1f}\n",
+        "<:maddox:988669718862917692> **Slayer Súly**: {slayer_weight:,.1f}\n",
+        "<:dungeons:988667365883543602> **Dungeon Súly**: {dungeon_weight:,.1f}"
       ],
       "skillsTitleSenither": [
-        "<:diamond_sword:986848758149021716> {name}'s Senither Skill Weight on {profile}"
+        "<:diamond_sword:986848758149021716> {name} Senither Súlya a {profile} profilon"
       ],
       "skillsDescriptionSenither": [
-        "**Skill Weight**: {weight:,.1f}\n",
-        "**Overflow**: {overflow:,.1f}\n",
-        "**Total**: {total:,.1f}"
+        "**Skill Súly**: {weight:,.1f}\n",
+        "**Súlyfelesleg**: {overflow:,.1f}\n",
+        "**Összesen**: {total:,.1f}"
       ],
       "mining": [
         "<:mining:978799566612738049> Mining"
@@ -1835,12 +1835,12 @@
         "<:taming:979159299655860327> Taming"
       ],
       "slayersTitleSenither": [
-        "<:maddox:988669718862917692> {name}'s Senither Slayer Weight on {profile}"
+        "<:maddox:988669718862917692> {name} Senither Slayer Súlya a {profile} profilon"
       ],
       "slayersDescriptionSenither": [
-        "**Slayer Weight**: {weight:,.1f}\n",
-        "**Overflow**: {overflow:,.1f}\n",
-        "**Total**: {total:,.1f}"
+        "**Slayer Súly**: {weight:,.1f}\n",
+        "**Súlyfelesleg**: {overflow:,.1f}\n",
+        "**Összesen**: {total:,.1f}"
       ],
       "zombie": [
         "<:revenant:986789889423077456> Revenant Horror"
@@ -1858,12 +1858,12 @@
         "<:blaze:986789888093487104> Inferno Demonlord"
       ],
       "dungeonsTitleSenither": [
-        "<:dungeons:988667365883543602> {name}'s Senither Dungeon Weight on {profile}"
+        "<:dungeons:988667365883543602> {name} Senither Dungeon Súlya a {profile} profilon"
       ],
       "dungeonsDescriptionSenither": [
-        "**Dungeon Weight**: {weight:,.1f}\n",
-        "**Overflow**: {overflow:,.1f}\n",
-        "**Total**: {total:,.1f}"
+        "**Dungeon Súly**: {weight:,.1f}\n",
+        "**Súlyfelesleg**: {overflow:,.1f}\n",
+        "**Összesen**: {total:,.1f}"
       ],
       "catacombs": [
         "<:catacombs:986846576582459443> Catacombs"
@@ -1885,48 +1885,48 @@
       ],
       "inner": [
         "XP: {xp:,.0f}\n",
-        "Level: {level:.1f}\n",
-        "Weight: {weight:,.1f}\n"
+        "Szint: {level:.1f}\n",
+        "Súly: {weight:,.1f}\n"
       ],
       "overflow": [
-        "Overflow: {overflow:,.1f}"
+        "Súlyfelesleg: {overflow:,.1f}"
       ],
       "titleLily": [
-        "{name}'s Lily Weight on {profile}"
+        "{name} Lily Súlya a {profile} profilon"
       ],
       "overviewDescriptionLily": [
-        "**{name}** has {weight:,.1f} weight on **{profile}**.\n\n",
-        "<:diamond_sword:986848758149021716> **Skill Weight**: {skill_weight:,.1f}\n",
-        "<:maddox:988669718862917692> **Slayer Weight**: {slayer_weight:,.1f}\n",
-        "<:dungeons:988667365883543602> **Dungeon Weight**: {dungeon_weight:,.1f}"
+        "**{name}**-nek {weight:,.1f} súlya van a **{profile}** profilon.\n\n",
+        "<:diamond_sword:986848758149021716> **Skill Súly**: {skill_weight:,.1f}\n",
+        "<:maddox:988669718862917692> **Slayer Súly**: {slayer_weight:,.1f}\n",
+        "<:dungeons:988667365883543602> **Dungeon Súly**: {dungeon_weight:,.1f}"
       ],
       "skillNameLily": ["<:diamond_sword:986848758149021716> Skills"],
       "skillValueLily": [
-        "Skill Average: {skill_avg:,.1f}\n",
-        "Weight: {weight:,.1f}"
+        "Skill Átlag: {skill_avg:,.1f}\n",
+        "Súly: {weight:,.1f}"
       ],
       "slayerNameLily": ["<:maddox:988669718862917692> Slayers"],
       "slayerValueLily": [
-        "Total XP: {xp:,.1f}\n",
-        "Weight: {weight:,.1f}"
+        "Összes XP: {xp:,.1f}\n",
+        "Súly: {weight:,.1f}"
       ],
       "dungeonsNameLily": ["<:dungeons:988667365883543602> Dungeons"],
       "dungeonsValueLily": [
-        "Catacombs Level: {cata_lvl:,.1f}\n",
-        "Catacombs Weight: {cata_weight:,.1f}\n",
-        "Catacombs Completion Weight: {cata_comp_weight:,.1f}\n",
-        "Master Mode Completion Weight: {master_comp_weight:,.1f}"
+        "Catacombs Szint: {cata_lvl:,.1f}\n",
+        "Catacombs Súly: {cata_weight:,.1f}\n",
+        "Catacombs Kiviteli Súly: {cata_comp_weight:,.1f}\n",
+        "Master Mode Kiviteli Súly: {master_comp_weight:,.1f}"
       ],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ]
     }
   },
   "networth": {
-    "name": "networth",
+    "name": "vagyon",
     "description": "Displays a player's networth on Hypixel Skyblock.",
     "options": [
       {
