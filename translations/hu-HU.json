@@ -1927,74 +1927,74 @@
   },
   "networth": {
     "name": "vagyon",
-    "description": "Displays a player's networth on Hypixel Skyblock.",
+    "description": "Kijelzi egy játékos vagyonát a Hypixel SkyBlock-ban.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to view networth for."
+        "name": "játékos",
+        "description": "A játékos akinek a vagyonát megnézzük."
       }
     ],
     "responses": {
-      "title": ["{name}'s Networth on {profile}"],
-      "inventoryAPIDisabled": ["This player's inventory API is disabled on this profile."],
-      "choseAnotherProfile": ["Chose another profile."],
-      "apiDisabled": ["API Disabled"],
-      "description": ["{name} is valued at **{networth}** coins."],
-      "purseName": ["<:gold_ingot:986849117340839937> Purse"],
+      "title": ["{name} vagyona a {profile} profilon"],
+      "inventoryAPIDisabled": ["Ennek a játékosnak az eszköztár API-ja ki van kapcsolva ezen a profilon."],
+      "choseAnotherProfile": ["Másik profil választva."],
+      "apiDisabled": ["API kikapcsolva"],
+      "description": ["{name} értéke **{networth}** coin."],
+      "purseName": ["<:gold_ingot:986849117340839937> Tárca"],
       "purseValue": ["{purse}"],
       "bankName": ["<:gold_block:986849038404026438> Bank"],
       "bankValue": ["{bank}"],
-      "sacksName": ["<:backpack:993336472348414102> Sacks"],
+      "sacksName": ["<:backpack:993336472348414102> Sack-ek"],
       "sacksValue": ["{sacks}"],
-      "overview": ["Overview"],
-      "inventory": ["{emoji} Inventory"],
-      "storage": ["{emoji} Storage"],
-      "enderchest": ["{emoji} Enderchest"],
-      "armor": ["{emoji} Armor"],
-      "pets": ["{emoji} Pets"],
-      "talismans": ["{emoji} Accessory Bag"],
-      "vault": ["{emoji} Personal Vault"],
+      "overview": ["Összesítés"],
+      "inventory": ["{emoji} "],
+      "storage": ["{emoji} Tárhelye"],
+      "enderchest": ["{emoji} Végzetládája"],
+      "armor": ["{emoji} Páncél"],
+      "pets": ["{emoji} Pet-jei"],
+      "talismans": ["{emoji} Accessory Zsákja"],
+      "vault": ["{emoji} Személyes Vault-ja"],
       "inner": [
-        "> Value: {value:,.0f} coins\n",
+        "> Érték: {value:,.0f} coin-ok\n",
         "{items}"
       ],
-      "hidden": ["+ {count:,} more items."],
+      "hidden": ["+ {count:,} több tárgy."],
       "categoryDescription": [
-        "{emoji} Value: {value:,.0f} coins\n\n",
+        "{emoji} Érték: {value:,.0f} coin-ok\n\n",
         "{items}"
       ],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ]
     }
   },
   "dungeons": {
-    "name": "dungeons",
-    "description": "View Dungeon statistics."
+    "name": "dungeonök",
+    "description": "Dungeon statisztikák megtekintése."
   },
   "dungeons info": {
-    "name": "info",
-    "description": "Displays a player's general SkyBlock dungeon statistics.",
+    "name": "információ",
+    "description": "Kijelzi egy játékos általános SkyBlock dungeon statisztikáit.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to view dungeon stats for."
+        "name": "játékos",
+        "description": "A játékos akinek a dungeon statisztikáit tekintjük meg."
       }
     ],
     "responses": {
-      "title": ["{name}'s Dungeon Statistics on {profile}"],
-      "noDungeonData": ["There is no dungeon data on this profile."],
-      "choseAnotherProfile": ["Chose another profile."],
+      "title": ["{name} Dungeon Statisztikái a {profile} profilon"],
+      "noDungeonData": ["Nincsen dungeon adat ezen a profilon."],
+      "choseAnotherProfile": ["Másik profil választva."],
       "description": [
-        "<:catacombs:986846576582459443> Catacombs Level {level:,} ({xp:,.0f} XP)\n",
-        "<:normal_cata:988675938034282538> Highest Catacombs Floor Completed: {cata_floor_completed}\n",
-        "<:master_cata:988676045358121020> Highest Master Mode Floor Completed: {master_floor_completed}\n",
-        "<:chest:993336473661231175> Secrets (All Profiles): {secrets:,}"
+        "<:catacombs:986846576582459443> Catacombs szint {level:,} ({xp:,.0f} XP)\n",
+        "<:normal_cata:988675938034282538> Legmagasabb Catacombs Floor teljesítve: {cata_floor_completed}\n",
+        "<:master_cata:988676045358121020> Legmagasabb Master Mode Floor teljesítve: {master_floor_completed}\n",
+        "<:chest:993336473661231175> Secret-ek (Összes Profil): {secrets:,}"
       ],
-      "classesName": ["Classes"],
+      "classesName": ["Class-ok"],
       "classesValue": [
         "<:healer_orb:986846578025308201> Healer {healer_level:,} ({healer_xp:,.0f} XP)\n",
         "<:mage_orb:986846579463946250> Mage {mage_level:,} ({mage_xp:,.0f} XP)\n",
@@ -2002,38 +2002,38 @@
         "<:archer_orb:986846573415768075> Archer {archer_level:,} ({archer_xp:,.0f} XP)\n",
         "<:tank_orb:986846580759986236> Tank {tank_level:,} ({tank_xp:,.0f} XP)"
       ],
-      "overview": ["Overview"],
-      "entranceTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Entrance"],
-      "floorTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Floor {floor}"],
-      "masterTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Master Mode Floor {floor}"],
+      "overview": ["Összesítés"],
+      "entranceTitle": ["{emoji} {name} Dungeon Statisztikái a {profile} profilon - Entrance"],
+      "floorTitle": ["{emoji} {name} Dungeon Statisztikái a {profile} profilon - Floor {floor}"],
+      "masterTitle": ["{emoji} {name}  Dungeon Statisztikái a  {profile} profilon - Master Mode Floor {floor}"],
       "innerDescription": [
-        "Times Played: {played:,}\n",
-        "Completions: {completions:,}\n",
-        "Best Score: {best_score:,}\n",
-        "Most Mobs Killed: {most_mobs_killed:,}\n",
-        "Total Mobs Killed: {mobs_killed:,}\n",
-        "Fastest Time: {fastest_time}\n",
-        "Fastest S Time: {fastest_time_s}\n",
-        "Fastest S+ Time: {fastest_time_s_plus}"
+        "Játszva: {played:,}\n",
+        "Teljesítések: {completions:,}\n",
+        "Legjobb Eredmény: {best_score:,}\n",
+        "Legtöbb mob megölve: {most_mobs_killed:,}\n",
+        "Eddigi mobok megölve: {mobs_killed:,}\n",
+        "Leggyorsabb idő: {fastest_time}\n",
+        "Leggyorsabb S idő: {fastest_time_s}\n",
+        "Leggyorsabb S+ idő: {fastest_time_s_plus}"
       ],
       "entranceLabel": ["Entrance"],
       "floorLabel": ["Floor {floor}"],
       "masterLabel": ["Master Mode Floor {floor}"],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ]
     }
   },
   "dungeons best-runs": {
-    "name": "best-runs",
-    "description": "Displays a player's best runs for a floor in the catacombs.",
+    "name": "legjobb-menetek",
+    "description": "Kijelzi egy játékos legjobb meneteit a catacombs eddigi floorjain.",
     "options": [
       {
         "name": "floor",
-        "description": "The floor to view best runs for.",
+        "description": "A floor ahol a legjobb menetet kell nézni.",
         "choices": [
           "Entrance",
           "Floor 1",
@@ -2053,104 +2053,104 @@
         ]
       },
       {
-        "name": "player",
-        "description": "The player to view best runs for."
+        "name": "játékos",
+        "description": "A játékos akinek a legjobb meneteit nézzük."
       }
     ],
     "responses": {
-      "noBestRuns": ["No best runs were found on this profile."],
-      "entranceTitle": ["{emoji} {name}'s Best Runs for Entrance on {profile}"],
-      "floorTitle": ["{emoji} {name}'s Best Runs for Floor {floor} on {profile}"],
-      "masterTitle": ["{emoji} {name}'s Best Runs for Master Mode Floor {floor} on {profile}"],
+      "noBestRuns": ["Nincs legjobb menet társítva ehhez a profilhoz."],
+      "entranceTitle": ["{emoji} {name} legjobb menetei az Entrance-on a {profile} profilon"],
+      "floorTitle": ["{emoji} {name} Legjobb menetei a Floor {floor}-on a {profile} profilon"],
+      "masterTitle": ["{emoji} {name} Legjobb menetei a Master Mode Floor {floor}-on a {profile} profilon"],
       "description": [
-        "Time: {time}\n",
-        "Score: {score:,}\n",
+        "Idő: {time}\n",
+        "Eredmény: {score:,}\n",
         "> Exploration: {exploration_score:,}\n",
         "> Speed: {speed_score:,}\n",
         "> Skill: {skill_score:,}\n",
         "> Bonus: {bonus_score:,}\n",
-        "Secrets: {secrets:,}\n",
-        "Teammates: {teammates}\n",
+        "Secret-ek: {secrets:,}\n",
+        "Csapattársak: {teammates}\n",
         "Class: {selected_class}\n",
-        "Mobs Killed: {kills:,}\n",
-        "Damage Dealt: {damage_dealt:,}\n",
-        "Damage Mitigated: {damage_mitigated:,}"
+        "Mobok megölve: {kills:,}\n",
+        "Sebzés kiosztva: {damage_dealt:,}\n",
+        "Sebzés lecsökkentve: {damage_mitigated:,}"
       ],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ]
     }
   },
   "bank": {
     "name": "bank",
-    "description": "Displays a player's bank balance and transactions.",
+    "description": "Kijelzi egy játékos bankegyenlegét és tranzakcióit",
     "options": [
       {
-        "name": "player",
-        "description": "The player to view bank information for."
+        "name": "játékos",
+        "description": "A játékos akinek a bankinformációit nézzük."
       }
     ],
     "responses": {
-      "title": ["{name}'s Bank Information on {profile}"],
-      "noBankAPI": ["Bank API is disabled on this profile."],
-      "description": ["<:gold_block:986849038404026438> Balance: {balance:,.0f} coins"],
-      "transactions": ["Transactions"],
-      "noTransactions": ["No recent transactions were found on this profile."],
+      "title": ["{name} Bankinformációi a {profile} profilon"],
+      "noBankAPI": ["A Bank API ki van kapcsolva ezen a profilon."],
+      "description": ["<:gold_block:986849038404026438> Egyenleg: {balance:,.0f} coin-ok"],
+      "transactions": ["Tranzakciók"],
+      "noTransactions": ["Nincsenek legutóbbi tranzakciók ezen a profilon."],
       "specialProfile": [
-        "{type} Profile"
+        "{type} Profil"
       ],
       "normalProfile": [
-        "Normal Profile"
+        "Normál Profil"
       ]
     }
   },
   "bingo": {
     "name": "bingo",
-    "description": "Check a player's Bingo statistics."
+    "description": "Megnézi egy játékos Bingo statisztikáit."
   },
   "bingo card": {
-    "name": "card",
-    "description": "Displays a player's Bingo card for this month.",
+    "name": "kártya",
+    "description": "Kijelzi a játékos ehavi Bingo kártyáját.",
     "options": [
         {
-            "name": "player",
-            "description": "The player to view the bingo card for."
+            "name": "játékos",
+            "description": "A játékos akinek a Bingo kártyáját nézzük."
         }
     ],
     "responses": {
-      "bingoTitle": ["{name}'s SkyBlock Bingo Card"],
-      "noBingoData": ["{name} has not played this month's bingo."],
-      "bingoDescription": ["Points: {points}\n\n{board}"],
+      "bingoTitle": ["{name} SkyBlock Bingo kártyája"],
+      "noBingoData": ["{name} nem játszotta ennek a hónapnak a bingóját"],
+      "bingoDescription": ["Pontok: {points}\n\n{board}"],
       "progress": [
-        "Progress: {progress:,}\n",
-        "Next Tier: {needed:,}\n> {toNext:,} needed\n",
-        "Tier {tier}/{tiers}"
+        "Haladás: {progress:,}\n",
+        "Következő szint: {needed:,}\n> {toNext:,} szükséges\n",
+        "Szint {tier}/{tiers}"
       ],
       "finishedProgress": [
-        "Progress: {progress:,}\n",
-        "Tier {tier}/{tiers}\n",
-        "Goal completed!"
+        "Haladás: {progress:,}\n",
+        "Szint {tier}/{tiers}\n",
+        "Cél teljesítve!"
       ]
     }
   },
   "bingo stats": {
-    "name": "stats",
-    "description": "Displays a player's Bingo statistics.",
+    "name": "statisztikák",
+    "description": "Kijelzi egy játékos Bingo statisztikáit.",
     "options": [
         {
-            "name": "player",
-            "description": "The player to view bingo statistics for."
+            "name": "játékos",
+            "description": "A játékos akinek a bingóstatisztikáit nézzük."
         }
     ],
     "responses": {
-      "noBingoData": ["{name} has not played this month's bingo."],
-      "bingoTitle": ["{name}'s SkyBlock Bingo Statistics"],
-      "inner": ["Points: {points:,}\nGoals Completed: {goals_completed:,}"],
+      "noBingoData": ["{name} nem játszotta ennek a hónapnak a bingóját."],
+      "bingoTitle": ["{name} SkyBlock Bingo statisztikái"],
+      "inner": ["Pontok: {points:,}\nCélok teljesítve: {goals_completed:,}"],
       "event": ["Bingo #{number}"],
-      "description": ["Points (Lifetime): {points}"]
+      "description": ["Pontok (Összesített): {points}"]
     }
   },
   "guild info": {
