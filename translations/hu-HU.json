@@ -2154,17 +2154,17 @@
     }
   },
   "guild info": {
-    "name": "info",
-    "description": "Displays information about a guild.",
+    "name": "információ",
+    "description": "Információt jelez ki egy guild-ről.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to view."
+        "description": "A megnézendő guild."
       }
     ],
     "responses": {
-      "noGuild": ["No guild was found with that name."],
-      "title": ["{name}'s Guild Information"],
+      "noGuild": ["Nem találtunk guild-et ezzel a névvel."],
+      "title": ["{name} Guild Információja"],
       "description": [
         "Description: {description}\n",
         "ID: {id}\n",
