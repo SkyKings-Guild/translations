@@ -2179,17 +2179,17 @@
     }
   },
   "guild members": {
-    "name": "members",
-    "description": "Displays a list of members in a guild.",
+    "name": "tagok",
+    "description": "Kijelez egy  listát a guild tagjairól.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to view."
+        "description": "A megtekintendő guild."
       }
     ],
     "responses": {
-      "noGuild": ["No guild was found with that name."],
-      "title": ["{name}'s Guild Members"],
+      "noGuild": ["Nem találtunk guild-et ezzel a névvel."],
+      "title": ["A {name} guild tagjai"],
       "rankInner": [
         "Members: {members:,}\n",
         "Created: <t:{created}:F>\n",
@@ -2204,166 +2204,166 @@
   },
   "guild xp": {
     "name": "xp",
-    "description": "Displays a list of members that are under a certain GEXP threshold.",
+    "description": "Kijelez egy listát azokról a tagokról, akik egy bizonyos GEXP számtól kevesebbet szereztek a héten.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to view."
+        "description": "A megtekintendő guild."
       },
       {
         "name": "gexp",
-        "description": "The GEXP threshold to display members under."
+        "description": "A megadandó GEXP szám."
       }
     ],
     "responses": {
-      "noGuild": ["No guild was found with that name."],
-      "title": ["{name}'s Guild XP Search"],
-      "description": ["Threshold: {gexp:,}\nMembers: {members:,}/{total:,}"],
+      "noGuild": ["Nem találtunk guild-et ezzel a névvel."],
+      "title": ["A {name} nevű guild XP számai"],
+      "description": ["Maximum GEXP: {gexp:,}\nTagok: {members:,}/{total:,}"],
       "memberInner": [
         "{name} ({xp:,} GEXP)"
       ]
     }
   },
   "guild check": {
-    "name": "check",
-    "description": "View a list of guild members that are not in the current Discord server.",
+    "name": "vizsgálás",
+    "description": "Kijelez egy listát azokról a tagokról, akik nincsenek a Discord szerveren.",
     "options": [
       {
         "name": "guild",
-        "description": "The guild to view."
+        "description": "A megtekintendő guild."
       }
     ],
     "responses": {
-      "checkRunning": ["There's already a check running in this guild. Please try again later."],
-      "noGuild": ["No guild was found with that name."],
-      "title": ["Guild Member Check for {name}"],
-      "allMembersInDC": ["All guild members are in the current Discord server."],
-      "description": ["{amount}/{total} {name} guild members are not in this Discord server."],
+      "checkRunning": ["Már megy egy vizsgálat ebben a guild-ban. Kérlek próbáld újra később."],
+      "noGuild": ["Nincs guild ezzel a névvel."],
+      "title": ["Guild tag vizsgálat a {name} guild-ban"],
+      "allMembersInDC": ["Az összes guild tag a Discord szerveren van."],
+      "description": ["{amount}/{total} {name} tag nincs a Discord szerveren."],
       "inner0": [
-        "{name} - Unverified"
+        "{name} - Nem ellenőrzött"
       ],
       "inner1": [
-          "{name} - Verified, Not in server"
+          "{name} - Ellenőrzött, nincs a szerveren"
       ]
     }
   },
   "status":{
-    "name": "status",
-    "description": "View Hypixel's current status from their status page.",
+    "name": "állapot",
+    "description": "Kijelzi a Hypixel állapotát az állapotmérő oldalukról.",
     "options": [],
     "responses": {
-      "title": ["Hypixel Server Status"],
+      "title": ["Hypixel Szerver Állapot"],
       "inner": [
         "**[{name}]({shortlink})**\n",
         "{update}\n",
-        "Status: {status}\n",
-        "Impact: {impact}"
+        "Állapot: {status}\n",
+        "Behatás: {impact}"
       ],
       "innerScheduled": [
         "**[{name}]({shortlink})**\n",
         "{update}\n",
-        "Scheduled for <t:{time}:F>."
+        "Időzítve: <t:{time}:F>-re."
       ],
-      "unresolved": ["Unresolved Incidents"],
-      "activeMaintenence": ["Active Maintenence"],
-      "scheduledMaintenence": ["Scheduled Maintenence"]
+      "unresolved": ["Megválaszolatlan Incidensek"],
+      "activeMaintenence": ["Aktív Javítás"],
+      "scheduledMaintenence": ["Időzített Javítás"]
     }
   },
   "userinfo": {
-    "name": "userinfo",
-    "description": "Displays information about a user.",
+    "name": "felhasználóinfó",
+    "description": "Információt jelez ki egy felhasználóról.",
     "options": [
       {
-        "name": "user",
-        "description": "The user to view information about."
+        "name": "felhasználó",
+        "description": "A felhasználó, akinek az információját nézzük."
       }
     ],
     "responses": {
-      "title": ["{name}'s User Information"],
-      "userInfoName": ["User Information"],
+      "title": ["{name} Felhasználói Információja"],
+      "userInfoName": ["Felhasználó Információ"],
       "userInfoValue": [
-        "Name: {name}\n",
-        "Discriminator: {discriminator}\n",
+        "Név: {name}\n",
+        "Diszkriminátor: {discriminator}\n",
         "ID: {id}\n",
-        "Created: <t:{created}:F>"
+        "Készítve: <t:{created}:F>"
       ],
-      "memberInfoName": ["Member Information"],
-      "boosted": ["Server Booster since <t:{time}:F>"],
+      "memberInfoName": ["Tag információ"],
+      "boosted": ["Szervergyorsító <t:{time}:F> óta"],
       "memberInfoValue": [
-        "Nick: {nick}\n",
-        "Top Role: {top_role}\n",
-        "Joined: <t:{joined}:F>\n",
+        "Becenév: {nick}\n",
+        "Legmagasabb role: {top_role}\n",
+        "Csatlakozott: <t:{joined}:F>\n",
         "{boosted}"
       ],
       "playerInfoName": ["Player Information"],
       "playerInfoValue": [
-        "Username: {name}\n",
-        "Rank: {rank}\n",
-        "Network Level: {level}\n",
+        "Felhasználónév: {name}\n",
+        "Rang: {rank}\n",
+        "Hypixel Szint: {level}\n",
         "Guild: {guild}"
       ]
     }
   },
   "verify": {
-    "name": "verify",
-    "description": "Verification commands."
+    "name": "ellenőrzés",
+    "description": "Ellenőrző parancsok."
   },
   "verify link": {
-    "name": "link",
-    "description": "Link with your Minecraft account through Hypixel's social menu.",
+    "name": "csatlakoztatás",
+    "description": "Csatlakoztasd a fiókod a Hypixel social menüjén keresztül.",
     "options": [
       {
-        "name": "player",
-        "description": "The player to verify with."
+        "name": "játékos",
+        "description": "A játékos akit ellenőrizni szeretnél."
       }
     ],
     "responses": {
       "notLinked": [
-        "**{name}** does not have a Discord account associated with them in their Hypixel social menu.\n\n",
-        "To learn how to add your Discord account to your Hypixel social menu, try the `/verify help` command."
+        "**{name}**-nek nincsen Discord fiókja összekötve a Hypixel social menün keresztül.\n\n",
+        "Hogy megtanuld, hogyan kösd össze a Discord fiókod a Hypixel social menün keresztül, próbáld ki a `/verify help` parancsot."
       ],
       "notVerified": [
-        "**{name}**'s associated Discord account is not identical to yours.\n\n",
-        "To learn how to add your Discord account to your Hypixel social menu, try the `/verify help` command."
+        "**{name}**-nek az összekötött Discord fiókja nem azonos a tiéddel.\n\n",
+        "Hogy megtanuld, hogyan kösd össze a Discord fiókod a Hypixel social menün keresztül, próbáld ki a `/verify help` parancsot."
       ],
       "alreadyVerified": [
-        "**{name}** is already verified with <@{userid}>. Verifying on this account will remove that link.\n\n",
-        "Would you like to continue?"
+        "**{name}** már ellenőrizve van a <@{userid}> ID-vel. Az ellenőrzés el fogja távolítani ezt az összekötést a fiókon.\n\n",
+        "Szeretnéd folytatni?"
       ],
       "verified": [
-        "**{name}** has been linked to your Discord account."
+        "**{name}** össze lett kötve a Discord fiókoddal."
       ]
     }
   },
   "verify help": {
-    "name": "help",
-    "description": "Learn how to add your Discord account to your Hypixel social menu.",
+    "name": "segítség",
+    "description": "Tanuld meg, hogy hogyan kösd össze a Discord fiókodat a Hypixel social menün keresztül.",
     "options": [],
     "responses": {
-      "title": ["Verification Instructions"],
+      "title": ["Ellenőrző Instrukciók"],
       "description": [
-        "To link your Minecraft account to your Discord account:\n",
-        "**1)** In any Hypixel lobby, right click the \"My Profile\" item in your 2nd hotbar slot.\n",
-        "**2)** Select \"Social Media\", to the right of the Redstone Block.\n",
-        "**3)** Select \"Discord\".\n",
-        "**4)** Paste your Discord username ({name}) into chat. __This is case sensitive.__\n",
-        "**5)** If a book pops up, select \"I understand\".\n",
-        "**6)** Use the `/verify link` command to connect your Minecraft account to your Discord account.\n",
-        "Note that it may take up to 5 minutes for the API to reflect your changes.\n\n",
-        "For a video example, click [here](https://youtu.be/6ZXaZ-chzWI)."
+        "Hogy hozzákösd a Minecraft fiókodat a Discord fiókodhoz:\n",
+        "**1)** Akármelyik Hypixel lobbyban jobb-klikkelj a \"My Profile\" tárgyadra a hotbar második helyén.\n",
+        "**2)** Válaszd ki a \"Social Media\" opciót, jobbra a Redstone Blokktól.\n",
+        "**3)** Válaszd ki a \"Discord\" opciót.\n",
+        "**4)** Másold ki a Discord felhasználónevedet ({name}) a chatbe. __Ez kis- és nagybetűérzékeny.__\n",
+        "**5)** Ha egy könyv felbukkan, válaszd a \"I understand\" opciót.\n",
+        "**6)** Használd a `/verify link` parancsot, hogy hozzákösd a Minecraft fiókod a Discord fiókodhoz.\n",
+        "Jegyezd meg, hogy akár 5 percbe is eltelhet, hogy az API mutassa a változtatásaidat.\n\n",
+        "Egy videós példáért kattints ide: [here](https://youtu.be/6ZXaZ-chzWI)."
       ]
     }
   },
   "verify sync": {
-    "name": "sync",
-    "description": "Synchronize your Discord account with Hypixel's social menu.",
+    "name": "sziinkron",
+    "description": "Szinkronizáld a Discord fiókod a Hypixel social menüjével.",
     "options": [],
     "responses": {
-      "synced": ["Successfully updated your roles."],
+      "synced": ["Sikeresen frissítetted a role-jaidat."],
       "syncedPartially": [
-        "Successfully updated your roles.\n",
-        "Some roles or your nickname were not changed due to permission issues. ",
-        "Please contact a server administrator for more information."
+        "Sikeresen frissítetted a rolejaidat.\n",
+        "Néhány role és a beceneved nem változott a jogosultságok miatt ",
+        "Kérlek lépj kapcsolatba egy szerveradminisztrátorral több információért."
       ]
     }
   },
