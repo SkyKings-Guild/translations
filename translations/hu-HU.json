@@ -2368,94 +2368,94 @@
     }
   },
   "verify unlink": {
-    "name": "unlink",
-    "description": "Unlink your Minecraft account.",
+    "name": "lecsatlakoztatás",
+    "description": "Lecsatlakoztatja a Minecraft fiókodat.",
     "options": [],
     "responses": {
       "unverified": [
-        "You have been unlinked from your Minecraft account, **{name}**."
+        "Le lettél csatlakoztatva a Minecraft fiókodról, **{name}**."
       ]
     }
   },
   "*": {
     "errors": {
       "*": {
-        "note": "Catches all errors that aren't here.",
+        "note": "Elfog minden nem itt található hibát.",
         "message": [
-          "An unhandled error occured. This has been reported.\n\n{e.__class__.__name__}: {e}"
+          "Egy kezeletlen hiba jelentve.\n\n{e.__class__.__name__}: {e}"
         ]
       },
       "HTTP-500": {
-        "note": "Raised on an HTTP 500 range error.",
+        "note": "Egy HTTP 500 hatósugarú hiba felemelve.",
         "message": [
-          "A request to the API returned a server error:\n{e}\nPlease try again later."
+          "Egy API-nak szóló kérelem szerverhibát jelzett ki:\n{e}\nPróbáld újra később."
         ]
       },
       "0": {
-        "note": "Raised in config edit if an invalid option is chosen.",
+        "note": "config edit-ben felemelve, ha egy érvénytelen opció lett kiválasztva.",
         "message": [
-          "{option} is not a valid option."
+          "{option} egy nem érvényes opció."
         ]
       },
       "1": {
-        "note": "Raised in config edit if an invalid value is chosen.",
+        "note": "config edit-ben felemelve, ha egy érvénytelen érték lett kiválasztva.",
         "message": [
-          "{value} is not a valid value for that option."
+          "{value} egy nem érvényes érték."
         ]
       },
       "2": {
-        "note": "Raised if an un-assignable role is chosen and can't be used.",
+        "note": "Felemelve, ha egy nemadható role van kiválasztva, és nem használható.",
         "message": [
-          "{role.mention} cannot be used because it's managed and cannot be assigned.\n",
-          "Please try a different role."
+          "{role.mention} nem használható, mert az kezelve van és nem adható másnak.\n",
+          "Próbálj meg egy másik role-t."
         ]
       },
       "3": {
-        "note": "Raised when adding guilds if the guild already exists.",
+        "note": "Felemelve, amikor egy olyan guild-et választasz, ami már a szerverhez van kötve.",
         "message": [
-          "That guild has already been linked to this server."
+          "Ez a guild már a szerverhez van kötve."
         ]
       },
       "4": {
-        "note": "Raised when trying to edit a guild that doesnt exist in the database.",
+        "note": "Felemelve, amikor egy olyan guild-et módosítasz, ami nincs benne az adatbázisban.",
         "message": [
-          "That guild has not been added to this server."
+          "Ez a guild nincs a szerverhez kötve."
         ]
       },
       "5": {
-        "note": "Raised when adding a guild rank that already exists.",
+        "note": "Felemelve, amikor már egy eleve létező guild rangot adsz hozzá a szerverhez.",
         "message": [
-          "That rank has already been linked to a role."
+          "Ez a rang már egy role-hoz van kötve."
         ]
       },
       "6": {
-        "note": "Raised when trying to edit a guild rank that doesnt exist in the database.",
+        "note": "Felemelve, amikor egy olyan role-t módosítasz, ami nincs benne az adatbázisban.",
         "message": [
-          "That rank has not been added to this server."
+          "Ez a rang nincs hozzáadva a szerverhez."
         ]
       },
       "7": {
-        "note": "Raised when trying to add a guild requirement that already exists in the database.",
+        "note": "Felemelve, amikor egy már létező követelményt akarsz a guild-hoz adni.",
         "message": [
-          "That requirement has already been added to this guild."
+          "Ez a követelmény már a guild-hez van adva."
         ]
       },
       "8": {
-        "note": "Raised when trying to manage a guild requirement that doesn't exist in the database.",
+        "note": "Felemelve, amikor egy olyan követelményt módosítasz, ami nincs az adatbázisban.",
         "message": [
-          "That requirement has not been added to this guild."
+          "Ez a követelmény nincs hozzáadva a guild-hoz."
         ]
       },
       "9": {
-        "note": "Raised when trying to add a rank requirement that already exists in the database.",
+        "note": "Felemelve, amikor egy már létező követelményt akarsz a ranghoz adni.",
         "message": [
-          "That requirement has already been added to this rank."
+          "Ez a követelmény már a ranghoz van adva."
         ]
       },
       "10": {
-        "note": "Raised when trying to manage a rank requirement that doesn't exist in the database.",
+        "note": "Felemelve, amikor egy olyan követelményt módosítasz, ami nincs az adatbázisban.",
         "message": [
-          "That requirement has not been added to this rank."
+          "Ez a követelmény nincs hozzáadva a ranghoz."
         ]
       },
       "11": {
