@@ -2467,64 +2467,64 @@
       "12": {
         "note": "Felemelve, amikor egy olyan guild-en próbálsz prémiumot aktiválni, ahol már az aktív.",
         "message": [
-          "Ezen a szerver."
+          "Ezen a szerveren már van prémium."
         ]
       },
       "13": {
-        "note": "Raised when trying to redeem a premium code on a guild that has premium from a user.",
+        "note": "Felemelve, amikor egy olyan szerveren próbálsz prémiumot aktiválni, ahol egy guild-nek már van prémiuma egy felhasználótól.",
         "message": [
-          "This server has premium active from a SkyKings Premium member.\n",
-          "Premium codes cannot be redeemed in this server."
+          "Ezen a szerveren van aktív prémium egy Skykings Premium tag által.\n",
+          "Prémium kódok nem aktiválhatóak ezen a szerveren."
         ]
       },
       "14": {
-        "note": "Raised when trying to use a nonexistant premium code.",
+        "note": "Felemelve, amikor egy nem létező kódot akarsz aktiválni.",
         "message": [
-          "This premium code is not valid."
+          "Ez a prémium kód nem érvényes."
         ]
       },
       "15": {
-        "note": "Raised when trying to start an event when one is running.",
+        "note": "Felemelve, amikor egy eseményt akarsz elindítani, de ezen a szerveren már van elindítva esemény.",
         "message": [
-          "There's already an event running in this server.\n",
-          "If it's already ended, you can forcefully delete it with the `/event delete` command."
+          "Már fut egy esemény ezen a szerveren.\n",
+          "Ha már véget ért, kitörölheted a `/event delete` paranccsal."
         ]
       },
       "16": {
-        "note": "Raised when trying to use a premium feature without premium.",
+        "note": "Felemelve, amikor egy prémium funkciót prémium nélkül akarsz használni.",
         "message": [
-          "SkyKings Premium is required to perform that action.\n",
-          "For more information, please see `/premium info`."
+          "SkyKings Premium szükséges, hogy végrehajtsd ezt a parancsot.\n",
+          "További információért írd be a `/premium info` parancsot."
         ]
       },
       "17": {
-        "note": "Raised when the bot does not have permission to send messages.",
+        "note": "Felemelve, amikor a bot-nak nincsenek képküldési engedélyei.",
         "message": [
-          "I don't have permission to send messages in the specified channel."
+          "Nincs engedélyem, hogy üzenetet kűldjek a kijelölt csatornában."
         ]
       },
       "18": {
-        "note": "Raised when the player argument is required but was not passed.",
+        "note": "Felemelve, amikor a játékos érvnek teljesülnie kéne, de nem teljesül.",
         "message": [
-          "You must provide a player to search for as you are not verified."
+          "Mindenképp meg kell adnod a keresendő játékost, mivel nem vagy ellenőrizve."
         ]
       },
       "19": {
-        "note": "Raised when an invalid event is passed.",
+        "note": "Felemelve, amikor egy érvénytelen eseményt indítanál.",
         "message": [
-          "**{event}** is not a valid event."
+          "**{event}** egy nem érvényes esemény."
         ]
       },
       "20": {
-          "note": "Raised when an event is already enabled.",
+          "note": "Felemelve, amikor az események már be vannak kapcsolva.",
           "message": [
-            "That event is already enabled."
+            "Ez az esemény már be van kapcsolva."
           ]
       },
       "21": {
-          "note": "Raised when an event is already disabled.",
+          "note": "Felemelve, amikor az események már ki vannak kapcsolva.",
           "message": [
-              "That event is already disabled."
+              "Ez az esemény már ki van kapcsolva."
           ]
       },
       "22": {
