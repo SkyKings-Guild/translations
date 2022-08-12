@@ -2459,15 +2459,15 @@
         ]
       },
       "11": {
-        "note": "Raised when the maximum value for a requirement is exceeded.",
+        "note": "Felemelve, amikor egy követelmény maximum értékén túlhaladsz.",
         "message": [
-          "The maximum value of {maximum:,} for the {requirement} requirement has been exceeded."
+          "A {maximum:,} maximumértéken a {requirement} követelménynél túlhaladtál."
         ]
       },
       "12": {
-        "note": "Raised when trying to redeem premium on a guild that already has it active.",
+        "note": "Felemelve, amikor egy olyan guild-en próbálsz prémiumot aktiválni, ahol már az aktív.",
         "message": [
-          "This server already has premium active."
+          "Ezen a szerver."
         ]
       },
       "13": {
