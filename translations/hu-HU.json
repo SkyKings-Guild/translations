@@ -29,7 +29,7 @@
         "Makrózó művelet: {macroer_action}\n",
         "Rattelő művelet: {phisher_action}\n",
         "\n",
-        "Módosítani tudod a konfigurációkat a '/config edit' paranccsal!"
+        "Módosítani tudod a konfigurációkat a '/config módosítás' paranccsal!"
       ],
       "title.2": [
         "{ctx.guild.name}'s Megerősítés konfiguráció"
@@ -46,7 +46,7 @@
         "Hypixel Dolgozó: {staff}\n",
         "Becenév formátum: {nickname}\n",
         "\n",
-        "Módosítani tudod a konfigurációkat a '/config edit' paranccsal!"
+        "Módosítani tudod a konfigurációkat a '/config módosítás' paranccsal!"
       ]
     }
   },
@@ -66,10 +66,10 @@
     "responses": {
       "premiumOnly": [
         "Ez az opció csak a prémium szervereken használható.\n",
-        "Ha többet szeretnél tudni, használd a '/premium info' parancsot."
+        "Ha többet szeretnél tudni, használd a '/premium infomáció' parancsot."
       ],
       "editedSuccessfully": [
-        "{option} {value}-re lett állítva!!"
+        "{option} {value}-re lett állítva!"
       ]
     },
     "autocomplete": {
@@ -226,7 +226,7 @@
         ],
         "premiumGuild": [
           "Ez az opció csak a prémium szervereken használható.\n",
-          "Ha többet szeretnél tudni, használd a '/premium info' parancsot."
+          "Ha többet szeretnél tudni, használd a '/premium információ' parancsot."
         ]
       }
   },
@@ -250,7 +250,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a  `/config guilds add-guild` paranccsal."
+        "Add a szerverhez a  `/config guilds guild-hozzáadás` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -283,7 +283,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds add-guild` paranccsal."
+        "Add a szerverhez a `/config guilds guild-hozzáadás` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -318,7 +318,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds add-guild` paranccsal."
+        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -358,7 +358,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds add-guild` paranccsal."
+        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -397,7 +397,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds add-guild` paranccsal."
+        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -436,7 +436,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds add-guild` paranccsal."
+        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -591,7 +591,7 @@
     "description": "Parancsok amik a SkyKings Premium-hoz vannak kötve."
   },
   "premium info": {
-    "name": "info",
+    "name": "információ",
     "description": "Szerezz információt a SkyKings Premium-ról.",
     "options": [],
     "responses": {
@@ -1362,8 +1362,8 @@
       }
     ],
     "responses": {
-      "enabled": [" **{event}** bekapcsolva."],
-      "disabled": [" **{event}** kikapcsolva."]
+      "enabled": ["**{event}** bekapcsolva."],
+      "disabled": ["**{event}** kikapcsolva."]
     }
   },
   "skyblock-events config toggle-alert": {
@@ -2180,7 +2180,7 @@
   },
   "guild members": {
     "name": "tagok",
-    "description": "Kijelez egy  listát a guild tagjairól.",
+    "description": "Kijelez egy listát a guild tagjairól.",
     "options": [
       {
         "name": "guild",
@@ -2725,7 +2725,7 @@
         "2. A bot elkezdi követni hogy mennyi XP-d van,\n",
         "3. És el leszel helyezve a ranglistán az XP-d szerint.\n",
         "Ez az üzenet fog ranglistaként szolgálni, és frissülni fog minden {when}-ben. Sok szerencsét és jó szórakozást!\n",
-        "**This event ends on {end_date} ({end_relative})**"
+        "**Ez az esemény {end_date}-kor fog véget érni ({end_relative}) idő múlva.**"
       ],
       "updateQueued": [
         "Esemény sorba állítva frissítésre ekkorra: {when}."
@@ -2768,7 +2768,7 @@
       "position": [
         "Jelenleg {xp:,} {label}-d van, és ezzel a #{pos:,}-dik vagy a {players:,} játékosból."
       ],
-      "jsonify": ["Dump to JSON File"]
+      "jsonify": ["JSON fájlban való lerakás"]
     },
     "pagination": {
       "page": [
