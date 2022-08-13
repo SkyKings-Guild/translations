@@ -2528,27 +2528,27 @@
           ]
       },
       "22": {
-          "note": "Raised when an invalid alert time is passed. (skyblock events config)",
+          "note": "Felemelve amikor egy érvénytelen időzítőt állítanál be. (skyblock events config)",
           "message": [
-              "**{time}** is not a valid time. It must be **0**, **5**, **10**, or **30**."
+              "**{time}** egy érvénytelen idő. Csak **0**, **5**, **10**, vagy **30** lehetséges."
           ]
       },
       "23": {
-          "note": "Raised when an alert is already enabled. (skyblock events config)",
+          "note": "Felemelve, amikor egy figyelmeztetés már be van kapcsolva. (skyblock events config)",
           "message": [
-              "That alert is already enabled."
+              "Ez a figyelmeztetés már be van kapcsolva."
           ]
       },
       "24": {
-          "note": "Raised when an alert is already disabled. (skyblock events config)",
+          "note": "Felemelve, amikor egy figyelmeztetés már ki van kapcsolva. (skyblock events config)",
           "message": [
-              "That alert is already disabled."
+              "Ez a figyelmeztetés már ki van kapcsolva."
           ]
       },
       "25": {
-          "note": "Raised when a player doesn't have any SkyBlock profiles to fetch.",
+          "note": "Felemelve, amikor egy játékosnak nincsenek lehozandó SkyBlock profiljai.",
           "message": [
-              "**{name}** has no SkyBlock profiles."
+              "**{name}**-nek nincsenek SkyBlock profiljai."
           ]
       }
     },
