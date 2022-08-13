@@ -13,6 +13,8 @@
       ],
       "description.1": [
         "Autoreply Enabled: {autoreply}\n",
+        "Hypixel Status Ping: {status_ping}\n",
+        "Hypixel Status Channel: {status_channel}\n",
         "Hypixel News Ping: {news_ping}\n",
         "Hypixel News Channel: {news_channel}\n",
         "SkyBlock Patchnotes Ping: {patchnotes_ping}\n",
@@ -120,6 +122,7 @@
     "description": "View the guilds linked to this server.",
     "options": [],
     "responses": {
+      "noGuilds": ["No guilds have been linked to this server."],
       "base": [
         "Name: {name}\n",
         "ID: {gid}\n",
@@ -174,6 +177,13 @@
       ],
       "guildNotFound": [
         "The guild **{guild}** does not exist."
+      ],
+      "premiumRequired": [
+        "Premium is required to add more than three guilds to one server.\n",
+        "For more information, run the `/premium info` command."
+      ],
+      "maxGuilds": [
+        "You cannot add more than 25 guilds."
       ]
     }
   },
@@ -989,7 +999,7 @@
       "SCAMMER_NAME": [
         "Entry #{id} - Scammer"
       ],
-      "IRL_TRADER_NAME": [
+      "TRADER_NAME": [
         "Entry #{id} - IRL Trader"
       ],
       "RATTER_NAME": [
@@ -1001,7 +1011,7 @@
       "SCAMMER": [
         "Reason: {reason}"
       ],
-      "IRL_TRADER": [
+      "TRADER": [
         "Reason: {reason}"
       ],
       "RATTER": [
@@ -1033,7 +1043,7 @@
       "SCAMMER_NAME": [
         "Entry #{id} - Scammer"
       ],
-      "IRL_TRADER_NAME": [
+      "TRADER_NAME": [
         "Entry #{id} - IRL Trader"
       ],
       "RATTER_NAME": [
@@ -1045,7 +1055,7 @@
       "SCAMMER": [
         "Reason: {reason}"
       ],
-      "IRL_TRADER": [
+      "TRADER": [
         "Reason: {reason}"
       ],
       "RATTER": [
