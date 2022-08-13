@@ -2554,74 +2554,74 @@
     },
     "checkFailure": {
       "0": {
-        "note": "Raised when a user doesn't have premium and needs it.",
+        "note": "Felemelve, amikor egy felhasználónak nincs prémiumja, de szükséges.",
         "message": [
-          "You need SkyKings Premium to use this command.\n",
-          "For more information, please see `/premium info`."
+          "A parancs használatához rendelkezned kell a SkyKings Premium-mal.\n",
+          "Több információért használd a `/premium info` parancsot."
         ]
       },
       "1": {
-        "note": "Raised when an event is already running.",
+        "note": "Felemelve, amikor egy esemény már fut.",
         "message": [
-          "There's already an event running in this server."
+          "Már fut egy esemény ezen a szerveren."
         ]
       },
       "2": {
-        "note": "Raised when an event is not running.",
+        "note": "Felemelve, amikor egy esemény nem fut.",
         "message": [
-          "There isn't an event running in this server."
+          "Nem fut esemény ezen a szereveren."
         ]
       },
       "3": {
-        "note": "Raised when the command invoker is not verified.",
+        "note": "Felemelve, amikor a parancsidéző nem ellenőrzött.",
         "message": [
-          "You must be verified to use this command.\n",
-          "You can verify with `/verify`."
+          "Ellenőrzöttnek kell lenned, hogy használni tudd ezt a parancsot.\n",
+          "Ellenőrizhetsz a `/verify` paranccsal."
         ]
       },
       "4": {
-        "note": "Raised when the command invoker is already verified.",
+        "note": "Felemelve, amikor a parancsidéző már ellenőrzött.",
         "message": [
-          "You're already verified."
+          "Már ellenőrizve vagy."
         ]
       },
       "5": {
-        "note": "Raised when the command invoker is already in the event.",
+        "note": "Felemelve, amikor a parancsidéző már az eseményben van.",
         "message": [
-          "You're already in the event."
+          "Már az eseményben vagy."
         ]
       },
       "6": {
-        "note": "Raised when the command invoker is not in the event.",
+        "note": "Felemelve, amikor a parancsiddéző nincs az eseményben.",
         "message": [
-          "You're not in the event. Join it with `/event join`."
+          "Nem vagy az eseményben. Csatlakozz az `/event join` paranccsal."
         ]
       },
       "7": {
-        "note": "Raised when the command invoker does not have permissions.",
+        "note": "Felemelve, amikor a parancsidézőnek nincsenek engedélyei.",
         "message": [
-          "You do not have permission to run this command.\n"
+          "Nincsenek engedélyeid, hogy használd ezt a parancsot.\n"
         ]
       },
       "8": {
-        "note": "Raised when trying to use a premium feature without premium.",
+        "note": "Felemelve, amikor egy prémium funkciót prémium nélkül akarsz használni.",
         "message": [
-          "SkyKings Premium is required to perform that action.\n",
-          "For more information, please see `/premium info`."
+          "SkyKings Premium szükséges, hogy végrehajtsd ezt az akciót.\n",
+          "Több információért használd a `/premium info` parancsot."
         ]
       }
     },
     "converterFailure": {
       "player": [
-        "The specified player does not exist."
+        "Ez a játékos nem létezik."
       ]
     },
     "events": {
       "*": [
-        "Event"
+        "Esemény"
       ],
       "gvg": [
-        "Guild vs Guild"
+        "Guild Guild ellen"
       ],
       "SKILL": [
         "Skill XP"
@@ -2663,13 +2663,13 @@
         "Catacombs XP"
       ],
       "WEIGHT": [
-        "Senither Weight"
+        "Senither Súly"
       ],
       "SKILL_WEIGHTED": [
-        "Weighted Skill XP"
+        "Súlyozott Skill XP"
       ],
       "GIFTS_GIVEN": [
-        "Gifts Given"
+        "Gift-ek adva"
       ],
       "SKILL_LABEL": [
         "XP"
@@ -2711,132 +2711,132 @@
         "XP"
       ],
       "WEIGHT_LABEL": [
-        "Weight"
+        "Súly"
       ],
       "SKILL_WEIGHTED_LABEL": [
         "XP"
       ],
       "GIFTS_GIVEN_LABEL": [
-        "Gifts"
+        "Gift-ek"
       ],
       "startMessage": [
-        "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
-        "1. You join the event,\n",
-        "2. The bot starts tracking the XP you earn,\n",
-        "3. You get placed on the leaderboard accordingly.\n",
-        "This message will serve as the leaderboard, and will be updated every {when}. Good luck, and have fun!\n",
+        "{created_by.mention} elindított egy {gvg}{event} eseményt! Itt van, hogy működik ez:\n",
+        "1. Csatlakozol az eseménybe,\n",
+        "2. A bot elkezdi követni hogy mennyi XP-d van,\n",
+        "3. És el leszel helyezve a ranglistán az XP-d szerint.\n",
+        "Ez az üzenet fog ranglistaként szolgálni, és frissülni fog minden {when}-ben. Sok szerencsét és jó szórakozást!\n",
         "**This event ends on {end_date} ({end_relative})**"
       ],
       "updateQueued": [
-        "Event queued for update at {when}."
+        "Esemény sorba állítva frissítésre ekkorra: {when}."
       ],
       "updating": [
-        "Updating the event leaderboard..."
+        "Az esemény ranglistájának frissítése..."
       ],
       "nobody": [
-        "Nothing to see here! Nobody's in the event!"
+        "Semmi látnivaló! Senki sem vesz részt az eseményben!"
       ],
       "ended": [
-        "This event has ended and all data will be deleted {when}."
+        "Az esemény véget ért és minden adat törlődni fog {when} múlva."
       ],
       "members": [
-        "Members"
+        "Résztvevők"
       ]
     },
     "eventButtons": {
       "btnJoin": [
-        "Join Event"
+        "Eseménybe csatlakozás"
       ],
       "btnPos": [
-        "Check Position"
+        "Helyezés megtekintése"
       ],
       "notVerified": [
-        "You must be verified to join an event. Verify with the `/verify` command."
+        "Ellenőrzöttnek kell lenned, hogy csatlakozni tudj az eseményhez. Ellenőrizd magad a `/verify` paranccsal."
       ],
       "noEvent": [
-        "There isn't an event running in this server."
+        "Nem fut esemény ezen a szerveren."
       ],
       "alreadyJoined": [
-        "You're already in the event."
+        "Már az eseményben vagy."
       ],
       "joined": [
-        "You've successfully joined the event!"
+        "Sikeresen csatlakoztál az eseményhez!"
       ],
       "notJoined": [
-        "You're not in the event."
+        "Nem vagy az eseményben."
       ],
       "position": [
-        "You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."
+        "Jelenleg {xp:,} {label}-d van, és ezzel a #{pos:,}-dik vagy a {players:,} játékosból."
       ],
       "jsonify": ["Dump to JSON File"]
     },
     "pagination": {
       "page": [
-        "Page"
+        "Oldal"
       ],
       "noPages": [
-        "There are no other pages to switch to!"
+        "Nincs több oldal ahova ugorhatnál!"
       ],
       "invalidPage": [
-        "Invalid page number."
+        "Érvénytelen oldalszám."
       ],
       "pageNumber": [
-        "Page Number"
+        "Oldalszám"
       ],
       "pageNumberPlaceholder": [
-        "Input a page number to switch to."
+        "Írd be az oldalszámot, ahova ugrani szeretnél."
       ],
       "pageTitle": [
-        "Switch Page"
+        "Oldalra való ugrás"
       ]
     },
     "auctions": {
-      "item": ["Item"],
-      "category": ["Category"],
-      "rarity": ["Rarity"],
-      "auctioneer": ["Auctioneer"],
-      "started": ["Started at"],
-      "ends": ["Ends at"],
-      "type": ["Auction Type"],
-      "startingBid": ["Starting Bid"],
-      "highestBid": ["Highest Bid"],
-      "topBidder": ["Top Bidder"],
-      "loreGenCredits": ["Lore generator by poke535.dev"],
-      "noEndedAuctions": ["This player has no ended auctions."],
-      "noActiveAuctions": ["This player has no active auctions."]
+      "item": ["Tárgy"],
+      "category": ["Kategória"],
+      "rarity": ["Ritkaság"],
+      "auctioneer": ["Eladó"],
+      "started": ["Elindult"],
+      "ends": ["Befejeződik"],
+      "type": ["Sukció típusa"],
+      "startingBid": ["Kezdő licit"],
+      "highestBid": ["Legmagasabb licit"],
+      "topBidder": ["Legnagyobbat licitáló"],
+      "loreGenCredits": ["poke535.dev történetkészítője"],
+      "noEndedAuctions": ["Ennek a játékosnak nincsenek befejezett aukciói."],
+      "noActiveAuctions": ["Ennek a játékosnak nincsenek aktív aukciói."]
     },
     "bazaar": {
-      "buyPrice": ["Buy Price"],
-      "sellPrice": ["Sell Price"],
-      "pastDay": ["Past Day"],
-      "pastWeek": ["Past Week"],
-      "pastMonth": ["Past Month"]
+      "buyPrice": ["Vételár"],
+      "sellPrice": ["Eladási ár"],
+      "pastDay": ["Az elmúlt napban"],
+      "pastWeek": ["Az elmúlt héten"],
+      "pastMonth": ["Az elmúlt hónapban"]
     },
     "charts": {
-      "pastDay": ["Past Day"],
-      "pastWeek": ["Past Week"],
-      "pastMonth": ["Past Month"]
+      "pastDay": ["Az elmúlt napban"],
+      "pastWeek": ["Az elmúlt héten"],
+      "pastMonth": ["Az elmúlt hónapban"]
     },
     "reportPrice": {
-      "report": ["Report Incorrect Price"],
-      "itemLabel": ["Item Description"],
-      "itemPlaceholder": ["Describe the item."],
-      "priceLabel": ["Actual Item Price"],
-      "pricePlaceholder": ["What's the item's actual value?"],
+      "report": ["Rossz ár jelentése"],
+      "itemLabel": ["Tárgyleírás"],
+      "itemPlaceholder": ["Jellemezd a tárgyat."],
+      "priceLabel": ["A jó ár."],
+      "pricePlaceholder": ["Mi a tárgy valódi értéke?"],
       "response": [
-        "Thanks for your feedback. We'll look into the issue and rectify it as soon as possible.\n\n",
-        "**Abuse of this system will not be tolerated.**"
+        "Köszönjük a visszajelzést. Megnézzük a problémát és kijavítjuk minél hamarabb.\n\n",
+        "**Ennek a rendszernek az abuzálása tilos!.**"
       ]
     },
     "collectionInfo": {
-      "titleNoCol": ["Collection Info"],
-      "descriptionNoCol": ["Select a collection in the dropdown below to view it."],
-      "title": ["Collection Info: {collection}"],
-      "description": ["Max Tier: {max_tier}"],
-      "fieldName": ["Tier {tier}"],
+      "titleNoCol": ["Collection infó"],
+      "descriptionNoCol": ["Válassz ki lent egy Collection-t, hogy megtekintsd."],
+      "title": ["Collection infó: {collection}"],
+      "description": ["Maximum szint: {max_tier}"],
+      "fieldName": ["{tier} szint"],
       "fieldValue": [
-        "Items: {amount_required:,}\n",
-        "Unlocks:\n{unlocks}"
+        "Tárgyak: {amount_required:,}\n",
+        "Feloldja a:\n{unlocks}"
       ]
     },
     "collections": {
@@ -2860,45 +2860,45 @@
       "TAMING": ["Taming"]
     },
     "skycryptLB": {
-      "skipUserTitle": ["Find Player"],
-      "skipUserLabel": ["Player"],
-      "skipUserPlaceholder": ["Enter a player name to find on the leaderboard."],
-      "skipToUser": ["Find Player"],
-      "title": ["SkyCrypt Leaderboards: {leaderboard}"],
-      "playerNotFound": ["**{player}** was not found on the leaderboard."],
-      "playerFound": ["Found {player} on page {page}. Rank: {rank:,}"]
+      "skipUserTitle": ["Játékos megkeresése"],
+      "skipUserLabel": ["Játékos"],
+      "skipUserPlaceholder": ["Írd be a játékos nevét, hogy megtaláld a ranglistán."],
+      "skipToUser": ["Játékos megkeresése"],
+      "title": ["SkyCrypt Ranglisák: {leaderboard}"],
+      "playerNotFound": ["**{player}**-t nem találtuk a ranglistán."],
+      "playerFound": ["Megtaláltuk {player}-t a {page}-dik oldalon. Helyezés: {rank:,}"]
     },
     "time": {
-      "datetime": ["{month} {day}, Year {year}"],
+      "datetime": ["{month} {day}, {year} év"],
       "am": ["{time} AM"],
       "pm": ["{time} PM"]
     },
     "sbEvents": {
         "NEW_YEAR": ["New Year"],
-        "NEW_YEAR_ALERT": ["The New Year Celebration starts"],
+        "NEW_YEAR_ALERT": ["A New Year Celebration indul"],
         "SPOOKY_FESTIVAL": ["Spooky Festival"],
-        "SPOOKY_FESTIVAL_ALERT": ["The Spooky Festival starts"],
-        "WORKSHOP_OPEN": ["Jerry's Workshop Opens"],
-        "WORKSHOP_OPEN_ALERT": ["Jerry's Workshop opens"],
+        "SPOOKY_FESTIVAL_ALERT": ["A Spooky Festival indul"],
+        "WORKSHOP_OPEN": ["A Jerry's Workshop nyílik"],
+        "WORKSHOP_OPEN_ALERT": ["A Jerry's Workshop nyílik"],
         "SEASON_OF_JERRY": ["Season of Jerry"],
-        "SEASON_OF_JERRY_ALERT": ["The Season of Jerry starts"],
-        "MAYOR_ELECTION_END": ["Mayor Election Ends"],
-        "MAYOR_ELECTION_END_ALERT": ["The Mayor Election ends"],
+        "SEASON_OF_JERRY_ALERT": ["A Season of Jerry indul"],
+        "MAYOR_ELECTION_END": ["A Mayor Election véget ér"],
+        "MAYOR_ELECTION_END_ALERT": ["A Mayor Election véget ér"],
         "TRAVELLING_ZOO": ["Travelling Zoo"],
-        "TRAVELLING_ZOO_ALERT": ["The Travelling Zoo arrives"],
+        "TRAVELLING_ZOO_ALERT": ["A Travelling Zoo megjön"],
         "FEAR_MONGERER": ["Fear Mongerer"],
-        "FEAR_MONGERER_ALERT": ["The Fear Mongerer spawns"],
+        "FEAR_MONGERER_ALERT": ["A Fear Mongerer megidéződik"],
         "DARK_AUCTION": ["Dark Auction"],
-        "DARK_AUCTION_ALERT": ["The Dark Auction opens"],
-        "MAYOR_ELECTION_START": ["Mayor Election Begins"],
-        "MAYOR_ELECTION_START_ALERT": ["The Mayor Election begins"],
+        "DARK_AUCTION_ALERT": ["A Dark Auction nyílik"],
+        "MAYOR_ELECTION_START": ["A Mayor Election elindul"],
+        "MAYOR_ELECTION_START_ALERT": ["A Mayor Election elindul"],
         "BANK_INTEREST": ["Bank Interest"],
-        "BANK_INTEREST_ALERT": ["Bank Interest is being paid"],
-        "startingNow": ["{event} **now**!"],
-        "startingSoon": ["{event} in **{time}**!"],
-        "5": "five minutes",
-        "10": "ten minutes",
-        "30": "thirty minutes"
+        "BANK_INTEREST_ALERT": ["A Bank Interest-et épp fizetik"],
+        "startingNow": ["{event} indul **now**!"],
+        "startingSoon": ["{event} **{time}** múlva!"],
+        "5": "öt perc",
+        "10": "tíz perc",
+        "30": "harminc perc"
     },
     "profileTypes": {
       "ironman": "Ironman",
@@ -2906,62 +2906,62 @@
       "bingo": "Bingo"
     },
     "friendsList": {
-      "title": ["{name}'s Friends ({count:,})"],
-      "friend": ["{name} since {timestamp}"],
-      "noFriends": ["This player has no friends."]
+      "title": ["{name} barátai ({count:,})"],
+      "friend": ["{name} {timestamp} óta"],
+      "noFriends": ["Ennek a játékosnak nincsenek barátai."]
     },
     "guild": {
-      "jumpGuildMember": ["Jump to Guild Member"],
-      "jumpGuildMemberPlaceholder": ["Enter a player to find."],
-      "player": ["Player Name"],
-      "notFound": ["That player was not found in this guild."]
+      "jumpGuildMember": ["Ugrás a Guild tag-hoz"],
+      "jumpGuildMemberPlaceholder": ["Írd be a keresendő játékost."],
+      "player": ["Játékosnév"],
+      "notFound": ["Ez a játékos nem található a guild-ben."]
     },
     "confirmation": {
-      "yes": "Yes",
-      "no": "No"
+      "yes": "Igen ",
+      "no": "Nem"
     },
     "fetchur": {
-      "title": ["Daily Fetchur"],
-      "item": ["Today's Item: {item}\n{obtain}"],
-      "yellow_glass": ["20 Yellow Stained Glass"],
-      "yellow_glass_obtain": ["Can be purchased from the Wool Weaver or crafted."],
-      "compass": ["Compass"],
-      "compass_obtain": ["Can be crafted with 4 iron ingots and a redstone dust."],
+      "title": ["Napi Fetchur"],
+      "item": ["A mai tárgy: {item}\n{obtain}"],
+      "yellow_glass": ["20 sárga festett üveg"],
+      "yellow_glass_obtain": ["Megvehető a Wool Weaver-nél, vagy craftolható."],
+      "compass": ["Iránytű"],
+      "compass_obtain": ["Craftolható 4 vasrúddal és egy vöröskőporral."],
       "mithril": ["20 Mithril"],
-      "mithril_obtain": ["Can be purchased from the Bazaar or mined."],
-      "firework": ["Firework Rocket"],
-      "firework_obtain": ["Can be crafted with paper and gunpowder."],
-      "coffee": ["Cheap or Decent Coffee"],
-      "coffee_obtain": ["Can be purchased from the Bartender for 1,000 or 5,000 coins."],
-      "door": ["Any Door"],
-      "door_obtain": ["Can be crafted with 6 wooden planks, or 6 iron ingots."],
-      "rabbits_foot": ["3 Rabbit's Foot"],
-      "rabbits_foot_obtain": ["Can be purchased from the Bazaar or dropped from rabbits."],
+      "mithril_obtain": ["Megvehető a Bazárból, vagy bányászható."],
+      "firework": ["Tüzijátékrakéta"],
+      "firework_obtain": ["Craftolható papírból és puskaporból."],
+      "coffee": ["Cheap vagy Decent Coffee"],
+      "coffee_obtain": ["Megvehető a Bartender-től 1,000 vagy 5,000 coin-ért."],
+      "door": ["Akármilyen ajtó"],
+      "door_obtain": ["Craftolható 6 deszkából, vagy 6 vasrúdból."],
+      "rabbits_foot": ["3 Nyúlláb"],
+      "rabbits_foot_obtain": ["Megvehető a Bazárból, vagy nyulak dobják."],
       "superboom": ["Superboom TNT"],
-      "superboom_obtain": ["Can be purchased from Ophelia or Walter in the hub, or found as a drop in Dungeons."],
-      "pumpkin": ["Pumpkin"],
-      "pumpkin_obtain": ["Can be purchased from the Bazaar or Farm Merchant in the hub, or harvested at the Barn."],
-      "flint_and_steel": ["Flint and Steel"],
-      "flint_and_steel_obtain": ["Can be crafted with a flint and an iron ingot."],
-      "quartz": ["50 Nether Quartz Ore"],
-      "quartz_obtain": ["Can be mined from the Crimson Isle with a Silk Touch pickaxe."],
-      "red_wool": ["50 Red Wool"],
-      "red_wool_obtain": ["Can be purchased from the Wool Weaver, crafted, or gained with the Rainbow enchantment."]
+      "superboom_obtain": ["Megvehető Opheliától vagy Waltertől a hub-ban, vagy drop-ként megtalálható a Dungeon-ban."],
+      "pumpkin": ["Tök"],
+      "pumpkin_obtain": ["Megvehető a Bazárban vagy a Farm Merchantnál a hub-ban, vagy aratható a Barn-ban."],
+      "flint_and_steel": ["Kovakő és acél"],
+      "flint_and_steel_obtain": ["Craftolható kovából és vasrúdból."],
+      "quartz": ["50 Alvilági Kvarcérc"],
+      "quartz_obtain": ["Bányászható a Crimson Isle-ben egy Gyengéd érintéses csákánnyal."],
+      "red_wool": ["50 Piros gyapjú"],
+      "red_wool_obtain": ["Megvehető a Wool Weaver-től, craftolható, vagy a Rainbow varázslat segítségével megszerezhető."]
     },
     "statuspage": {
-      "truncated": ["Truncated..."],
-      "components": ["Affected Components"]
+      "truncated": ["Csonkítva..."],
+      "components": ["Érintett komponensek"]
     },
     "actions": {
-      "scammer": ["Scammer Joined"],
-      "trader": ["IRL Trader Joined"],
-      "assigned_role": ["They were assigned the <@&{role}> role automatically."],
-      "kicked": ["They were kicked from the server automatically."],
-      "kick": ["Kick"],
-      "ban": ["Ban"],
-      "give_role": ["Give Role"],
+      "scammer": ["Scammer csatlakozott"],
+      "trader": ["IRL Kereskedő csatlakozott"],
+      "assigned_role": ["Automatikusan megkapták a <@&{role}> role-t."],
+      "kicked": ["Automatikusan ki lettek rúgva a szerverről."],
+      "kick": ["Kirúgás"],
+      "ban": ["Kitiltás"],
+      "give_role": ["Role adása"],
       "description": [
-        "User: {user}\n",
+        "Felhasználó: {user}\n",
         "UUID: {uuid}\n",
         "{action}"
       ]
