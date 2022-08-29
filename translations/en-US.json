@@ -2340,6 +2340,9 @@
         "**{name}** is already verified with <@{userid}>. Verifying on this account will remove that link.\n\n",
         "Would you like to continue?"
       ],
+      "cancelled": [
+        "Verification cancelled."
+      ],
       "verified": [
         "**{name}** has been linked to your Discord account."
       ]
