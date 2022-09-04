@@ -14,7 +14,11 @@ def match_keys(original: dict, data: dict, *, path: str):
     keys = set(data.keys())
     if original_keys != keys:
         missing = original_keys - keys
-        print(f"Missing keys in {path}: " + ', '.join(missing))
+        extra = keys - original_keys
+        if missing:
+            print(f"Missing keys in {path}: " + ', '.join(missing))
+        if extra:
+            print(f"Extra keys in {path}: " + ', '.join(extra))
         passed = False
     for k, v in data.items():
         if not isinstance(v, type(original[k])):
