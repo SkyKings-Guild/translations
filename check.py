@@ -22,7 +22,7 @@ def match_keys(original: dict, data: dict, *, path: str):
         passed = False
     for k, v in data.items():
         if k not in original:
-            pass
+            continue
         if not isinstance(v, type(original[k])):
             print(f"Incorrect object type at {path}/{k}")
             passed = False
