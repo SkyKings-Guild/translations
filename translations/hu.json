@@ -989,7 +989,7 @@
       "SCAMMER_NAME": [
         "Bejegyzés #{id} - Scammer"
       ],
-      "IRL_TRADER_NAME": [
+      "TRADER_NAME": [
         "Behegyzés #{id} - IRL Kereskedő"
       ],
       "RATTER_NAME": [
@@ -1001,7 +1001,7 @@
       "SCAMMER": [
         "Indok: {reason}"
       ],
-      "IRL_TRADER": [
+      "TRADER": [
         "Indok: {reason}"
       ],
       "RATTER": [
