@@ -9,28 +9,42 @@ with open(f'translations/en-US.json', 'r', encoding='utf-8') as file:
 
 
 def match_keys(original: dict, data: dict, *, path: str):
+    passed = True
     original_keys = set(original.keys())
     keys = set(data.keys())
     if original_keys != keys:
         missing = original_keys - keys
         print(f"Missing keys in {path}: " + ', '.join(missing))
+        passed = False
     for k, v in data.items():
         if not isinstance(v, type(original[k])):
             print(f"Incorrect object type at {path}/{k}")
+            passed = False
             continue
         if isinstance(v, dict):
-            match_keys(original[k], v, path=path + '/' + k)
+            r = match_keys(original[k], v, path=path + '/' + k)
+            if passed:
+                passed = r
         elif isinstance(v, list):
             if len(original[k]) != len(v):
                 print(f"Incorrect list length at {path}/{k}")
+                passed = False
+    return passed
 
 
 def check_file(locale, enc):
     with open(f'translations/{locale}.json', 'r', encoding=enc) as f:
         data = json.load(f)
-    match_keys(en_us, data, path=locale)
+    res = match_keys(en_us, data, path=locale)
     print(f'Completed check for {locale}')
+    return res
 
+
+failed = []
 
 for lang, encoding in encodings.items():
-    check_file(lang, encoding)
+    if not check_file(lang, encoding):
+        failed.append(lang)
+
+if failed:
+    raise ValueError(f"Checks for {', '.join(failed)} failed")
