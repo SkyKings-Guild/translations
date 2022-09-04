@@ -21,6 +21,8 @@ def match_keys(original: dict, data: dict, *, path: str):
             print(f"Extra keys in {path}: " + ', '.join(extra))
         passed = False
     for k, v in data.items():
+        if k not in original:
+            pass
         if not isinstance(v, type(original[k])):
             print(f"Incorrect object type at {path}/{k}")
             passed = False
