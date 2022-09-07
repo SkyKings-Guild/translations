@@ -1528,6 +1528,7 @@
       "onlineCantLocate": ["**{name}** is currently online, but has their status API settings disabled."],
       "online": ["**{name}** is currently online. I was unable to determine where."],
       "onlineWithMode": ["**{name}** is currently playing {game}.\nMode: {mode}."],
+      "lobby": ["Lobby"],
       "onlineWithGame": ["**{name}** is currently playing {game}."]
     }
   },
