@@ -13,6 +13,8 @@
       ],
       "description.1": [
         "Automatikus válasz bekapcsolása: {autoreply}\n",
+        "Hypixel Status Ping: {status_ping}\n",
+        "Hypixel Status Channel: {status_channel}\n",
         "Hypixel hírek ping: {news_ping}\n",
         "Hypixel hírek csatornája: {news_channel}\n",
         "SkyBlock frissítési jegyzetek: {patchnotes_ping}\n",
