@@ -120,7 +120,7 @@
     "description": "Tekintsd meg az ehhez a szerverhez kötött céheket.",
     "options": [],
     "responses": {
-      "noGuilds": ["Nincsenek guild-ek kötve ehhez a szerverhez."]
+      "noGuilds": ["Nincsenek guild-ek kötve ehhez a szerverhez."],
       "base": [
         "Név: {name}\n",
         "ID: {gid}\n",
