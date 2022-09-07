@@ -120,6 +120,7 @@
     "description": "Tekintsd meg az ehhez a szerverhez kötött céheket.",
     "options": [],
     "responses": {
+      "noGuilds": ["Nincsenek guild-ek kötve ehhez a szerverhez."]
       "base": [
         "Név: {name}\n",
         "ID: {gid}\n",
@@ -174,6 +175,13 @@
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik!"
+      ],
+      "premiumRequired": [
+        "Prémium szükséges ahhoz, hogy háromnál több guild-et adj hozzá a szerveredhez.\n",
+        "Több információért futtasd a /premium infó parancsot."
+      ],
+      "maxGuilds": [
+        "Nem tudsz 25-nél több guild-et hozzáadni."
       ]
     }
   },
@@ -1033,8 +1041,8 @@
       "SCAMMER_NAME": [
         "Bejegyzés #{id} - Scammer"
       ],
-      "IRL_TRADER_NAME": [
-        "Bejegyzés #{id} - IRL Kereskedő"
+      "TRADER_NAME": [
+        "Entry #{id} - IRL Kereskedő"
       ],
       "RATTER_NAME": [
         "Bejegyzés #{id} - Rattelő"
@@ -1045,7 +1053,7 @@
       "SCAMMER": [
         "Indok: {reason}"
       ],
-      "IRL_TRADER": [
+      "TRADER": [
         "Indok: {reason}"
       ],
       "RATTER": [
@@ -2329,6 +2337,9 @@
       "alreadyVerified": [
         "**{name}** már ellenőrizve van a <@{userid}> ID-vel. Az ellenőrzés el fogja távolítani ezt az összekötést a fiókon.\n\n",
         "Szeretnéd folytatni?"
+      ],
+      "cancelled": [
+        "Ellenőrzés megszakítva."
       ],
       "verified": [
         "**{name}** össze lett kötve a Discord fiókoddal."
