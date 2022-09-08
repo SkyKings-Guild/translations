@@ -13,8 +13,8 @@
       ],
       "description.1": [
         "Automatikus válasz bekapcsolása: {autoreply}\n",
-        "Hypixel Status Ping: {status_ping}\n",
-        "Hypixel Status Channel: {status_channel}\n",
+        "Hypixel Státusz Ping: {status_ping}\n",
+        "Hypixel Státusz Csatorna: {status_channel}\n",
         "Hypixel hírek ping: {news_ping}\n",
         "Hypixel hírek csatornája: {news_channel}\n",
         "SkyBlock frissítési jegyzetek: {patchnotes_ping}\n",
@@ -1528,6 +1528,7 @@
       "onlineCantLocate": ["**{name}** jelenleg online, de a státuszuk kikapcsolt API beállítást jeleznek."],
       "online": ["**{name}** jelenleg online. Viszont nem tudom, hogy hol van."],
       "onlineWithMode": ["**{name}** jelenleg {game}-t játszik.\nMód: {mode}."],
+      "lobby": ["Lobby-ban"], 
       "onlineWithGame": ["**{name}** jelenleg {game}-t játszik."]
     }
   },
