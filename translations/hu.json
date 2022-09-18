@@ -31,7 +31,7 @@
         "Makrózó művelet: {macroer_action}\n",
         "Rattelő művelet: {phisher_action}\n",
         "\n",
-        "Módosítani tudod a konfigurációkat a '/config módosítás' paranccsal!"
+        "Módosítani tudod a konfigurációkat a '/konfiguráció módosítás' paranccsal!"
       ],
       "title.2": [
         "{ctx.guild.name}'s Megerősítés konfiguráció"
@@ -48,7 +48,7 @@
         "Hypixel Dolgozó: {staff}\n",
         "Becenév formátum: {nickname}\n",
         "\n",
-        "Módosítani tudod a konfigurációkat a '/config módosítás' paranccsal!"
+        "Módosítani tudod a konfigurációkat a '/konfiguráció módosítás' paranccsal!"
       ]
     }
   },
@@ -68,7 +68,7 @@
     "responses": {
       "premiumOnly": [
         "Ez az opció csak a prémium szervereken használható.\n",
-        "Ha többet szeretnél tudni, használd a '/premium infomáció' parancsot."
+        "Ha többet szeretnél tudni, használd a '/prémium infomáció' parancsot."
       ],
       "editedSuccessfully": [
         "{option} {value}-re lett állítva!"
@@ -180,7 +180,7 @@
       ],
       "premiumRequired": [
         "Prémium szükséges ahhoz, hogy háromnál több guild-et adj hozzá a szerveredhez.\n",
-        "Több információért futtasd a /premium infó parancsot."
+        "Több információért futtasd a /prémium infó parancsot."
       ],
       "maxGuilds": [
         "Nem tudsz 25-nél több guild-et hozzáadni."
@@ -236,7 +236,7 @@
         ],
         "premiumGuild": [
           "Ez az opció csak a prémium szervereken használható.\n",
-          "Ha többet szeretnél tudni, használd a '/premium információ' parancsot."
+          "Ha többet szeretnél tudni, használd a '/prémium információ' parancsot."
         ]
       }
   },
@@ -260,7 +260,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a  `/config guilds guild-hozzáadás` paranccsal."
+        "Add a szerverhez a  `/konfiguráció guildek guild-hozzáadás` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -293,7 +293,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds guild-hozzáadás` paranccsal."
+        "Add a szerverhez a `/konfiguráció guildek guild-hozzáadás` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -328,7 +328,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
+        "Add a szerverhez a `/konfiguráció guildek guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -368,7 +368,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
+        "Add a szerverhez a `/konfiguráció guildek guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -407,7 +407,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
+        "Add a szerverhez a `/konfiguráció guildek guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -446,7 +446,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds guild-hozzáadása` paranccsal."
+        "Add a szerverhez a `/konfiguráció guildek guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -493,7 +493,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincs ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds add-guild` paranccsal."
+        "Add a szerverhez a `/konfiguráció guildek guild-hozzáadása` paranccsal."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -503,7 +503,7 @@
       ],
       "rankNotAdded": [
         "A **{guild}** nevű guild **{rank}** rangja nincs regisztrálva a bottal.\n",
-        "Regisztráld a `/config guilds add-rank` paranccsal."
+        "Regisztráld a `/konfiguráció guildek rang-hozzáadása` paranccsal."
       ],
       "addedRequirement": [
         "A **{requirement}** követelmény hozzá lett adva a **{guild}** nevű guild **{rank}** rangjához!"
@@ -583,7 +583,7 @@
     "responses": {
       "guildNotAdded": [
         "A **{guild}** nevű guild nincsen ehhez a szerverhez kötve.\n",
-        "Add a szerverhez a `/config guilds add-guild` parancshoz."
+        "Add a szerverhez a `/konfiguráció guildek guild-hozzáadása` parancshoz."
       ],
       "guildNotFound": [
         "A **{guild}** nevű guild nem létezik."
@@ -754,7 +754,7 @@
       "pong": [
         "**Pong!**\n",
         "Pihenő API lappangási idő: {latency:,} ms\n",
-        "Átlagos Websocket lappangási idő : {avg_ws_latency:,} ms\n",
+        "Átlagos Websocket lappangási idő: {avg_ws_latency:,} ms\n",
         "Szilánk Websocket lappangási idő: {shard_latency:,} ms"
       ]
     }
@@ -827,7 +827,7 @@
       },
       {
         "name": "gvg",
-        "description": "Itt állíthatod be, hogy GvG (Guild versus Guild) legyen az esemény. Ehhez a lehetőséghez prémiummal kell rendelkezni."
+        "description": "Itt állíthatod be, hogy GvG (Guild Guild ellen) legyen az esemény. Ehhez a lehetőséghez prémiummal kell rendelkezni."
       },
       {
         "name": "csatorna",
@@ -991,7 +991,7 @@
       "notScammer": [
         "**{player}** nincs megjelölve scammerként/IRL kereskedőként az adatbázisunkban.\n",
         "Ez ugyanakkor nem jelenti azt, hogy százszázalékosan nem scammel, mindig légy óvatos, amikor más játékosokkal cserélsz.",
-        "\n\n*Ha ez nem igaz, kérjük jelentsd ezt a játékost `/report` paranccsal.*"
+        "\n\n*Ha ez nem igaz, kérjük jelentsd ezt a játékost `/jelentés` paranccsal.*"
       ],
       "isScammer": [
         "**{player}** scammerként/IRL kereskedőként van megjelölve az adatbázisban."
@@ -1035,7 +1035,7 @@
       "notScammer": [
         "**{player}** nincs megjelölve scammerként/IRL kereskedőként az adatbázisunkban.\n",
         "Ez ugyanakkor nem jelenti azt, hogy százszázalékosan nem scammel, mindig légy óvatos, amikor más játékosokkal cserélsz.",
-        "\n\n*Ha ez nem igaz, kérjük jelentsd ezt a játékost `/report` paranccsal.*"
+        "\n\n*Ha ez nem igaz, kérjük jelentsd ezt a játékost `/jelentés` paranccsal.*"
       ],
       "isScammer": [
         "**{player}** scammerként/IRL kereskedőként van megjelölve az adatbázisban."
