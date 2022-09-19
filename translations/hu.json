@@ -1222,9 +1222,9 @@
       "title": ["Tárgy információ: {item}"],
       "attributesName": ["Attribútomok"],
       "attributesValue": [
-        "Glowing: {glowing}\n",
-        "Museum Item: {museum}\n",
-        "Dungeon Item: {dungeon}\n"
+        "Világít: {glowing}\n",
+        "Múzeum Tárgy: {museum}\n",
+        "Dungeon Tárgy: {dungeon}\n"
       ],
       "category": ["Tárgytípus: {category}"],
       "tier": ["Fokozat: {tier}"],
@@ -2177,15 +2177,15 @@
       "noGuild": ["Nem találtunk guild-et ezzel a névvel."],
       "title": ["{name} Guild Információja"],
       "description": [
-        "Description: {description}\n",
+        "Leírás: {description}\n",
         "ID: {id}\n",
-        "Guild Master: {gm}\n",
-        "Members: {members:,}\n",
-        "Created: <t:{created}:F>\n",
-        "Tag: {tag}\n",
+        "Guildmester: {gm}\n",
+        "Tagok: {members:,}\n",
+        "Készítve: <t:{created}:F>\n",
+        "Rövidítés: {tag}\n",
         "XP: {xp:,}\n",
-        "Level: {level:,}\n",
-        "Preferred Games: {prefgames}"
+        "Szint: {level:,}\n",
+        "Preferált játékok: {prefgames}"
       ]
     }
   },
@@ -2202,14 +2202,14 @@
       "noGuild": ["Nem találtunk guild-et ezzel a névvel."],
       "title": ["A {name} guild tagjai"],
       "rankInner": [
-        "Members: {members:,}\n",
-        "Created: <t:{created}:F>\n",
-        "Tag: {tag}"
+        "Tagok: {members:,}\n",
+        "Készítve: <t:{created}:F>\n",
+        "Rövidítés: {tag}"
       ],
       "memberInner": [
-        "Joined: <t:{joined}:F>\n",
-        "Guild Rank: {rank}\n",
-        "XP History: \n{xp_history}"
+        "Csatlakozva: <t:{joined}:F>\n",
+        "Guild rang: {rank}\n",
+        "XP Történelem: \n{xp_history}"
       ]
     }
   },
@@ -2362,14 +2362,14 @@
         "**3)** Válaszd ki a \"Discord\" opciót.\n",
         "**4)** Másold ki a Discord felhasználónevedet ({name}) a chatbe. __Ez kis- és nagybetűérzékeny.__\n",
         "**5)** Ha egy könyv felbukkan, válaszd a \"I understand\" opciót.\n",
-        "**6)** Használd a `/verify link` parancsot, hogy hozzákösd a Minecraft fiókod a Discord fiókodhoz.\n",
+        "**6)** Használd a `/verify összekötés` parancsot, hogy hozzákösd a Minecraft fiókod a Discord fiókodhoz.\n",
         "Jegyezd meg, hogy akár 5 percbe is eltelhet, hogy az API mutassa a változtatásaidat.\n\n",
         "Egy videós példáért kattints ide: [here](https://youtu.be/6ZXaZ-chzWI)."
       ]
     }
   },
   "verify sync": {
-    "name": "sziinkron",
+    "name": "szinkron",
     "description": "Szinkronizáld a Discord fiókod a Hypixel social menüjével.",
     "options": [],
     "responses": {
@@ -2501,14 +2501,14 @@
         "note": "Felemelve, amikor egy eseményt akarsz elindítani, de ezen a szerveren már van elindítva esemény.",
         "message": [
           "Már fut egy esemény ezen a szerveren.\n",
-          "Ha már véget ért, kitörölheted a `/event delete` paranccsal."
+          "Ha már véget ért, kitörölheted a `/esemény törlés` paranccsal."
         ]
       },
       "16": {
         "note": "Felemelve, amikor egy prémium funkciót prémium nélkül akarsz használni.",
         "message": [
           "SkyKings Premium szükséges, hogy végrehajtsd ezt a parancsot.\n",
-          "További információért írd be a `/premium info` parancsot."
+          "További információért írd be a `/premium információ` parancsot."
         ]
       },
       "17": {
@@ -2571,7 +2571,7 @@
         "note": "Felemelve, amikor egy felhasználónak nincs prémiumja, de szükséges.",
         "message": [
           "A parancs használatához rendelkezned kell a SkyKings Premium-mal.\n",
-          "Több információért használd a `/premium info` parancsot."
+          "Több információért használd a `/premium információ` parancsot."
         ]
       },
       "1": {
@@ -2590,7 +2590,7 @@
         "note": "Felemelve, amikor a parancsidéző nem ellenőrzött.",
         "message": [
           "Ellenőrzöttnek kell lenned, hogy használni tudd ezt a parancsot.\n",
-          "Ellenőrizhetsz a `/verify` paranccsal."
+          "Ellenőrizhetsz a `/ellenőrzés` paranccsal."
         ]
       },
       "4": {
@@ -2608,7 +2608,7 @@
       "6": {
         "note": "Felemelve, amikor a parancsiddéző nincs az eseményben.",
         "message": [
-          "Nem vagy az eseményben. Csatlakozz az `/event join` paranccsal."
+          "Nem vagy az eseményben. Csatlakozz az `/esemény csatlakozás` paranccsal."
         ]
       },
       "7": {
@@ -2621,7 +2621,7 @@
         "note": "Felemelve, amikor egy prémium funkciót prémium nélkül akarsz használni.",
         "message": [
           "SkyKings Premium szükséges, hogy végrehajtsd ezt az akciót.\n",
-          "Több információért használd a `/premium info` parancsot."
+          "Több információért használd a `/premium információ` parancsot."
         ]
       }
     },
