@@ -1071,7 +1071,7 @@
     "description": "Report a scammer and get them added to our scammer list.",
     "options": [],
     "responses": {
-      "description": "Scammers can be reported on our [Google Form](https://forms.gle/ANud6cd9mTx2efbh9)."
+      "description": "Scammers can be reported on our [Website](https://skykings.net/forms/report)."
     }
   },
   "bazaar": {
