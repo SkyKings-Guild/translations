@@ -1071,7 +1071,7 @@
     "description": "Jelentesz egy scammer-t, hogy az adatbázishoz adjuk.",
     "options": [],
     "responses": {
-      "description": "A scammerek ezen a Google Form-on jelenthetőek: [Google Form](https://forms.gle/ANud6cd9mTx2efbh9)."
+      "description": "A scammereket feljelentheted itt a weboldalunkon: [Website](https://skykings.net/forms/report)."
     }
   },
   "bazaar": {
