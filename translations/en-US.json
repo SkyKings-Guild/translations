@@ -112,7 +112,7 @@
         "Scammer Action",
         "IRL Trader Action",
         "Macroer Action",
-        "Phisher Action"
+        "Ratter Action"
       ],
       "invalid": ["Invalid option provided. Please go back and fix it."]
     }
