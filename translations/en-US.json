@@ -976,11 +976,11 @@
   },
   "lookup": {
     "name": "lookup",
-    "description": "Check if a player is a scammer, IRL trader, ratter, or macroer."
+    "description": "Check if a player is flagged in our database."
   },
   "lookup player": {
     "name": "player",
-    "description": "Check if someone is a scammer/IRL trader/ratter/macroer. Checks their Discord account if linked.",
+    "description": "Check if someone is flagged in our database. Checks their Discord account if linked.",
     "options": [
       {
         "name": "player",
@@ -989,7 +989,7 @@
     ],
     "responses": {
       "notScammer": [
-        "**{player}** is not marked as a scammer/IRL trader in our database.\n",
+        "**{player}** is flagged in our database.\n",
         "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
         "\n\n*If this is untrue, please report this player with the `/report` command.*"
       ],
@@ -1024,7 +1024,7 @@
   },
   "lookup user": {
     "name": "user",
-    "description": "Check if a user is a scammer/IRL trader/ratter/macroer. Checks their Minecraft account if linked.",
+    "description": "Check if a user is flagged in our database. Checks their Minecraft account if linked.",
     "options": [
       {
         "name": "user",
@@ -1033,12 +1033,12 @@
     ],
     "responses": {
       "notScammer": [
-        "**{player}** is not marked as a scammer/IRL trader in our database.\n",
+        "**{player}** is not flagged in our database.\n",
         "This does not mean that they are safe to trade with, you should always use caution when trading with players.",
         "\n\n*If this is untrue, please report this player with the `/report` command.*"
       ],
       "isScammer": [
-        "**{player}** is marked as a scammer/IRL trader in our database."
+        "**{player}** is flagged in our database."
       ],
       "SCAMMER_NAME": [
         "Entry #{id} - Scammer"
@@ -1068,10 +1068,10 @@
   },
   "report": {
     "name": "report",
-    "description": "Report a scammer and get them added to our scammer list.",
+    "description": "Report a scammer, IRL trader, macroer, or ratter and get them added to our scammer list.",
     "options": [],
     "responses": {
-      "description": "Scammers can be reported on our [Website](https://skykings.net/forms/report)."
+      "description": "Malicious players can be reported on our [Website](https://skykings.net/forms/report)."
     }
   },
   "bazaar": {
