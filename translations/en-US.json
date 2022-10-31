@@ -1475,6 +1475,40 @@
       ]
     }
   },
+  "fragbot": {
+    "name": "fragbot",
+    "description": "Manage the fragbots."
+  },
+  "fragbot add-guild": {
+    "name": "add-guild",
+    "description": "Add a guild to the fragbot whitelist.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to add to the whitelist. Leave blank to remove guild."
+      }
+    ],
+    "responses": {
+      "noGuildWhitelisted": [
+        "You have not whitelisted a guild yet."
+      ],
+      "noGuild": [
+        "The guild **{guild}** does not exist."
+      ],
+      "addedGuild": [
+        "Added **{guild}** to the fragbot whitelist.\n",
+        "It may take up to 5 minutes for this change to be reflected in the frag bots."
+      ],
+      "removedGuild": [
+        "Removed **{guild}** from the fragbot whitelist.\n",
+        "It may take up to 5 minutes for this change to be reflected in the frag bots."
+      ],
+      "editedGuild": [
+        "Removed **{old_guild}** from the fragbot whitelist and replaced it with **{guild}**.\n",
+        "It may take up to 5 minutes for this change to be reflected in the frag bots."
+      ]
+    }
+  },
   "player": {
     "name": "player",
     "description": "Get information about a player on Hypixel.",
