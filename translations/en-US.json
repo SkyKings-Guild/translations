@@ -797,8 +797,7 @@
     "options": [],
     "responses": {
       "key": [
-        "Your new API key is `{key}`. ",
-        "Don't share it with anyone.\n\n",
+        "Your new API key is `{key}`.\nMake sure to save it in a safe place, as it won't be shown to you again.\n\n",
         "[API Documentation](https://skykings.net/api) • ",
         "[Terms of Service](https://skykings.net/terms) • ",
         "[Privacy Policy](https://skykings.net/privacy)"
