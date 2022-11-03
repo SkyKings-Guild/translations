@@ -791,6 +791,20 @@
       ]
     }
   },
+  "api-key": {
+    "name": "api-key",
+    "description": "Generates an API key for you.",
+    "options": [],
+    "responses": {
+      "key": [
+        "Your new API key is `{key}`.\n\nDon't share it with anyone."
+      ],
+      "keyExists": [
+        "You already have an API key.\n",
+        "Would you like to generate a new one? Your old one will be invalidated."
+      ]
+    }
+  },
   "event": {
     "name": "event",
     "description": "Commands relating to events."
