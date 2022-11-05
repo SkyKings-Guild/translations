@@ -2003,24 +2003,55 @@
       "apiDisabled": ["API Disabled"],
       "description": ["{name} is valued at **{networth}** coins."],
       "purseName": ["<:gold_ingot:986849117340839937> Purse"],
-      "purseValue": ["{purse}"],
-      "bankName": ["<:gold_block:986849038404026438> Bank"],
-      "bankValue": ["{bank}"],
-      "sacksName": ["<:backpack:993336472348414102> Sacks"],
-      "sacksValue": ["{sacks}"],
-      "overview": ["Overview"],
-      "inventory": ["{emoji} Inventory"],
-      "storage": ["{emoji} Storage"],
-      "enderchest": ["{emoji} Enderchest"],
-      "armor": ["{emoji} Armor"],
-      "pets": ["{emoji} Pets"],
-      "talismans": ["{emoji} Accessory Bag"],
-      "vault": ["{emoji} Personal Vault"],
+      "purseValue": [
+        "{purse}"
+      ],
+      "bankName": [
+        "<:gold_block:986849038404026438> Bank"
+      ],
+      "bankValue": [
+        "{bank}"
+      ],
+      "sacksName": [
+        "<:backpack:993336472348414102> Sacks"
+      ],
+      "sacksValue": [
+        "{sacks}"
+      ],
+      "overview": [
+        "Overview"
+      ],
+      "inventory": [
+        "{emoji} Inventory"
+      ],
+      "storage": [
+        "{emoji} Storage"
+      ],
+      "enderchest": [
+        "{emoji} Enderchest"
+      ],
+      "armor": [
+        "{emoji} Armor"
+      ],
+      "equipment": [
+        "{emoji} Equipment"
+      ],
+      "pets": [
+        "{emoji} Pets"
+      ],
+      "talismans": [
+        "{emoji} Accessory Bag"
+      ],
+      "vault": [
+        "{emoji} Personal Vault"
+      ],
       "inner": [
         "> Value: {value:,.0f} coins\n",
         "{items}"
       ],
-      "hidden": ["+ {count:,} more items."],
+      "hidden": [
+        "+ {count:,} more items."
+      ],
       "categoryDescription": [
         "{emoji} Value: {value:,.0f} coins\n\n",
         "{items}"
