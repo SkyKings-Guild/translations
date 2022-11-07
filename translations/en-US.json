@@ -2473,6 +2473,55 @@
       ]
     }
   },
+  "help": {
+    "name": "help",
+    "description": "Displays a list of the bot's commands.",
+    "options": [],
+    "responses": {
+      "title": [
+        "SkyKings Commands"
+      ],
+      "description": [
+        "() = required, [] = optional\n",
+        "*Use {verify_mention} `(username)` to link your account.*"
+      ],
+      "category.help": [
+        "Bot Help"
+      ],
+      "category.skyblock": [
+        "SkyBlock"
+      ],
+      "category.hypixel": [
+        "Hypixel"
+      ],
+      "category.verify": [
+        "Verification"
+      ],
+      "category.misc": [
+        "Miscellaneous"
+      ],
+      "category.stats": [
+        "Statis"
+      ],
+      "category.config": [
+        "Config"
+      ],
+      "category.events": [
+        "Events"
+      ],
+      "pages": [
+        "Pages"
+      ],
+      "linksTitle": [
+        "Useful Links"
+      ],
+      "linksDescription": [
+        "[Patreon](https://patreon.com/skykings)\n",
+        "[Support Server](https://discord.gg/skykings)\n",
+        "[Invite Bot](https://skykings.net/bot/invite)"
+      ]
+    }
+  },
   "*": {
     "errors": {
       "*": {
