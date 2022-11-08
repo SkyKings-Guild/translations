@@ -2542,7 +2542,7 @@
       "linksDescription": [
         "[Patreon](https://patreon.com/skykings)\n",
         "[Support Server](https://discord.gg/skykings)\n",
-        "[Invite Bot](https://skykings.net/bot/invite)"
+        "[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=%7B%7D%22&permissions=414867377168&scope=bot%20applications.commands)"
       ]
     }
   },
