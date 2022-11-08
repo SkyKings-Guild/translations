@@ -1083,6 +1083,30 @@
       ]
     }
   },
+  "lookup guild": {
+    "name": "guild",
+    "description": "Check if a guild contains scammers/IRL traders/ratters/macroers.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to check."
+      }
+    ],
+    "responses": {
+      "noGuild": [
+        "**{guild}** does not exist."
+      ],
+      "title": [
+        "{guild} - Player Lookup"
+      ],
+      "noScammers": [
+        "No players in this guild were flagged in our database."
+      ],
+      "scammers": [
+        "**{amount}** players in **{guild}** have been flagged."
+      ]
+    }
+  },
   "report": {
     "name": "report",
     "description": "Report a scammer, IRL trader, macroer, or ratter and get them added to our scammer list.",
