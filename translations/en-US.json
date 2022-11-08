@@ -1361,7 +1361,7 @@
     "description": "Displays the current time in SkyBlock.",
     "options": [],
     "responses": {
-      "time": ["Is is currently {time} on {date} in Hypixel SkyBlock."]
+      "time": ["{time}\n{date}"]
     }
   },
   "skyblock events": {
