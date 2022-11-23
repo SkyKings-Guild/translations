@@ -709,7 +709,7 @@
     "options": [],
     "responses": {
       "title": [
-        "SkyKings v{version}"
+        "SkyKings"
       ],
       "versionInfoTitle": [
         "Version Information"
@@ -1288,28 +1288,72 @@
       "requirements.nether_reputation": ["{reputation:,} {faction} Reputation{coop}"],
       "requirements.dungeon.CATACOMBS": ["Catacombs Level {level}"],
       "requirements.skill.COMBAT": ["Combat {level}"],
-      "requirements.skill.FISHING": ["Fishing {level}"],
-      "requirements.skill.MINING": ["Mining {level}"],
-      "requirements.skill.SOCIAL": ["Social {level}"],
-      "requirements.skill.FARMING": ["Farming {level}"],
-      "requirements.skill.FORAGING": ["Foraging {level}"],
-      "requirements.slayer.enderman": ["Voidgloom Seraph {level}"],
-      "requirements.slayer.zombie": ["Revenant Horror {level}"],
-      "requirements.slayer.spider": ["Tarantula Broodfather {level}"],
-      "requirements.slayer.wolf": ["Sven Packmaster {level}"],
-      "requirements.slayer.blaze": ["Inferno Demonlord {level}"],
-      "requirements.dungeon_completion.CATACOMBS": ["The Catacombs, Floor {level} Completion"],
-      "requirements.dungeon_completion.MASTER_CATACOMBS": ["Master Mode, Floor {level} Completion"],
-      "requirements.heart_of_the_mountain": ["Heart of the Mountain Tier {level}"],
-      "requirements.targetPractice": ["Target Practice {level}"],
-      "essence.DIAMOND": ["Diamond Essence"],
-      "essence.WITHER": ["Wither Essence"],
-      "essence.GOLD": ["Gold Essence"],
-      "essence.CRIMSON": ["Crimson Essence"],
-      "essence.ICE": ["Ice Essence"],
-      "essence.UNDEAD": ["Undead Essence"],
-      "essence.DRAGON": ["Dragon Essence"],
-      "gemstone_slot_type.SAPPHIRE": ["Sapphire"],
+      "requirements.skill.FISHING": [
+        "Fishing {level}"
+      ],
+      "requirements.skill.MINING": [
+        "Mining {level}"
+      ],
+      "requirements.skill.SOCIAL": [
+        "Social {level}"
+      ],
+      "requirements.skill.FARMING": [
+        "Farming {level}"
+      ],
+      "requirements.skill.FORAGING": [
+        "Foraging {level}"
+      ],
+      "requirements.slayer.enderman": [
+        "Voidgloom Seraph {level}"
+      ],
+      "requirements.slayer.zombie": [
+        "Revenant Horror {level}"
+      ],
+      "requirements.slayer.spider": [
+        "Tarantula Broodfather {level}"
+      ],
+      "requirements.slayer.wolf": [
+        "Sven Packmaster {level}"
+      ],
+      "requirements.slayer.blaze": [
+        "Inferno Demonlord {level}"
+      ],
+      "requirements.dungeon_tier.CATACOMBS": [
+        "The Catacombs, Floor {level} Completion"
+      ],
+      "requirements.dungeon_tier.MASTER_CATACOMBS": [
+        "Master Mode, Floor {level} Completion"
+      ],
+      "requirements.heart_of_the_mountain": [
+        "Heart of the Mountain Tier {level}"
+      ],
+      "requirements.targetPractice": [
+        "Target Practice {level}"
+      ],
+      "essence.DIAMOND": [
+        "Diamond Essence"
+      ],
+      "essence.WITHER": [
+        "Wither Essence"
+      ],
+      "essence.GOLD": [
+        "Gold Essence"
+      ],
+      "essence.CRIMSON": [
+        "Crimson Essence"
+      ],
+      "essence.ICE": [
+        "Ice Essence"
+      ],
+      "essence.UNDEAD": [
+        "Undead Essence"
+      ],
+      "essence.DRAGON": [
+        "Dragon Essence"
+      ],
+      "gemstone_slot_type.SAPPHIRE": [
+        "Sapphire"
+      ],
       "gemstone_slot_type.JASPER": ["Jasper"],
       "gemstone_slot_type.AMETHYST": ["Amethyst"],
       "gemstone_slot_type.JADE": ["Jade"],
