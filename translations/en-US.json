@@ -75,46 +75,48 @@
       ]
     },
     "autocomplete": {
-      "bool": [
-        "on",
-        "off"
-      ],
-      "action": [
-        "ban",
-        "kick"
-      ],
-      "options": [
-        "Verification Enabled",
-        "Verified",
-        "VIP",
-        "VIP+",
-        "MVP",
-        "MVP+",
-        "MVP++",
-        "YouTube",
-        "Hypixel Staff",
-        "Nickname",
-        "Scammer Log Channel",
-        "Hypixel Status Ping",
-        "Hypixel Status Channel",
-        "Hypixel News Ping",
-        "Hypixel News Channel",
-        "SkyBlock Patchnotes Ping",
-        "SkyBlock Patchnotes Channel",
-        "Fetchur Ping",
-        "Fetchur Channel",
-        "Autoreply",
-        "Giveaway Runner Role",
-        "SkyBlock Date",
-        "Global Event Ping",
-        "Global Event Channel",
-        "SkyBlock Event Channel",
-        "Scammer Action",
-        "IRL Trader Action",
-        "Macroer Action",
-        "Ratter Action"
-      ],
-      "invalid": ["Invalid option provided. Please go back and fix it."]
+      "bool": {
+        "on": "on",
+        "off": "off"
+      },
+      "action": {
+        "ban": "ban",
+        "kick": "kick"
+      },
+      "options": {
+        "Verification Enabled": "Verification Enabled",
+        "Verified": "Verified",
+        "VIP": "VIP",
+        "VIP+": "VIP+",
+        "MVP": "MVP",
+        "MVP+": "MVP+",
+        "MVP++": "MVP++",
+        "YouTube": "YouTube",
+        "Hypixel Staff": "Hypixel Staff",
+        "Nickname": "Nickname",
+        "Scammer Log Channel": "Scammer Log Channel",
+        "Hypixel Status Ping": "Hypixel Status Ping",
+        "Hypixel Status Channel": "Hypixel Status Channel",
+        "Hypixel News Ping": "Hypixel News Ping",
+        "Hypixel News Channel": "Hypixel News Channel",
+        "SkyBlock Patchnotes Ping": "SkyBlock Patchnotes Ping",
+        "SkyBlock Patchnotes Channel": "SkyBlock Patchnotes Channel",
+        "Fetchur Ping": "Fetchur Ping",
+        "Fetchur Channel": "Fetchur Channel",
+        "Autoreply": "Autoreply",
+        "Giveaway Runner Role": "Giveaway Runner Role",
+        "SkyBlock Date": "SkyBlock Date",
+        "Global Event Ping": "Global Event Ping",
+        "Global Event Channel": "Global Event Channel",
+        "SkyBlock Event Channel": "SkyBlock Event Channel",
+        "Scammer Action": "Scammer Action",
+        "IRL Trader Action": "IRL Trader Action",
+        "Macroer Action": "Macroer Action",
+        "Ratter Action": "Ratter Action"
+      },
+      "invalid": {
+        "invalid": "Invalid option provided. Please go back and fix it."
+      }
     }
   },
   "config guilds view": {
@@ -348,24 +350,30 @@
       },
       {
         "name": "requirement",
-        "description": "The requirement to add.",
-        "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
-          "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
-        ]
+        "description": "The requirement to add."
       },
       {
         "name": "value",
         "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
       }
     ],
+    "autocomplete": {
+      "requirements": {
+        "network/level": "Network Level",
+        "skyblock/skills/average": "Skill Average",
+        "skyblock/slayer/xp/total": "Slayer XP",
+        "skyblock/minion_slots": "Minion Slots",
+        "skyblock/catacombs/level": "Catacombs Level",
+        "skyblock/fairy_souls": "Fairy Souls",
+        "skyblock/weight/senither": "Senither Weight",
+        "skyblock/weight/lily": "Lily Weight",
+        "skyblock/api": "API Settings Enabled"
+      }
+    },
     "responses": {
+      "invalidRequirement": [
+        "The requirement **{requirement}** does not exist."
+      ],
       "guildNotAdded": [
         "The guild **{guild}** is not linked to this server.\n",
         "Add it with `/config guilds add-guild`."
@@ -378,6 +386,33 @@
       ],
       "addedRequirement": [
         "The **{requirement}** requirement has been added to **{guild}**!"
+      ],
+      "network/level": [
+        "Network Level"
+      ],
+      "skyblock/skills/average": [
+        "Skill Average"
+      ],
+      "skyblock/slayer/xp/total": [
+        "Slayer XP"
+      ],
+      "skyblock/minion_slots": [
+        "Minion Slots"
+      ],
+      "skyblock/catacombs/level": [
+        "Catacombs Level"
+      ],
+      "skyblock/fairy_souls": [
+        "Fairy Souls"
+      ],
+      "skyblock/weight/senither": [
+        "Senither Weight"
+      ],
+      "skyblock/weight/lily": [
+        "Lily Weight"
+      ],
+      "skyblock/api": [
+        "API Settings Enabled"
       ]
     }
   },
@@ -391,20 +426,26 @@
       },
       {
         "name": "requirement",
-        "description": "The requirement to remove.",
-        "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
-          "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
-        ]
+        "description": "The requirement to remove."
       }
     ],
+    "autocomplete": {
+      "requirements": {
+        "network/level": "Network Level",
+        "skyblock/skills/average": "Skill Average",
+        "skyblock/slayer/xp/total": "Slayer XP",
+        "skyblock/minion_slots": "Minion Slots",
+        "skyblock/catacombs/level": "Catacombs Level",
+        "skyblock/fairy_souls": "Fairy Souls",
+        "skyblock/weight/senither": "Senither Weight",
+        "skyblock/weight/lily": "Lily Weight",
+        "skyblock/api": "API Settings Enabled"
+      }
+    },
     "responses": {
+      "invalidRequirement": [
+        "The requirement **{requirement}** does not exist."
+      ],
       "guildNotAdded": [
         "The guild **{guild}** is not linked to this server.\n",
         "Add it with `/config guilds add-guild`."
@@ -414,6 +455,33 @@
       ],
       "removedRequirement": [
         "The **{requirement}** requirement has been removed from **{guild}**!"
+      ],
+      "network/level": [
+        "Network Level"
+      ],
+      "skyblock/skills/average": [
+        "Skill Average"
+      ],
+      "skyblock/slayer/xp/total": [
+        "Slayer XP"
+      ],
+      "skyblock/minion_slots": [
+        "Minion Slots"
+      ],
+      "skyblock/catacombs/level": [
+        "Catacombs Level"
+      ],
+      "skyblock/fairy_souls": [
+        "Fairy Souls"
+      ],
+      "skyblock/weight/senither": [
+        "Senither Weight"
+      ],
+      "skyblock/weight/lily": [
+        "Lily Weight"
+      ],
+      "skyblock/api": [
+        "API Settings Enabled"
       ]
     }
   },
@@ -427,23 +495,29 @@
       },
       {
         "name": "requirement",
-        "description": "The requirement to edit.",
-        "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
-          "Fairy Souls",
-          "Weight"
-        ]
+        "description": "The requirement to edit."
       },
       {
         "name": "value",
         "description": "The new value of the requirement."
       }
     ],
+    "autocomplete": {
+      "requirements": {
+        "network/level": "Network Level",
+        "skyblock/skills/average": "Skill Average",
+        "skyblock/slayer/xp/total": "Slayer XP",
+        "skyblock/minion_slots": "Minion Slots",
+        "skyblock/catacombs/level": "Catacombs Level",
+        "skyblock/fairy_souls": "Fairy Souls",
+        "skyblock/weight/senither": "Senither Weight",
+        "skyblock/weight/lily": "Lily Weight"
+      }
+    },
     "responses": {
+      "invalidRequirement": [
+        "The requirement **{requirement}** does not exist."
+      ],
       "guildNotAdded": [
         "The guild **{guild}** is not linked to this server.\n",
         "Add it with `/config guilds add-guild`."
@@ -456,6 +530,33 @@
       ],
       "updatedRequirement": [
         "The **{requirement}** requirement has been set to **{value:,}** in **{guild}**!"
+      ],
+      "network/level": [
+        "Network Level"
+      ],
+      "skyblock/skills/average": [
+        "Skill Average"
+      ],
+      "skyblock/slayer/xp/total": [
+        "Slayer XP"
+      ],
+      "skyblock/minion_slots": [
+        "Minion Slots"
+      ],
+      "skyblock/catacombs/level": [
+        "Catacombs Level"
+      ],
+      "skyblock/fairy_souls": [
+        "Fairy Souls"
+      ],
+      "skyblock/weight/senither": [
+        "Senither Weight"
+      ],
+      "skyblock/weight/lily": [
+        "Lily Weight"
+      ],
+      "skyblock/api": [
+        "API Settings Enabled"
       ]
     }
   },
@@ -473,24 +574,30 @@
       },
       {
         "name": "requirement",
-        "description": "The requirement to add.",
-        "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
-          "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
-        ]
+        "description": "The requirement to add."
       },
       {
         "name": "value",
         "description": "The value of the requirement. Input any number for the 'API Settings Enabled' requirement."
       }
     ],
+    "autocomplete": {
+      "requirements": {
+        "network/level": "Network Level",
+        "skyblock/skills/average": "Skill Average",
+        "skyblock/slayer/xp/total": "Slayer XP",
+        "skyblock/minion_slots": "Minion Slots",
+        "skyblock/catacombs/level": "Catacombs Level",
+        "skyblock/fairy_souls": "Fairy Souls",
+        "skyblock/weight/senither": "Senither Weight",
+        "skyblock/weight/lily": "Lily Weight",
+        "skyblock/api": "API Settings Enabled"
+      }
+    },
     "responses": {
+      "invalidRequirement": [
+        "The requirement **{requirement}** does not exist."
+      ],
       "guildNotAdded": [
         "The guild **{guild}** is not linked to this server.\n",
         "Add it with `/config guilds add-guild`."
@@ -507,6 +614,33 @@
       ],
       "addedRequirement": [
         "The **{requirement}** requirement has been added to **{guild}**'s **{rank}** rank!"
+      ],
+      "network/level": [
+        "Network Level"
+      ],
+      "skyblock/skills/average": [
+        "Skill Average"
+      ],
+      "skyblock/slayer/xp/total": [
+        "Slayer XP"
+      ],
+      "skyblock/minion_slots": [
+        "Minion Slots"
+      ],
+      "skyblock/catacombs/level": [
+        "Catacombs Level"
+      ],
+      "skyblock/fairy_souls": [
+        "Fairy Souls"
+      ],
+      "skyblock/weight/senither": [
+        "Senither Weight"
+      ],
+      "skyblock/weight/lily": [
+        "Lily Weight"
+      ],
+      "skyblock/api": [
+        "API Settings Enabled"
       ]
     }
   },
@@ -524,20 +658,26 @@
       },
       {
         "name": "requirement",
-        "description": "The requirement to remove.",
-        "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
-          "Fairy Souls",
-          "Weight",
-          "API Settings Enabled"
-        ]
+        "description": "The requirement to remove."
       }
     ],
+    "autocomplete": {
+      "requirements": {
+        "network/level": "Network Level",
+        "skyblock/skills/average": "Skill Average",
+        "skyblock/slayer/xp/total": "Slayer XP",
+        "skyblock/minion_slots": "Minion Slots",
+        "skyblock/catacombs/level": "Catacombs Level",
+        "skyblock/fairy_souls": "Fairy Souls",
+        "skyblock/weight/senither": "Senither Weight",
+        "skyblock/weight/lily": "Lily Weight",
+        "skyblock/api": "API Settings Enabled"
+      }
+    },
     "responses": {
+      "invalidRequirement": [
+        "The requirement **{requirement}** does not exist."
+      ],
       "guildNotAdded": [
         "The guild **{guild}** is not linked to this server.\n",
         "Add it with `/config guilds add-guild`."
@@ -547,6 +687,33 @@
       ],
       "removedRequirement": [
         "The **{requirement}** requirement has been removed from **{guild}**'s **{rank}** rank!"
+      ],
+      "network/level": [
+        "Network Level"
+      ],
+      "skyblock/skills/average": [
+        "Skill Average"
+      ],
+      "skyblock/slayer/xp/total": [
+        "Slayer XP"
+      ],
+      "skyblock/minion_slots": [
+        "Minion Slots"
+      ],
+      "skyblock/catacombs/level": [
+        "Catacombs Level"
+      ],
+      "skyblock/fairy_souls": [
+        "Fairy Souls"
+      ],
+      "skyblock/weight/senither": [
+        "Senither Weight"
+      ],
+      "skyblock/weight/lily": [
+        "Lily Weight"
+      ],
+      "skyblock/api": [
+        "API Settings Enabled"
       ]
     }
   },
@@ -564,23 +731,29 @@
       },
       {
         "name": "requirement",
-        "description": "The requirement to edit.",
-        "choices": [
-          "Network Level",
-          "Skill Average",
-          "Slayer XP",
-          "Minion Slots",
-          "Catacombs Level",
-          "Fairy Souls",
-          "Weight"
-        ]
+        "description": "The requirement to edit."
       },
       {
         "name": "value",
         "description": "The value to set the requirement to."
       }
     ],
+    "autocomplete": {
+      "requirements": {
+        "network/level": "Network Level",
+        "skyblock/skills/average": "Skill Average",
+        "skyblock/slayer/xp/total": "Slayer XP",
+        "skyblock/minion_slots": "Minion Slots",
+        "skyblock/catacombs/level": "Catacombs Level",
+        "skyblock/fairy_souls": "Fairy Souls",
+        "skyblock/weight/senither": "Senither Weight",
+        "skyblock/weight/lily": "Lily Weight"
+      }
+    },
     "responses": {
+      "invalidRequirement": [
+        "The requirement **{requirement}** does not exist."
+      ],
       "guildNotAdded": [
         "The guild **{guild}** is not linked to this server.\n",
         "Add it with `/config guilds add-guild`."
@@ -593,6 +766,33 @@
       ],
       "updatedRequirement": [
         "The **{requirement}** requirement has been set to **{value}** for **{guild}**'s **{rank}** rank!"
+      ],
+      "network/level": [
+        "Network Level"
+      ],
+      "skyblock/skills/average": [
+        "Skill Average"
+      ],
+      "skyblock/slayer/xp/total": [
+        "Slayer XP"
+      ],
+      "skyblock/minion_slots": [
+        "Minion Slots"
+      ],
+      "skyblock/catacombs/level": [
+        "Catacombs Level"
+      ],
+      "skyblock/fairy_souls": [
+        "Fairy Souls"
+      ],
+      "skyblock/weight/senither": [
+        "Senither Weight"
+      ],
+      "skyblock/weight/lily": [
+        "Lily Weight"
+      ],
+      "skyblock/api": [
+        "API Settings Enabled"
       ]
     }
   },
@@ -2456,12 +2656,71 @@
         "Joined: <t:{joined}:F>\n",
         "{boosted}"
       ],
-      "playerInfoName": ["Player Information"],
+      "playerInfoName": [
+        "Player Information"
+      ],
       "playerInfoValue": [
         "Username: {name}\n",
         "Rank: {rank}\n",
         "Network Level: {level}\n",
         "Guild: {guild}"
+      ]
+    }
+  },
+  "guild-requirements": {
+    "name": "guild-requirements",
+    "description": "Checks if a player meets guild and rank requirements for this server.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to check."
+      }
+    ],
+    "responses": {
+      "noGuilds": [
+        "**{server}** has no linked guilds with requirements."
+      ],
+      "neverJoined": [
+        "**{name}** has never joined Hypixel."
+      ],
+      "noGuildRequirements": [
+        "**{guild}** does not have requirements."
+      ],
+      "title": [
+        "{guild} Requirement Check for {name}"
+      ],
+      "network/level": [
+        "Network Level: {player_value:,.1f}/{value:,}"
+      ],
+      "skyblock/skills/average": [
+        "Skill Average: {player_value:,.1f}/{value:,}"
+      ],
+      "skyblock/slayer/xp/total": [
+        "Slayer XP: {player_value:,.0f}/{value:,}"
+      ],
+      "skyblock/minion_slots": [
+        "Minion Slots: {player_value:,.0f}/{value:,}"
+      ],
+      "skyblock/catacombs/level": [
+        "Catacombs Level: {player_value:,.1f}/{value:,}"
+      ],
+      "skyblock/fairy_souls": [
+        "Fairy Souls: {player_value:,.0f}/{value:,}"
+      ],
+      "skyblock/weight/senither": [
+        "Senither Weight: {player_value:,.0f}/{value:,}"
+      ],
+      "skyblock/weight/lily": [
+        "Lily Weight: {player_value:,.0f}/{value:,}"
+      ],
+      "skyblock/api": [
+        "API Settings Enabled"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
       ]
     }
   },
@@ -2729,40 +2988,40 @@
         ]
       },
       "20": {
-          "note": "Raised when an event is already enabled.",
-          "message": [
-            "That event is already enabled."
-          ]
+        "note": "Raised when an event is already enabled.",
+        "message": [
+          "That event is already enabled."
+        ]
       },
       "21": {
-          "note": "Raised when an event is already disabled.",
-          "message": [
-              "That event is already disabled."
-          ]
+        "note": "Raised when an event is already disabled.",
+        "message": [
+          "That event is already disabled."
+        ]
       },
       "22": {
-          "note": "Raised when an invalid alert time is passed. (skyblock events config)",
-          "message": [
-              "**{time}** is not a valid time. It must be **0**, **5**, **10**, or **30**."
-          ]
+        "note": "Raised when an invalid alert time is passed. (skyblock events config)",
+        "message": [
+          "**{time}** is not a valid time. It must be **0**, **5**, **10**, or **30**."
+        ]
       },
       "23": {
-          "note": "Raised when an alert is already enabled. (skyblock events config)",
-          "message": [
-              "That alert is already enabled."
-          ]
+        "note": "Raised when an alert is already enabled. (skyblock events config)",
+        "message": [
+          "That alert is already enabled."
+        ]
       },
       "24": {
-          "note": "Raised when an alert is already disabled. (skyblock events config)",
-          "message": [
-              "That alert is already disabled."
-          ]
+        "note": "Raised when an alert is already disabled. (skyblock events config)",
+        "message": [
+          "That alert is already disabled."
+        ]
       },
       "25": {
-          "note": "Raised when a player doesn't have any SkyBlock profiles to fetch.",
-          "message": [
-              "**{name}** has no SkyBlock profiles."
-          ]
+        "note": "Raised when a player doesn't have any SkyBlock profiles to fetch.",
+        "message": [
+          "**{name}** has no SkyBlock profiles."
+        ]
       }
     },
     "checkFailure": {
@@ -2981,7 +3240,9 @@
       "position": [
         "You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."
       ],
-      "jsonify": ["Dump to JSON File"]
+      "jsonify": [
+        "Dump to JSON File"
+      ]
     },
     "pagination": {
       "page": [
@@ -3004,114 +3265,272 @@
       ]
     },
     "auctions": {
-      "item": ["Item"],
-      "category": ["Category"],
-      "rarity": ["Rarity"],
-      "auctioneer": ["Auctioneer"],
-      "started": ["Started at"],
-      "ends": ["Ends at"],
-      "type": ["Auction Type"],
-      "startingBid": ["Starting Bid"],
-      "highestBid": ["Highest Bid"],
-      "topBidder": ["Top Bidder"],
-      "loreGenCredits": ["Lore generator by poke535.dev"],
-      "noEndedAuctions": ["This player has no ended auctions."],
-      "noActiveAuctions": ["This player has no active auctions."]
+      "item": [
+        "Item"
+      ],
+      "category": [
+        "Category"
+      ],
+      "rarity": [
+        "Rarity"
+      ],
+      "auctioneer": [
+        "Auctioneer"
+      ],
+      "started": [
+        "Started at"
+      ],
+      "ends": [
+        "Ends at"
+      ],
+      "type": [
+        "Auction Type"
+      ],
+      "startingBid": [
+        "Starting Bid"
+      ],
+      "highestBid": [
+        "Highest Bid"
+      ],
+      "topBidder": [
+        "Top Bidder"
+      ],
+      "loreGenCredits": [
+        "Lore generator by poke535.dev"
+      ],
+      "noEndedAuctions": [
+        "This player has no ended auctions."
+      ],
+      "noActiveAuctions": [
+        "This player has no active auctions."
+      ]
     },
     "bazaar": {
-      "buyPrice": ["Buy Price"],
-      "sellPrice": ["Sell Price"],
-      "pastDay": ["Past Day"],
-      "pastWeek": ["Past Week"],
-      "pastMonth": ["Past Month"]
+      "buyPrice": [
+        "Buy Price"
+      ],
+      "sellPrice": [
+        "Sell Price"
+      ],
+      "pastDay": [
+        "Past Day"
+      ],
+      "pastWeek": [
+        "Past Week"
+      ],
+      "pastMonth": [
+        "Past Month"
+      ]
     },
     "charts": {
-      "pastDay": ["Past Day"],
-      "pastWeek": ["Past Week"],
-      "pastMonth": ["Past Month"]
+      "pastDay": [
+        "Past Day"
+      ],
+      "pastWeek": [
+        "Past Week"
+      ],
+      "pastMonth": [
+        "Past Month"
+      ]
     },
     "reportPrice": {
-      "report": ["Report Incorrect Price"],
-      "itemLabel": ["Item Description"],
-      "itemPlaceholder": ["Describe the item."],
-      "priceLabel": ["Actual Item Price"],
-      "pricePlaceholder": ["What's the item's actual value?"],
+      "report": [
+        "Report Incorrect Price"
+      ],
+      "itemLabel": [
+        "Item Description"
+      ],
+      "itemPlaceholder": [
+        "Describe the item."
+      ],
+      "priceLabel": [
+        "Actual Item Price"
+      ],
+      "pricePlaceholder": [
+        "What's the item's actual value?"
+      ],
       "response": [
         "Thanks for your feedback. We'll look into the issue and rectify it as soon as possible.\n\n",
         "**Abuse of this system will not be tolerated.**"
       ]
     },
     "collectionInfo": {
-      "titleNoCol": ["Collection Info"],
-      "descriptionNoCol": ["Select a collection in the dropdown below to view it."],
-      "title": ["Collection Info: {collection}"],
-      "description": ["Max Tier: {max_tier}"],
-      "fieldName": ["Tier {tier}"],
+      "titleNoCol": [
+        "Collection Info"
+      ],
+      "descriptionNoCol": [
+        "Select a collection in the dropdown below to view it."
+      ],
+      "title": [
+        "Collection Info: {collection}"
+      ],
+      "description": [
+        "Max Tier: {max_tier}"
+      ],
+      "fieldName": [
+        "Tier {tier}"
+      ],
       "fieldValue": [
         "Items: {amount_required:,}\n",
         "Unlocks:\n{unlocks}"
       ]
     },
     "collections": {
-      "FARMING": ["Farming"],
-      "MINING": ["Mining"],
-      "COMBAT": ["Combat"],
-      "FORAGING": ["Foraging"],
-      "FISHING": ["Fishing"]
+      "FARMING": [
+        "Farming"
+      ],
+      "MINING": [
+        "Mining"
+      ],
+      "COMBAT": [
+        "Combat"
+      ],
+      "FORAGING": [
+        "Foraging"
+      ],
+      "FISHING": [
+        "Fishing"
+      ]
     },
     "skills": {
-      "FARMING": ["Farming"],
-      "MINING": ["Mining"],
-      "COMBAT": ["Combat"],
-      "FORAGING": ["Foraging"],
-      "FISHING": ["Fishing"],
-      "ENCHANTING": ["Enchanting"],
-      "ALCHEMY": ["Alchemy"],
-      "CARPENTRY": ["Carpentry"],
-      "RUNECRAFTING": ["Runecrafting"],
-      "SOCIAL": ["Social"],
-      "TAMING": ["Taming"]
+      "FARMING": [
+        "Farming"
+      ],
+      "MINING": [
+        "Mining"
+      ],
+      "COMBAT": [
+        "Combat"
+      ],
+      "FORAGING": [
+        "Foraging"
+      ],
+      "FISHING": [
+        "Fishing"
+      ],
+      "ENCHANTING": [
+        "Enchanting"
+      ],
+      "ALCHEMY": [
+        "Alchemy"
+      ],
+      "CARPENTRY": [
+        "Carpentry"
+      ],
+      "RUNECRAFTING": [
+        "Runecrafting"
+      ],
+      "SOCIAL": [
+        "Social"
+      ],
+      "TAMING": [
+        "Taming"
+      ]
     },
     "skycryptLB": {
-      "skipUserTitle": ["Find Player"],
-      "skipUserLabel": ["Player"],
-      "skipUserPlaceholder": ["Enter a player name to find on the leaderboard."],
-      "skipToUser": ["Find Player"],
-      "title": ["SkyCrypt Leaderboards: {leaderboard}"],
-      "playerNotFound": ["**{player}** was not found on the leaderboard."],
-      "playerFound": ["Found {player} on page {page}. Rank: {rank:,}"]
+      "skipUserTitle": [
+        "Find Player"
+      ],
+      "skipUserLabel": [
+        "Player"
+      ],
+      "skipUserPlaceholder": [
+        "Enter a player name to find on the leaderboard."
+      ],
+      "skipToUser": [
+        "Find Player"
+      ],
+      "title": [
+        "SkyCrypt Leaderboards: {leaderboard}"
+      ],
+      "playerNotFound": [
+        "**{player}** was not found on the leaderboard."
+      ],
+      "playerFound": [
+        "Found {player} on page {page}. Rank: {rank:,}"
+      ]
     },
     "time": {
-      "datetime": ["{month} {day}, Year {year}"],
-      "am": ["{time} AM"],
-      "pm": ["{time} PM"]
+      "datetime": [
+        "{month} {day}, Year {year}"
+      ],
+      "am": [
+        "{time} AM"
+      ],
+      "pm": [
+        "{time} PM"
+      ]
     },
     "sbEvents": {
-        "NEW_YEAR": ["New Year"],
-        "NEW_YEAR_ALERT": ["The New Year Celebration starts"],
-        "SPOOKY_FESTIVAL": ["Spooky Festival"],
-        "SPOOKY_FESTIVAL_ALERT": ["The Spooky Festival starts"],
-        "WORKSHOP_OPEN": ["Jerry's Workshop Opens"],
-        "WORKSHOP_OPEN_ALERT": ["Jerry's Workshop opens"],
-        "SEASON_OF_JERRY": ["Season of Jerry"],
-        "SEASON_OF_JERRY_ALERT": ["The Season of Jerry starts"],
-        "MAYOR_ELECTION_END": ["Mayor Election Ends"],
-        "MAYOR_ELECTION_END_ALERT": ["The Mayor Election ends"],
-        "TRAVELLING_ZOO": ["Travelling Zoo"],
-        "TRAVELLING_ZOO_ALERT": ["The Travelling Zoo arrives"],
-        "FEAR_MONGERER": ["Fear Mongerer"],
-        "FEAR_MONGERER_ALERT": ["The Fear Mongerer spawns"],
-        "DARK_AUCTION": ["Dark Auction"],
-        "DARK_AUCTION_ALERT": ["The Dark Auction opens"],
-        "MAYOR_ELECTION_START": ["Mayor Election Begins"],
-        "MAYOR_ELECTION_START_ALERT": ["The Mayor Election begins"],
-        "BANK_INTEREST": ["Bank Interest"],
-        "BANK_INTEREST_ALERT": ["Bank Interest is being paid"],
-        "startingNow": ["{event} **now**!"],
-        "startingSoon": ["{event} in **{time}**!"],
-        "5": "five minutes",
-        "10": "ten minutes",
-        "30": "thirty minutes"
+      "NEW_YEAR": [
+        "New Year"
+      ],
+      "NEW_YEAR_ALERT": [
+        "The New Year Celebration starts"
+      ],
+      "SPOOKY_FESTIVAL": [
+        "Spooky Festival"
+      ],
+      "SPOOKY_FESTIVAL_ALERT": [
+        "The Spooky Festival starts"
+      ],
+      "WORKSHOP_OPEN": [
+        "Jerry's Workshop Opens"
+      ],
+      "WORKSHOP_OPEN_ALERT": [
+        "Jerry's Workshop opens"
+      ],
+      "SEASON_OF_JERRY": [
+        "Season of Jerry"
+      ],
+      "SEASON_OF_JERRY_ALERT": [
+        "The Season of Jerry starts"
+      ],
+      "MAYOR_ELECTION_END": [
+        "Mayor Election Ends"
+      ],
+      "MAYOR_ELECTION_END_ALERT": [
+        "The Mayor Election ends"
+      ],
+      "TRAVELLING_ZOO": [
+        "Travelling Zoo"
+      ],
+      "TRAVELLING_ZOO_ALERT": [
+        "The Travelling Zoo arrives"
+      ],
+      "FEAR_MONGERER": [
+        "Fear Mongerer"
+      ],
+      "FEAR_MONGERER_ALERT": [
+        "The Fear Mongerer spawns"
+      ],
+      "DARK_AUCTION": [
+        "Dark Auction"
+      ],
+      "DARK_AUCTION_ALERT": [
+        "The Dark Auction opens"
+      ],
+      "MAYOR_ELECTION_START": [
+        "Mayor Election Begins"
+      ],
+      "MAYOR_ELECTION_START_ALERT": [
+        "The Mayor Election begins"
+      ],
+      "BANK_INTEREST": [
+        "Bank Interest"
+      ],
+      "BANK_INTEREST_ALERT": [
+        "Bank Interest is being paid"
+      ],
+      "startingNow": [
+        "{event} **now**!"
+      ],
+      "startingSoon": [
+        "{event} in **{time}**!"
+      ],
+      "5": "five minutes",
+      "10": "ten minutes",
+      "30": "thirty minutes"
     },
     "profileTypes": {
       "ironman": "Ironman",
@@ -3119,60 +3538,144 @@
       "bingo": "Bingo"
     },
     "friendsList": {
-      "title": ["{name}'s Friends ({count:,})"],
-      "friend": ["{name} since {timestamp}"],
-      "noFriends": ["This player has no friends."]
+      "title": [
+        "{name}'s Friends ({count:,})"
+      ],
+      "friend": [
+        "{name} since {timestamp}"
+      ],
+      "noFriends": [
+        "This player has no friends."
+      ]
     },
     "guild": {
-      "jumpGuildMember": ["Jump to Guild Member"],
-      "jumpGuildMemberPlaceholder": ["Enter a player to find."],
-      "player": ["Player Name"],
-      "notFound": ["That player was not found in this guild."]
+      "jumpGuildMember": [
+        "Jump to Guild Member"
+      ],
+      "jumpGuildMemberPlaceholder": [
+        "Enter a player to find."
+      ],
+      "player": [
+        "Player Name"
+      ],
+      "notFound": [
+        "That player was not found in this guild."
+      ]
     },
     "confirmation": {
       "yes": "Yes",
       "no": "No"
     },
     "fetchur": {
-      "title": ["Daily Fetchur"],
-      "item": ["Today's Item: {item}\n{obtain}"],
-      "yellow_glass": ["20 Yellow Stained Glass"],
-      "yellow_glass_obtain": ["Can be purchased from the Wool Weaver or crafted."],
-      "compass": ["Compass"],
-      "compass_obtain": ["Can be crafted with 4 iron ingots and a redstone dust."],
-      "mithril": ["20 Mithril"],
-      "mithril_obtain": ["Can be purchased from the Bazaar or mined."],
-      "firework": ["Firework Rocket"],
-      "firework_obtain": ["Can be crafted with paper and gunpowder."],
-      "coffee": ["Cheap or Decent Coffee"],
-      "coffee_obtain": ["Can be purchased from the Bartender for 1,000 or 5,000 coins."],
-      "door": ["Any Door"],
-      "door_obtain": ["Can be crafted with 6 wooden planks, or 6 iron ingots."],
-      "rabbits_foot": ["3 Rabbit's Foot"],
-      "rabbits_foot_obtain": ["Can be purchased from the Bazaar or dropped from rabbits."],
-      "superboom": ["Superboom TNT"],
-      "superboom_obtain": ["Can be purchased from Ophelia or Walter in the hub, or found as a drop in Dungeons."],
-      "pumpkin": ["Pumpkin"],
-      "pumpkin_obtain": ["Can be purchased from the Bazaar or Farm Merchant in the hub, or harvested at the Barn."],
-      "flint_and_steel": ["Flint and Steel"],
-      "flint_and_steel_obtain": ["Can be crafted with a flint and an iron ingot."],
-      "quartz": ["50 Nether Quartz Ore"],
-      "quartz_obtain": ["Can be mined from the Crimson Isle with a Silk Touch pickaxe."],
-      "red_wool": ["50 Red Wool"],
-      "red_wool_obtain": ["Can be purchased from the Wool Weaver, crafted, or gained with the Rainbow enchantment."]
+      "title": [
+        "Daily Fetchur"
+      ],
+      "item": [
+        "Today's Item: {item}\n{obtain}"
+      ],
+      "yellow_glass": [
+        "20 Yellow Stained Glass"
+      ],
+      "yellow_glass_obtain": [
+        "Can be purchased from the Wool Weaver or crafted."
+      ],
+      "compass": [
+        "Compass"
+      ],
+      "compass_obtain": [
+        "Can be crafted with 4 iron ingots and a redstone dust."
+      ],
+      "mithril": [
+        "20 Mithril"
+      ],
+      "mithril_obtain": [
+        "Can be purchased from the Bazaar or mined."
+      ],
+      "firework": [
+        "Firework Rocket"
+      ],
+      "firework_obtain": [
+        "Can be crafted with paper and gunpowder."
+      ],
+      "coffee": [
+        "Cheap or Decent Coffee"
+      ],
+      "coffee_obtain": [
+        "Can be purchased from the Bartender for 1,000 or 5,000 coins."
+      ],
+      "door": [
+        "Any Door"
+      ],
+      "door_obtain": [
+        "Can be crafted with 6 wooden planks, or 6 iron ingots."
+      ],
+      "rabbits_foot": [
+        "3 Rabbit's Foot"
+      ],
+      "rabbits_foot_obtain": [
+        "Can be purchased from the Bazaar or dropped from rabbits."
+      ],
+      "superboom": [
+        "Superboom TNT"
+      ],
+      "superboom_obtain": [
+        "Can be purchased from Ophelia or Walter in the hub, or found as a drop in Dungeons."
+      ],
+      "pumpkin": [
+        "Pumpkin"
+      ],
+      "pumpkin_obtain": [
+        "Can be purchased from the Bazaar or Farm Merchant in the hub, or harvested at the Barn."
+      ],
+      "flint_and_steel": [
+        "Flint and Steel"
+      ],
+      "flint_and_steel_obtain": [
+        "Can be crafted with a flint and an iron ingot."
+      ],
+      "quartz": [
+        "50 Nether Quartz Ore"
+      ],
+      "quartz_obtain": [
+        "Can be mined from the Crimson Isle with a Silk Touch pickaxe."
+      ],
+      "red_wool": [
+        "50 Red Wool"
+      ],
+      "red_wool_obtain": [
+        "Can be purchased from the Wool Weaver, crafted, or gained with the Rainbow enchantment."
+      ]
     },
     "statuspage": {
-      "truncated": ["Truncated..."],
-      "components": ["Affected Components"]
+      "truncated": [
+        "Truncated..."
+      ],
+      "components": [
+        "Affected Components"
+      ]
     },
     "actions": {
-      "scammer": ["Scammer Joined"],
-      "trader": ["IRL Trader Joined"],
-      "assigned_role": ["They were assigned the <@&{role}> role automatically."],
-      "kicked": ["They were kicked from the server automatically."],
-      "kick": ["Kick"],
-      "ban": ["Ban"],
-      "give_role": ["Give Role"],
+      "scammer": [
+        "Scammer Joined"
+      ],
+      "trader": [
+        "IRL Trader Joined"
+      ],
+      "assigned_role": [
+        "They were assigned the <@&{role}> role automatically."
+      ],
+      "kicked": [
+        "They were kicked from the server automatically."
+      ],
+      "kick": [
+        "Kick"
+      ],
+      "ban": [
+        "Ban"
+      ],
+      "give_role": [
+        "Give Role"
+      ],
       "description": [
         "User: {user}\n",
         "UUID: {uuid}\n",
