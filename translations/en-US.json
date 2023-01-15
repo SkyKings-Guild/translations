@@ -1518,6 +1518,9 @@
       "requirements.slayer.blaze": [
         "Inferno Demonlord {level}"
       ],
+      "requirements.dungeon_skill.CATACOMBS": [
+        "Catacombs {level}"
+      ],
       "requirements.dungeon_tier.CATACOMBS": [
         "The Catacombs, Floor {level} Completion"
       ],
