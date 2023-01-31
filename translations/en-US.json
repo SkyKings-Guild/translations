@@ -2785,11 +2785,17 @@
     "description": "Synchronize your Discord account with Hypixel's social menu.",
     "options": [],
     "responses": {
-      "synced": ["Successfully updated your roles."],
+      "synced": [
+        "Successfully updated your roles."
+      ],
       "syncedPartially": [
         "Successfully updated your roles.\n",
         "Some roles or your nickname were not changed due to permission issues. ",
         "Please contact a server administrator for more information."
+      ],
+      "roleConnection": [
+        "We also recommend adding our bot as a connection to your Discord account.\n",
+        "You can do so at https://skykings.net/role-connections."
       ]
     }
   },
@@ -3683,6 +3689,40 @@
         "User: {user}\n",
         "UUID: {uuid}\n",
         "{action}"
+      ]
+    },
+    "roleConnectionNames": {
+      "level": [
+        "SkyBlock Level"
+      ],
+      "senither_weight": [
+        "Senither Weight"
+      ],
+      "lily_weight": [
+        "Lily Weight"
+      ],
+      "cata": [
+        "Catacombs Level"
+      ],
+      "slayer_xp": [
+        "Slayer XP"
+      ]
+    },
+    "roleConnectionDescriptions": {
+      "level": [
+        "The player's SkyBlock level."
+      ],
+      "senither_weight": [
+        "The player's Senither weight."
+      ],
+      "lily_weight": [
+        "The player's Lily weight."
+      ],
+      "cata": [
+        "The player's Catacombs level."
+      ],
+      "slayer_xp": [
+        "The player's total slayer XP."
       ]
     }
   }
