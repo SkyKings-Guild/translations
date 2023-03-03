@@ -1554,38 +1554,55 @@
       "essence.DRAGON": [
         "Dragon Essence"
       ],
+      "essence.SPIDER": [
+        "Spider Essence"
+      ],
       "gemstone_slot_type.SAPPHIRE": [
         "Sapphire"
       ],
-      "gemstone_slot_type.JASPER": ["Jasper"],
-      "gemstone_slot_type.AMETHYST": ["Amethyst"],
-      "gemstone_slot_type.JADE": ["Jade"],
-      "gemstone_slot_type.AMBER": ["Amber"],
-      "gemstone_slot_type.TOPAZ": ["Topaz"],
-      "gemstone_slot_type.OPAL": ["Opal"],
-      "gemstone_slot_type.RUBY": ["Ruby"],
-      "gemstone_slot_type.COMBAT": ["Combat"],
-      "gemstone_slot_type.OFFENSIVE": ["Offensive"],
-      "gemstone_slot_type.DEFENSIVE": ["Defensive"],
-      "gemstone_slot_type.MINING": ["Mining"],
-      "gemstone_slot_type.UNIVERSAL": ["Universal"],
-      "faction.BARBARIANS": ["Barbarians"],
-      "faction.MAGES": ["MAGE"]
+      "gemstone_slot_type.JASPER": [
+        "Jasper"
+      ],
+      "gemstone_slot_type.AMETHYST": [
+        "Amethyst"
+      ],
+      "gemstone_slot_type.JADE": [
+        "Jade"
+      ],
+      "gemstone_slot_type.AMBER": [
+        "Amber"
+      ],
+      "gemstone_slot_type.TOPAZ": [
+        "Topaz"
+      ],
+      "gemstone_slot_type.OPAL": [
+        "Opal"
+      ],
+      "gemstone_slot_type.RUBY": [
+        "Ruby"
+      ],
+      "gemstone_slot_type.COMBAT": [
+        "Combat"
+      ],
+      "gemstone_slot_type.OFFENSIVE": [
+        "Offensive"
+      ],
+      "gemstone_slot_type.DEFENSIVE": [
+        "Defensive"
+      ],
+      "gemstone_slot_type.MINING": [
+        "Mining"
+      ],
+      "gemstone_slot_type.UNIVERSAL": [
+        "Universal"
+      ],
+      "faction.BARBARIANS": [
+        "Barbarians"
+      ],
+      "faction.MAGES": [
+        "MAGE"
+      ]
     }
-  },
-  "skyblock leaderboard":{
-    "name": "leaderboard",
-    "description": "Displays leaderboards from SkyCrypt (sky.shiiyu.moe)",
-    "options": [
-      {
-        "name": "leaderboard",
-        "description": "The leaderboard to display."
-      },
-      {
-        "name": "player",
-        "description": "The player to search for on the leaderboard."
-      }
-    ]
   },
   "skyblock wiki": {
     "name": "wiki",
@@ -1760,6 +1777,104 @@
         "Progress: {progress:,}\n",
         "Tier {tier}/{tiers}\n",
         "Goal completed!"
+      ]
+    }
+  },
+  "leaderboard": {
+    "name": "leaderboard",
+    "description": "Displays Hypixel SkyBlock rankings."
+  },
+  "leaderboard players": {
+    "name": "players",
+    "description": "Displays Hypixel SkyBlock player rankings.",
+    "options": [
+      {
+        "name": "leaderboard",
+        "description": "The leaderboard to display."
+      },
+      {
+        "guild": "guild",
+        "description": "The guild to filter by."
+      }
+    ],
+    "autocomplete": {
+      "leaderboards": {
+        "weight": "Senither Weight",
+        "weight_lily": "Lily Weight",
+        "skyblock_xp": "SkyBlock XP",
+        "networth": "Networth",
+        "skills": "Skill Average",
+        "slayers": "Slayer XP",
+        "cata": "Catacombs Level"
+      }
+    },
+    "responses": {
+      "title": [
+        "{leaderboard} Leaderboard"
+      ],
+      "weight": [
+        "Senither Weight"
+      ],
+      "weight_lily": [
+        "Lily Weight"
+      ],
+      "skyblock_xp": [
+        "SkyBlock XP"
+      ],
+      "networth": [
+        "Networth"
+      ],
+      "skills": [
+        "Skill Average"
+      ],
+      "slayers": [
+        "Slayer XP"
+      ],
+      "cata": [
+        "Catacombs Level"
+      ],
+      "description": [
+        "Showing top 25 players. For more, [visit our website](https://skykings.net/player-leaderboard)"
+      ],
+      "guild": [
+        "Showing top 25 players in **{guild}**. ",
+        "For more, [visit our website](https://skykings.net/leaderboard#{guild})"
+      ],
+      "player": [
+        "#{rank}: [{player}](https://skykings.net/player-leaderboard#{unescaped_name}) ({text})"
+      ],
+      "addGuild": [
+        "**{guild}** is not officially on our leaderboard, ",
+        "and it is possible we are not showing the full guild. ",
+        "If you'd like your full guild to be shown, ",
+        "consider adding it to our leaderboard with `/leaderboard add-guild`."
+      ],
+      "noGuild": [
+        "The guild **{guild}** does not exist."
+      ]
+    }
+  },
+  "leaderboard add-guild": {
+    "name": "add-guild",
+    "description": "Adds a guild to our Hypixel Skyblock leaderboards.",
+    "options": [
+      {
+        "name": "guild",
+        "description": "The guild to add."
+      }
+    ],
+    "responses": {
+      "noGuild": [
+        "The guild **{guild}** does not exist."
+      ],
+      "tooSmall": [
+        "The guild **{guild}** is too small to be added to the leaderboard.\n",
+        "It must have at least 50 members."
+      ],
+      "added": [
+        "\uD83C\uDF89 **{guild}** has been added to the leaderboard!\n",
+        "It may take up to 24 hours before members are updated and ",
+        "the guild is displayed on our leaderboards."
       ]
     }
   },
