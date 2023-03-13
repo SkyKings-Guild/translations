@@ -3807,40 +3807,25 @@
     },
     "actions": {
       "scammer": [
-        "Scammer"
+        "Scammer Joined"
       ],
       "trader": [
-        "IRL Trader"
-      ],
-      "macroer": [
-        "Macroer"
-      ],
-      "ratter": [
-        "Ratter"
-      ],
-      "ENTRY_SCAMMER_NAME": [
-        "Entry #{id} - Scammer"
-      ],
-      "ENTRY_TRADER_NAME": [
-        "Entry #{id} - IRL Trader"
-      ],
-      "ENTRY_RATTER_NAME": [
-        "Entry #{id} - Ratter"
-      ],
-      "ENTRY_MACROER_NAME": [
-        "Entry #{id} - Macroer"
-      ],
-      "ENTRY_REASON": [
-        "Reason: {reason}"
-      ],
-      "flagged_as": [
-        "was flagged as: "
+        "IRL Trader Joined"
       ],
       "assigned_role": [
-        "They were assigned the following roles:"
+        "They were assigned the <@&{role}> role automatically."
       ],
       "kicked": [
-        "They were kicked from the server."
+        "They were kicked from the server automatically."
+      ],
+      "kick": [
+        "Kick"
+      ],
+      "ban": [
+        "Ban"
+      ],
+      "give_role": [
+        "Give Role"
       ],
       "description": [
         "User: {user}\n",
