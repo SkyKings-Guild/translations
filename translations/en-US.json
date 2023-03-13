@@ -1312,7 +1312,10 @@
     "description": "Report a scammer, IRL trader, macroer, or ratter and get them added to our scammer list.",
     "options": [],
     "responses": {
-      "description": "Malicious players can be reported on our [Website](https://skykings.net/forms/report)."
+      "description": [
+        "Malicious players can be reported on our [Website](https://skykings.net/forms/report), ",
+        "or by clicking the button below."
+      ]
     }
   },
   "bazaar": {
@@ -3862,6 +3865,67 @@
       ],
       "slayer_xp": [
         "The player's total slayer XP."
+      ]
+    },
+    "reports": {
+      "reportBtn": [
+        "Make a Report"
+      ],
+      "names": [
+        "Players"
+      ],
+      "names_placeholder": [
+        "Report multiple players by separating them with a comma."
+      ],
+      "userids": [
+        "User IDs"
+      ],
+      "userids_placeholder": [
+        "Report multiple users by separating them with a comma."
+      ],
+      "type": [
+        "Report Type"
+      ],
+      "type_placeholder": [
+        "SCAMMER, TRADER (IRL Trader), MACROER, RATTER"
+      ],
+      "reason": [
+        "Reason"
+      ],
+      "reason_placeholder": [
+        "Enter a reason for the report."
+      ],
+      "evidence": [
+        "Evidence"
+      ],
+      "evidence_placeholder": [
+        "Evidence can be a screenshot, video, or link to a video."
+      ],
+      "maxLimit": [
+        "You can only report up to 5 players at a time."
+      ],
+      "invalidUsername": [
+        "An invalid username was provided."
+      ],
+      "invalidDiscord": [
+        "An invalid Discord user ID was provided."
+      ],
+      "invalidType": [
+        "An invalid report type was provided.\n",
+        "Must be one of `SCAMMER`, `TRADER` (IRL Traders), `MACROER`, or `RATTER`."
+      ],
+      "success": [
+        "Your report has been submitted to SkyKings staff for review.\n",
+        "Thanks for helping keep the SkyBlock community safe.\n\n",
+        "**We are not Hypixel staff.** If you would like to report the player to Hypixel, ",
+        "use the `/report` command in-game."
+      ],
+      "error": [
+        "An error occurred while trying to submit your report.\n",
+        "Please try again later."
+      ],
+      "noNamesOrUserids": [
+        "You must provide at least one player name or Discord user ID."
       ]
     }
   }
