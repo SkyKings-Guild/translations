@@ -3846,6 +3846,9 @@
         "User: {user}\n",
         "UUID: {uuid}\n",
         "{action}"
+      ],
+      "give_role": [
+        "Give Role"
       ]
     },
     "roleConnectionNames": {
