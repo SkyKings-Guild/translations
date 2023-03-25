@@ -2951,6 +2951,30 @@
       ]
     }
   },
+  "verify button": {
+    "name": "button",
+    "description": "Send a message with a button that can be used to verify.",
+    "options": [
+      {
+        "name": "channel",
+        "description": "The channel to send the message in."
+      }
+    ],
+    "responses": {
+      "default": [
+        "This server uses SkyKings to verify that you own a Minecraft account.\n\n",
+        "To verify, click the 'Verify' button below.\n",
+        "If you need help verifying, click the 'Help' button."
+      ],
+      "noPerms": [
+        "You cannot send the verification message in {channel}.\n",
+        "You must have **Manage Messages** permissions."
+      ],
+      "sent": [
+        "Verification message sent in {channel}."
+      ]
+    }
+  },
   "help": {
     "name": "help",
     "description": "Displays a list of the bot's commands.",
@@ -3944,6 +3968,55 @@
       ],
       "noNamesOrUserids": [
         "You must provide at least one player name or Discord user ID."
+      ]
+    },
+    "verify": {
+      "notLinked": [
+        "**{name}** does not have a Discord account associated with them in their Hypixel social menu.\n\n",
+        "To learn how to add your Discord account to your Hypixel social menu, try the `/verify help` command."
+      ],
+      "notVerified": [
+        "**{name}**'s associated Discord account is not identical to yours.\n\n",
+        "To learn how to add your Discord account to your Hypixel social menu, try the `/verify help` command."
+      ],
+      "alreadyVerified": [
+        "**{name}** is already verified with <@{userid}>. Verifying on this account will remove that link.\n\n",
+        "Would you like to continue?"
+      ],
+      "cancelled": [
+        "Verification cancelled."
+      ],
+      "verified": [
+        "**{name}** has been linked to your Discord account."
+      ],
+      "loading": [
+        "Processing verification request..."
+      ],
+      "label": [
+        "Verify"
+      ],
+      "input": [
+        "What is your IGN?"
+      ],
+      "input_placeholder": [
+        "Enter your Minecrfaft username."
+      ],
+      "helpTitle": [
+        "Verification Instructions"
+      ],
+      "helpDescription": [
+        "To link your Minecraft account to your Discord account:\n",
+        "**1)** In any Hypixel lobby, right click the \"My Profile\" item in your 2nd hotbar slot.\n",
+        "**2)** Select \"Social Media\", to the right of the Redstone Block.\n",
+        "**3)** Select \"Discord\".\n",
+        "**4)** Paste your Discord username ({name}) into chat. __This is case sensitive.__\n",
+        "**5)** If a book pops up, select \"I understand\".\n",
+        "**6)** Use the `/verify link` command to connect your Minecraft account to your Discord account.\n",
+        "Note that it may take up to 5 minutes for the API to reflect your changes.\n\n",
+        "For a video example, click [here](https://youtu.be/6ZXaZ-chzWI)."
+      ],
+      "invalidPlayer": [
+        "**{name}** is not a valid Minecraft username."
       ]
     }
   }
