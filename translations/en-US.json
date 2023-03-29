@@ -1421,11 +1421,28 @@
     "description": "Displays items purchasable with bits, and its coins per bit.",
     "options": [],
     "responses": {
-      "title": ["Bits to BIN"],
+      "title": [
+        "Bits to BIN"
+      ],
       "field": [
         "**Bit Price**: {cost:,}\n",
         "**Coin Price**: {price:,.0f}\n",
         "**Coins Per Bit**: {coinsPerBit:,.2f}"
+      ]
+    }
+  },
+  "organic-matter": {
+    "name": "organic-matter",
+    "description": "Displays the item that provides the most organic matter per coin.",
+    "options": [],
+    "responses": {
+      "title": [
+        "Coins per Organic Matter"
+      ],
+      "field": [
+        "**Bazaar Instant Buy**: {price:,}\n",
+        "**Organic Matter**: {matter:,}\n",
+        "**Coins per Organic Matter**: {value:,.2f}"
       ]
     }
   },
