@@ -1440,9 +1440,9 @@
         "Coins per Organic Matter"
       ],
       "field": [
-        "**Bazaar Instant Buy**: {price:,.0f}\n",
-        "**Organic Matter (OM)**: {matter:,}\n",
-        "**Coins per OM**: {value:,.2f}"
+        "**Bazaar Price**: {price:,.0f}\n",
+        "**Organic Matter**: {matter:,}\n",
+        "**Coins/OM**: {value:,.2f}"
       ]
     }
   },
