@@ -941,6 +941,7 @@
         "Shard ID: {shard_id}\n",
         "Average Latency: {latency} ms\n",
         "Shard Latency: {shard_latency} ms\n",
+        "Scammers/IRL Traders/Ratters/Macroers Listed: {scammers:,}\n",
         "\n",
         "Developed by plun1331#5535 - [discord.gg/skykings](https://discord.gg/skykings)"
       ]
