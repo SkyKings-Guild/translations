@@ -124,7 +124,9 @@
     "description": "View the guilds linked to this server.",
     "options": [],
     "responses": {
-      "noGuilds": ["No guilds have been linked to this server."],
+      "noGuilds": [
+        "No guilds have been linked to this server."
+      ],
       "base": [
         "Name: {name}\n",
         "ID: {gid}\n",
@@ -208,9 +210,9 @@
     }
   },
   "config guilds edit-guild": {
-      "name": "edit-guild",
-      "description": "Edits the config for a linked Hypixel guild.",
-      "options": [
+    "name": "edit-guild",
+    "description": "Edits the config for a linked Hypixel guild.",
+    "options": [
       {
         "name": "guild",
         "description": "The guild to edit."
@@ -228,19 +230,19 @@
         "name": "value",
         "description": "The value to set the setting to. Leave blank to reset the setting."
       }
+    ],
+    "responses": {
+      "guildNotFound": [
+        "The guild **{guild}** does not exist."
       ],
-      "responses": {
-        "guildNotFound": [
-          "The guild **{guild}** does not exist."
-        ],
-        "editedGuild": [
-          "**{guild}**'s config was successfully updated."
-        ],
-        "premiumGuild": [
-          "This option will only work for premium servers.\n",
-          "For more information, please see the `/premium info` command."
-        ]
-      }
+      "editedGuild": [
+        "**{guild}**'s config was successfully updated."
+      ],
+      "premiumGuild": [
+        "This option will only work for premium servers.\n",
+        "For more information, please see the `/premium info` command."
+      ]
+    }
   },
   "config guilds add-rank": {
     "name": "add-rank",
@@ -847,7 +849,9 @@
       "fromCode": [
         "This server redeemed a premium code and has premium active until {exp}."
       ],
-      "admin": ["This server has permanent premium granted by a SkyKings administrator."]
+      "admin": [
+        "This server has permanent premium granted by a SkyKings administrator."
+      ]
     }
   },
   "premium transfer": {
@@ -1329,75 +1333,101 @@
       }
     ],
     "responses": {
-      "itemNotFound": ["The item **{item}** does not exist."],
+      "itemNotFound": [
+        "The item **{item}** does not exist."
+      ],
       "itemNotInBazaar": [
         "**{item}** is not in the bazaar."
       ],
-      "instantBuy": ["Buy Instantly"],
-      "instantSell": ["Sell Instantly"],
-      "highestBuyOrder": ["Highest Buy Order"],
-      "lowestSellOrder": ["Lowest Sell Order"],
-      "buyVolume": ["Buy Volume"],
-      "sellVolume": ["Sell Volume"]
+      "instantBuy": [
+        "Buy Instantly"
+      ],
+      "instantSell": [
+        "Sell Instantly"
+      ],
+      "highestBuyOrder": [
+        "Highest Buy Order"
+      ],
+      "lowestSellOrder": [
+        "Lowest Sell Order"
+      ],
+      "buyVolume": [
+        "Buy Volume"
+      ],
+      "sellVolume": [
+        "Sell Volume"
+      ]
     }
   },
   "auctions": {
-      "name": "auctions",
-      "description": "View auctions."
+    "name": "auctions",
+    "description": "View auctions."
   },
   "auctions search": {
-      "name": "search",
-      "description": "Search for auctions in the auction house.",
-      "options": [
-        {
-          "name": "item",
-          "description": "The item to search for."
-        },
-        {
-          "name": "bin",
-          "description": "Filter BIN auctions. Leave blank to search all auctions."
-        },
-        {
-          "name": "exact",
-          "description": "Match the item name exactly. Default false."
-        }
-      ],
-      "responses": {
-        "noAuctions": ["No auctions matching the query **{query}** were found."],
-        "title": ["{item} in the Auction House"]
+    "name": "search",
+    "description": "Search for auctions in the auction house.",
+    "options": [
+      {
+        "name": "item",
+        "description": "The item to search for."
+      },
+      {
+        "name": "bin",
+        "description": "Filter BIN auctions. Leave blank to search all auctions."
+      },
+      {
+        "name": "exact",
+        "description": "Match the item name exactly. Default false."
       }
+    ],
+    "responses": {
+      "noAuctions": [
+        "No auctions matching the query **{query}** were found."
+      ],
+      "title": [
+        "{item} in the Auction House"
+      ]
+    }
   },
   "auctions player": {
-      "name": "player",
-      "description": "View a player's auctions.",
-      "options": [
-        {
-          "name": "player",
-          "description": "The player to search for."
-        }
-      ],
-      "responses": {
-        "noAuctions": ["**{player}** has no auctions."],
-        "title": ["{player}'s Auctions"]
+    "name": "player",
+    "description": "View a player's auctions.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to search for."
       }
+    ],
+    "responses": {
+      "noAuctions": [
+        "**{player}** has no auctions."
+      ],
+      "title": [
+        "{player}'s Auctions"
+      ]
+    }
   },
   "auctions lowestbin": {
-      "name": "lowestbin",
-      "description": "Find the lowest BIN auction for an item.",
-      "options": [
-        {
-          "name": "item",
-          "description": "The item to search for."
-        },
-        {
-          "name": "exact",
-          "description": "Match the item name exactly. Default false."
-        }
-      ],
-      "responses": {
-        "noAuction": ["Could not find a BIN auction for **{item}**."],
-        "title": ["Lowest BIN for {item}"]
+    "name": "lowestbin",
+    "description": "Find the lowest BIN auction for an item.",
+    "options": [
+      {
+        "name": "item",
+        "description": "The item to search for."
+      },
+      {
+        "name": "exact",
+        "description": "Match the item name exactly. Default false."
       }
+    ],
+    "responses": {
+      "noAuction": [
+        "Could not find a BIN auction for **{item}**."
+      ],
+      "title": [
+        "Lowest BIN for {item}"
+      ]
+    }
   },
   "price": {
     "name": "price",
@@ -1409,12 +1439,18 @@
       }
     ],
     "responses": {
-      "noItem": ["**{item}** is not a valid item."],
+      "noItem": [
+        "**{item}** is not a valid item."
+      ],
       "bazaarPrice": [
         "**{item}** is currently selling for an average of **{price} coins** on the bazaar."
       ],
-      "noPrice": ["Could not determine a price for **{item}**."],
-      "price": ["**{item}** is currently selling for **{price:,.0f} coins** on the auction house."]
+      "noPrice": [
+        "Could not determine a price for **{item}**."
+      ],
+      "price": [
+        "**{item}** is currently selling for **{price:,.0f} coins** on the auction house."
+      ]
     }
   },
   "bits-to-bin": {
@@ -1461,9 +1497,15 @@
     "description": "Displays information about the SkyBlock skills.",
     "options": [],
     "responses": {
-      "title": ["Skill Info: {emoji} {skill}"],
-      "description": ["{description}"],
-      "fieldName": ["Level {level}"],
+      "title": [
+        "Skill Info: {emoji} {skill}"
+      ],
+      "description": [
+        "{description}"
+      ],
+      "fieldName": [
+        "Level {level}"
+      ],
       "fieldValue": [
         "Required XP: {xp:,.0f}\n",
         "Unlocks:\n{unlocks}"
@@ -1480,35 +1522,83 @@
       }
     ],
     "responses": {
-      "notFound": ["Could not find an item named **{item}**."],
-      "title": ["Item Information: {item}"],
-      "attributesName": ["Attributes"],
+      "notFound": [
+        "Could not find an item named **{item}**."
+      ],
+      "title": [
+        "Item Information: {item}"
+      ],
+      "attributesName": [
+        "Attributes"
+      ],
       "attributesValue": [
         "Glowing: {glowing}\n",
         "Museum Item: {museum}\n",
         "Dungeon Item: {dungeon}\n"
       ],
-      "category": ["Item Type: {category}"],
-      "tier": ["Tier: {tier}"],
-      "id": ["ID: {id}"],
-      "statsName": ["Base Stats"],
-      "requirementsName": ["Usage Requirements"],
-      "requirementsValue": ["{requirements}"],
-      "dungeonRequirementsName": ["Dungeon Usage Requirements"],
-      "dungeonRequirementsValue": ["{requirements}"],
-      "essenceName": ["Essence Crafting"],
-      "dungeonize": ["Dungeonize: {amount:,} {type}"],
-      "star": ["{stars}: {data}"],
-      "innerStar": ["{amount:,} {type}"],
-      "essenceValue": ["{essence}"],
-      "gemstoneSlotName": ["Gemstone Slot {slot}"],
-      "gemstoneSlotType": ["Type: {type}"],
-      "gemstoneSlotCost": ["\nUnlock Cost:\n{cost}"],
-      "innerGemstoneSlotCost": ["{amount:,} {type}"],
-      "npcSellPrice": ["NPC Sell Price: {price:,}"],
-      "requirements.nether_reputation": ["{reputation:,} {faction} Reputation{coop}"],
-      "requirements.dungeon.CATACOMBS": ["Catacombs Level {level}"],
-      "requirements.skill.COMBAT": ["Combat {level}"],
+      "category": [
+        "Item Type: {category}"
+      ],
+      "tier": [
+        "Tier: {tier}"
+      ],
+      "id": [
+        "ID: {id}"
+      ],
+      "statsName": [
+        "Base Stats"
+      ],
+      "requirementsName": [
+        "Usage Requirements"
+      ],
+      "requirementsValue": [
+        "{requirements}"
+      ],
+      "dungeonRequirementsName": [
+        "Dungeon Usage Requirements"
+      ],
+      "dungeonRequirementsValue": [
+        "{requirements}"
+      ],
+      "essenceName": [
+        "Essence Crafting"
+      ],
+      "dungeonize": [
+        "Dungeonize: {amount:,} {type}"
+      ],
+      "star": [
+        "{stars}: {data}"
+      ],
+      "innerStar": [
+        "{amount:,} {type}"
+      ],
+      "essenceValue": [
+        "{essence}"
+      ],
+      "gemstoneSlotName": [
+        "Gemstone Slot {slot}"
+      ],
+      "gemstoneSlotType": [
+        "Type: {type}"
+      ],
+      "gemstoneSlotCost": [
+        "\nUnlock Cost:\n{cost}"
+      ],
+      "innerGemstoneSlotCost": [
+        "{amount:,} {type}"
+      ],
+      "npcSellPrice": [
+        "NPC Sell Price: {price:,}"
+      ],
+      "requirements.nether_reputation": [
+        "{reputation:,} {faction} Reputation{coop}"
+      ],
+      "requirements.dungeon.CATACOMBS": [
+        "Catacombs Level {level}"
+      ],
+      "requirements.skill.COMBAT": [
+        "Combat {level}"
+      ],
       "requirements.skill.FISHING": [
         "Fishing {level}"
       ],
@@ -1635,10 +1725,18 @@
       }
     ],
     "responses": {
-      "title": ["Hypixel SkyBlock Wiki"],
-      "noResults": ["No results were found for **{search}**."],
-      "results": ["Results for **{search}**:\n{results}"],
-      "wikiURL": ["The wiki can be found at [wiki.hypixel.net](https://wiki.hypixel.net/)."]
+      "title": [
+        "Hypixel SkyBlock Wiki"
+      ],
+      "noResults": [
+        "No results were found for **{search}**."
+      ],
+      "results": [
+        "Results for **{search}**:\n{results}"
+      ],
+      "wikiURL": [
+        "The wiki can be found at [wiki.hypixel.net](https://wiki.hypixel.net/)."
+      ]
     }
   },
   "skyblock time": {
@@ -1646,7 +1744,9 @@
     "description": "Displays the current time in SkyBlock.",
     "options": [],
     "responses": {
-      "time": ["{time}\n{date}"]
+      "time": [
+        "{time}\n{date}"
+      ]
     }
   },
   "skyblock events": {
@@ -1666,7 +1766,9 @@
     "description": "Displays the server's SkyBlock event notification configuration.",
     "options": [],
     "responses": {
-      "title": ["SkyBlock Event Notifications"],
+      "title": [
+        "SkyBlock Event Notifications"
+      ],
       "fieldTemplate": [
         "Enabled: {enabled}\n",
         "Alerts: {alerts}\n",
@@ -1698,15 +1800,19 @@
       }
     ],
     "responses": {
-      "enabled": ["Enabled **{event}**."],
-      "disabled": ["Disabled **{event}**."]
+      "enabled": [
+        "Enabled **{event}**."
+      ],
+      "disabled": [
+        "Disabled **{event}**."
+      ]
     }
   },
   "skyblock-events config toggle-alert": {
     "name": "toggle-alert",
     "description": "Toggles an alert on or off for an event.",
     "options": [
-    {
+      {
         "name": "event",
         "description": "The event to toggle an alert for.",
         "choices": [
@@ -1721,8 +1827,8 @@
           "Mayor Election Begins",
           "Bank Interest"
         ]
-    },
-    {
+      },
+      {
         "name": "alert",
         "description": "The alert to toggle.",
         "choices": [
@@ -1731,11 +1837,15 @@
           "10 minutes before event",
           "30 minutes before event"
         ]
-    }
+      }
     ],
     "responses": {
-      "enabledAlert": ["Enabled the **{alert}** alert for **{event}**."],
-      "disabledAlert": ["Disabled the **{alert}** alert for **{event}**."],
+      "enabledAlert": [
+        "Enabled the **{alert}** alert for **{event}**."
+      ],
+      "disabledAlert": [
+        "Disabled the **{alert}** alert for **{event}**."
+      ],
       "0": "Start of event",
       "5": "5 minutes before event",
       "10": "10 minutes before event",
@@ -1768,8 +1878,12 @@
       }
     ],
     "responses": {
-      "setPing": ["Set the ping role for **{event}** to **{role}**."],
-      "removedPing": ["Removed the ping role for **{event}**."]
+      "setPing": [
+        "Set the ping role for **{event}** to **{role}**."
+      ],
+      "removedPing": [
+        "Removed the ping role for **{event}**."
+      ]
     }
   },
   "skyblock mayor": {
@@ -1777,10 +1891,18 @@
     "description": "Displays the current SkyBlock mayor, as well as the current election.",
     "options": [],
     "responses": {
-      "mayorTitle": ["Hypixel SkyBlock Mayor"],
-      "mayorDescription": ["The current mayor is **{mayor}**.\n\n{perks}"],
-      "electionName": ["Election for Year {year:,}"],
-      "electionDescription": ["Total Votes: {votes:,}"]
+      "mayorTitle": [
+        "Hypixel SkyBlock Mayor"
+      ],
+      "mayorDescription": [
+        "The current mayor is **{mayor}**.\n\n{perks}"
+      ],
+      "electionName": [
+        "Election for Year {year:,}"
+      ],
+      "electionDescription": [
+        "Total Votes: {votes:,}"
+      ]
     }
   },
   "skyblock bingo": {
@@ -1788,7 +1910,9 @@
     "description": "Displays the current SkyBlock Bingo card.",
     "options": [],
     "responses": {
-      "bingoTitle": ["Hypixel SkyBlock Bingo Card"],
+      "bingoTitle": [
+        "Hypixel SkyBlock Bingo Card"
+      ],
       "progress": [
         "Progress: {progress:,}\n",
         "Next Tier: {needed:,}\n> {toNext:,} needed\n",
@@ -1980,14 +2104,30 @@
       "neverJoined": [
         "**{name}** has never joined Hypixel."
       ],
-      "title": ["{name}'s Status"],
-      "offline": ["**{name}** is currently offline."],
-      "noData": ["I was unable to fetch **{name}**'s status."],
-      "onlineCantLocate": ["**{name}** is currently online, but has their status API settings disabled."],
-      "online": ["**{name}** is currently online. I was unable to determine where."],
-      "onlineWithMode": ["**{name}** is currently playing {game}.\nMode: {mode}."],
-      "lobby": ["Lobby"],
-      "onlineWithGame": ["**{name}** is currently playing {game}."]
+      "title": [
+        "{name}'s Status"
+      ],
+      "offline": [
+        "**{name}** is currently offline."
+      ],
+      "noData": [
+        "I was unable to fetch **{name}**'s status."
+      ],
+      "onlineCantLocate": [
+        "**{name}** is currently online, but has their status API settings disabled."
+      ],
+      "online": [
+        "**{name}** is currently online. I was unable to determine where."
+      ],
+      "onlineWithMode": [
+        "**{name}** is currently playing {game}.\nMode: {mode}."
+      ],
+      "lobby": [
+        "Lobby"
+      ],
+      "onlineWithGame": [
+        "**{name}** is currently playing {game}."
+      ]
     }
   },
   "profiles": {
@@ -2197,7 +2337,9 @@
       "runecraftingName": [
         "<:runecrafting:979159298846380113> Runecrafting ({level:.0f})"
       ],
-      "socialName": ["<:social:979159299475513344> Social ({level:.0f})"],
+      "socialName": [
+        "<:social:979159299475513344> Social ({level:.0f})"
+      ],
       "inner": [
         "Total XP: {xp:,.0f}\n",
         "Progress: {xp_progress:,.0f}/{xp_needed:,.0f} ({progress:.2%})"
@@ -2393,17 +2535,23 @@
         "<:maddox:988669718862917692> **Slayer Weight**: {slayer_weight:,.1f}\n",
         "<:dungeons:988667365883543602> **Dungeon Weight**: {dungeon_weight:,.1f}"
       ],
-      "skillNameLily": ["<:diamond_sword:986848758149021716> Skills"],
+      "skillNameLily": [
+        "<:diamond_sword:986848758149021716> Skills"
+      ],
       "skillValueLily": [
         "Skill Average: {skill_avg:,.1f}\n",
         "Weight: {weight:,.1f}"
       ],
-      "slayerNameLily": ["<:maddox:988669718862917692> Slayers"],
+      "slayerNameLily": [
+        "<:maddox:988669718862917692> Slayers"
+      ],
       "slayerValueLily": [
         "Total XP: {xp:,.1f}\n",
         "Weight: {weight:,.1f}"
       ],
-      "dungeonsNameLily": ["<:dungeons:988667365883543602> Dungeons"],
+      "dungeonsNameLily": [
+        "<:dungeons:988667365883543602> Dungeons"
+      ],
       "dungeonsValueLily": [
         "Catacombs Level: {cata_lvl:,.1f}\n",
         "Catacombs Weight: {cata_weight:,.1f}\n",
@@ -2428,12 +2576,24 @@
       }
     ],
     "responses": {
-      "title": ["{name}'s Networth on {profile}"],
-      "inventoryAPIDisabled": ["This player's inventory API is disabled on this profile."],
-      "choseAnotherProfile": ["Chose another profile."],
-      "apiDisabled": ["API Disabled"],
-      "description": ["{name} is valued at **{networth}** coins."],
-      "purseName": ["<:gold_ingot:986849117340839937> Purse"],
+      "title": [
+        "{name}'s Networth on {profile}"
+      ],
+      "inventoryAPIDisabled": [
+        "This player's inventory API is disabled on this profile."
+      ],
+      "choseAnotherProfile": [
+        "Chose another profile."
+      ],
+      "apiDisabled": [
+        "API Disabled"
+      ],
+      "description": [
+        "{name} is valued at **{networth}** coins."
+      ],
+      "purseName": [
+        "<:gold_ingot:986849117340839937> Purse"
+      ],
       "purseValue": [
         "{purse}"
       ],
@@ -2509,16 +2669,24 @@
       }
     ],
     "responses": {
-      "title": ["{name}'s Dungeon Statistics on {profile}"],
-      "noDungeonData": ["There is no dungeon data on this profile."],
-      "choseAnotherProfile": ["Chose another profile."],
+      "title": [
+        "{name}'s Dungeon Statistics on {profile}"
+      ],
+      "noDungeonData": [
+        "There is no dungeon data on this profile."
+      ],
+      "choseAnotherProfile": [
+        "Chose another profile."
+      ],
       "description": [
         "<:catacombs:986846576582459443> Catacombs Level {level:,} ({xp:,.0f} XP)\n",
         "<:normal_cata:988675938034282538> Highest Catacombs Floor Completed: {cata_floor_completed}\n",
         "<:master_cata:988676045358121020> Highest Master Mode Floor Completed: {master_floor_completed}\n",
         "<:chest:993336473661231175> Secrets (All Profiles): {secrets:,}"
       ],
-      "classesName": ["Classes"],
+      "classesName": [
+        "Classes"
+      ],
       "classesValue": [
         "<:healer_orb:986846578025308201> Healer {healer_level:,} ({healer_xp:,.0f} XP)\n",
         "<:mage_orb:986846579463946250> Mage {mage_level:,} ({mage_xp:,.0f} XP)\n",
@@ -2526,10 +2694,18 @@
         "<:archer_orb:986846573415768075> Archer {archer_level:,} ({archer_xp:,.0f} XP)\n",
         "<:tank_orb:986846580759986236> Tank {tank_level:,} ({tank_xp:,.0f} XP)"
       ],
-      "overview": ["Overview"],
-      "entranceTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Entrance"],
-      "floorTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Floor {floor}"],
-      "masterTitle": ["{emoji} {name}'s Dungeon Statistics on {profile} - Master Mode Floor {floor}"],
+      "overview": [
+        "Overview"
+      ],
+      "entranceTitle": [
+        "{emoji} {name}'s Dungeon Statistics on {profile} - Entrance"
+      ],
+      "floorTitle": [
+        "{emoji} {name}'s Dungeon Statistics on {profile} - Floor {floor}"
+      ],
+      "masterTitle": [
+        "{emoji} {name}'s Dungeon Statistics on {profile} - Master Mode Floor {floor}"
+      ],
       "innerDescription": [
         "Times Played: {played:,}\n",
         "Completions: {completions:,}\n",
@@ -2540,9 +2716,15 @@
         "Fastest S Time: {fastest_time_s}\n",
         "Fastest S+ Time: {fastest_time_s_plus}"
       ],
-      "entranceLabel": ["Entrance"],
-      "floorLabel": ["Floor {floor}"],
-      "masterLabel": ["Master Mode Floor {floor}"],
+      "entranceLabel": [
+        "Entrance"
+      ],
+      "floorLabel": [
+        "Floor {floor}"
+      ],
+      "masterLabel": [
+        "Master Mode Floor {floor}"
+      ],
       "specialProfile": [
         "{type} Profile"
       ],
@@ -2582,10 +2764,18 @@
       }
     ],
     "responses": {
-      "noBestRuns": ["No best runs were found on this profile."],
-      "entranceTitle": ["{emoji} {name}'s Best Runs for Entrance on {profile}"],
-      "floorTitle": ["{emoji} {name}'s Best Runs for Floor {floor} on {profile}"],
-      "masterTitle": ["{emoji} {name}'s Best Runs for Master Mode Floor {floor} on {profile}"],
+      "noBestRuns": [
+        "No best runs were found on this profile."
+      ],
+      "entranceTitle": [
+        "{emoji} {name}'s Best Runs for Entrance on {profile}"
+      ],
+      "floorTitle": [
+        "{emoji} {name}'s Best Runs for Floor {floor} on {profile}"
+      ],
+      "masterTitle": [
+        "{emoji} {name}'s Best Runs for Master Mode Floor {floor} on {profile}"
+      ],
       "description": [
         "Time: {time}\n",
         "Score: {score:,}\n",
@@ -2618,11 +2808,21 @@
       }
     ],
     "responses": {
-      "title": ["{name}'s Bank Information on {profile}"],
-      "noBankAPI": ["Bank API is disabled on this profile."],
-      "description": ["<:gold_block:986849038404026438> Balance: {balance:,.0f} coins"],
-      "transactions": ["Transactions"],
-      "noTransactions": ["No recent transactions were found on this profile."],
+      "title": [
+        "{name}'s Bank Information on {profile}"
+      ],
+      "noBankAPI": [
+        "Bank API is disabled on this profile."
+      ],
+      "description": [
+        "<:gold_block:986849038404026438> Balance: {balance:,.0f} coins"
+      ],
+      "transactions": [
+        "Transactions"
+      ],
+      "noTransactions": [
+        "No recent transactions were found on this profile."
+      ],
       "specialProfile": [
         "{type} Profile"
       ],
@@ -2639,15 +2839,21 @@
     "name": "card",
     "description": "Displays a player's Bingo card for this month.",
     "options": [
-        {
-            "name": "player",
-            "description": "The player to view the bingo card for."
-        }
+      {
+        "name": "player",
+        "description": "The player to view the bingo card for."
+      }
     ],
     "responses": {
-      "bingoTitle": ["{name}'s SkyBlock Bingo Card"],
-      "noBingoData": ["{name} has not played this month's bingo."],
-      "bingoDescription": ["Points: {points}\n\n{board}"],
+      "bingoTitle": [
+        "{name}'s SkyBlock Bingo Card"
+      ],
+      "noBingoData": [
+        "{name} has not played this month's bingo."
+      ],
+      "bingoDescription": [
+        "Points: {points}\n\n{board}"
+      ],
       "progress": [
         "Progress: {progress:,}\n",
         "Next Tier: {needed:,}\n> {toNext:,} needed\n",
@@ -2664,10 +2870,10 @@
     "name": "stats",
     "description": "Displays a player's Bingo statistics.",
     "options": [
-        {
-            "name": "player",
-            "description": "The player to view bingo statistics for."
-        }
+      {
+        "name": "player",
+        "description": "The player to view bingo statistics for."
+      }
     ],
     "responses": {
       "noBingoData": [
@@ -2782,6 +2988,369 @@
       ]
     }
   },
+  "bestiary": {
+    "name": "bestiary",
+    "description": "Displays a player's bestiary.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view."
+      }
+    ],
+    "responses": {
+      "title": [
+        "{name}'s {category} Bestiary on {profile}"
+      ],
+      "description": [
+        "<:diamond_sword:986848758149021716> **Total Kills**: {kills:,}\n",
+        "<:greenTick:793709935150104577> **Maxed Bestiaries**: {maxed:,}/{total:,}"
+      ],
+      "maxedMobTitle": [
+        "<:greenTick:793709935150104577> {mob} ({level})"
+      ],
+      "mobTitle": [
+        "{mob} ({level})"
+      ],
+      "innerMob": [
+        "Kills: {kills:,}\n",
+        "Next Tier: {next:,} kills"
+      ],
+      "maxedValue": [
+        "Kills: {kills:,}\n",
+        "Maximum tier!"
+      ],
+      "noData": [
+        "No bestiary data was found on this profile."
+      ],
+      "selectOther": [
+        "Select a different profile."
+      ],
+      "islandName": [
+        "Private Island"
+      ],
+      "hubName": [
+        "Hub"
+      ],
+      "spiders_denName": [
+        "Spider's Den"
+      ],
+      "crimson_isleName": [
+        "Crimson Isle"
+      ],
+      "endName": [
+        "End Island"
+      ],
+      "cavernsName": [
+        "Deep Caverns"
+      ],
+      "parkName": [
+        "The Park"
+      ],
+      "spookyName": [
+        "Spooky Festival"
+      ],
+      "catacombsName": [
+        "Catacombs"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ],
+      "kills_family_zombie": [
+        "Zombie"
+      ],
+      "kills_family_skeleton": [
+        "Skeleton"
+      ],
+      "kills_family_spider": [
+        "Spider"
+      ],
+      "kills_family_cave_spider": [
+        "Cave Spider"
+      ],
+      "kills_family_enderman_private": [
+        "Enderman"
+      ],
+      "kills_family_slime": [
+        "Slime"
+      ],
+      "kills_family_witch": [
+        "Witch"
+      ],
+      "kills_family_zombie_villager": [
+        "Zombie Villager"
+      ],
+      "kills_family_unburried_zombie": [
+        "Crypt Ghoul"
+      ],
+      "kills_family_ruin_wolf": [
+        "Wolf"
+      ],
+      "kills_family_old_wolf": [
+        "Old Wolf"
+      ],
+      "kills_family_dasher_spider": [
+        "Dasher Spider"
+      ],
+      "kills_family_spider_jockey": [
+        "Spider Jockey"
+      ],
+      "kills_family_weaver_spider": [
+        "Weaver Spider"
+      ],
+      "kills_family_voracious_spider": [
+        "Voracious Spider"
+      ],
+      "kills_family_splitter_spider": [
+        "Splitter Spider"
+      ],
+      "kills_family_brood_mother_spider": [
+        "Brood Mother"
+      ],
+      "kills_family_respawning_skeleton": [
+        "Gravel Skeleton"
+      ],
+      "kills_family_random_slime": [
+        "Rain Slime"
+      ],
+      "kills_family_arachne_keeper": [
+        "Arachne's Keeper"
+      ],
+      "kills_family_arachne_brood": [
+        "Arachne's Brood"
+      ],
+      "kills_family_arachne": [
+        "Arachne"
+      ],
+      "kills_family_ashfang": [
+        "Ashfang"
+      ],
+      "kills_family_barbarian_duke_x": [
+        "Barbarian Duke X"
+      ],
+      "kills_family_bladesoul": [
+        "Bladesoul"
+      ],
+      "kills_family_blaze": [
+        "Blaze"
+      ],
+      "kills_family_flaming_spider": [
+        "Flaming Spider"
+      ],
+      "kills_family_ghast": [
+        "Ghast"
+      ],
+      "kills_family_mage_outlaw": [
+        "Mage Outlaw"
+      ],
+      "kills_family_magma_cube": [
+        "Magma Cube"
+      ],
+      "kills_family_magma_boss": [
+        "Magma Cube Boss"
+      ],
+      "kills_family_matcho": [
+        "Matcho"
+      ],
+      "kills_family_charging_mushroom_cow": [
+        "Mushroom Bull"
+      ],
+      "kills_family_pigman": [
+        "Pigman"
+      ],
+      "kills_family_wither_skeleton": [
+        "Wither Skeleton"
+      ],
+      "kills_family_wither_spectre": [
+        "Wither Spectre"
+      ],
+      "kills_family_enderman": [
+        "Enderman"
+      ],
+      "kills_family_obsidian_wither": [
+        "Obsidian Defender"
+      ],
+      "kills_family_watcher": [
+        "Watcher"
+      ],
+      "kills_family_zealot_enderman": [
+        "Zealot"
+      ],
+      "kills_family_endermite": [
+        "Endermite"
+      ],
+      "kills_family_dragon": [
+        "Dragon"
+      ],
+      "kills_family_corrupted_protector": [
+        "Endstone Protector"
+      ],
+      "kills_family_voidling_fanatic": [
+        "Voidling Fanatic"
+      ],
+      "kills_family_voidling_extremist": [
+        "Voidling Extremist"
+      ],
+      "kills_family_invisible_creeper": [
+        "Sneaky Creeper"
+      ],
+      "kills_family_lapis_zombie": [
+        "Lapis Zombie"
+      ],
+      "kills_family_redstone_pigman": [
+        "Redstone Pigman"
+      ],
+      "kills_family_emerald_slime": [
+        "Emerald Slime"
+      ],
+      "kills_family_diamond_zombie": [
+        "Miner Zombie"
+      ],
+      "kills_family_diamond_skeleton": [
+        "Miner Skeleton"
+      ],
+      "kills_family_caverns_ghost": [
+        "Ghost"
+      ],
+      "kills_family_goblin": [
+        "Goblin"
+      ],
+      "kills_family_treasure_hoarder": [
+        "Treasure Hoarder"
+      ],
+      "kills_family_ice_walker": [
+        "Ice Walker"
+      ],
+      "kills_family_automaton": [
+        "Automaton"
+      ],
+      "kills_family_butterfly": [
+        "Butterfly"
+      ],
+      "kills_family_team_treasurite": [
+        "Grunt"
+      ],
+      "kills_family_sludge": [
+        "Sludge"
+      ],
+      "kills_family_thyst": [
+        "Thyst"
+      ],
+      "kills_family_worms": [
+        "Worm"
+      ],
+      "kills_family_yog": [
+        "Yog"
+      ],
+      "kills_family_pack_spirit": [
+        "Pack Spirit"
+      ],
+      "kills_family_howling_spirit": [
+        "Howling Spirit"
+      ],
+      "kills_family_soul_of_the_alpha": [
+        "Soul of the Alpha"
+      ],
+      "kills_family_trick_or_treater": [
+        "Trick or Treater"
+      ],
+      "kills_family_wither_gourd": [
+        "Wither Gourd"
+      ],
+      "kills_family_phantom_spirit": [
+        "Phantom Spirit"
+      ],
+      "kills_family_scary_jerry": [
+        "Scary Jerry"
+      ],
+      "kills_family_wraith": [
+        "Wraith"
+      ],
+      "kills_family_batty_witch": [
+        "Crazy Witch"
+      ],
+      "kills_family_headless_horseman": [
+        "Headless Horseman"
+      ],
+      "kills_family_lost_adventurer": [
+        "Lost Adventurer"
+      ],
+      "kills_family_zombie_grunt": [
+        "Zombie Grunt"
+      ],
+      "kills_family_zombie_soldier": [
+        "Zombie Soldier"
+      ],
+      "kills_family_zombie_knight": [
+        "Zombie Soldier"
+      ],
+      "kills_family_skeleton_grunt": [
+        "Skeleton Grunt"
+      ],
+      "kills_family_skeleton_soldier": [
+        "Skeleton Soldier"
+      ],
+      "kills_family_skeleton_master": [
+        "Skeleton Master"
+      ],
+      "kills_family_scared_skeleton": [
+        "Scared Skeleton"
+      ],
+      "kills_family_diamond_guy": [
+        "Angry Archeologist"
+      ],
+      "kills_family_dungeon_respawning_skeleton": [
+        "Undead Skeleton"
+      ],
+      "kills_family_skeletor": [
+        "Skeletor"
+      ],
+      "kills_family_sniper_skeleton": [
+        "Sniper"
+      ],
+      "kills_family_crypt_souleater": [
+        "Crypt Souleater"
+      ],
+      "kills_family_crypt_dreadlord": [
+        "Crypt Dreadlord"
+      ],
+      "kills_family_crypt_tank_zombie": [
+        "Tank Zombie"
+      ],
+      "kills_family_super_tank_zombie": [
+        "Super Tank Zombie"
+      ],
+      "kills_family_crypt_lurker": [
+        "Crypt Lurker"
+      ],
+      "kills_family_cellar_spider": [
+        "Cellar Spider"
+      ],
+      "kills_family_watcher_summon_undead": [
+        "Undead"
+      ],
+      "kills_family_lonely_spider": [
+        "Lonely Spider"
+      ],
+      "kills_family_shadow_assassin": [
+        "Shadow Assassin"
+      ],
+      "kills_family_king_midas": [
+        "King Midas"
+      ],
+      "kills_family_super_archer": [
+        "Super Archer"
+      ],
+      "kills_family_crypt_witherskeleton": [
+        "Withermancer"
+      ],
+      "kills_family_zombie_commander": [
+        "Zombie Commander"
+      ]
+    }
+  },
   "guild info": {
     "name": "info",
     "description": "Displays information about a guild.",
@@ -2792,8 +3361,12 @@
       }
     ],
     "responses": {
-      "noGuild": ["No guild was found with that name."],
-      "title": ["{name}'s Guild Information"],
+      "noGuild": [
+        "No guild was found with that name."
+      ],
+      "title": [
+        "{name}'s Guild Information"
+      ],
       "description": [
         "Description: {description}\n",
         "ID: {id}\n",
@@ -2817,8 +3390,12 @@
       }
     ],
     "responses": {
-      "noGuild": ["No guild was found with that name."],
-      "title": ["{name}'s Guild Members"],
+      "noGuild": [
+        "No guild was found with that name."
+      ],
+      "title": [
+        "{name}'s Guild Members"
+      ],
       "rankInner": [
         "Members: {members:,}\n",
         "Created: <t:{created}:F>\n",
@@ -2845,9 +3422,15 @@
       }
     ],
     "responses": {
-      "noGuild": ["No guild was found with that name."],
-      "title": ["{name}'s Guild XP Search"],
-      "description": ["Threshold: {gexp:,}\nMembers: {members:,}/{total:,}"],
+      "noGuild": [
+        "No guild was found with that name."
+      ],
+      "title": [
+        "{name}'s Guild XP Search"
+      ],
+      "description": [
+        "Threshold: {gexp:,}\nMembers: {members:,}/{total:,}"
+      ],
       "memberInner": [
         "{name} ({xp:,} GEXP)"
       ]
@@ -2863,25 +3446,37 @@
       }
     ],
     "responses": {
-      "checkRunning": ["There's already a check running in this guild. Please try again later."],
-      "noGuild": ["No guild was found with that name."],
-      "title": ["Guild Member Check for {name}"],
-      "allMembersInDC": ["All guild members are in the current Discord server."],
-      "description": ["{amount}/{total} {name} guild members are not in this Discord server."],
+      "checkRunning": [
+        "There's already a check running in this guild. Please try again later."
+      ],
+      "noGuild": [
+        "No guild was found with that name."
+      ],
+      "title": [
+        "Guild Member Check for {name}"
+      ],
+      "allMembersInDC": [
+        "All guild members are in the current Discord server."
+      ],
+      "description": [
+        "{amount}/{total} {name} guild members are not in this Discord server."
+      ],
       "inner0": [
         "{name} - Unverified"
       ],
       "inner1": [
-          "{name} - Verified, Not in server"
+        "{name} - Verified, Not in server"
       ]
     }
   },
-  "status":{
+  "status": {
     "name": "status",
     "description": "View Hypixel's current status from their status page.",
     "options": [],
     "responses": {
-      "title": ["Hypixel Server Status"],
+      "title": [
+        "Hypixel Server Status"
+      ],
       "inner": [
         "**[{name}]({shortlink})**\n",
         "{update}\n",
@@ -2893,9 +3488,15 @@
         "{update}\n",
         "Scheduled for <t:{time}:F>."
       ],
-      "unresolved": ["Unresolved Incidents"],
-      "activeMaintenence": ["Active Maintenence"],
-      "scheduledMaintenence": ["Scheduled Maintenence"]
+      "unresolved": [
+        "Unresolved Incidents"
+      ],
+      "activeMaintenence": [
+        "Active Maintenence"
+      ],
+      "scheduledMaintenence": [
+        "Scheduled Maintenence"
+      ]
     }
   },
   "userinfo": {
@@ -2908,16 +3509,24 @@
       }
     ],
     "responses": {
-      "title": ["{name}'s User Information"],
-      "userInfoName": ["User Information"],
+      "title": [
+        "{name}'s User Information"
+      ],
+      "userInfoName": [
+        "User Information"
+      ],
       "userInfoValue": [
         "Name: {name}\n",
         "Discriminator: {discriminator}\n",
         "ID: {id}\n",
         "Created: <t:{created}:F>"
       ],
-      "memberInfoName": ["Member Information"],
-      "boosted": ["Server Booster since <t:{time}:F>"],
+      "memberInfoName": [
+        "Member Information"
+      ],
+      "boosted": [
+        "Server Booster since <t:{time}:F>"
+      ],
       "memberInfoValue": [
         "Nick: {nick}\n",
         "Top Role: {top_role}\n",
@@ -3031,7 +3640,9 @@
     "description": "Learn how to add your Discord account to your Hypixel social menu.",
     "options": [],
     "responses": {
-      "title": ["Verification Instructions"],
+      "title": [
+        "Verification Instructions"
+      ],
       "description": [
         "To link your Minecraft account to your Discord account:\n",
         "**1)** In any Hypixel lobby, right click the \"My Profile\" item in your 2nd hotbar slot.\n",
