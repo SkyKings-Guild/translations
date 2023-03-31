@@ -3351,6 +3351,50 @@
       ]
     }
   },
+  "jacob": {
+    "name": "jacob",
+    "description": "Displays a player's Jacob contest stats.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view."
+      }
+    ],
+    "responses": {
+      "title": [
+        "{name}'s Jacob's Contest Stats"
+      ],
+      "description": [
+        "<:farming:978799567124447343> **Contests Attended**: {contests:,}\n",
+        "\uD83E\uDD47 **Gold Medals**: {gold:,}\n",
+        "> {gold_inv:,} in inventory.\n",
+        "> {unique_gold:,} unique gold medals.\n",
+        "\uD83E\uDD48 **Silver Medals**: {silver:,}\n",
+        "> {silver_inv:,} in inventory.\n",
+        "\uD83E\uDD49 **Bronze Medals**: {bronze:,}\n",
+        "> {bronze_inv:,} in inventory.\n"
+      ],
+      "crop": [
+        "Attended: {contests:,}\n",
+        "Crops:\n",
+        "> Best: {personal_best:,}\n",
+        "> Total: {total:,}\n",
+        "Average Place: {average}\n",
+        "Gold Medals: {gold:,}\n",
+        "Silver Medals: {silver:,}\n",
+        "Bronze Medals: {bronze:,}"
+      ],
+      "noData": [
+        "No contest data was found on this profile."
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
   "guild info": {
     "name": "info",
     "description": "Displays information about a guild.",
