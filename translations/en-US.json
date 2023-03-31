@@ -2670,11 +2670,116 @@
         }
     ],
     "responses": {
-      "noBingoData": ["{name} has not played this month's bingo."],
-      "bingoTitle": ["{name}'s SkyBlock Bingo Statistics"],
-      "inner": ["Points: {points:,}\nGoals Completed: {goals_completed:,}"],
-      "event": ["Bingo #{number}"],
-      "description": ["Points (Lifetime): {points}"]
+      "noBingoData": [
+        "{name} has not played this month's bingo."
+      ],
+      "bingoTitle": [
+        "{name}'s SkyBlock Bingo Statistics"
+      ],
+      "inner": [
+        "Points: {points:,}\nGoals Completed: {goals_completed:,}"
+      ],
+      "event": [
+        "Bingo #{number}"
+      ],
+      "description": [
+        "Points (Lifetime): {points}"
+      ]
+    }
+  },
+  "crimson": {
+    "name": "crimson",
+    "description": "Displays a player's Crimson Isle statistics.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view statistics for."
+      }
+    ],
+    "responses": {
+      "title": [
+        "{name}'s Crimson Isle Statistics on {profile}"
+      ],
+      "mages": [
+        "Mages"
+      ],
+      "barbarians": [
+        "Barbarians"
+      ],
+      "noFaction": [
+        "None"
+      ],
+      "description": [
+        "\uD83D\uDEE1\uFE0F **Faction**: {faction}\n",
+        "\uD83E\uDDD9 **Mage Reputation**: {mage_rep:,}\n",
+        "\uD83D\uDC17 **Barbarian Repuation**: {barb_rep:,}"
+      ],
+      "kuudraName": [
+        "Kuudra Completions"
+      ],
+      "kuudraValue": [
+        "**Total Completions**: {completions:,}\n"
+      ],
+      "noneName": [
+        "<:kuudra_basic:1091154837095317524> Basic"
+      ],
+      "hotName": [
+        "<:kuudra_hot:1091154835337924709> Hot"
+      ],
+      "burningName": [
+        "<:kuudra_burning:1091154832829722635> Burning"
+      ],
+      "fieryName": [
+        "<:kuudra_fiery:1091154830527057922> Fiery"
+      ],
+      "infernalName": [
+        "<:kuudra_infernal:1091154827783974953> Infernal"
+      ],
+      "kuudraCompValue": [
+        "Kills: {kills:,}\n",
+        "Highest Wave: {wave:,}"
+      ],
+      "dojoName": [
+        "Dojo Completions"
+      ],
+      "dojoValue": [
+        "\uD83E\uDD77 **Total Points**: {points:,}\n"
+      ],
+      "forceName": [
+        "<:stick:1091227610673053736> Force"
+      ],
+      "staminaName": [
+        "<:rabbit_foot:1091227612497575938> Stamina"
+      ],
+      "masteryName": [
+        "<:bow:1091227617560109129> Mastery"
+      ],
+      "disciplineName": [
+        "<:diamond_sword:986848758149021716> Discipline"
+      ],
+      "swiftnessName": [
+        "<:lead:1091227614259200031> Swiftness"
+      ],
+      "controlName": [
+        "<:eye_of_ender:1091227615639117954> Control"
+      ],
+      "tenacityName": [
+        "<:fireball:1091227619443347497> Tenacity"
+      ],
+      "testValue": [
+        "Total Points: {points:,}\n",
+        "Rank: {score}\n",
+        "Time: {time}"
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ],
+      "noData": [
+        "No Crimson Isle data was found on this profile."
+      ]
     }
   },
   "guild info": {
