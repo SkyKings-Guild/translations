@@ -2718,7 +2718,7 @@
         "Kuudra Completions"
       ],
       "kuudraValue": [
-        "**Total Completions**: {completions:,}\n"
+        "⚔ **Total Completions**: {completions:,}\n"
       ],
       "noneName": [
         "<:kuudra_basic:1091154837095317524> Basic"
