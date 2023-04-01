@@ -3395,6 +3395,24 @@
       ]
     }
   },
+  "accessories": {
+    "name": "accessories",
+    "description": "Displays a player's accessories.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to view."
+      }
+    ],
+    "responses": {
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
   "guild info": {
     "name": "info",
     "description": "Displays information about a guild.",
