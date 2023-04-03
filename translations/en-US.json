@@ -3405,11 +3405,63 @@
       }
     ],
     "responses": {
+      "title": [
+        "{name}'s Accessories on {profile}"
+      ],
+      "description": [
+        "{name} has {accessories} accessories with {max_level}/{total} max level accessories on {profile}, ",
+        "totaling to {magical_power} magical power.\n",
+        "> {duplicates} duplicates.\n",
+        "> {conflicting} conflicting.\n",
+        "> {missing} missing.\n",
+        "> {upgradable} upgradable."
+      ],
+      "accessoriesOption": [
+        "Accessories"
+      ],
+      "accessoriesOptionDescription": [
+        "View all of {name}'s accessories."
+      ],
+      "noAccessories": [
+        "No accesories."
+      ],
+      "missingOption": [
+        "Missing and Upgradable"
+      ],
+      "missingOptionDescription": [
+        "Missing and upgradable accessories."
+      ],
+      "noMissing": [
+        "No missing or upgradable accesories."
+      ],
+      "duplicateOption": [
+        "Duplicates and Conflicting"
+      ],
+      "duplicateOptionDescription": [
+        "Ineffective accessories due to conflicts."
+      ],
+      "noDuplicate": [
+        "No duplicated or conflicting accesories."
+      ],
+      "coins": [
+        "coins"
+      ],
+      "ifSell": [
+        "coins if sell below"
+      ],
       "specialProfile": [
         "{type} Profile"
       ],
       "normalProfile": [
         "Normal Profile"
+      ],
+      "betaWarning": [
+        "This command is in a beta phase. Bugs may be present, and features may be added/removed. ",
+        "Please report any bugs in our [Discord server](https://discord.gg/skykings).\n\n",
+        "Known bugs:\n",
+        "- Abicase's Magical Power is not being calculated properly.\n",
+        "- The Hedgemony Artifact's Magical Power is not being calculated properly.\n",
+        "These will be fixed in the near future. We thank you for your understanding."
       ]
     }
   },
