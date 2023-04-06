@@ -3423,16 +3423,16 @@
         "View all of {name}'s accessories."
       ],
       "noAccessories": [
-        "No accesories."
+        "No accessories."
       ],
       "missingOption": [
-        "Missing and Upgradable"
+        "Missing"
       ],
       "missingOptionDescription": [
-        "Missing and upgradable accessories."
+        "Missing accessories."
       ],
       "noMissing": [
-        "No missing or upgradable accesories."
+        "No missing accessories."
       ],
       "duplicateOption": [
         "Duplicates and Conflicting"
@@ -3443,11 +3443,64 @@
       "noDuplicate": [
         "No duplicated or conflicting accesories."
       ],
+      "upgradeOption": [
+        "Available Upgrades"
+      ],
+      "upgradeOptionDescription": [
+        "Accessories that can be upgraded."
+      ],
+      "noUpgrade": [
+        "No upgrades available."
+      ],
+      "upgradeCPMP": [
+        "Costs {cost:,} coins at {cpmp:,.0f} coins/MP."
+      ],
+      "upgradeRarity": [
+        "<:recombobulator:824715669529821216> Upgrade rarity to ",
+        "{rarity_emoji} {rarity}: +{additional:,} MP at {cpmp} coins/MP ({cost:,} coins)"
+      ],
+      "upgradeRarityNoCPMP": [
+        "<:recombobulator:824715669529821216> Upgrade rarity to ",
+        "{rarity_emoji} {rarity}: +{additional:,} MP"
+      ],
+      "upgradeAccessory": [
+        "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji} {new_accessory}: +{additional:,} MP\n",
+        "**OR**"
+      ],
+      "upgradeAccessoryCPMP": [
+        "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji} {new_accessory}: +{additional:,} MP",
+        "at {cpmp:,} coins/MP ({cost:,} coins)\n",
+        "**OR**"
+      ],
+      "upgradeAccessoryCPMPIfSell": [
+        "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji}{new_accessory}: +{additional:,} MP",
+        "at {cpmp:,} coins/MP ({cost:,} coins)\n",
+        "Should sell the following accessories:\n{accessories_to_sell}\n",
+        "**OR**"
+      ],
+      "upgradeAbiphone": [
+        "☎\uFE0F Get {missing} more contacts on your Abiphone: +{additional:,} MP"
+      ],
+      "upgradePulseRing": [
+        "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP at {cpmp:,} coins/MP ({cost:,} coins)"
+      ],
+      "upgradePulseRingNoCPMP": [
+        "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP"
+      ],
+      "upgradeTrapperCrest": [
+        "\uD83E\uDDAC Get {pelts} more pelts: +{additional:,} MP"
+      ],
+      "upgradePowerArtifact": [
+        "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP at {cpmp:,} coins/MP ({cost:,} coins)"
+      ],
+      "upgradePowerArtifactNoCPMP": [
+        "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP"
+      ],
+      "or": [
+        "or"
+      ],
       "coins": [
         "coins"
-      ],
-      "ifSell": [
-        "coins if sell below"
       ],
       "specialProfile": [
         "{type} Profile"
