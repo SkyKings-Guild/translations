@@ -3457,7 +3457,7 @@
       ],
       "upgradeRarity": [
         "<:recombobulator:824715669529821216> Upgrade rarity to ",
-        "{rarity_emoji} {rarity}: +{additional:,} MP at {cpmp:,.0f} coins/MP ({cost:,} coins)"
+        "{rarity_emoji} {rarity}: +{additional:,} MP at {cpmp:,.0f} coins/MP"
       ],
       "upgradeRarityNoCPMP": [
         "<:recombobulator:824715669529821216> Upgrade rarity to ",
@@ -3469,12 +3469,12 @@
       ],
       "upgradeAccessoryCPMP": [
         "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji} {new_accessory}: +{additional:,} MP",
-        "at {cpmp:,.0f} coins/MP ({cost:,} coins)\n",
+        "at {cpmp:,.0f} coins/MP\n",
         "**OR**"
       ],
       "upgradeAccessoryCPMPIfSell": [
         "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji}{new_accessory}: +{additional:,} MP",
-        "at {cpmp:,.0f} coins/MP ({cost:,} coins)\n",
+        "at {cpmp:,.0f} coins/MP\n",
         "Should sell the following accessories:\n{accessories_to_sell}\n",
         "**OR**"
       ],
@@ -3482,7 +3482,7 @@
         "☎\uFE0F Get {missing} more contacts on your Abiphone: +{additional:,} MP"
       ],
       "upgradePulseRing": [
-        "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP at {cpmp:,.0f} coins/MP ({cost:,} coins)"
+        "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP at {cpmp:,.0f} coins/MP"
       ],
       "upgradePulseRingNoCPMP": [
         "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP"
@@ -3491,7 +3491,7 @@
         "\uD83E\uDDAC Get {pelts} more pelts: +{additional:,} MP"
       ],
       "upgradePowerArtifact": [
-        "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP at {cpmp:,.0f} coins/MP ({cost:,} coins)"
+        "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP at {cpmp:,.0f} coins/MP"
       ],
       "upgradePowerArtifactNoCPMP": [
         "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP"
