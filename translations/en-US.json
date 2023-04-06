@@ -3468,13 +3468,13 @@
         "**OR**"
       ],
       "upgradeAccessoryCPMP": [
-        "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji} {new_accessory}: +{additional:,} MP",
-        "at {cpmp:,.0f} coins/MP\n",
+        "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji} {new_accessory}: +{additional:,} MP\n",
+        "Costs {cost:,} coins at {cpmp:,.0f} coins/MP\n",
         "**OR**"
       ],
       "upgradeAccessoryCPMPIfSell": [
-        "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji}{new_accessory}: +{additional:,} MP",
-        "at {cpmp:,.0f} coins/MP\n",
+        "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji}{new_accessory}: +{additional:,} MP\n",
+        "Costs {cost:,} coins at {cpmp:,.0f} coins/MP\n",
         "Should sell the following accessories:\n{accessories_to_sell}\n",
         "**OR**"
       ],
