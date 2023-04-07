@@ -3410,11 +3410,7 @@
       ],
       "description": [
         "{name} has {accessories} accessories with {max_level}/{total} max level accessories on {profile}, ",
-        "totaling to {magical_power} magical power.\n",
-        "> {duplicates} duplicates.\n",
-        "> {conflicting} conflicting.\n",
-        "> {missing} missing.\n",
-        "> {upgradable} upgradable."
+        "totaling to {magical_power} magical power."
       ],
       "accessoriesOption": [
         "Accessories"
