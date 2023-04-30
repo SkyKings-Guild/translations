@@ -3506,6 +3506,45 @@
       ]
     }
   },
+  "forge": {
+    "name": "forge",
+    "description": "Displays information about the SkyBlock Forge."
+  },
+  "forge profits": {
+    "name": "profits",
+    "description": "Displays the best items to forge for profit.",
+    "options": [
+      {
+        "name": "player",
+        "description": "The player to use for calculating profits."
+      }
+    ],
+    "responses": {
+      "noMiningCore": [
+        "This profile has no Dwarven Mines data."
+      ],
+      "lowHOTM": [
+        "This profile cannot access the forge. HOTM 2 is required."
+      ],
+      "title": [
+        "Forge Profits for {name} on {profile}"
+      ],
+      "forgeProfitsItem": [
+        "**Cost**: {cost:,} coins\n",
+        "**Profit**: {profit:,.0f} coins\n",
+        "**Profit per Hour**: {profit_per_hour:,.0f} coins"
+      ],
+      "noItems": [
+        "Could not find items to profit from."
+      ],
+      "specialProfile": [
+        "{type} Profile"
+      ],
+      "normalProfile": [
+        "Normal Profile"
+      ]
+    }
+  },
   "guild info": {
     "name": "info",
     "description": "Displays information about a guild.",
