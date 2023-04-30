@@ -3532,6 +3532,7 @@
       "forgeProfitsItem": [
         "**Cost**: {cost} coins\n",
         "**Profit**: {profit} coins\n",
+        "**Forge Time**: {time}\n",
         "**Per Hour**: {profit_per_hour} coins"
       ],
       "noItems": [
