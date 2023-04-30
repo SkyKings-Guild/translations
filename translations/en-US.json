@@ -3530,9 +3530,9 @@
         "Forge Profits for {name} on {profile}"
       ],
       "forgeProfitsItem": [
-        "**Cost**: {cost:,} coins\n",
-        "**Profit**: {profit:,.0f} coins\n",
-        "**Per Hour**: {profit_per_hour:,.0f} coins"
+        "**Cost**: {cost} coins\n",
+        "**Profit**: {profit} coins\n",
+        "**Per Hour**: {profit_per_hour} coins"
       ],
       "noItems": [
         "Could not find items to profit from."
