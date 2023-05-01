@@ -3565,7 +3565,7 @@
             "title": [
                 "Forge Profits for {name} on {profile}"
             ],
-            "forgeProfitsItem": [
+            "forgeItem": [
                 "**Started Forging**: <t:{started}:R>\n",
                 "**Finished**: <t:{finish}:R>"
             ],
