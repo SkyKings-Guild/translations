@@ -3899,6 +3899,10 @@
         "You cannot send the verification message in {channel}.\n",
         "You must have **Manage Messages** permissions."
       ],
+      "botNoPerms": [
+        "I am unable to send the verification message in {channel}.\n",
+        "Please make sure I have the **Read Messages**, **Send Messages**, and **Embed Links** permissions."
+      ],
       "sent": [
         "Verification message sent in {channel}."
       ]
