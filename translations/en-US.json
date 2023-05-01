@@ -3563,7 +3563,7 @@
                 "This profile cannot access the forge. HOTM 2 is required."
             ],
             "title": [
-                "Forge Profits for {name} on {profile}"
+                "{name}'s Forge on {profile}"
             ],
             "forgeItem": [
                 "**Started Forging**: <t:{started}:R>\n",
