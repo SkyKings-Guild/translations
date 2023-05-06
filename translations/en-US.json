@@ -2023,6 +2023,76 @@
             ]
         }
     },
+    "calculate": {
+        "name": "calculate",
+        "description": "Performs various Skyblock calculations."
+    },
+    "calculate skill": {
+        "name": "skill",
+        "description": "Calculates the amount of XP needed to reach a certain skill level.",
+        "options": [
+            {
+                "name": "player",
+                "description": "The player to calculate with."
+            },
+            {
+                "name": "level",
+                "description": "The target level."
+            }
+        ],
+        "responses": {
+            "combatName": [
+                "<:combat:978800035443667025> Combat ({level:.0f})"
+            ],
+            "miningName": [
+                "<:mining:978799566612738049> Mining ({level:.0f})"
+            ],
+            "alchemyName": [
+                "<:alchemy:979159298154315828> Alchemy ({level:.0f})"
+            ],
+            "farmingName": [
+                "<:farming:978799567124447343> Farming ({level:.0f})"
+            ],
+            "tamingName": [
+                "<:taming:979159299655860327> Taming ({level:.0f})"
+            ],
+            "enchantingName": [
+                "<:enchanting:979159298913488946> Enchanting ({level:.0f})"
+            ],
+            "foragingName": [
+                "<:foraging:978800035347185704> Foraging ({level:.0f})"
+            ],
+            "fishingName": [
+                "<:fishing:978799568462413914> Fishing ({level:.0f})"
+            ],
+            "carpentryName": [
+                "<:carpentry:979159298846363688> Carpentry ({level:.0f})"
+            ],
+            "title": [
+                "Skill XP Calculation for {name} on {profile}"
+            ],
+            "inner": [
+                "XP for Level {level}: {xp:,}\n",
+                "Current XP: {current:,.0f}\n",
+                "XP Needed: {needed:,.0f}\n"
+            ],
+            "levelLimit": [
+                "This skill cannot reach level {level}."
+            ],
+            "maxed": [
+                "Already has level {level}."
+            ],
+            "skillsDisabled": [
+                "Skill API is disabled."
+            ],
+            "specialProfile": [
+                "{type} Profile"
+            ],
+            "normalProfile": [
+                "Normal Profile"
+            ]
+        }
+    },
     "fragbot": {
         "name": "fragbot",
         "description": "Manage the fragbots."
