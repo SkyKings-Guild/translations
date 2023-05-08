@@ -2036,7 +2036,7 @@
                 "description": "The player to calculate with."
             },
             {
-                "name": "level",
+                "name": "target_level",
                 "description": "The target level."
             }
         ],
@@ -2084,6 +2084,58 @@
             ],
             "skillsDisabled": [
                 "Skill API is disabled."
+            ],
+            "specialProfile": [
+                "{type} Profile"
+            ],
+            "normalProfile": [
+                "Normal Profile"
+            ]
+        }
+    },
+    "calculate slayer": {
+        "name": "slayer",
+        "description": "Calculates the amount of XP needed to reach a certain slayer level.",
+        "options": [
+            {
+                "name": "player",
+                "description": "The player to calculate with."
+            },
+            {
+                "name": "target_level",
+                "description": "The target level."
+            }
+        ],
+        "responses": {
+            "zombieName": [
+                "<:revenant:986789889423077456> Revenant Horror"
+            ],
+            "spiderName": [
+                "<:tarantula:986789892271005728> Tarantula Broodfather"
+            ],
+            "wolfName": [
+                "<:sven:986789891088187403> Sven Packmaster"
+            ],
+            "endermanName": [
+                "<:voidgloom:986789894397526036> Voidgloom Seraph"
+            ],
+            "blazeName": [
+                "<:blaze:986789888093487104> Inferno Demonlord"
+            ],
+            "title": [
+                "Slayer XP Calculation for {name} on {profile}"
+            ],
+            "inner": [
+                "XP for Level {level}: {xp:,}\n",
+                "Current XP: {current:,.0f}\n",
+                "XP Needed: {needed:,.0f}\n",
+                "{kills}"
+            ],
+            "killsNeeded": [
+                "T{tier} Kills Needed: {kills:,}"
+            ],
+            "maxed": [
+                "Already has level {level}."
             ],
             "specialProfile": [
                 "{type} Profile"
