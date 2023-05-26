@@ -1381,7 +1381,10 @@
                 "No auctions matching the query **{query}** were found."
             ],
             "title": [
-                "{item} in the Auction House"
+                "`{item}` in the Auction House"
+            ],
+            "searching": [
+                "<a:loading:793710004044562434> Searching the auction house, this may take a bit."
             ]
         }
     },
@@ -1400,6 +1403,9 @@
             ],
             "title": [
                 "{player}'s Auctions"
+            ],
+            "searching": [
+                "<a:loading:793710004044562434> Searching the auction house, this may take a bit."
             ]
         }
     },
