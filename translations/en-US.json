@@ -1374,10 +1374,6 @@
             {
                 "name": "bin",
                 "description": "Filter BIN auctions. Leave blank to search all auctions."
-            },
-            {
-                "name": "exact",
-                "description": "Match the item name exactly. Default false."
             }
         ],
         "responses": {
@@ -1414,10 +1410,6 @@
             {
                 "name": "item",
                 "description": "The item to search for."
-            },
-            {
-                "name": "exact",
-                "description": "Match the item name exactly. Default false."
             }
         ],
         "responses": {
