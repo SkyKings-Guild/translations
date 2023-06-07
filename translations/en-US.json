@@ -1984,7 +1984,7 @@
                 "For more, [visit our website](https://skykings.net/leaderboard#{guild})"
             ],
             "player": [
-                "#{rank}: [{player}](https://skykings.net/player-leaderboard#{unescaped_name}) ({text})"
+                "#{rank}: [{unescaped_name}](https://skykings.net/player-leaderboard#{unescaped_name}) ({text})"
             ],
             "addGuild": [
                 "**{guild}** is not officially on our leaderboard, ",
