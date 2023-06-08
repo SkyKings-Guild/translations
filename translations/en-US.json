@@ -3604,10 +3604,10 @@
                 "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP"
             ],
             "obtain": [
-                "<:Coin:895081517322235914> Obtain accessory: +{additonal:,} MP at {cpmp:,.0f} coins/MP"
+                "<:Coin:895081517322235914> Obtain accessory: +{additional:,} MP at {cpmp:,.0f} coins/MP"
             ],
             "obtainNoCPMP": [
-                "<:Coin:895081517322235914> Obtain accessory: +{additonal:,} MP"
+                "<:Coin:895081517322235914> Obtain accessory: +{additional:,} MP"
             ],
             "or": [
                 "or"
