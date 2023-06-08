@@ -3541,15 +3541,6 @@
             "noAccessories": [
                 "No accessories."
             ],
-            "missingOption": [
-                "Missing"
-            ],
-            "missingOptionDescription": [
-                "Missing accessories."
-            ],
-            "noMissing": [
-                "No missing accessories."
-            ],
             "duplicateOption": [
                 "Duplicates and Conflicting"
             ],
@@ -3560,10 +3551,10 @@
                 "No duplicated or conflicting accesories."
             ],
             "upgradeOption": [
-                "Available Upgrades"
+                "Missing & Upgradanle"
             ],
             "upgradeOptionDescription": [
-                "Accessories that can be upgraded."
+                "Accessories that can be upgraded or are missing."
             ],
             "noUpgrade": [
                 "No upgrades available."
@@ -3611,6 +3602,12 @@
             ],
             "upgradePowerArtifactNoCPMP": [
                 "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP"
+            ],
+            "obtain": [
+                "<:Coin:895081517322235914> Obtain accessory: +{additonal:,} MP at {cpmp:,.0f} coins/MP"
+            ],
+            "obtainNoCPMP": [
+                "<:Coin:895081517322235914> Obtain accessory: +{additonal:,} MP"
             ],
             "or": [
                 "or"
@@ -5088,7 +5085,7 @@
                 "What is your IGN?"
             ],
             "input_placeholder": [
-                "Enter your Minecrfaft username."
+                "Enter your Minecraft username."
             ],
             "helpTitle": [
                 "Verification Instructions"
