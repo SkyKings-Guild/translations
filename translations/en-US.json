@@ -5112,7 +5112,7 @@
         "firesale": {
             "newTitle": ["New Firesale"],
             "newDescription": [
-                "Firesale for {item} starts <t:{starts}:R>.\n"
+                "Firesale for {item} starts <t:{starts}:R>.\n",
                 "{amount:,} stock at a price of {price:,} gems. Ends on <t:{ends}:F>."
             ],
             "startTitle": ["Firesale Starting"],
