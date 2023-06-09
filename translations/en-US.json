@@ -21,6 +21,8 @@
                 "SkyBlock Patchnotes Channel: {patchnotes_channel}\n",
                 "Fetchur Ping: {fetchur_ping}\n",
                 "Fetchur Channel: {fetchur_channel}\n",
+                "Firesale Ping: {firesale_ping}\n",
+                "Firesale Channel: {firesale_channel}\n",
                 "Global Event Ping: {global_event_ping}\n",
                 "Global Event Channel: {global_event_channel}\n",
                 "SkyBlock Date/Time Channel: {skyblock_time}\n",
@@ -103,6 +105,8 @@
                 "SkyBlock Patchnotes Channel": "SkyBlock Patchnotes Channel",
                 "Fetchur Ping": "Fetchur Ping",
                 "Fetchur Channel": "Fetchur Channel",
+                "Firesale Ping": "Firesale Ping",
+                "Firesale Channel": "Firesale Channel",
                 "Autoreply": "Autoreply",
                 "Giveaway Runner Role": "Giveaway Runner Role",
                 "SkyBlock Date": "SkyBlock Date",
@@ -5103,6 +5107,22 @@
             ],
             "invalidPlayer": [
                 "**{name}** is not a valid Minecraft username."
+            ]
+        },
+        "firesale": {
+            "newTitle": ["New Firesale"],
+            "newDescription": [
+                "Firesale for {item} starts <t:{starts}:R>.\n"
+                "{amount:,} stock at a price of {price:,} gems. Ends on <t:{ends}:F>."
+            ],
+            "startTitle": ["Firesale Starting"],
+            "startDescription": [
+                "Firesale for {item} has started <t:{starts}:R>!\n",
+                "Ends <t:{ends}:R>."
+            ],
+            "endTitle": ["Firesale Ending"],
+            "endDescription": [
+                "Firesale for {item} has ended <t:{ends}:R>."
             ]
         }
     }
