@@ -3701,6 +3701,41 @@
             ]
         }
     },
+    "harp": {
+        "name": "harp",
+        "description": "Displays a player's harp statistics.",
+        "options": [
+            {
+                "name": "player",
+                "description": "The player to view."
+            }
+        ],
+        "responses": {
+            "noHarp": [
+                "The harp has never been played on this profile!"
+            ],
+            "title": [
+                "Melody's Harp for {name} on {profile}"
+            ],
+            "description": [
+                "**Currently Selected**: {selected} (<t:{selected_at}:R>)"
+            ],
+            "claimedTalisman": [
+                "Has claimed Melody's Hair. "
+            ],
+            "song": [
+                "Completions: {completions}\n",
+                "Best: {best}%\n",
+                "Perfect: {perfect}"
+            ],
+            "specialProfile": [
+                "{type} Profile"
+            ],
+            "normalProfile": [
+                "Normal Profile"
+            ]
+        }
+    },
     "guild info": {
         "name": "info",
         "description": "Displays information about a guild.",
