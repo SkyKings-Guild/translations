@@ -1475,13 +1475,27 @@
         "description": "Displays the item that provides the most organic matter per coin.",
         "options": [],
         "responses": {
-            "title": [
+            "matterTitle": [
                 "Coins per Organic Matter"
             ],
-            "field": [
-                "Bazaar Price: {price:,.0f}\n",
+            "matterField": [
+                "Price: {price:,.0f}\n",
                 "Organic Matter: {matter:,}\n",
                 "Coins/OM: {value:,.2f}"
+            ],
+            "fuelTitle": [
+                "Coins per Fuel"
+            ],
+            "fuelField": [
+                "Price: {price:,.0f}\n",
+                "Fuel: {matter:,}\n",
+                "Coins/Fuel: {value:,.2f}"
+            ],
+            "matter": [
+                "Organic Matter"
+            ],
+            "fuel": [
+                "Fuel"
             ]
         }
     },
