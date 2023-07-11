@@ -1645,6 +1645,9 @@
             "requirements.slayer.blaze": [
                 "Inferno Demonlord {level}"
             ],
+            "requirements.slayer.vampire": [
+                "Riftstalker Bloodfiend {level}"
+            ],
             "requirements.dungeon_skill.CATACOMBS": [
                 "Catacombs {level}"
             ],
@@ -2138,6 +2141,9 @@
             "blazeName": [
                 "<:blaze:986789888093487104> Inferno Demonlord"
             ],
+            "vampireName": [
+                "<:riftstalker:1128147041994948788> Riftstalker Bloodfiend"
+            ],
             "title": [
                 "Slayer XP Calculation for {name} on {profile}"
             ],
@@ -2305,7 +2311,8 @@
                 "<:tarantula:986789892271005728> Tarantula Broodfather: {spider_slayer:.0f}\n",
                 "<:sven:986789891088187403> Sven Packmaster: {wolf_slayer:.0f}\n",
                 "<:voidgloom:986789894397526036> Voidgloom Seraph: {enderman_slayer:.0f}\n",
-                "<:blaze:986789888093487104> Inferno Demonlord: {blaze_slayer:.0f}"
+                "<:blaze:986789888093487104> Inferno Demonlord: {blaze_slayer:.0f}\n",
+                "<:riftstalker:1128147041994948788> Riftstalker Bloodfiend: {vampire_slayer:.0f}"
             ],
             "dungeonName": [
                 "<:dungeons:988667365883543602> Dungeons"
@@ -2420,6 +2427,19 @@
                 "> Tier 2: {kills_t2:,}\n",
                 "> Tier 3: {kills_t3:,}\n",
                 "> Tier 4: {kills_t4:,}"
+            ],
+            "vampireName": [
+                "<:riftstalker:1128147041994948788> Riftstalker Bloodfiend"
+            ],
+            "vampireValue": [
+                "XP: {xp:,}\n",
+                "Level: {level:.0f}\n",
+                "Boss Kills:\n",
+                "> Tier 1: {kills_t1:,}\n",
+                "> Tier 2: {kills_t2:,}\n",
+                "> Tier 3: {kills_t3:,}\n",
+                "> Tier 4: {kills_t4:,}\n",
+                "> Tier 5: {kills_t5:,}"
             ],
             "specialProfile": [
                 "{type} Profile"
