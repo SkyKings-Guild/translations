@@ -4724,6 +4724,9 @@
             ],
             "FISHING": [
                 "Fishing"
+            ],
+            "RIFT": [
+                "Rift"
             ]
         },
         "skills": {
