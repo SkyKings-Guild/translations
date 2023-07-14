@@ -2749,23 +2749,24 @@
             "description": [
                 "{name} is valued at **{networth}** coins."
             ],
-            "purseName": [
-                "<:gold_ingot:986849117340839937> Purse"
+            "coinsName": [
+                "<:Coin:895081517322235914> Coins"
             ],
-            "purseValue": [
-                "{purse}"
-            ],
-            "bankName": [
-                "<:gold_block:986849038404026438> Bank"
-            ],
-            "bankValue": [
-                "{bank}"
+            "coinsValue": [
+                "<:gold_ingot:986849117340839937> Purse: {purse}\n",
+                "<:gold_block:986849038404026438> Bank: {bank}"
             ],
             "sacksName": [
                 "<:backpack:993336472348414102> Sacks"
             ],
             "sacksValue": [
                 "{sacks}"
+            ],
+            "museumName": [
+                "🏦 Museum"
+            ],
+            "museumValue": [
+                "{museum}"
             ],
             "overview": [
                 "Overview"
