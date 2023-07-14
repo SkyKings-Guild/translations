@@ -3770,6 +3770,58 @@
             ]
         }
     },
+    "museum": {
+        "name": "museum",
+        "description": "View a player's museum."
+    },
+    "museum featured": {
+        "name": "featured",
+        "description": "View a player's featured museum items.",
+        "options": [
+            {
+                "name": "player",
+                "description": "The player to view."
+            }
+        ],
+        "responses": {
+            "specialProfile": [
+                "{type} Profile"
+            ],
+            "normalProfile": [
+                "Normal Profile"
+            ],
+            "overviewLabel": [
+                "Overview"
+            ],
+            "itemsLabel": [
+                "Atrium"
+            ],
+            "weaponsLabel": [
+                "Weapons Wing"
+            ],
+            "armor_setsLabel": [
+                "Armory"
+            ],
+            "raritiesLabel": [
+                "Rarities Wing"
+            ],
+            "museumTitle": [
+                "{name}'s Museum on {profile}"
+            ],
+            "apiDisabled": [
+                "Museum API is disabled on this profile."
+            ],
+            "noItems": [
+                "No items in this section."
+            ],
+            "museumDesc": [
+                "{name}'s Museum on {profile} has {item_count:,} items worth {value:,} coins."
+            ],
+            "museumDescNoValue": [
+                "{name}'s Museum on {profile} has {item_count:,} items."
+            ]
+        }
+    },
     "guild info": {
         "name": "info",
         "description": "Displays information about a guild.",
