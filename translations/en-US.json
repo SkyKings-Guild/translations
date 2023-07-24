@@ -2023,6 +2023,9 @@
             ],
             "noGuild": [
                 "The guild **{guild}** does not exist."
+            ],
+            "noLeaderboard": [
+                "**{leaderboard}** is not a valid leaderboard."
             ]
         }
     },
