@@ -3165,6 +3165,9 @@
             }
         ],
         "responses": {
+            "titleNoData": [
+                "{name}'s Bestiary on {profile}"
+            ],
             "title": [
                 "{name}'s {category} Bestiary on {profile}"
             ],
