@@ -2582,9 +2582,6 @@
             }
         ],
         "responses": {
-            "titleSenither": [
-                "{name}'s Senither Weight on {profile}"
-            ],
             "overviewOption": [
                 "Overview"
             ],
@@ -2600,6 +2597,9 @@
             "lilyOption": [
                 "Unavailable for Lily Weight."
             ],
+            "titleSenither": [
+                "{name}'s Senither Weight on {profile}"
+            ],
             "overviewDescriptionSenither": [
                 "**{name}** has {weight:,.1f} weight and {overflow:,.1f} overflow on **{profile}**, for a total of {total:,.1f} weight.\n\n",
                 "<:diamond_sword:986848758149021716> **Skill Weight**: {skill_weight:,.1f}\n",
@@ -2611,6 +2611,57 @@
             ],
             "skillsDescriptionSenither": [
                 "**Skill Weight**: {weight:,.1f}\n",
+                "**Overflow**: {overflow:,.1f}\n",
+                "**Total**: {total:,.1f}"
+            ],
+            "slayersTitleSenither": [
+                "<:maddox:988669718862917692> {name}'s Senither Slayer Weight on {profile}"
+            ],
+            "slayersDescriptionSenither": [
+                "**Slayer Weight**: {weight:,.1f}\n",
+                "**Overflow**: {overflow:,.1f}\n",
+                "**Total**: {total:,.1f}"
+            ],
+            "dungeonsTitleSenither": [
+                "<:dungeons:988667365883543602> {name}'s Senither Dungeon Weight on {profile}"
+            ],
+            "dungeonsDescriptionSenither": [
+                "**Dungeon Weight**: {weight:,.1f}\n",
+                "**Overflow**: {overflow:,.1f}\n",
+                "**Total**: {total:,.1f}"
+            ],
+            "titleSkykings": [
+                "{name}'s SkyKings Weight on {profile}"
+            ],
+            "overviewDescriptionSkykings": [
+                "**{name}** has {weight:,.1f} weight and {overflow:,.1f} overflow on **{profile}**, for a total of {total:,.1f} weight.\n\n",
+                "<:diamond_sword:986848758149021716> **Skill Weight**: {skill_weight:,.1f}\n",
+                "<:maddox:988669718862917692> **Slayer Weight**: {slayer_weight:,.1f}\n",
+                "<:dungeons:988667365883543602> **Dungeon Weight**: {dungeon_weight:,.1f}\n\n",
+                "⚠️ **This weight system is currently in beta!** For bugs and feedback, ",
+                "[join our Discord server](https://discord.gg/skykings) and open a ticket."
+            ],
+            "skillsTitleSkykings": [
+                "<:diamond_sword:986848758149021716> {name}'s SkyKings Skill Weight on {profile}"
+            ],
+            "skillsDescriptionSkykings": [
+                "**Skill Weight**: {weight:,.1f}\n",
+                "**Overflow**: {overflow:,.1f}\n",
+                "**Total**: {total:,.1f}"
+            ],
+            "slayersTitleSkykings": [
+                "<:maddox:988669718862917692> {name}'s SkyKings Slayer Weight on {profile}"
+            ],
+            "slayersDescriptionSkykings": [
+                "**Slayer Weight**: {weight:,.1f}\n",
+                "**Overflow**: {overflow:,.1f}\n",
+                "**Total**: {total:,.1f}"
+            ],
+            "dungeonsTitleSkykings": [
+                "<:dungeons:988667365883543602> {name}'s SkyKings Dungeon Weight on {profile}"
+            ],
+            "dungeonsDescriptionSkykings": [
+                "**Dungeon Weight**: {weight:,.1f}\n",
                 "**Overflow**: {overflow:,.1f}\n",
                 "**Total**: {total:,.1f}"
             ],
@@ -2638,14 +2689,6 @@
             "taming": [
                 "<:taming:979159299655860327> Taming"
             ],
-            "slayersTitleSenither": [
-                "<:maddox:988669718862917692> {name}'s Senither Slayer Weight on {profile}"
-            ],
-            "slayersDescriptionSenither": [
-                "**Slayer Weight**: {weight:,.1f}\n",
-                "**Overflow**: {overflow:,.1f}\n",
-                "**Total**: {total:,.1f}"
-            ],
             "zombie": [
                 "<:revenant:986789889423077456> Revenant Horror"
             ],
@@ -2661,13 +2704,8 @@
             "blaze": [
                 "<:blaze:986789888093487104> Inferno Demonlord"
             ],
-            "dungeonsTitleSenither": [
-                "<:dungeons:988667365883543602> {name}'s Senither Dungeon Weight on {profile}"
-            ],
-            "dungeonsDescriptionSenither": [
-                "**Dungeon Weight**: {weight:,.1f}\n",
-                "**Overflow**: {overflow:,.1f}\n",
-                "**Total**: {total:,.1f}"
+            "vampire": [
+                "<:riftstalker:1128147041994948788> Riftstalker Bloodfiend"
             ],
             "catacombs": [
                 "<:catacombs:986846576582459443> Catacombs"
