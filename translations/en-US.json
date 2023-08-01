@@ -3281,295 +3281,295 @@
             "normalProfile": [
                 "Normal Profile"
             ],
-            "kills_family_zombie": [
+            "family_zombie": [
                 "Zombie"
             ],
-            "kills_family_skeleton": [
+            "family_skeleton": [
                 "Skeleton"
             ],
-            "kills_family_spider": [
+            "family_spider": [
                 "Spider"
             ],
-            "kills_family_cave_spider": [
+            "family_cave_spider": [
                 "Cave Spider"
             ],
-            "kills_family_enderman_private": [
+            "family_enderman_private": [
                 "Enderman"
             ],
-            "kills_family_slime": [
+            "family_slime": [
                 "Slime"
             ],
-            "kills_family_witch": [
+            "family_witch": [
                 "Witch"
             ],
-            "kills_family_zombie_villager": [
+            "family_zombie_villager": [
                 "Zombie Villager"
             ],
-            "kills_family_unburried_zombie": [
+            "family_unburried_zombie": [
                 "Crypt Ghoul"
             ],
-            "kills_family_ruin_wolf": [
+            "family_ruin_wolf": [
                 "Wolf"
             ],
-            "kills_family_old_wolf": [
+            "family_old_wolf": [
                 "Old Wolf"
             ],
-            "kills_family_dasher_spider": [
+            "family_dasher_spider": [
                 "Dasher Spider"
             ],
-            "kills_family_spider_jockey": [
+            "family_spider_jockey": [
                 "Spider Jockey"
             ],
-            "kills_family_weaver_spider": [
+            "family_weaver_spider": [
                 "Weaver Spider"
             ],
-            "kills_family_voracious_spider": [
+            "family_voracious_spider": [
                 "Voracious Spider"
             ],
-            "kills_family_splitter_spider": [
+            "family_splitter_spider": [
                 "Splitter Spider"
             ],
-            "kills_family_brood_mother_spider": [
+            "family_brood_mother_spider": [
                 "Brood Mother"
             ],
-            "kills_family_respawning_skeleton": [
+            "family_respawning_skeleton": [
                 "Gravel Skeleton"
             ],
-            "kills_family_random_slime": [
+            "family_random_slime": [
                 "Rain Slime"
             ],
-            "kills_family_arachne_keeper": [
+            "family_arachne_keeper": [
                 "Arachne's Keeper"
             ],
-            "kills_family_arachne_brood": [
+            "family_arachne_brood": [
                 "Arachne's Brood"
             ],
-            "kills_family_arachne": [
+            "family_arachne": [
                 "Arachne"
             ],
-            "kills_family_ashfang": [
+            "family_ashfang": [
                 "Ashfang"
             ],
-            "kills_family_barbarian_duke_x": [
+            "family_barbarian_duke_x": [
                 "Barbarian Duke X"
             ],
-            "kills_family_bladesoul": [
+            "family_bladesoul": [
                 "Bladesoul"
             ],
-            "kills_family_blaze": [
+            "family_blaze": [
                 "Blaze"
             ],
-            "kills_family_flaming_spider": [
+            "family_flaming_spider": [
                 "Flaming Spider"
             ],
-            "kills_family_ghast": [
+            "family_ghast": [
                 "Ghast"
             ],
-            "kills_family_mage_outlaw": [
+            "family_mage_outlaw": [
                 "Mage Outlaw"
             ],
-            "kills_family_magma_cube": [
+            "family_magma_cube": [
                 "Magma Cube"
             ],
-            "kills_family_magma_boss": [
+            "family_magma_boss": [
                 "Magma Cube Boss"
             ],
-            "kills_family_matcho": [
+            "family_matcho": [
                 "Matcho"
             ],
-            "kills_family_charging_mushroom_cow": [
+            "family_charging_mushroom_cow": [
                 "Mushroom Bull"
             ],
-            "kills_family_pigman": [
+            "family_pigman": [
                 "Pigman"
             ],
-            "kills_family_wither_skeleton": [
+            "family_wither_skeleton": [
                 "Wither Skeleton"
             ],
-            "kills_family_wither_spectre": [
+            "family_wither_spectre": [
                 "Wither Spectre"
             ],
-            "kills_family_enderman": [
+            "family_enderman": [
                 "Enderman"
             ],
-            "kills_family_obsidian_wither": [
+            "family_obsidian_wither": [
                 "Obsidian Defender"
             ],
-            "kills_family_watcher": [
+            "family_watcher": [
                 "Watcher"
             ],
-            "kills_family_zealot_enderman": [
+            "family_zealot_enderman": [
                 "Zealot"
             ],
-            "kills_family_endermite": [
+            "family_endermite": [
                 "Endermite"
             ],
-            "kills_family_dragon": [
+            "family_dragon": [
                 "Dragon"
             ],
-            "kills_family_corrupted_protector": [
+            "family_corrupted_protector": [
                 "Endstone Protector"
             ],
-            "kills_family_voidling_fanatic": [
+            "family_voidling_fanatic": [
                 "Voidling Fanatic"
             ],
-            "kills_family_voidling_extremist": [
+            "family_voidling_extremist": [
                 "Voidling Extremist"
             ],
-            "kills_family_invisible_creeper": [
+            "family_invisible_creeper": [
                 "Sneaky Creeper"
             ],
-            "kills_family_lapis_zombie": [
+            "family_lapis_zombie": [
                 "Lapis Zombie"
             ],
-            "kills_family_redstone_pigman": [
+            "family_redstone_pigman": [
                 "Redstone Pigman"
             ],
-            "kills_family_emerald_slime": [
+            "family_emerald_slime": [
                 "Emerald Slime"
             ],
-            "kills_family_diamond_zombie": [
+            "family_diamond_zombie": [
                 "Miner Zombie"
             ],
-            "kills_family_diamond_skeleton": [
+            "family_diamond_skeleton": [
                 "Miner Skeleton"
             ],
-            "kills_family_caverns_ghost": [
+            "family_caverns_ghost": [
                 "Ghost"
             ],
-            "kills_family_goblin": [
+            "family_goblin": [
                 "Goblin"
             ],
-            "kills_family_treasure_hoarder": [
+            "family_treasure_hoarder": [
                 "Treasure Hoarder"
             ],
-            "kills_family_ice_walker": [
+            "family_ice_walker": [
                 "Ice Walker"
             ],
-            "kills_family_automaton": [
+            "family_automaton": [
                 "Automaton"
             ],
-            "kills_family_butterfly": [
+            "family_butterfly": [
                 "Butterfly"
             ],
-            "kills_family_team_treasurite": [
+            "family_team_treasurite": [
                 "Grunt"
             ],
-            "kills_family_sludge": [
+            "family_sludge": [
                 "Sludge"
             ],
-            "kills_family_thyst": [
+            "family_thyst": [
                 "Thyst"
             ],
-            "kills_family_worms": [
+            "family_worms": [
                 "Worm"
             ],
-            "kills_family_yog": [
+            "family_yog": [
                 "Yog"
             ],
-            "kills_family_pack_spirit": [
+            "family_pack_spirit": [
                 "Pack Spirit"
             ],
-            "kills_family_howling_spirit": [
+            "family_howling_spirit": [
                 "Howling Spirit"
             ],
-            "kills_family_soul_of_the_alpha": [
+            "family_soul_of_the_alpha": [
                 "Soul of the Alpha"
             ],
-            "kills_family_trick_or_treater": [
+            "family_trick_or_treater": [
                 "Trick or Treater"
             ],
-            "kills_family_wither_gourd": [
+            "family_wither_gourd": [
                 "Wither Gourd"
             ],
-            "kills_family_phantom_spirit": [
+            "family_phantom_spirit": [
                 "Phantom Spirit"
             ],
-            "kills_family_scary_jerry": [
+            "family_scary_jerry": [
                 "Scary Jerry"
             ],
-            "kills_family_wraith": [
+            "family_wraith": [
                 "Wraith"
             ],
-            "kills_family_batty_witch": [
+            "family_batty_witch": [
                 "Crazy Witch"
             ],
-            "kills_family_headless_horseman": [
+            "family_headless_horseman": [
                 "Headless Horseman"
             ],
-            "kills_family_lost_adventurer": [
+            "family_lost_adventurer": [
                 "Lost Adventurer"
             ],
-            "kills_family_zombie_grunt": [
+            "family_zombie_grunt": [
                 "Zombie Grunt"
             ],
-            "kills_family_zombie_soldier": [
+            "family_zombie_soldier": [
                 "Zombie Soldier"
             ],
-            "kills_family_zombie_knight": [
+            "family_zombie_knight": [
                 "Zombie Soldier"
             ],
-            "kills_family_skeleton_grunt": [
+            "family_skeleton_grunt": [
                 "Skeleton Grunt"
             ],
-            "kills_family_skeleton_soldier": [
+            "family_skeleton_soldier": [
                 "Skeleton Soldier"
             ],
-            "kills_family_skeleton_master": [
+            "family_skeleton_master": [
                 "Skeleton Master"
             ],
-            "kills_family_scared_skeleton": [
+            "family_scared_skeleton": [
                 "Scared Skeleton"
             ],
-            "kills_family_diamond_guy": [
+            "family_diamond_guy": [
                 "Angry Archeologist"
             ],
-            "kills_family_dungeon_respawning_skeleton": [
+            "family_dungeon_respawning_skeleton": [
                 "Undead Skeleton"
             ],
-            "kills_family_skeletor": [
+            "family_skeletor": [
                 "Skeletor"
             ],
-            "kills_family_sniper_skeleton": [
+            "family_sniper_skeleton": [
                 "Sniper"
             ],
-            "kills_family_crypt_souleater": [
+            "family_crypt_souleater": [
                 "Crypt Souleater"
             ],
-            "kills_family_crypt_dreadlord": [
+            "family_crypt_dreadlord": [
                 "Crypt Dreadlord"
             ],
-            "kills_family_crypt_tank_zombie": [
+            "family_crypt_tank_zombie": [
                 "Tank Zombie"
             ],
-            "kills_family_super_tank_zombie": [
+            "family_super_tank_zombie": [
                 "Super Tank Zombie"
             ],
-            "kills_family_crypt_lurker": [
+            "family_crypt_lurker": [
                 "Crypt Lurker"
             ],
-            "kills_family_cellar_spider": [
+            "family_cellar_spider": [
                 "Cellar Spider"
             ],
-            "kills_family_watcher_summon_undead": [
+            "family_watcher_summon_undead": [
                 "Undead"
             ],
-            "kills_family_lonely_spider": [
+            "family_lonely_spider": [
                 "Lonely Spider"
             ],
-            "kills_family_shadow_assassin": [
+            "family_shadow_assassin": [
                 "Shadow Assassin"
             ],
-            "kills_family_king_midas": [
+            "family_king_midas": [
                 "King Midas"
             ],
-            "kills_family_super_archer": [
+            "family_super_archer": [
                 "Super Archer"
             ],
-            "kills_family_crypt_witherskeleton": [
+            "family_crypt_witherskeleton": [
                 "Withermancer"
             ],
-            "kills_family_zombie_commander": [
+            "family_zombie_commander": [
                 "Zombie Commander"
             ]
         }
