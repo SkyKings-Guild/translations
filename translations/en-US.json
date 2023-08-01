@@ -3223,6 +3223,7 @@
             ],
             "description": [
                 "<:diamond_sword:986848758149021716> **Total Kills**: {kills:,}\n",
+                "☠️ **Total Deaths**: {deaths:,}\n",
                 "<:greenTick:793709935150104577> **Maxed Bestiaries**: {maxed:,}/{total:,}"
             ],
             "maxedMobTitle": [
@@ -3233,10 +3234,12 @@
             ],
             "innerMob": [
                 "Kills: {kills:,}\n",
+                "Deaths: {deaths:,}\n",
                 "Next Tier: {next:,} kills"
             ],
             "maxedValue": [
                 "Kills: {kills:,}\n",
+                "Deaths: {deaths:,}\n",
                 "Maximum tier!"
             ],
             "noData": [
