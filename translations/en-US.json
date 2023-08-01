@@ -3222,8 +3222,8 @@
                 "{name}'s {category} Bestiary on {profile}"
             ],
             "description": [
-                "<:diamond_sword:986848758149021716> **Total Kills**: {kills:,}\n",
-                "☠️ **Total Deaths**: {deaths:,}\n",
+                "<:diamond_sword:986848758149021716> **Kills**: {kills:,}\n",
+                "☠️ **Deaths**: {deaths:,}\n",
                 "<:greenTick:793709935150104577> **Maxed Bestiaries**: {maxed:,}/{total:,}"
             ],
             "maxedMobTitle": [
@@ -3281,295 +3281,295 @@
             "normalProfile": [
                 "Normal Profile"
             ],
-            "family_zombie": [
+            "zombie": [
                 "Zombie"
             ],
-            "family_skeleton": [
+            "skeleton": [
                 "Skeleton"
             ],
-            "family_spider": [
+            "spider": [
                 "Spider"
             ],
-            "family_cave_spider": [
+            "cave_spider": [
                 "Cave Spider"
             ],
-            "family_enderman_private": [
+            "enderman_private": [
                 "Enderman"
             ],
-            "family_slime": [
+            "slime": [
                 "Slime"
             ],
-            "family_witch": [
+            "witch": [
                 "Witch"
             ],
-            "family_zombie_villager": [
+            "zombie_villager": [
                 "Zombie Villager"
             ],
-            "family_unburried_zombie": [
+            "unburried_zombie": [
                 "Crypt Ghoul"
             ],
-            "family_ruin_wolf": [
+            "ruin_wolf": [
                 "Wolf"
             ],
-            "family_old_wolf": [
+            "old_wolf": [
                 "Old Wolf"
             ],
-            "family_dasher_spider": [
+            "dasher_spider": [
                 "Dasher Spider"
             ],
-            "family_spider_jockey": [
+            "spider_jockey": [
                 "Spider Jockey"
             ],
-            "family_weaver_spider": [
+            "weaver_spider": [
                 "Weaver Spider"
             ],
-            "family_voracious_spider": [
+            "voracious_spider": [
                 "Voracious Spider"
             ],
-            "family_splitter_spider": [
+            "splitter_spider": [
                 "Splitter Spider"
             ],
-            "family_brood_mother_spider": [
+            "brood_mother_spider": [
                 "Brood Mother"
             ],
-            "family_respawning_skeleton": [
+            "respawning_skeleton": [
                 "Gravel Skeleton"
             ],
-            "family_random_slime": [
+            "random_slime": [
                 "Rain Slime"
             ],
-            "family_arachne_keeper": [
+            "arachne_keeper": [
                 "Arachne's Keeper"
             ],
-            "family_arachne_brood": [
+            "arachne_brood": [
                 "Arachne's Brood"
             ],
-            "family_arachne": [
+            "arachne": [
                 "Arachne"
             ],
-            "family_ashfang": [
+            "ashfang": [
                 "Ashfang"
             ],
-            "family_barbarian_duke_x": [
+            "barbarian_duke_x": [
                 "Barbarian Duke X"
             ],
-            "family_bladesoul": [
+            "bladesoul": [
                 "Bladesoul"
             ],
-            "family_blaze": [
+            "blaze": [
                 "Blaze"
             ],
-            "family_flaming_spider": [
+            "flaming_spider": [
                 "Flaming Spider"
             ],
-            "family_ghast": [
+            "ghast": [
                 "Ghast"
             ],
-            "family_mage_outlaw": [
+            "mage_outlaw": [
                 "Mage Outlaw"
             ],
-            "family_magma_cube": [
+            "magma_cube": [
                 "Magma Cube"
             ],
-            "family_magma_boss": [
+            "magma_boss": [
                 "Magma Cube Boss"
             ],
-            "family_matcho": [
+            "matcho": [
                 "Matcho"
             ],
-            "family_charging_mushroom_cow": [
+            "charging_mushroom_cow": [
                 "Mushroom Bull"
             ],
-            "family_pigman": [
+            "pigman": [
                 "Pigman"
             ],
-            "family_wither_skeleton": [
+            "wither_skeleton": [
                 "Wither Skeleton"
             ],
-            "family_wither_spectre": [
+            "wither_spectre": [
                 "Wither Spectre"
             ],
-            "family_enderman": [
+            "enderman": [
                 "Enderman"
             ],
-            "family_obsidian_wither": [
+            "obsidian_wither": [
                 "Obsidian Defender"
             ],
-            "family_watcher": [
+            "watcher": [
                 "Watcher"
             ],
-            "family_zealot_enderman": [
+            "zealot_enderman": [
                 "Zealot"
             ],
-            "family_endermite": [
+            "endermite": [
                 "Endermite"
             ],
-            "family_dragon": [
+            "dragon": [
                 "Dragon"
             ],
-            "family_corrupted_protector": [
+            "corrupted_protector": [
                 "Endstone Protector"
             ],
-            "family_voidling_fanatic": [
+            "voidling_fanatic": [
                 "Voidling Fanatic"
             ],
-            "family_voidling_extremist": [
+            "voidling_extremist": [
                 "Voidling Extremist"
             ],
-            "family_invisible_creeper": [
+            "invisible_creeper": [
                 "Sneaky Creeper"
             ],
-            "family_lapis_zombie": [
+            "lapis_zombie": [
                 "Lapis Zombie"
             ],
-            "family_redstone_pigman": [
+            "redstone_pigman": [
                 "Redstone Pigman"
             ],
-            "family_emerald_slime": [
+            "emerald_slime": [
                 "Emerald Slime"
             ],
-            "family_diamond_zombie": [
+            "diamond_zombie": [
                 "Miner Zombie"
             ],
-            "family_diamond_skeleton": [
+            "diamond_skeleton": [
                 "Miner Skeleton"
             ],
-            "family_caverns_ghost": [
+            "caverns_ghost": [
                 "Ghost"
             ],
-            "family_goblin": [
+            "goblin": [
                 "Goblin"
             ],
-            "family_treasure_hoarder": [
+            "treasure_hoarder": [
                 "Treasure Hoarder"
             ],
-            "family_ice_walker": [
+            "ice_walker": [
                 "Ice Walker"
             ],
-            "family_automaton": [
+            "automaton": [
                 "Automaton"
             ],
-            "family_butterfly": [
+            "butterfly": [
                 "Butterfly"
             ],
-            "family_team_treasurite": [
+            "team_treasurite": [
                 "Grunt"
             ],
-            "family_sludge": [
+            "sludge": [
                 "Sludge"
             ],
-            "family_thyst": [
+            "thyst": [
                 "Thyst"
             ],
-            "family_worms": [
+            "worms": [
                 "Worm"
             ],
-            "family_yog": [
+            "yog": [
                 "Yog"
             ],
-            "family_pack_spirit": [
+            "pack_spirit": [
                 "Pack Spirit"
             ],
-            "family_howling_spirit": [
+            "howling_spirit": [
                 "Howling Spirit"
             ],
-            "family_soul_of_the_alpha": [
+            "soul_of_the_alpha": [
                 "Soul of the Alpha"
             ],
-            "family_trick_or_treater": [
+            "trick_or_treater": [
                 "Trick or Treater"
             ],
-            "family_wither_gourd": [
+            "wither_gourd": [
                 "Wither Gourd"
             ],
-            "family_phantom_spirit": [
+            "phantom_spirit": [
                 "Phantom Spirit"
             ],
-            "family_scary_jerry": [
+            "scary_jerry": [
                 "Scary Jerry"
             ],
-            "family_wraith": [
+            "wraith": [
                 "Wraith"
             ],
-            "family_batty_witch": [
+            "batty_witch": [
                 "Crazy Witch"
             ],
-            "family_headless_horseman": [
+            "headless_horseman": [
                 "Headless Horseman"
             ],
-            "family_lost_adventurer": [
+            "lost_adventurer": [
                 "Lost Adventurer"
             ],
-            "family_zombie_grunt": [
+            "zombie_grunt": [
                 "Zombie Grunt"
             ],
-            "family_zombie_soldier": [
+            "zombie_soldier": [
                 "Zombie Soldier"
             ],
-            "family_zombie_knight": [
+            "zombie_knight": [
                 "Zombie Soldier"
             ],
-            "family_skeleton_grunt": [
+            "skeleton_grunt": [
                 "Skeleton Grunt"
             ],
-            "family_skeleton_soldier": [
+            "skeleton_soldier": [
                 "Skeleton Soldier"
             ],
-            "family_skeleton_master": [
+            "skeleton_master": [
                 "Skeleton Master"
             ],
-            "family_scared_skeleton": [
+            "scared_skeleton": [
                 "Scared Skeleton"
             ],
-            "family_diamond_guy": [
+            "diamond_guy": [
                 "Angry Archeologist"
             ],
-            "family_dungeon_respawning_skeleton": [
+            "dungeon_respawning_skeleton": [
                 "Undead Skeleton"
             ],
-            "family_skeletor": [
+            "skeletor": [
                 "Skeletor"
             ],
-            "family_sniper_skeleton": [
+            "sniper_skeleton": [
                 "Sniper"
             ],
-            "family_crypt_souleater": [
+            "crypt_souleater": [
                 "Crypt Souleater"
             ],
-            "family_crypt_dreadlord": [
+            "crypt_dreadlord": [
                 "Crypt Dreadlord"
             ],
-            "family_crypt_tank_zombie": [
+            "crypt_tank_zombie": [
                 "Tank Zombie"
             ],
-            "family_super_tank_zombie": [
+            "super_tank_zombie": [
                 "Super Tank Zombie"
             ],
-            "family_crypt_lurker": [
+            "crypt_lurker": [
                 "Crypt Lurker"
             ],
-            "family_cellar_spider": [
+            "cellar_spider": [
                 "Cellar Spider"
             ],
-            "family_watcher_summon_undead": [
+            "watcher_summon_undead": [
                 "Undead"
             ],
-            "family_lonely_spider": [
+            "lonely_spider": [
                 "Lonely Spider"
             ],
-            "family_shadow_assassin": [
+            "shadow_assassin": [
                 "Shadow Assassin"
             ],
-            "family_king_midas": [
+            "king_midas": [
                 "King Midas"
             ],
-            "family_super_archer": [
+            "super_archer": [
                 "Super Archer"
             ],
-            "family_crypt_witherskeleton": [
+            "crypt_witherskeleton": [
                 "Withermancer"
             ],
-            "family_zombie_commander": [
+            "zombie_commander": [
                 "Zombie Commander"
             ]
         }
