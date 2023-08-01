@@ -2647,7 +2647,9 @@
             "skillsDescriptionSkykings": [
                 "**Skill Weight**: {weight:,.1f}\n",
                 "**Overflow**: {overflow:,.1f}\n",
-                "**Total**: {total:,.1f}"
+                "**Total**: {total:,.1f}\n\n",
+                "⚠️ **This weight system is currently in beta!** For bugs and feedback, ",
+                "[join our Discord server](https://discord.gg/skykings) and open a ticket."
             ],
             "slayersTitleSkykings": [
                 "<:maddox:988669718862917692> {name}'s SkyKings Slayer Weight on {profile}"
@@ -2655,7 +2657,9 @@
             "slayersDescriptionSkykings": [
                 "**Slayer Weight**: {weight:,.1f}\n",
                 "**Overflow**: {overflow:,.1f}\n",
-                "**Total**: {total:,.1f}"
+                "**Total**: {total:,.1f}\n\n",
+                "⚠️ **This weight system is currently in beta!** For bugs and feedback, ",
+                "[join our Discord server](https://discord.gg/skykings) and open a ticket."
             ],
             "dungeonsTitleSkykings": [
                 "<:dungeons:988667365883543602> {name}'s SkyKings Dungeon Weight on {profile}"
@@ -2663,7 +2667,9 @@
             "dungeonsDescriptionSkykings": [
                 "**Dungeon Weight**: {weight:,.1f}\n",
                 "**Overflow**: {overflow:,.1f}\n",
-                "**Total**: {total:,.1f}"
+                "**Total**: {total:,.1f}\n\n",
+                "⚠️ **This weight system is currently in beta!** For bugs and feedback, ",
+                "[join our Discord server](https://discord.gg/skykings) and open a ticket."
             ],
             "mining": [
                 "<:mining:978799566612738049> Mining"
