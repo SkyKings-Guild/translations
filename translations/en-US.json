@@ -4594,6 +4594,9 @@
             "GIFTS_GIVEN": [
                 "Gifts Given"
             ],
+            "MINING_POWDER": [
+                "Mining Powder"
+            ],
             "SKILL_LABEL": [
                 "XP"
             ],
@@ -4641,6 +4644,9 @@
             ],
             "GIFTS_GIVEN_LABEL": [
                 "Gifts"
+            ],
+            "MINING_POWDER": [
+                "Powder"
             ],
             "startMessage": [
                 "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
