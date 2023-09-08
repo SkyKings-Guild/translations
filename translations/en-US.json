@@ -373,6 +373,7 @@
                 "skyblock/fairy_souls": "Fairy Souls",
                 "skyblock/weight/senither": "Senither Weight",
                 "skyblock/weight/lily": "Lily Weight",
+                "skyblock/level": "SkyBlock Level",
                 "skyblock/api": "API Settings Enabled"
             }
         },
@@ -445,6 +446,7 @@
                 "skyblock/fairy_souls": "Fairy Souls",
                 "skyblock/weight/senither": "Senither Weight",
                 "skyblock/weight/lily": "Lily Weight",
+                "skyblock/level": "SkyBlock Level",
                 "skyblock/api": "API Settings Enabled"
             }
         },
@@ -517,6 +519,7 @@
                 "skyblock/catacombs/level": "Catacombs Level",
                 "skyblock/fairy_souls": "Fairy Souls",
                 "skyblock/weight/senither": "Senither Weight",
+                "skyblock/level": "SkyBlock Level",
                 "skyblock/weight/lily": "Lily Weight"
             }
         },
@@ -597,6 +600,7 @@
                 "skyblock/fairy_souls": "Fairy Souls",
                 "skyblock/weight/senither": "Senither Weight",
                 "skyblock/weight/lily": "Lily Weight",
+                "skyblock/level": "SkyBlock Level",
                 "skyblock/api": "API Settings Enabled"
             }
         },
@@ -677,6 +681,7 @@
                 "skyblock/fairy_souls": "Fairy Souls",
                 "skyblock/weight/senither": "Senither Weight",
                 "skyblock/weight/lily": "Lily Weight",
+                "skyblock/level": "SkyBlock Level",
                 "skyblock/api": "API Settings Enabled"
             }
         },
@@ -753,6 +758,7 @@
                 "skyblock/catacombs/level": "Catacombs Level",
                 "skyblock/fairy_souls": "Fairy Souls",
                 "skyblock/weight/senither": "Senither Weight",
+                "skyblock/level": "SkyBlock Level",
                 "skyblock/weight/lily": "Lily Weight"
             }
         },
