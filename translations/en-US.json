@@ -4287,15 +4287,22 @@
                 "Events"
             ],
             "pages": [
-                "Pages"
+                "Categories"
             ],
-            "linksTitle": [
-                "Useful Links"
+            "website": [
+                "Website"
             ],
-            "linksDescription": [
-                "[Patreon](https://patreon.com/skykings)\n",
-                "[Support Server](https://discord.gg/skykings)\n",
-                "[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=797974550834053203&permissions=414867377168&scope=bot%20applications.commands)"
+            "docs": [
+                "Documentation"
+            ],
+            "patreon": [
+                "Patreon"
+            ],
+            "support": [
+                "Support Server"
+            ],
+            "invite": [
+                "Invite Bot"
             ]
         }
     },
