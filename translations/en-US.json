@@ -4602,8 +4602,8 @@
             "WEIGHT": [
                 "Senither Weight"
             ],
-            "SKILL_WEIGHTED": [
-                "Weighted Skill XP"
+            "WEIGHTED_XP": [
+                "Weighted XP"
             ],
             "GIFTS_GIVEN": [
                 "Gifts Given"
@@ -4653,7 +4653,7 @@
             "WEIGHT_LABEL": [
                 "Weight"
             ],
-            "SKILL_WEIGHTED_LABEL": [
+            "WEIGHTED_XP_LABEL": [
                 "XP"
             ],
             "GIFTS_GIVEN_LABEL": [
