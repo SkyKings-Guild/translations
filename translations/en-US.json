@@ -4526,15 +4526,15 @@
                 ]
             },
             "5": {
-                "note": "Raised when the command invoker is already in the event.",
-                "message": [
-                    "You're already in the event."
-                ]
-            },
-            "6": {
                 "note": "Raised when the command invoker is not in the event.",
                 "message": [
                     "You're not in the event. Join it with `/event join`."
+                ]
+            },
+            "6": {
+                "note": "Raised when the command invoker is already in the event.",
+                "message": [
+                    "You're already in the event."
                 ]
             },
             "7": {
