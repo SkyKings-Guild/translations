@@ -4614,6 +4614,9 @@
             "MINING_POWDER": [
                 "Mining Powder"
             ],
+            "KUUDRA": [
+                "Kuudra"
+            ],
             "SKILL_LABEL": [
                 "XP"
             ],
@@ -4664,6 +4667,9 @@
             ],
             "MINING_POWDER_LABEL": [
                 "Powder"
+            ],
+            "KUUDRA_LABEL": [
+                "Runs"
             ],
             "startMessage": [
                 "{created_by.mention} started a{n} {gvg}{event} event! Here's how it works:\n",
