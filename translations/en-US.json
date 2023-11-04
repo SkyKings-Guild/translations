@@ -4061,7 +4061,7 @@
                 "{name}'s User Information"
             ],
             "userInfoName": [
-                "User Information"
+                "🥽 User Information"
             ],
             "userInfoValue": [
                 "Name: {name}\n",
@@ -4070,7 +4070,7 @@
                 "Created: <t:{created}:F>"
             ],
             "memberInfoName": [
-                "Member Information"
+                "🎮 Member Information"
             ],
             "boosted": [
                 "Server Booster since <t:{time}:F>"
@@ -4082,7 +4082,7 @@
                 "{boosted}"
             ],
             "playerInfoName": [
-                "Player Information"
+                "👑 Player Information"
             ],
             "playerInfoValue": [
                 "Username: {name}\n",
