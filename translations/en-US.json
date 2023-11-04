@@ -519,8 +519,9 @@
                 "skyblock/catacombs/level": "Catacombs Level",
                 "skyblock/fairy_souls": "Fairy Souls",
                 "skyblock/weight/senither": "Senither Weight",
+                "skyblock/weight/lily": "Lily Weight",
                 "skyblock/level": "SkyBlock Level",
-                "skyblock/weight/lily": "Lily Weight"
+                "skyblock/api": "API Settings Enabled"
             }
         },
         "responses": {
