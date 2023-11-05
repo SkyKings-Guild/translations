@@ -4144,6 +4144,9 @@
             "skyblock/api": [
                 "API Settings Enabled"
             ],
+            "skyblock/level": [
+                "SkyBlock Level: {player_value:,.0f}/{value:,}"
+            ],
             "specialProfile": [
                 "{type} Profile"
             ],
