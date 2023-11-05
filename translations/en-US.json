@@ -162,8 +162,11 @@
             "Fairy Souls": [
                 "Fairy Souls: {value:,}"
             ],
-            "Weight": [
-                "Weight: {value:,}"
+            "Senither Weight": [
+                "Senither Weight: {value:,}"
+            ],
+            "Lily Weight": [
+                "Lily Weight: {value:,}"
             ],
             "API Settings Enabled": [
                 "API Settings Enabled"
