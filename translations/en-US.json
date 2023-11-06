@@ -4726,7 +4726,7 @@
                 "You're not in the event."
             ],
             "position": [
-                "You are currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."
+                "You currently have {xp:,} {label} in the event and are #{pos:,} out of {players:,} players."
             ],
             "jsonify": [
                 "Dump to JSON File"
