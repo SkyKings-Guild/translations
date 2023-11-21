@@ -2314,7 +2314,7 @@
                 "{name}'s {profile} Profile"
             ],
             "description": [
-                "Created: {first_join}\n",
+                "First Join: {first_join}\n",
                 "Profile Type: {profile_type}"
             ],
             "miscellaneousName": [
