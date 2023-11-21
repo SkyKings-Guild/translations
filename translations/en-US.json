@@ -2315,7 +2315,6 @@
             ],
             "description": [
                 "Created: {first_join}\n",
-                "Last Saved: {last_save}\n",
                 "Profile Type: {profile_type}"
             ],
             "miscellaneousName": [
