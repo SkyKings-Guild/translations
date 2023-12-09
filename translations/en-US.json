@@ -170,6 +170,9 @@
             ],
             "API Settings Enabled": [
                 "API Settings Enabled"
+            ],
+            "SkyBlock Level": [
+                "SkyBlock Level: {value:,}"
             ]
         }
     },
