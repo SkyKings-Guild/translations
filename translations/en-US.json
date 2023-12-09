@@ -1042,6 +1042,93 @@
         "name": "event",
         "description": "Commands relating to events."
     },
+    "event schedule": {
+        "name": "schedule",
+        "description": "Schedules an event.",
+        "options": [
+            {
+                "name": "start_duration",
+                "description": "The duration from now until the event starts, must be between 7 days and 1 hour. Example: 1d 3h"
+            },
+            {
+                "name": "event",
+                "description": "The type of event to start.",
+                "choices": [
+                    "Skill XP",
+                    "Farming XP",
+                    "Mining XP",
+                    "Combat XP",
+                    "Foraging XP",
+                    "Fishing XP",
+                    "Enchanting XP",
+                    "Alchemy XP",
+                    "Carpentry XP",
+                    "Runecrafting XP",
+                    "Taming XP",
+                    "Slayer XP",
+                    "Catacombs XP",
+                    "Senither Weight",
+                    "Weighted XP",
+                    "Gifts Given",
+                    "Mining Powder",
+                    "Kuudra Completions"
+                ]
+            },
+            {
+                "name": "duration",
+                "description": "The duration of the event, must be between 14 days and 1 day. Example: 1w 3d"
+            },
+            {
+                "name": "gvg",
+                "description": "Whether the event should be a Guilds vs Guilds event. Premium is required for this option."
+            },
+            {
+                "name": "channel",
+                "description": "The channel to send the event to. Defaults to the current channel."
+            },
+            {
+                "name": "role",
+                "description": "The role to ping for the start of the event."
+            },
+            {
+                "name": "discord_event",
+                "description": "Whether or not the bot should register the event with Discord."
+            }
+        ],
+        "responses": {
+            "eventScheduledDiscordFailed": [
+                "Succesfully scheduled a {gvg}{type} event! ",
+                "Unfortunately, I wasn't able to register the event with Discord.\n",
+                "Your event will start <t:{start_time}:R>."
+            ],
+            "eventScheduledWithDiscord": [
+                "Succesfully scheduled a {gvg}{type} event! ",
+                "[Discord Event URL]({event})\n",
+                "Your event will start <t:{start_time}:R>."
+            ],
+            "eventScheduled": [
+                "Succesfully scheduled a {gvg}{type} event!\n",
+                "Your event will start <t:{start_time}:R>."
+            ],
+            "invalidStartDuration": [
+                "The start duration you provided was invalid.\n",
+                "For example, you can use `1d 3h` for 1 day and 3 hours."
+            ],
+            "startDurationLimited": [
+                "The event can only be scheduled for a time between 1 hour and 1 week from now."
+            ],
+            "invalidDuration": [
+                "The duration you provided was invalid.\n",
+                "For example, you can use `1w 3d` for 1 week and 3 days."
+            ],
+            "durationLimited": [
+                "The event can only last between 14 days and 1 day."
+            ],
+            "gvg": [
+                "Guild vs Guild "
+            ]
+        }
+    },
     "event start": {
         "name": "start",
         "description": "Starts an event.",
@@ -1087,7 +1174,7 @@
                 "description": "The role to ping for the start of the event."
             },
             {
-                "name": "schedule_event",
+                "name": "discord_event",
                 "description": "Whether or not the bot should register the event with Discord."
             }
         ],
@@ -1126,6 +1213,9 @@
             "eventEnded": [
                 "Succesfully scheduled the event to end.\n",
                 "This may take a while depending on the amount of players and the size of the event queue."
+            ],
+            "eventEndedScheduled": [
+                "Successfully cancelled the event."
             ]
         }
     },
@@ -4499,6 +4589,12 @@
                     "**{name}** has no SkyBlock profiles.\n\n",
                     "⚠️ Hypixel has recently updated their SkyBlock profiles system, profiles for people that have not logged in since ",
                     "May 16th may not display."
+                ]
+            },
+            "26": {
+                "note": "Raised when a player tried to perform an action on an event that was scheduled but not started.",
+                "message": [
+                    "This event has not started yet! It will start <t:{start}:R>."
                 ]
             }
         },
