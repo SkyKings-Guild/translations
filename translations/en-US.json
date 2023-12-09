@@ -1243,6 +1243,11 @@
         "responses": {
             "eventJoined": [
                 "You've successfully joined the event in **{ctx.guild.name}**!"
+            ],
+            "scheduledEventJoined": [
+                "You've been placed into the event in **{ctx.guild.name}**!\n",
+                "The event will start in {start_time}.\n",
+                "Any progress made before the event starts will not be counted."
             ]
         }
     },
