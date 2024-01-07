@@ -426,6 +426,9 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
+            ],
+            "skyblock/level": [
+                "SkyBlock Level"
             ]
         }
     },
@@ -496,6 +499,9 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
+            ],
+            "skyblock/level": [
+                "SkyBlock Level"
             ]
         }
     },
@@ -573,6 +579,9 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
+            ],
+            "skyblock/level": [
+                "SkyBlock Level"
             ]
         }
     },
@@ -658,6 +667,9 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
+            ],
+            "skyblock/level": [
+                "SkyBlock Level"
             ]
         }
     },
@@ -732,6 +744,9 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
+            ],
+            "skyblock/level": [
+                "SkyBlock Level"
             ]
         }
     },
@@ -812,6 +827,9 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
+            ],
+            "skyblock/level": [
+                "SkyBlock Level"
             ]
         }
     },
