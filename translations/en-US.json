@@ -426,9 +426,6 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
-            ],
-            "skyblock/level": [
-                "SkyBlock Level"
             ]
         }
     },
@@ -499,9 +496,6 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
-            ],
-            "skyblock/level": [
-                "SkyBlock Level"
             ]
         }
     },
@@ -579,9 +573,6 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
-            ],
-            "skyblock/level": [
-                "SkyBlock Level"
             ]
         }
     },
@@ -667,9 +658,6 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
-            ],
-            "skyblock/level": [
-                "SkyBlock Level"
             ]
         }
     },
@@ -744,9 +732,6 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
-            ],
-            "skyblock/level": [
-                "SkyBlock Level"
             ]
         }
     },
@@ -827,9 +812,6 @@
             ],
             "skyblock/api": [
                 "API Settings Enabled"
-            ],
-            "skyblock/level": [
-                "SkyBlock Level"
             ]
         }
     },
@@ -971,27 +953,27 @@
                 "Bot Information"
             ],
             "botInfo": [
-              "Commands: {commands:,}\n",
-              "Extensions: {extensions:,}\n",
-              "Cogs: {cogs:,}\n",
-              "Servers: {servers:,}\n",
-              "Shards: {shards:,}\n",
-              "Shard ID: {shard_id}\n",
-              "Average Latency: {latency} ms\n",
-              "Shard Latency: {shard_latency} ms\n",
-              "Scammers/IRL Traders/Ratters/Macroers Listed: {scammers:,}\n",
-              "\n",
-              "Developed by @plun1331"
+                "Commands: {commands:,}\n",
+                "Extensions: {extensions:,}\n",
+                "Cogs: {cogs:,}\n",
+                "Servers: {servers:,}\n",
+                "Shards: {shards:,}\n",
+                "Shard ID: {shard_id}\n",
+                "Average Latency: {latency} ms\n",
+                "Shard Latency: {shard_latency} ms\n",
+                "Scammers/IRL Traders/Ratters/Macroers Listed: {scammers:,}\n",
+                "\n",
+                "Developed by @plun1331"
             ],
-          "invite": [
-            "Invite Bot"
-          ],
-          "support": [
-            "Support Server"
-          ],
-          "docs": [
-            "Documentation"
-          ]
+            "invite": [
+                "Invite Bot"
+            ],
+            "support": [
+                "Support Server"
+            ],
+            "docs": [
+                "Documentation"
+            ]
         }
     },
     "ping": {
@@ -1584,13 +1566,13 @@
                 "**{item}** is not a valid item."
             ],
             "bazaarPrice": [
-                "**{item}** is currently selling for an average of **{price:ord} coins** on the bazaar."
+                "**{item}** is currently selling for an average of **{price:*} coins** on the bazaar."
             ],
             "noPrice": [
                 "Could not determine a price for **{item}**."
             ],
             "price": [
-                "**{item}** is currently selling for **{price:ord} coins** on the auction house."
+                "**{item}** is currently selling for **{price:*} coins** on the auction house."
             ]
         }
     },
@@ -1603,9 +1585,9 @@
                 "Bits to BIN"
             ],
             "field": [
-                "**Bit Price**: {cost:ord}\n",
-                "**Coin Price**: {price:ord}\n",
-                "**Coins Per Bit**: {coinsPerBit:ord}"
+                "**Bit Price**: {cost:*}\n",
+                "**Coin Price**: {price:*}\n",
+                "**Coins Per Bit**: {coinsPerBit:*}"
             ]
         }
     },
@@ -1618,7 +1600,7 @@
                 "Coins per Organic Matter"
             ],
             "matterField": [
-                "Price: {price:ord}\n",
+                "Price: {price:*}\n",
                 "Organic Matter: {matter:,}\n",
                 "Coins/OM: {value:,.2f}"
             ],
@@ -1626,9 +1608,9 @@
                 "Coins per Fuel"
             ],
             "fuelField": [
-                "Price: {price:ord}\n",
-                "Fuel: {matter:ord}\n",
-                "Coins/Fuel: {value:ord}"
+                "Price: {price:*}\n",
+                "Fuel: {matter:*}\n",
+                "Coins/Fuel: {value:*}"
             ],
             "matter": [
                 "Organic Matter"
@@ -2059,7 +2041,7 @@
                 "Election for Year {year:,}"
             ],
             "electionDescription": [
-                "Total Votes: {votes:ord}"
+                "Total Votes: {votes:*}"
             ]
         }
     },
@@ -2072,12 +2054,12 @@
                 "Hypixel SkyBlock Bingo Card"
             ],
             "progress": [
-                "Progress: {progress:ord}\n",
-                "Next Tier: {needed:ord}\n> {toNext:ord} needed\n",
+                "Progress: {progress:*}\n",
+                "Next Tier: {needed:*}\n> {toNext:*} needed\n",
                 "Tier {tier}/{tiers}"
             ],
             "finishedProgress": [
-                "Progress: {progress:ord}\n",
+                "Progress: {progress:*}\n",
                 "Tier {tier}/{tiers}\n",
                 "Goal completed!"
             ]
@@ -2233,9 +2215,9 @@
                 "Skill XP Calculation for {name} on {profile}"
             ],
             "inner": [
-                "XP for Level {level}: {xp:ord}\n",
-                "Current XP: {current:ord}\n",
-                "XP Needed: {needed:ord}\n"
+                "XP for Level {level}: {xp:*}\n",
+                "Current XP: {current:*}\n",
+                "XP Needed: {needed:*}\n"
             ],
             "levelLimit": [
                 "This skill cannot reach level {level}."
@@ -2290,13 +2272,13 @@
                 "Slayer XP Calculation for {name} on {profile}"
             ],
             "inner": [
-                "XP for Level {level}: {xp:ord}\n",
-                "Current XP: {current:ord}\n",
-                "XP Needed: {needed:ord}\n",
+                "XP for Level {level}: {xp:*}\n",
+                "Current XP: {current:*}\n",
+                "XP Needed: {needed:*}\n",
                 "{kills}"
             ],
             "killsNeeded": [
-                "T{tier} Kills Needed: {kills:ord}"
+                "T{tier} Kills Needed: {kills:*}"
             ],
             "maxed": [
                 "Already has level {level}."
@@ -2331,11 +2313,11 @@
                 "First Login: {first_login}\n",
                 "Last Login: {last_login}\n",
                 "Last Logout: {last_logout}\n",
-                "Network XP: {network_xp:ord}\n",
+                "Network XP: {network_xp:*}\n",
                 "Network Level: {network_level:,.0f}\n",
                 "Minecraft Version: {version}\n",
-                "Karma: {karma:ord}\n",
-                "Achievement Points: {achievement_points:ord}\n",
+                "Karma: {karma:*}\n",
+                "Achievement Points: {achievement_points:*}\n",
                 "Status: {status}"
             ],
             "title": [
@@ -2405,8 +2387,8 @@
             "miscellaneousValue": [
                 "<:fairysoul:986790574310965248> {fairy_souls}/238 Fairy Souls\n",
                 "<:diamond_sword:986848758149021716> {skill_average:.2f} Skill Average\n",
-                "<:gold_block:986849038404026438> Bank: {bank:ord}\n",
-                "<:gold_ingot:986849117340839937> Purse: {purse:ord} Coins\n",
+                "<:gold_block:986849038404026438> Bank: {bank:*}\n",
+                "<:gold_ingot:986849117340839937> Purse: {purse:*} Coins\n",
                 "\uD83C\uDF97️ SkyBlock Level: {level:,.0f} ({sbxp_next:,.0f} XP to next level)\n",
                 "<:weights:986849604492476477> Weight: {senither_weight:,.0f} Senither, {lily_weight:,.0f} Lily"
             ],
@@ -2478,7 +2460,7 @@
                 "<:revenant:986789889423077456> Revenant Horror"
             ],
             "zombieValue": [
-                "XP: {xp:ord}\n",
+                "XP: {xp:*}\n",
                 "Level: {level:.0f}\n",
                 "Boss Kills:\n",
                 "> Tier 1: {kills_t1:,}\n",
@@ -2606,11 +2588,11 @@
                 "<:social:979159299475513344> Social ({level:.0f})"
             ],
             "inner": [
-                "Total XP: {xp:ord}\n",
-                "Progress: {xp_progress:ord}/{xp_needed:ord} ({progress:.2%})"
+                "Total XP: {xp:*}\n",
+                "Progress: {xp_progress:*}/{xp_needed:*} ({progress:.2%})"
             ],
             "innerMaxed": [
-                "Total XP: {xp:ord}\n",
+                "Total XP: {xp:*}\n",
                 "Max level!"
             ],
             "specialProfile": [
@@ -2653,12 +2635,12 @@
                 "{item} ({level:.0f})"
             ],
             "innerMaxed": [
-                "Items: {xp:ord}\n",
+                "Items: {xp:*}\n",
                 "Maxed collection!"
             ],
             "inner": [
-                "Items: {xp:ord}\n",
-                "Progress: {xp_progress:ord}/{xp_needed:ord} ({progress:.2%})"
+                "Items: {xp:*}\n",
+                "Progress: {xp_progress:*}/{xp_needed:*} ({progress:.2%})"
             ],
             "specialProfile": [
                 "{type} Profile"
@@ -2831,7 +2813,7 @@
                 "<:tank_orb:986846580759986236> Tank"
             ],
             "inner": [
-                "XP: {xp:ord}\n",
+                "XP: {xp:*}\n",
                 "Level: {level:.1f}\n",
                 "Weight: {weight:,.1f}\n"
             ],
@@ -2858,7 +2840,7 @@
                 "<:maddox:988669718862917692> Slayers"
             ],
             "slayerValueLily": [
-                "Total XP: {xp:ord}\n",
+                "Total XP: {xp:*}\n",
                 "Weight: {weight:,.1f}"
             ],
             "dungeonsNameLily": [
@@ -2950,14 +2932,14 @@
                 "{emoji} Personal Vault"
             ],
             "inner": [
-                "> Value: {value:ord} coins\n",
+                "> Value: {value:*} coins\n",
                 "{items}"
             ],
             "hidden": [
                 "+ {count:,} more items."
             ],
             "categoryDescription": [
-                "{emoji} Value: {value:ord} coins\n\n",
+                "{emoji} Value: {value:*} coins\n\n",
                 "{items}"
             ],
             "specialProfile": [
@@ -2992,7 +2974,7 @@
                 "Chose another profile."
             ],
             "description": [
-                "<:catacombs:986846576582459443> Catacombs Level {level:,} ({xp:ord} XP)\n",
+                "<:catacombs:986846576582459443> Catacombs Level {level:,} ({xp:*} XP)\n",
                 "<:normal_cata:988675938034282538> Highest Catacombs Floor Completed: {cata_floor_completed}\n",
                 "<:master_cata:988676045358121020> Highest Master Mode Floor Completed: {master_floor_completed}\n",
                 "<:chest:993336473661231175> Secrets (All Profiles): {secrets:,}"
@@ -3001,11 +2983,11 @@
                 "Classes"
             ],
             "classesValue": [
-                "<:healer_orb:986846578025308201> Healer {healer_level:,} ({healer_xp:ord} XP)\n",
-                "<:mage_orb:986846579463946250> Mage {mage_level:,} ({mage_xp:ord} XP)\n",
-                "<:berserk_orb:986846574812487711> Berserk {berserk_level:,} ({berserk_xp:ord} XP)\n",
-                "<:archer_orb:986846573415768075> Archer {archer_level:,} ({archer_xp:ord} XP)\n",
-                "<:tank_orb:986846580759986236> Tank {tank_level:,} ({tank_xp:ord} XP)"
+                "<:healer_orb:986846578025308201> Healer {healer_level:,} ({healer_xp:*} XP)\n",
+                "<:mage_orb:986846579463946250> Mage {mage_level:,} ({mage_xp:*} XP)\n",
+                "<:berserk_orb:986846574812487711> Berserk {berserk_level:,} ({berserk_xp:*} XP)\n",
+                "<:archer_orb:986846573415768075> Archer {archer_level:,} ({archer_xp:*} XP)\n",
+                "<:tank_orb:986846580759986236> Tank {tank_level:,} ({tank_xp:*} XP)"
             ],
             "overview": [
                 "Overview"
@@ -3099,9 +3081,9 @@
                 "Secrets: {secrets:,}\n",
                 "Teammates: {teammates}\n",
                 "Class: {selected_class}\n",
-                "Mobs Killed: {kills:ord}\n",
-                "Damage Dealt: {damage_dealt:ord}\n",
-                "Damage Mitigated: {damage_mitigated:ord}"
+                "Mobs Killed: {kills:*}\n",
+                "Damage Dealt: {damage_dealt:*}\n",
+                "Damage Mitigated: {damage_mitigated:*}"
             ],
             "specialProfile": [
                 "{type} Profile"
@@ -3128,7 +3110,7 @@
                 "Bank API is disabled on this profile."
             ],
             "description": [
-                "<:gold_block:986849038404026438> Balance: {balance:ord} coins"
+                "<:gold_block:986849038404026438> Balance: {balance:*} coins"
             ],
             "transactions": [
                 "Transactions"
@@ -3168,12 +3150,12 @@
                 "Points: {points}\n\n{board}"
             ],
             "progress": [
-                "Progress: {progress:ord}\n",
-                "Next Tier: {needed:ord}\n> {toNext:ord} needed\n",
+                "Progress: {progress:*}\n",
+                "Next Tier: {needed:*}\n> {toNext:*} needed\n",
                 "Tier {tier}/{tiers}"
             ],
             "finishedProgress": [
-                "Progress: {progress:ord}\n",
+                "Progress: {progress:*}\n",
                 "Tier {tier}/{tiers}\n",
                 "Goal completed!"
             ]
@@ -3329,13 +3311,13 @@
                 "{mob} ({level})"
             ],
             "innerMob": [
-                "Kills: {kills:ord}\n",
-                "Deaths: {deaths:ord}\n",
-                "Next Tier: {next:ord} kills"
+                "Kills: {kills:*}\n",
+                "Deaths: {deaths:*}\n",
+                "Next Tier: {next:*} kills"
             ],
             "maxedValue": [
-                "Kills: {kills:ord}\n",
-                "Deaths: {deaths:ord}\n",
+                "Kills: {kills:*}\n",
+                "Deaths: {deaths:*}\n",
                 "Maximum tier!"
             ],
             "noData": [
@@ -3696,8 +3678,8 @@
             "crop": [
                 "Attended: {contests:,}\n",
                 "Crops:\n",
-                "> Best: {personal_best:ord}\n",
-                "> Total: {total:ord}\n",
+                "> Best: {personal_best:*}\n",
+                "> Total: {total:*}\n",
                 "Average Place: {average}\n",
                 "Gold Medals: {gold:,}\n",
                 "Silver Medals: {silver:,}\n",
@@ -3759,11 +3741,11 @@
                 "No upgrades available."
             ],
             "upgradeCPMP": [
-                "Costs {cost:ord} coins at {cpmp:ord} coins/MP."
+                "Costs {cost:*} coins at {cpmp:*} coins/MP."
             ],
             "upgradeRarity": [
                 "<:recombobulator:824715669529821216> Upgrade rarity to ",
-                "{rarity_emoji} {rarity}: +{additional:,} MP at {cpmp:ord} coins/MP"
+                "{rarity_emoji} {rarity}: +{additional:,} MP at {cpmp:*} coins/MP"
             ],
             "upgradeRarityNoCPMP": [
                 "<:recombobulator:824715669529821216> Upgrade rarity to ",
@@ -3775,12 +3757,12 @@
             ],
             "upgradeAccessoryCPMP": [
                 "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji} {new_accessory}: +{additional:,} MP\n",
-                "Costs {cost:ord} coins at {cpmp:ord} coins/MP\n",
+                "Costs {cost:*} coins at {cpmp:*} coins/MP\n",
                 "**OR**"
             ],
             "upgradeAccessoryCPMPIfSell": [
                 "<:Coin:895081517322235914> Upgrade accessory to {rarity_emoji}{new_accessory}: +{additional:,} MP\n",
-                "Costs {cost:ord} coins at {cpmp:ord} coins/MP\n",
+                "Costs {cost:*} coins at {cpmp:*} coins/MP\n",
                 "Should sell the following accessories:\n{accessories_to_sell}\n",
                 "**OR**"
             ],
@@ -3788,7 +3770,7 @@
                 "☎\uFE0F Get {missing} more contacts on your Abiphone: +{additional:,} MP"
             ],
             "upgradePulseRing": [
-                "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP at {cpmp:ord} coins/MP"
+                "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP at {cpmp:*} coins/MP"
             ],
             "upgradePulseRingNoCPMP": [
                 "⚡ Add {bottles} more bottles to Pulse Ring: +{additional:,} MP"
@@ -3797,13 +3779,13 @@
                 "\uD83E\uDDAC Get {pelts} more pelts: +{additional:,} MP"
             ],
             "upgradePowerArtifact": [
-                "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP at {cpmp:ord} coins/MP"
+                "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP at {cpmp:*} coins/MP"
             ],
             "upgradePowerArtifactNoCPMP": [
                 "\uD83D\uDC8E Add perfect gemstones: {missing}: +{additional:,} MP"
             ],
             "obtain": [
-                "<:Coin:895081517322235914> Obtain accessory: +{additional:,} MP at {cpmp:ord} coins/MP"
+                "<:Coin:895081517322235914> Obtain accessory: +{additional:,} MP at {cpmp:*} coins/MP"
             ],
             "obtainNoCPMP": [
                 "<:Coin:895081517322235914> Obtain accessory: +{additional:,} MP"
@@ -3976,7 +3958,7 @@
                 "No items in this section."
             ],
             "museumDesc": [
-                "{name}'s Museum on {profile} has {item_count:,} items worth {value:ord} coins."
+                "{name}'s Museum on {profile} has {item_count:,} items worth {value:*} coins."
             ],
             "museumDescNoValue": [
                 "{name}'s Museum on {profile} has {item_count:,} items."
