@@ -1904,7 +1904,7 @@
                 "Upcoming"
             ],
             "event": [
-                "{emoji} {name} {time}"
+                "{emoji} {event} {time}"
             ]
         }
     },
