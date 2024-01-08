@@ -1891,7 +1891,22 @@
     },
     "skyblock events": {
         "name": "events",
-        "description": "Manages SkyBlock event notifications."
+        "description": "Lists the current and upcoming SkyBlock events.",
+        "options": [],
+        "responses": {
+            "title": [
+                "SkyBlock Events"
+            ],
+            "current": [
+                "Ongoing"
+            ],
+            "upcoming": [
+                "Upcoming"
+            ],
+            "event": [
+                "{emoji} {name} {time}"
+            ]
+        }
     },
     "skyblock-events": {
         "name": "skyblock-events",
@@ -5048,6 +5063,9 @@
             ],
             "MAYOR_ELECTION_END": [
                 "Mayor Election Ends"
+            ],
+            "MAYOR_ELECTION": [
+                "Mayor Election"
             ],
             "MAYOR_ELECTION_END_ALERT": [
                 "The Mayor Election ends"
