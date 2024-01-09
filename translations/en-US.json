@@ -2405,7 +2405,7 @@
             "miscellaneousValue": [
                 "<:fairysoul:986790574310965248> {fairy_souls}/238 Fairy Souls\n",
                 "<:diamond_sword:986848758149021716> {skill_average:.2f} Skill Average\n",
-                "<:gold_block:986849038404026438> Bank: {bank:*}\n",
+                "<:gold_block:986849038404026438> Bank: {bank}\n",
                 "<:gold_ingot:986849117340839937> Purse: {purse:*} Coins\n",
                 "\uD83C\uDF97️ SkyBlock Level: {level:,.0f} ({sbxp_next:,.0f} XP to next level)\n",
                 "<:weights:986849604492476477> Weight: {senither_weight:,.0f} Senither, {lily_weight:,.0f} Lily"
