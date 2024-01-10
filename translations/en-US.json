@@ -2491,7 +2491,7 @@
                 "<:tarantula:986789892271005728> Tarantula Broodfather"
             ],
             "spiderValue": [
-                "XP: {xpord}\n",
+                "XP: {xp:*}\n",
                 "Level: {level:.0f}\n",
                 "Boss Kills:\n",
                 "> Tier 1: {kills_t1:,}\n",
@@ -2503,7 +2503,7 @@
                 "<:sven:986789891088187403> Sven Packmaster"
             ],
             "wolfValue": [
-                "XP: {xpord}\n",
+                "XP: {xp:*}\n",
                 "Level: {level:.0f}\n",
                 "Boss Kills:\n",
                 "> Tier 1: {kills_t1:,}\n",
@@ -2515,7 +2515,7 @@
                 "<:voidgloom:986789894397526036> Voidgloom Seraph"
             ],
             "endermanValue": [
-                "XP: {xpord}\n",
+                "XP: {xp:*}\n",
                 "Level: {level:.0f}\n",
                 "Boss Kills:\n",
                 "> Tier 1: {kills_t1:,}\n",
@@ -2527,7 +2527,7 @@
                 "<:blaze:986789888093487104> Inferno Demonlord"
             ],
             "blazeValue": [
-                "XP: {xpord}\n",
+                "XP: {xp:*}\n",
                 "Level: {level:.0f}\n",
                 "Boss Kills:\n",
                 "> Tier 1: {kills_t1:,}\n",
@@ -2539,7 +2539,7 @@
                 "<:riftstalker:1128147041994948788> Riftstalker Bloodfiend"
             ],
             "vampireValue": [
-                "XP: {xpord}\n",
+                "XP: {xp:*}\n",
                 "Level: {level:.0f}\n",
                 "Boss Kills:\n",
                 "> Tier 1: {kills_t1:,}\n",
