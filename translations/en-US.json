@@ -4575,9 +4575,7 @@
             "25": {
                 "note": "Raised when a player doesn't have any SkyBlock profiles to fetch.",
                 "message": [
-                    "**{name}** has no SkyBlock profiles.\n\n",
-                    "⚠️ Hypixel has recently updated their SkyBlock profiles system, profiles for people that have not logged in since ",
-                    "May 16th may not display."
+                    "**{name}** has no SkyBlock profiles."
                 ]
             },
             "26": {
