@@ -4296,6 +4296,9 @@
         "description": "Synchronize your Discord account with Hypixel's social menu.",
         "options": [],
         "responses": {
+            "guildOnly": [
+                "The bot has not been added to this server, you cannot sync your roles here."
+            ],
             "synced": [
                 "Successfully updated your roles."
             ],
@@ -4330,6 +4333,9 @@
             }
         ],
         "responses": {
+            "guildOnly": [
+                "The bot has not been added to this server, you cannot use this command here."
+            ],
             "default": [
                 "This server uses SkyKings to verify that you own a Minecraft account.\n\n",
                 "To verify, click the 'Verify' button below.\n",
