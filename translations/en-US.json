@@ -4297,7 +4297,10 @@
         "options": [],
         "responses": {
             "guildOnly": [
-                "The bot has not been added to this server, you cannot sync your roles here."
+                "This command can only be used in servers with the bot!"
+            ],
+            "guildNotAuthorized": [
+                "The bot has not been added to this server, you cannot use this command here."
             ],
             "synced": [
                 "Successfully updated your roles."
@@ -4334,6 +4337,9 @@
         ],
         "responses": {
             "guildOnly": [
+                "This command can only be used in servers with the bot!"
+            ],
+            "guildNotAuthorized": [
                 "The bot has not been added to this server, you cannot use this command here."
             ],
             "default": [
