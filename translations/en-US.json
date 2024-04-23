@@ -2995,7 +2995,7 @@
                 "<:catacombs:986846576582459443> Catacombs Level {level:,} ({xp:*} XP)\n",
                 "<:normal_cata:988675938034282538> Highest Catacombs Floor Completed: {cata_floor_completed}\n",
                 "<:master_cata:988676045358121020> Highest Master Mode Floor Completed: {master_floor_completed}\n",
-                "<:chest:993336473661231175> Secrets (All Profiles): {secrets:,}"
+                "<:chest:993336473661231175> Secrets: {secrets:,}"
             ],
             "classesName": [
                 "Classes"
