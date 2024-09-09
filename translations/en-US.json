@@ -4161,7 +4161,6 @@
             ],
             "memberInfoValue": [
                 "Nick: {nick}\n",
-                "Top Role: {top_role}\n",
                 "Joined: <t:{joined}:F>\n",
                 "{boosted}"
             ],
