@@ -3685,14 +3685,13 @@
             ],
             "description": [
                 "<:farming:978799567124447343> **Contests Attended**: {contests:,}\n",
-                "<:diamond:1290322591776636928> **Diamond**: {diamond:,}\n",
-                "<:cyan_dye:1290322579378274314> **Platinum**: {platinum:,}\n",
-                "<:gold:1290322567264997418> **Gold**: {gold:,}\n",
+                "<:diamond:1290322591776636928> **Diamond**: {diamond:,} ({unique_diamond:,}/{crop_count:,)\n",
+                "<:cyan_dye:1290322579378274314> **Platinum**: {platinum:,} ({unique_platinum:,}/{crop_count:,)\n",
+                "<:gold:1290322567264997418> **Gold**: {gold:,} ({unique_gold:,}/{crop_count:,)\n",
                 "> {gold_inv:,} in inventory.\n",
-                "> {unique_gold:,} unique gold medals.\n",
-                "<:iron:1290322554883670048> **Silver**: {silver:,}\n",
+                "<:iron:1290322554883670048> **Silver**: {silver:,} ({unique_silver:,}/{crop_count:,)\n",
                 "> {silver_inv:,} in inventory.\n",
-                "<:brick:1290322545496559667> **Bronze**: {bronze:,}\n",
+                "<:brick:1290322545496559667> **Bronze**: {bronze:,} ({unique_bronze:,}/{crop_count:,)\n",
                 "> {bronze_inv:,} in inventory.\n"
             ],
             "crop": [
@@ -3701,11 +3700,7 @@
                 "> Best: {personal_best:*}\n",
                 "> Total: {total:*}\n",
                 "Average Place: {average}\n",
-                "<:brick:1290322545496559667> {bronze:,} ",
-                "<:iron:1290322554883670048> {silver:,} ",
-                "<:gold:1290322567264997418> {gold:,} ",
-                "<:cyan_dye:1290322579378274314> {platinum:,} ",
-                "<:diamond:1290322591776636928> {diamond:,}",
+                "{medals}",
             ],
             "noData": [
                 "No contest data was found on this profile."
