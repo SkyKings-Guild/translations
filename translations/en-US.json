@@ -3700,7 +3700,7 @@
                 "> Best: {personal_best:*}\n",
                 "> Total: {total:*}\n",
                 "Average Place: {average}\n",
-                "{medals}",
+                "{medals}"
             ],
             "noData": [
                 "No contest data was found on this profile."
